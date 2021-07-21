@@ -11,7 +11,7 @@ export default class Home extends Component {
         <Navbar />
         <div className="card bg-dark text-white">
           <img id="iggy" src={beach} alt="beach" />
-          <div className="card-img-overlay text-center ">
+          <div className="card-img-overlay d-flex justify-content-center flex-column align-item-center text-center">
             <h5 className="Oceaneers">Oceaneers</h5>
             <p className="card-text"> To the Oceans, Our Food Choices Matter</p>
           </div>
