@@ -2,15 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // sets the font size to 10 px so we can use rems easily
 }
+
+// sets the font size to 10 px so we can use rems easily
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1 rem = 10px;
 }
 
+// import partials for scss and import fonts here !
+
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap");
-
-// 1 rem = 10px;
-
 @import "./navbar";
+
+$hero-height: 60vh;
+
+.hero-section {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg")
+    50% no-repeat;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+}

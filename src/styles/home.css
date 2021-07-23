@@ -48,30 +48,32 @@ nav ul {
           align-items: center;
   list-style: none;
   font-family: "Cabin", sans-serif;
+  padding-top: 1.3rem;
 }
 
 #logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 10rem;
           flex: 1 1 10rem;
+  background-color: #024a63;
 }
 
 .join {
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 2rem;
   background: #ff7c5c;
   border: 0rem solid white;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 2.4rem;
   font-family: "Cabin", sans-serif;
 }
 
 .login {
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 2rem;
   background: white;
   border: 0rem solid white;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 2.4rem;
   font-family: "Cabin", sans-serif;
 }
@@ -82,5 +84,26 @@ nav ul {
 
 i {
   font-size: 2rem;
+}
+
+.hero-section {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 /*# sourceMappingURL=home.css.map */

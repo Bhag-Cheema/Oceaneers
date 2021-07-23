@@ -5,6 +5,7 @@ import Login from './components/Login';
 import "./styles/home.scss";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'foundation-sites';
 import { BrowserRouter, Route } from 'react-router-dom';
 class App extends Component {
   render() {
