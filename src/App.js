@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./components/Home";
 import Login from "./components/Login";
-import Partners from "./components/Partners";
+import About from "./components/About";
 
 import "./styles/home.scss";
 import "./styles/home.css";
@@ -16,7 +16,7 @@ class App extends Component {
         <BrowserRouter>
           <Route path="/" exact component={Home} />
           <Route path="/login" exact component={Login} />
-          <Route path="/partners" exact component={Partners} />
+          <Route path="/aboutus" exact component={About} />
         </BrowserRouter>
       </div>
     );
