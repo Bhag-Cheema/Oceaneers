@@ -62,7 +62,7 @@ export default class Partners extends Component {
                 <h2 className="repeating-h2 d-flex justify-content-center">
                     James Taylor
                 </h2>
-                
+
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -77,20 +77,6 @@ export default class Partners extends Component {
                         <i className="bi bi-plus-circle"></i>
                       </button>
                     </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        A Cape Town based grass root community that fights
-                        plastic pollution in our oceans, by giving individuals
-                        the opportunity to take a pledge on their website. Their
-                        motto is C.A.R.E. (Collaborate, Act, Respond, and
-                        Enjoy!).
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -124,6 +110,43 @@ export default class Partners extends Component {
               </div>
             </div>
           </div>
+        {/*Display Button James */}
+        <div
+          id="collapseOne"
+          className="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+          >
+          <div className="accordion-body">
+            <div className="container-2 d-flex justify-content-center">
+              <div class="row">
+                  <div class="col-4">
+                  <div className="card-ambassador">
+                  <img src={ambassador1} className="rounded-circle-am" alt="..." />
+                  </div>
+                  </div>
+                  <div class="col-8">
+                  <h2 className="repeating-h2-name">
+                    James Taylor
+                  </h2>
+                  <h3 className="h3">
+                    Big-wave Surfer, Foiler, Spear-fisherman, Entrepreneur
+                  </h3>
+                    Unlike most big wave surfers, James didn’t grow up at the ocean but in the middle of South Africa. After catching
+                    his first wave at the mature age of 12, nothing could keep him away from the salty playground anymore and he’s 
+                    taken full advantage of it ever since. This even lead to James’s participation in the WSL Big Wave Tour in 
+                    2015/2016 where he competed with the best big wave surfers on waves. But in January 2016, James had the 
+                    wipeout of his life at Jaws (Hawaii) when his eardrum and inflation vest burst and his leash snapped—pretty much 
+                    the worst-case-scenario. Luckily he survived it, and many other precarious moments in the ocean, for example 
+                    when he broke his back surfing a “small” wave in Cape Town. His relationship with the sea doesn’t stop at surfing 
+                    though. He kitesurfs, windsurfs, SUPs, spearfishes, swims and has increasingly often been spotted on foils out in 
+                    the Southern African ocean. We seriously couldn’t think of a better first ambassador for Oceaneers than 
+                    James—stoked to have you on board!</div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
         {/* Our Team */}
         <div className="container">
         <h1 className="repeating-h1-1">Our Team</h1>
