@@ -41,6 +41,25 @@
   line-height: 3.5rem;
   margin-bottom: 3rem;
 }
+.repeating-h3 {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  margin-top: -2.5rem; 
+  font-weight: 400;
+  line-height: 3.5rem;
+  margin-bottom: 3rem;
+}
+.repeating-h1-1 {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
 
 .slide {
   padding-top: 6rem;
@@ -61,19 +80,19 @@
   margin-bottom: 2.4rem;
 }
 
-.card rounded-circle {
-  width: 30.8rem;
-  height: 35.8rem;
-  padding: 3.5rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-  //background-color: #e2f0ef !important;
-}
 
 .container {
-  margin-left: 40rem;
+  margin-top: 2rem;
+  margin-left: 16rem;
   margin-right: 16rem;
+  background: #BEDEDF;
+  border-radius: 7rem;
 }
+.ambasadors{
+  background: #BEDEDF;
+  border-radius: 10.3rem;
+}
+
 
 .accordion {
   margin-bottom: 3.2rem;
@@ -87,12 +106,13 @@
 }
 .button-accordian {
   font-family: "Cabin", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 600;
-  padding: 2rem 5rem 2rem 5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 2rem 4rem 2rem 4rem;
+  outline: none;
   background-color:#ff7c5c;;
-  border: none;
+  border: 0rem;
   border-radius: 4.3rem;
   color: white;
-  width: 28.4rem;
+  width: 25.4rem;
 }

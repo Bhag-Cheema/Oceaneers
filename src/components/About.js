@@ -4,10 +4,13 @@ import Navbar from "./NavBar";
 import header1 from "../imgs/aboutus/header1.png";
 
 import ambassador1 from "../imgs/aboutus/ambassador1.png"
+import ambassador2 from "../imgs/aboutus/ambassador2.png"
+import ambassador3 from "../imgs/aboutus/ambassador3.png"
+import ambassador4 from "../imgs/aboutus/ambassador4.png"
 
-import circle1 from "../imgs/Partners/ocean pledge.png";
-import circle2 from "../imgs/Partners/green pop logo.png";
-import circle3 from "../imgs/Partners/fish welfare initiative logo.png";
+import team1 from "../imgs/aboutus/team1.png"
+import team2 from "../imgs/aboutus/team2.png"
+import team3 from "../imgs/aboutus/team3.png"
 
 export default class Partners extends Component {
   render() {
@@ -46,64 +49,158 @@ export default class Partners extends Component {
             <br /> journey blossomed. Thus, we decided to put other work projects on stand-by and dedicate our {" "}
             <br />full time and energy towards this cause. 
           </h2>
+        </div>
           
-          {/* Ambassadors */}
-          <div className="card">
-          <div className="container text-center">
-            <h1 className="repeating-h1">Ambassadors</h1>
-            {/* Circle Carousel */}
-            {/* item 1 */}
-            <div className="row row-cols-1 row-cols-md-4 g-4 mx-auto">
-                <div className="col">
-                    <div className="card rounded-circle border-0">
-                        <img src={ambassador1} className="rounded-circle" alt="ambassador1"/>
-                            <div className="card-body"></div>
-                            <h2 className="repeating-h2">
-                            James Taylor
-                            </h2>                            
-                    </div>
-
-                <div className="accordion" id="accordionExample">
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingOne">
+        {/* Ambassadors */}
+        <div className="container">
+        <h1 className="repeating-h1-1">Ambassadors</h1>
+          <div className="row row-cols-1 row-cols-md-4 g-4 mx-auto">
+              <div className="col">
+                <div className="card rounded-circle">
+                  <img src={ambassador1} className="rounded-circle" alt="..." />
+                </div>
+                <h2 className="repeating-h2 d-flex justify-content-center">
+                    James Taylor
+                </h2>
+                
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
                       <button
-                        className="button-accordian"
+                        class="button-accordian"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne"
                         aria-expanded="true"
                         aria-controls="collapseOne"
-                        >Learn More
+                      > Learn More
                         <i className="bi bi-plus-circle"></i>
                       </button>
                     </h2>
                     <div
                       id="collapseOne"
-                      className="accordion-collapse collapse show"
+                      class="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >
-                      <div className="accordion-body">
-                      <div class="container-sm">
-                           CONTAINER
-                      </div>
+                      <div class="accordion-body">
+                        A Cape Town based grass root community that fights
+                        plastic pollution in our oceans, by giving individuals
+                        the opportunity to take a pledge on their website. Their
+                        motto is C.A.R.E. (Collaborate, Act, Respond, and
+                        Enjoy!).
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               {/* end */}
-             
-
-
-              </div> {/*end main Ambassadors card*/}
-
-              
-          
+              {/* Tammy Fry */}
+              <div className="col">
+                <div className="card rounded-circle border-0">
+                  <img src={ambassador2} className="rounded-circle " alt="..." />
+                </div>
+                <h2 className="repeating-h2 d-flex justify-content-center">
+                      Tammy Fry
+                </h2>
+              </div>
+              {/*Terence Ball*/}
+              <div className="col">
+                <div className="card rounded-circle border-0">
+                  <img src={ambassador3} className="card rounded-circle" alt="..." />
+                </div>
+                <h2 className="repeating-h2 d-flex justify-content-center">
+                    Terence Bell
+                </h2>
+              </div>
+              {/*Emi Koch */}
+              <div className="col">
+                <div className="card rounded-circle border-0">
+                  <img src={ambassador4} className="rounded-circle" alt="..." />
+                </div>
+                <h2 className="repeating-h2 d-flex justify-content-center">
+                    Emi Koch
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        {/* Our Team */}
+        <div className="container">
+        <h1 className="repeating-h1-1">Our Team</h1>
+          <div className="row row-cols-1 row-cols-md-3 g-4 mx-auto">
+              <div className="col">
+                <div className="card rounded-circle">
+                  <img src={team1} className="rounded-circle" alt="..." />
+                </div>
+                <h2 className="repeating-h2 d-flex justify-content-center">
+                  Kaspar Paur
+                </h2>
+                <h2 className="repeating-h3 d-flex justify-content-center">
+                  Founder
+                </h2>
+                
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="button-accordian"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      > Learn More
+                        <i className="bi bi-plus-circle"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        A Cape Town based grass root community that fights
+                        plastic pollution in our oceans, by giving individuals
+                        the opportunity to take a pledge on their website. Their
+                        motto is C.A.R.E. (Collaborate, Act, Respond, and
+                        Enjoy!).
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* end */}
+              {/* Nathan Richardson */}
+              <div className="col">
+                <div className="card rounded-circle border-0">
+                  <img src={team2} className="rounded-circle " alt="..." />
+                </div>
+                <h2 className="repeating-h2 d-flex justify-content-center">
+                  Nathan Richardson
+                </h2>
+                <h2 className="repeating-h3 d-flex justify-content-center">
+                  Stoke Manager
+                </h2>
+              </div>
+              {/*Andrea Fedder*/}
+              <div className="col">
+                <div className="card rounded-circle border-0">
+                  <img src={team3} className="card rounded-circle" alt="..." />
+                </div>
+                <h2 className="repeating-h2 d-flex justify-content-center">
+                  Andrea Fedder
+                </h2>
+                <h2 className="repeating-h3 d-flex justify-content-center">
+                (Alumni)
+                </h2>
+              </div>
+              
+            </div>
+          </div>
+      </div> //end render class
+       
+            
     );
   }
 }
