@@ -12,8 +12,9 @@
   font-family: "Cabin", sans-serif;
   font-size: 3.5rem;
   font-weight: 400;
-  padding: 2.8rem 9.5rem 11.3rem 9.5rem;
+  margin: 2.8rem 9.5rem 11.3rem 9.5rem;
 }
+// ORANGE BUTTON
 .learn-how {
   padding: 0.5rem 2rem;
   margin-top: -2rem;
@@ -25,6 +26,7 @@
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
 }
+// Quote Block
 .quote {
   color: #024a63;
   margin-top: 3.7rem;
@@ -35,33 +37,44 @@
   padding-left: 11rem;
   padding-right: 11rem;
 }
+
+// Repeating h1,h2
 .repeating-h1 {
   color: #024a63;
   font-family: "Cabin", sans-serif;
   font-size: 6rem;
   font-weight: 700;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .repeating-h2 {
   color: #024a63;
   font-family: "Cabin", sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  margin-top: 1.6rem;
+  margin: 1.6rem 25rem 1rem 25rem;
   line-height: 3.5rem;
-  margin-bottom: 3rem;
 }
+
+// Grid carousel
+
+// .card-img {
+//   height: auto;
+//   width: auto;
+// }
 
 .slide {
   padding-top: 6rem;
-  padding-left: 14.5rem;
-  padding-right: 14.5rem;
+  padding-bottom: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
 }
-
 .card-title {
   font-family: "Cabin", sans-serif;
   font-size: 3.5rem;
   font-weight: 600;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
 }
 
 .card-text {
@@ -71,45 +84,83 @@
   margin-bottom: 2.4rem;
 }
 
+.bi-arrow-right-circle {
+  position: absolute;
+  font-size: 3.6rem;
+  top: 6rem;
+  right: 0rem;
+  color: black;
+}
+.bi-arrow-left-circle {
+  position: absolute;
+  font-size: 3.6rem;
+  top: 6rem;
+  left: 0rem;
+  color: black;
+}
+.filled-circle {
+  border-radius: 100%;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+// Circle Carousels
+
 .rounded-circle {
   width: 35.8rem;
   height: 35.8rem;
   padding: 3.5rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+  margin-top: 4.8rem;
   background-color: #e2f0ef !important;
-}
-// .carousel-indicators {
-//   bottom: -50px;
-//   width: 1rem;
-//   height: 1rem;
-//   border-radius: 100%;
-//   background-color: #024a63;
-// }
-.container {
-  margin-left: 16rem;
-  margin-right: 16rem;
 }
 
+// Drop Downs
 .accordion {
   margin-top: 3.2rem;
-  margin-bottom: 3.2rem;
-  background-color: #e2f0ef !important;
 }
 
 .accordion-body {
+  background-color: #e2f0ef;
+  margin-top: -4rem;
+  margin-left: 5rem;
+  width: 32.4rem;
+  border-radius: 0rem 0rem 4.3rem 4.3rem;
+}
+.text-accordion {
+  background-color: #e2f0ef;
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
   font-weight: 500;
+  padding-top: 4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
-.button-accordian {
+
+.button-accordion {
   font-family: "Cabin", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
-  padding: 2rem 5rem 2rem 5rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
   background-color: #024a63;
+  margin-left: 5rem;
   border: none;
   border-radius: 4.3rem;
   color: white;
+  height: 4rem;
   width: 32.4rem;
+
+  position: relative;
+}
+// .accordion-item {
+//   background-color: #024a63 !important;
+//   border-radius: 50px 50px 50px 50px !important;
+// }
+.plus-icon {
+  position: absolute;
+  right: 1.6rem;
+  top: 2.4rem;
+  font-size: 2.4rem;
 }
