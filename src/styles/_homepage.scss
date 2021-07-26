@@ -55,7 +55,7 @@
   font-family: "Cabin", sans-serif ;
   font-weight: 700;
   margin-top: 8rem;
-  font-size: 60px;
+  font-size: 6rem;
   text-align: center;
 }
 
@@ -65,7 +65,19 @@
   font-weight: 400;
   margin-top: 80px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-top: 1.5%;
+  margin-left: 229px;
+  margin-right: 228px;
+}
+
+.our-pillers-text {
+  color: #024a63;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 3rem;
   margin-top: 1.5%;
   margin-left: 229px;
   margin-right: 228px;
@@ -74,31 +86,94 @@
 .accordion {
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
-  background-color: #e2f0ef !important;
+  background-color: #024a63 !important;
   justify-content: center;
+  border: none;
+}
+
+.accordion-body-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .accordion-body {
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
   font-weight: 500;
+  border: none;
+  margin-left: 14%;
+  margin-right: 14%;
 }
+
 .button-accordian {
   font-family: "Cabin", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
-  padding: 2rem 5rem 2rem 5rem;
   background-color: #024a63;
   border: none;
   border-radius: 4.3rem;
   color: white;
-  width: 32.4rem;
-  justify-content: center;
+  width: 75%;
+  height: 7.2rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: center;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 20px;
+
+
+.card-title {
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 16%;
+}
+
+.card-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 35%;
+  margin-left: 10%;
   margin-right: 10%;
 }
+
+.card-text-ocean {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+//should I make one for the last card, does the 
+//spacing look off 
+
+.why {
+  color: #024a63;
+  font-family: "Cabin", sans-serif ;
+  font-weight: 700;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.learn-how-2 {
+  padding: 0.5rem 3.5rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+}
+
