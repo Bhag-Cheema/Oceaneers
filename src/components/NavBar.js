@@ -11,7 +11,7 @@ export default class NavBar extends Component {
                         <img id="logo" src={logo} alt="logo" />
                         <ul>
                             <li><NavLink to="/" activeClassName="active-link">Home</NavLink> </li>
-                            <li><NavLink to="" activeClassName="active-link">Why</NavLink></li>
+                            <li><NavLink to="/why" activeClassName="active-link">Why</NavLink></li>
                             <li><NavLink to="" activeClassName="active-link">About Us</NavLink></li>
                             <li><NavLink to="" activeClassName="active-link">Events</NavLink></li>
                             <li><NavLink to="" activeClassName="active-link">Partners</NavLink></li>

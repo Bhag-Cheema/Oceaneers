@@ -1,0 +1,202 @@
+.intro-why {
+  min-height: 60vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../imgs/whyIntro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Cabin", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .desc {
+    font-size: 3rem;
+  }
+}
+
+/* -------------------------------------------  */
+
+.compare {
+  min-height: 50vh;
+  width: 100%;
+  margin: auto;
+
+  .indust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    .sub-title {
+      font-size: 4.5rem;
+      font-weight: bold;
+      color: #024a63;
+    }
+
+    .sub-desc {
+      font-size: 2.2rem;
+      font-weight: normal;
+      color: #024a63;
+    }
+  }
+
+  .indust-cards {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .indust-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-itself {
+    border: solid;
+    background: url("../imgs/bridge-water.png");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 45rem;
+    height: 35rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+
+    h5 {
+      font-size: 2.5rem;
+    }
+
+    h6 {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .non-indust-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-itself-two {
+    border: solid;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: url("../imgs/camel.png");
+    width: 45rem; //
+    height: 35rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+    h5 {
+      margin-top: 22rem;
+      font-size: 2.5rem;
+    }
+
+    h6 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .green-bar {
+    background-color: #024a63;
+    color: white;
+    width: 35rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+
+    h5 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  // .green-bar-two {
+  //   background-color: #024a63;
+  //   color: white;
+  //   width: 30rem;
+  //   height: 2.5rem;
+  //   margin-bottom: 1rem;
+  //   text-align: center;
+  //   border-radius: 1rem;
+
+  //   h5 {
+  //     padding-top: 0.5rem;
+  //     padding-bottom: 0.5rem;
+  //   }
+  // }
+}
+
+.hrLine {
+  margin-left: 50rem;
+  margin-right: 50rem;
+  hr {
+    border: 3px solid #bededf;
+  }
+}
+
+.further-explanation {
+  min-height: 50vh;
+
+  .explanation-content {
+    text-align: center;
+    h2 {
+      font-size: 4.5rem;
+      font-weight: bold;
+      color: #024a63;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    h4 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      color: #024a63;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.why-carousel {
+  min-height: 50vh;
+}
+
+.infographic {
+  min-height: 40vh;
+
+  div {
+    border-radius: 10rem;
+    background: url("../imgs/infographic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 95%;
+    margin: auto;
+    height: 100rem;
+  }
+}
