@@ -1,0 +1,70 @@
+.homepage-color {
+    background: #024a63;
+    color: white;
+    width: 75%;
+    height: 217px;
+    border-radius: 58px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 80px;
+  }
+
+  .oceaneers-raleway {
+      font-family: "Raleway", sans-serif;
+  }
+  
+  .oceaneers-cabin-700 {
+      font-family: "Cabin", sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+  }
+
+  .oceaneers-cabin-400 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+  .our-purpose {
+      color: #024a63;
+      font: Cabin; 
+      font-weight: 700;
+      margin-top: 80px;
+  }
+
+  .our-purpose-text {
+    color: #024a63;
+    font: Raleway; 
+    font-weight: 700;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0%;
+    margin-left: 229px;
+    margin-right: 228px;
+}
+
+.join-button {
+    padding: 0.5rem 1.2rem;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2.4rem;
+    font-family: "Cabin", sans-serif;
+  }
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    margin-right: 10%;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+
+
+
+  
+  

@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap");
+=======
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+>>>>>>> bhag-cheema
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
+<<<<<<< HEAD
   box-sizing: border-box;
+=======
+          box-sizing: border-box;
+>>>>>>> bhag-cheema
 }
 
 html {
@@ -29,8 +37,13 @@ nav {
   width: 98%;
   margin: auto;
   -webkit-box-align: center;
+<<<<<<< HEAD
   -ms-flex-align: center;
   align-items: center;
+=======
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> bhag-cheema
 }
 
 nav ul {
@@ -38,6 +51,7 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 8;
+<<<<<<< HEAD
   -ms-flex: 8 1 10rem;
   flex: 8 1 10rem;
   -webkit-box-pack: space-evenly;
@@ -46,6 +60,16 @@ nav ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+=======
+      -ms-flex: 8 1 10rem;
+          flex: 8 1 10rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> bhag-cheema
   list-style: none;
   font-family: "Cabin", sans-serif;
   padding-top: 1.3rem;
@@ -53,8 +77,13 @@ nav ul {
 
 #logo {
   -webkit-box-flex: 1;
+<<<<<<< HEAD
   -ms-flex: 1 1 10rem;
   flex: 1 1 10rem;
+=======
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+>>>>>>> bhag-cheema
   background-color: #024a63;
 }
 
@@ -86,6 +115,7 @@ i {
   font-size: 2rem;
 }
 
+<<<<<<< HEAD
 .hero-section {
   background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg")
     50% no-repeat;
@@ -108,3 +138,208 @@ i {
   text-shadow: 1px 1px 2px black;
 }
 /*# sourceMappingURL=home.css.map */
+=======
+.homepage-color {
+  background: #024a63;
+  color: white;
+  width: 75%;
+  height: 2.17rem;
+  border-radius: 5.8rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 8rem;
+}
+
+.learn-how {
+  padding: 0.5rem 3.5rem;
+  margin-top: -2rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+}
+
+.oceaneers-cabin-large {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 6.5rem;
+}
+
+.oceaneers-cabin-small {
+  font-family: "Cabin", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.oceaneers-cabin {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+.oceaneers-raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 2rem;
+  font-style: "Regular 400";
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-purpose {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  margin-top: 8rem;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.our-purpose-text {
+  color: #024a63;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1.5%;
+  margin-left: 229px;
+  margin-right: 228px;
+}
+
+.our-pillers-text {
+  color: #024a63;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1.5%;
+  margin-left: 229px;
+  margin-right: 228px;
+}
+
+.accordion {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #024a63 !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.accordion-body-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.accordion-body {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  border: none;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+
+.button-accordian {
+  font-family: "Cabin", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: #024a63;
+  border: none;
+  border-radius: 4.3rem;
+  color: white;
+  width: 75%;
+  height: 7.2rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: center;
+}
+
+.card-title {
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 16%;
+}
+
+.card-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 35%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card-text-ocean {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.why {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.learn-how-2 {
+  padding: 0.5rem 3.5rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+}
+
+.events-cabin-large {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 8rem;
+}
+
+.events-cabin-small {
+  font-family: "Cabin", sans-serif;
+  font-weight: 100;
+  font-size: 4rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.learn-how {
+  padding: 0.5rem 3.5rem;
+  margin-top: -2rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+}
+/*# sourceMappingURL=home.css.map */
+>>>>>>> bhag-cheema

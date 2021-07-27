@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import Home from './components/Home';
 import Login from './components/Login';
+import Events from './components/Events';
 import Why from './components/Why';
 import "./styles/home.scss";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -15,7 +16,7 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/login" exact component={Login} />
           <Route path="/why" exact component={Why} />
-
+          <Route path="/events" exact component={Events} />
         </BrowserRouter>
       </div>
     );
