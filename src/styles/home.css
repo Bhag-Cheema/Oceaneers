@@ -90,7 +90,7 @@ i {
   background: #024a63;
   color: white;
   width: 75%;
-  height: 217px;
+  height: 2.17rem;
   border-radius: 5.8rem;
   margin-left: 12%;
   margin-right: 12%;
@@ -112,13 +112,13 @@ i {
 .oceaneers-cabin-large {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 6.5rem;
 }
 
 .oceaneers-cabin-small {
   font-family: "Cabin", sans-serif;
   font-weight: 100;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .oceaneers-cabin {
@@ -130,7 +130,7 @@ i {
 .oceaneers-raleway {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 3rem;
   margin-top: 2rem;
   font-style: "Regular 400";
   text-align: center;

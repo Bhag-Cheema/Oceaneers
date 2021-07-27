@@ -54,10 +54,10 @@ export default class Home extends Component {
         </div>
 
         <div className="accordion" id="accordionExample">
-          <div className="accordion-item">
+          <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingOne">
               <button
-                class="button-accordian"
+                class="button-accordian collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -66,32 +66,32 @@ export default class Home extends Component {
               >
                 Awarness
                 
-                <i className="bi bi-plus-circle me-0"></i>
+                <i className="bi bi-plus-circle plus-icon"></i>
                
               </button>
             </h2>
             <div
               id="collapseOne"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
                 <p className="accordion-body-title">…is what we raise! </p>
-                <div className="accordion-body">
+                <p className="accordion-body">
                 Food choices matter more than most people
                 (want to) know. That’s not a coincidence – there’s some pretty
                 powerful & loaded industries & lobbyists out there who want to
                 keep it that way
-              </div>
+              </p>
             </div>
           </div>
         </div>
 
         <div className="accordion" id="accordionExample">
-          <div className="accordion-item">
+          <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingTwo">
               <button
-                class="button-accordian"
+                class="button-accordian collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -99,12 +99,12 @@ export default class Home extends Component {
                 aria-controls="collapseTwo"
               >
                 Empowerment
-                <i className="bi bi-plus-circle"></i>
+                <i className="bi bi-plus-circle plus-icon"></i>
               </button>
             </h2>
             <div
               id="collapseTwo"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
@@ -119,10 +119,10 @@ export default class Home extends Component {
         </div>
 
         <div className="accordion" id="accordionExample">
-          <div className="accordion-item">
+          <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingThree">
               <button
-                class="button-accordian"
+                class="button-accordian collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -130,12 +130,12 @@ export default class Home extends Component {
                 aria-controls="collapseThree"
               >
                 Reduction
-                <i className="bi bi-plus-circle"></i>
+                <i className="bi bi-plus-circle plus-icon"></i>
               </button>
             </h2>
             <div
               id="collapseThree"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
