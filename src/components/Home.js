@@ -53,11 +53,11 @@ export default class Home extends Component {
           </p>
         </div>
 
-        <div className="accordion" id="accordionExample">
+        <div className="accordion-home" id="accordionExample">
           <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingOne">
               <button
-                class="button-accordian collapsed"
+                class="button-accordian-home collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -118,11 +118,11 @@ export default class Home extends Component {
           </div>
         </div>
 
-        <div className="accordion" id="accordionExample">
+        <div className="accordion-home" id="accordionExample">
           <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingThree">
               <button
-                class="button-accordian collapsed"
+                className="button-accordian-home collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -140,7 +140,7 @@ export default class Home extends Component {
               data-bs-parent="#accordionExample"
             >
                  <p className="accordion-body-title">...is what we aim for!</p>
-              <div className="accordion-body">
+              <div className="accordion-body-home">
                  We don’t recommend to go from carnivore
                 to complete herbivore, the same way we don’t recommend to go
                 from Muizies to Dungeons (big wave spot). We believe that

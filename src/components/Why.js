@@ -15,8 +15,6 @@ export default class Why extends Component {
                         and us are undeniable. Oceaneers advocated for a world free of them.</p>
                     </div>
                 </section>
-
-
                 <section className="compare">
                     <div className="indust">
                         <p className="sub-title">

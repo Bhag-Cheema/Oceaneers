@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap");
-=======
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
->>>>>>> bhag-cheema
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-<<<<<<< HEAD
   box-sizing: border-box;
-=======
-          box-sizing: border-box;
->>>>>>> bhag-cheema
 }
 
 html {
@@ -37,13 +29,8 @@ nav {
   width: 98%;
   margin: auto;
   -webkit-box-align: center;
-<<<<<<< HEAD
   -ms-flex-align: center;
   align-items: center;
-=======
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> bhag-cheema
 }
 
 nav ul {
@@ -51,7 +38,6 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 8;
-<<<<<<< HEAD
   -ms-flex: 8 1 10rem;
   flex: 8 1 10rem;
   -webkit-box-pack: space-evenly;
@@ -60,16 +46,6 @@ nav ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-=======
-      -ms-flex: 8 1 10rem;
-          flex: 8 1 10rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> bhag-cheema
   list-style: none;
   font-family: "Cabin", sans-serif;
   padding-top: 1.3rem;
@@ -77,13 +53,8 @@ nav ul {
 
 #logo {
   -webkit-box-flex: 1;
-<<<<<<< HEAD
   -ms-flex: 1 1 10rem;
   flex: 1 1 10rem;
-=======
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
->>>>>>> bhag-cheema
   background-color: #024a63;
 }
 
@@ -115,30 +86,6 @@ i {
   font-size: 2rem;
 }
 
-<<<<<<< HEAD
-.hero-section {
-  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg")
-    50% no-repeat;
-  background-size: cover;
-  height: 60vh;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.hero-section .hero-section-text {
-  color: white;
-  text-shadow: 1px 1px 2px black;
-}
-/*# sourceMappingURL=home.css.map */
-=======
 .homepage-color {
   background: #024a63;
   color: white;
@@ -188,8 +135,8 @@ i {
   font-style: "Regular 400";
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .our-purpose {
@@ -230,8 +177,8 @@ i {
   margin-bottom: 3.2rem;
   background-color: #024a63 !important;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border: none;
 }
 
@@ -342,4 +289,3 @@ i {
   font-family: "Cabin", sans-serif;
 }
 /*# sourceMappingURL=home.css.map */
->>>>>>> bhag-cheema
