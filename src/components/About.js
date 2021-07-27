@@ -28,26 +28,26 @@ export default class Partners extends Component {
             alt="girl eating smoothie bowl"
           />
           <div className="card-img-overlay d-flex justify-content-center flex-column align-item-center text-center">
-            <h1 className="header">About Us</h1>
-            <h3 className="header-text">
+            <h1 className="header-about">About Us</h1>
+            <h3 className="header-text-about">
             Join a community of like-minded people who share a passion for the ocean and are committed to reducing 
             their consumption of animal products.
             </h3>
           </div>
           {/* Join us button */}
           <div className="d-flex justify-content-center">
-            <button className="learn-how">Want to Join? Learn how.</button>
+            <button className="learn-how-about">Want to Join? Learn how.</button>
           </div>
         </div>
         {/* Why We Started */}
         <div className="card text-center border-0">
-          <h1 className="repeating-h1">Why We Started</h1>
-          <h2 className="repeating-h2">
+          <h1 className="repeating-h1-about">Why We Started</h1>
+          <h2 className="repeating-h2-about">
           We created Oceaneers as a community-driven initiative because we believe changing our food{" "}
             <br /> choices is the most powerful lever to make oceans more sustainable, reduce suffering worldwide,{" "}
             <br />  and take better care of our Oceans. 
           </h2>
-          <h2 className="repeating-h2">
+          <h2 className="repeating-h2-about">
           The urge to share this information with our fellow Ocean-dwellers and inspire a reduction-based{" "}
             <br /> journey blossomed. Thus, we decided to put other work projects on stand-by and dedicate our {" "}
             <br />full time and energy towards this cause. 
@@ -55,22 +55,22 @@ export default class Partners extends Component {
         </div>
           
         {/* Ambassadors */}
-        <div className="container">
-        <h1 className="repeating-h1-1">Ambassadors</h1>
+        <div className="container-about">
+        <h1 className="repeating-h1-1-about">Ambassadors</h1>
           <div className="row row-cols-1 row-cols-md-4 g-4 mx-auto">
               <div className="col">
                 <div className="card rounded-circle">
                   <img src={ambassador1} className="rounded-circle" alt="..." />
                 </div>
-                <h2 className="repeating-h2 d-flex justify-content-center">
+                <h2 className="repeating-h2-about d-flex justify-content-center">
                     James Taylor
                 </h2>
 
-                <div class="accordion d-flex justify-content-center" id="accordionExample-James">
+                <div class="accordion about about d-flex justify-content-center" id="accordionExample-James">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-James">
                       <button
-                        class="button-accordian "
+                        class="button-accordian-about"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne-James"
@@ -89,14 +89,14 @@ export default class Partners extends Component {
                 <div className="card rounded-circle">
                   <img src={ambassador2} className="rounded-circle " alt="..." />
                 </div>
-                <h2 className="repeating-h2 d-flex justify-content-center">
+                <h2 className="repeating-h2-about d-flex justify-content-center">
                       Tammy Fry
                 </h2>
-                <div class="accordion d-flex justify-content-center" id="accordionExample-Tammy">
+                <div class="accordion about d-flex justify-content-center" id="accordionExample-Tammy">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-Tammy">
                       <button
-                        class="button-accordian "
+                        class="button-accordian-about"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne-Tammy"
@@ -113,14 +113,14 @@ export default class Partners extends Component {
                 <div className="card rounded-circle">
                   <img src={ambassador3} className="card rounded-circle" alt="..." />
                 </div>
-                <h2 className="repeating-h2 d-flex justify-content-center">
+                <h2 className="repeating-h2-about d-flex justify-content-center">
                     Terence Bell
                 </h2>
-                <div class="accordion d-flex justify-content-center" id="accordionExample-Terence">
+                <div class="accordion about d-flex justify-content-center" id="accordionExample-Terence">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-Terence">
                       <button
-                        class="button-accordian "
+                        class="button-accordian-about"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne-Terence"
@@ -137,14 +137,14 @@ export default class Partners extends Component {
                 <div className="card rounded-circle border-0">
                   <img src={ambassador4} className="rounded-circle" alt="..." />
                 </div>
-                <h2 className="repeating-h2 d-flex justify-content-center">
+                <h2 className="repeating-h2-about d-flex justify-content-center">
                     Emi Koch
                 </h2>
-                <div class="accordion d-flex justify-content-center" id="accordionExample-Emi">
+                <div class="accordion about d-flex justify-content-center" id="accordionExample-Emi">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-Emi">
                       <button
-                        class="button-accordian"
+                        class="button-accordian-about"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne-Emi"
@@ -166,7 +166,7 @@ export default class Partners extends Component {
           aria-labelledby="heading-James"
           data-bs-parent="#accordionExample-James"
           >
-          <div className="accordion-body">
+          <div className="accordion-body-about">
             <div className="container-2 d-flex justify-content-center">
               <div class="row">
                   <div class="col-4">
@@ -178,7 +178,7 @@ export default class Partners extends Component {
                   <h2 className="repeating-h2-name">
                     James Taylor
                   </h2>
-                  <h3 className="h3">
+                  <h3 className="h3-about">
                     Big-wave Surfer, Foiler, Spear-fisherman, Entrepreneur
                   </h3>
                     Unlike most big wave surfers, James didn’t grow up at the ocean but in the middle of South Africa. After catching
@@ -210,7 +210,7 @@ export default class Partners extends Component {
           aria-labelledby="heading-Tamy"
           data-bs-parent="#accordionExample-Tammy"
           >
-          <div className="accordion-body">
+          <div className="accordion-body-about">
             <div className="container-2 d-flex justify-content-center">
               <div class="row">
                   <div class="col-4">
@@ -222,7 +222,7 @@ export default class Partners extends Component {
                   <h2 className="repeating-h2-name">
                     Tammy Fry
                   </h2>
-                  <h3 className="h3">
+                  <h3 className="h3-about">
                     Surfer, Karateka, Blogger, Marketeer, Advocate, Influencer
                   </h3>
                   You do not want to drop in on Tammy Fry. Karate runs through her veins. She’s won multiple South African 
@@ -253,7 +253,7 @@ export default class Partners extends Component {
           aria-labelledby="heading-Terence"
           data-bs-parent="#accordionExample-Terence"
           >
-          <div className="accordion-body">
+          <div className="accordion-body-about">
             <div className="container-2 d-flex justify-content-center">
               <div class="row">
                   <div class="col-4">
@@ -265,7 +265,7 @@ export default class Partners extends Component {
                   <h2 className="repeating-h2-name">
                     Terence Bell
                   </h2>
-                  <h3 className="h3">
+                  <h3 className="h3-about">
                     Waterman, Endurance Athlete, Ocean-advocate, Investor
                   </h3>
                   Terence is an Australia-raised, passionate waterman and endurance athlete. Nature has always been a significant 
@@ -297,7 +297,7 @@ export default class Partners extends Component {
           aria-labelledby="heading-Emi"
           data-bs-parent="#accordionExample-Emi"
           >
-          <div className="accordion-body">
+          <div className="accordion-body-about">
             <div className="container-2 d-flex justify-content-center">
               <div class="row">
                   <div class="col-4">
@@ -309,7 +309,7 @@ export default class Partners extends Component {
                   <h2 className="repeating-h2-name">
                     Emi Koch
                   </h2>
-                  <h3 className="h3">
+                  <h3 className="h3-about">
                     Surfer, Social Ecologist, Multimedia Storyteller, Founder
                   </h3>
                   Emi has created the reality that most of us are dreaming of: getting paid to go surfing with Billabong. She 
@@ -336,24 +336,24 @@ export default class Partners extends Component {
         
         
         {/* Our Team */}
-        <div className="container">
-        <h1 className="repeating-h1-1">Our Team</h1>
+        <div className="container-about">
+        <h1 className="repeating-h1-1-about">Our Team</h1>
           <div className="row row-cols-1 row-cols-md-3 g-4 mx-auto">
               <div className="col">
                 <div className="card rounded-circle">
                   <img src={team1} className="rounded-circle" alt="..." />
                 </div>
-                <h2 className="repeating-h2 d-flex justify-content-center">
+                <h2 className="repeating-h2-about d-flex justify-content-center">
                   Kaspar Paur
                 </h2>
-                <h2 className="repeating-h3 d-flex justify-content-center">
+                <h2 className="repeating-h3-about d-flex justify-content-center">
                   Founder
                 </h2>
-                <div class="accordion d-flex justify-content-center" id="accordionExample-Kaspar">
+                <div class="accordion about d-flex justify-content-center" id="accordionExample-Kaspar">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-Kaspar">
                       <button
-                        class="button-accordian "
+                        class="button-accordian-about"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne-Kaspar"
@@ -371,17 +371,17 @@ export default class Partners extends Component {
                 <div className="card rounded-circle border-0">
                   <img src={team2} className="rounded-circle " alt="..." />
                 </div>
-                <h2 className="repeating-h2 d-flex justify-content-center">
+                <h2 className="repeating-h2-about d-flex justify-content-center">
                   Nathan Richardson
                 </h2>
-                <h2 className="repeating-h3 d-flex justify-content-center">
+                <h2 className="repeating-h3-about d-flex justify-content-center">
                   Stoke Manager
                 </h2>
-                <div class="accordion d-flex justify-content-center" id="accordionExample-Nathan">
+                <div class="accordion about d-flex justify-content-center" id="accordionExample-Nathan">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-Nathan">
                       <button
-                        class="button-accordian "
+                        class="button-accordian-about"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne-Nathan"
@@ -398,17 +398,17 @@ export default class Partners extends Component {
                 <div className="card rounded-circle border-0">
                   <img src={team3} className="card rounded-circle" alt="..." />
                 </div>
-                <h2 className="repeating-h2 d-flex justify-content-center">
+                <h2 className="repeating-h2-about d-flex justify-content-center">
                   Andrea Fedder
                 </h2>
-                <h2 className="repeating-h3 d-flex justify-content-center">
+                <h2 className="repeating-h3-about d-flex justify-content-center">
                 (Alumni)
                 </h2>
-                <div class="accordion d-flex justify-content-center" id="accordionExample-Andrea">
+                <div class="accordion about d-flex justify-content-center" id="accordionExample-Andrea">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-Andrea">
                       <button
-                        class="button-accordian "
+                        class="button-accordian-about"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne-Andrea"
@@ -429,7 +429,7 @@ export default class Partners extends Component {
           aria-labelledby="heading-Kaspar"
           data-bs-parent="#accordionExample-Kaspar"
           >
-          <div className="accordion-body">
+          <div className="accordion-body-about">
             <div className="container-2 d-flex justify-content-center">
               <div class="row">
                   <div class="col-4">
@@ -449,7 +449,7 @@ export default class Partners extends Component {
                   <h3 className="repeating-h3-team">
                     Founder
                   </h3>
-                  <h3 className="h3">
+                  <h3 className="h3-about">
                     Kaspar’s Reduction Journey
                   </h3>
                   <ul>
@@ -475,7 +475,7 @@ export default class Partners extends Component {
           aria-labelledby="heading-Nathan"
           data-bs-parent="#accordionExample-Nathan"
           >
-          <div className="accordion-body">
+          <div className="accordion-body-about">
             <div className="container-2 d-flex justify-content-center">
               <div class="row">
                   <div class="col-4">
@@ -494,7 +494,7 @@ export default class Partners extends Component {
                   <h3 className="repeating-h3-team">
                     Founder
                   </h3>
-                  <h3 className="h3">
+                  <h3 className="h3-about">
                     Kaspar’s Reduction Journey
                   </h3>
                   <ul>
@@ -520,7 +520,7 @@ export default class Partners extends Component {
           aria-labelledby="heading-Andrea"
           data-bs-parent="#accordionExample-Andrea"
           >
-          <div className="accordion-body">
+          <div className="accordion-body-about">
             <div className="container-2 d-flex justify-content-center">
               <div class="row">
                   <div class="col-4">
@@ -539,7 +539,7 @@ export default class Partners extends Component {
                   <h3 className="repeating-h3-team">
                   Creator of Iggy, Content Force during First Year
                   </h3>
-                  <h3 className="h3">
+                  <h3 className="h3-about">
                   Andrea's Reduction Journey
                   </h3>
                   <ul>
@@ -566,7 +566,7 @@ export default class Partners extends Component {
             <div class="text-center">
                 <img src={iggy} class="rounded" alt="..."/>
             </div>
-            <h1 className="repeating-h1">Iggy, the Mascot</h1>
+            <h1 className="repeating-h1-about">Iggy, the Mascot</h1>
             <h2 className="repeating-h2-iggy">
                 Who is He and Why Do We Love Him?
             </h2>
