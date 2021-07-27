@@ -4,6 +4,8 @@ import Login from "./components/Login";
 import Partners from "./components/Partners";
 import Events from './components/Events';
 import Why from './components/Why';
+import About from "./components/About";
+
 import "./styles/home.scss";
 import "./styles/home.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -20,6 +22,7 @@ class App extends Component {
           <Route path="/why" exact component={Why} />
           <Route path="/events" exact component={Events} />
           <Route path="/partners" exact component={Partners} />
+          <Route path="/aboutus" exact component={About} />
         </BrowserRouter>
       </div>
     );

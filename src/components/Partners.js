@@ -397,7 +397,7 @@ export default class Partners extends Component {
             </div>
 
             {/* next slide */}
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div className="row row-cols-1 row-cols-md-3 g-4">
                 {/* item 4 */}
                 <div className="col align-middle mx-auto p-0">

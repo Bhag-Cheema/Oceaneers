@@ -12,7 +12,7 @@ export default class NavBar extends Component {
                         <ul>
                             <li><NavLink to="/" activeStyle={{ color: "red" }} className="active-link">Home</NavLink> </li>
                             <li><NavLink to="/why" activeStyle={{ color: "red" }} className="active-link">Why</NavLink></li>
-                            <li><NavLink to="" activeStyle={{ color: "red" }} className="active-link">About Us</NavLink></li>
+                            <li><NavLink to="/aboutus" activeStyle={{ color: "red" }} className="active-link">About Us</NavLink></li>
                             <li><NavLink to="/events" activeStyle={{ color: "red" }} className="active-link">Events</NavLink></li>
                             <li><NavLink to="/partners" activeStyle={{ color: "red" }} className="active-link">Partners</NavLink></li>
                             <li><NavLink to="" activeStyle={{ color: "red" }} className="active-link">Blog</NavLink></li>

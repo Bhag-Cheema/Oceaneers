@@ -57,7 +57,7 @@ export default class Home extends Component {
           <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingOne">
               <button
-                class="button-accordian-home collapsed"
+                className="button-accordian-home collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -91,7 +91,7 @@ export default class Home extends Component {
           <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingTwo">
               <button
-                class="button-accordian collapsed"
+                className="button-accordian collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
