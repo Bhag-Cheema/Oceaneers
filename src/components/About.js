@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./NavBar";
+import NewsLetter from "./NewsLetter";
+import Footer from "./Footer";
 
 import header1 from "../imgs/aboutus/header1.png";
 
@@ -70,7 +72,7 @@ export default class Partners extends Component {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-James">
                     <button
-                      className="button-accordian-about"
+                      className="button-accordion-about"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne-James"
@@ -96,7 +98,7 @@ export default class Partners extends Component {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Tammy">
                     <button
-                      className="button-accordian-about"
+                      className="button-accordion-about"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne-Tammy"
@@ -120,7 +122,7 @@ export default class Partners extends Component {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Terence">
                     <button
-                      className="button-accordian-about"
+                      className="button-accordion-about"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne-Terence"
@@ -144,7 +146,7 @@ export default class Partners extends Component {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Emi">
                     <button
-                      className="button-accordian-about"
+                      className="button-accordion-about"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne-Emi"
@@ -353,7 +355,7 @@ export default class Partners extends Component {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Kaspar">
                     <button
-                      className="button-accordian-about"
+                      className="button-accordion-about"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne-Kaspar"
@@ -381,7 +383,7 @@ export default class Partners extends Component {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Nathan">
                     <button
-                      className="button-accordian-about"
+                      className="button-accordion-about"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne-Nathan"
@@ -408,7 +410,7 @@ export default class Partners extends Component {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Andrea">
                     <button
-                      className="button-accordian-about"
+                      className="button-accordion-about"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne-Andrea"
@@ -577,6 +579,9 @@ export default class Partners extends Component {
             all about sustainability and saving the planet!
             </h3>
         </div>
+
+        <NewsLetter />
+        <Footer />
 
       </div> //end render class
 

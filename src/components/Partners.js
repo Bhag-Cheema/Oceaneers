@@ -23,6 +23,7 @@ import circle3 from "../imgs/Partners/fish welfare initiative logo.png";
 import circle4 from "../imgs/Partners/beyond the surface logo.png";
 import circle5 from "../imgs/Partners/captain fanplastic logo.png";
 import circle6 from "../imgs/Partners/fry's logo.png";
+import NewsLetter from "./NewsLetter";
 
 export default class Partners extends Component {
   render() {
@@ -548,6 +549,8 @@ export default class Partners extends Component {
             <i className="bi bi-arrow-right-circle" aria-hidden="true"></i>
           </button>
         </div>
+
+        <NewsLetter />
 
         {/* Footer */}
 

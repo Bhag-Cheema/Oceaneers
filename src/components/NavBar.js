@@ -18,7 +18,7 @@ export default class NavBar extends Component {
                             <li><NavLink to="" activeStyle={{ color: "red" }} className="active-link">Blog</NavLink></li>
                             <li><button className="join">Join Us</button></li>
                             <li><button className="login">Log In</button></li>
-                            <li><i className="bi bi-search pointer"></i></li>
+                            <li><i className="bi bi-search pointer-why"></i></li>
 
                         </ul>
                     </nav>

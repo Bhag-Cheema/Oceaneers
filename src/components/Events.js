@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Navbar from "./NavBar";
 import events from "../imgs/events.png";
+import NewsLetter from "./NewsLetter";
+import Footer from "./Footer";
 
 export default class Events extends Component {
   render() {
@@ -10,7 +12,7 @@ export default class Events extends Component {
         <div className="card text-white border-0">
           <img id="events" src={events} alt="events" />
           <div className="card-img-overlay d-flex justify-content-center flex-column align-item-center text-center">
-            <h1 className="events-cabin-large">Events</h1>
+            <h6 className="events-cabin-large event-title">Events</h6>
             <p className="events-cabin-small">
               {" "}
               These events are publicly open to Oceaneers and non-Oceaneers
@@ -25,6 +27,9 @@ export default class Events extends Component {
             <button className="learn-how">Want to Join? Learn how.</button>
           </div>
         </div>
+
+        <NewsLetter />
+        <Footer />
       </div>
     );
   }

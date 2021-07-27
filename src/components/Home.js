@@ -5,6 +5,8 @@ import image1 from "../imgs/image1.jpg";
 import image2 from "../imgs/image2.png";
 import image3 from "../imgs/image3.png";
 import image4 from "../imgs/image4.png";
+import NewsLetter from "./NewsLetter";
+import Footer from "./Footer";
 
 export default class Home extends Component {
   render() {
@@ -57,7 +59,7 @@ export default class Home extends Component {
           <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingOne">
               <button
-                className="button-accordian-home collapsed"
+                className="button-accordion-home collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -65,9 +67,9 @@ export default class Home extends Component {
                 aria-controls="collapseOne"
               >
                 Awarness
-                
+
                 <i className="bi bi-plus-circle plus-icon"></i>
-               
+
               </button>
             </h2>
             <div
@@ -76,8 +78,8 @@ export default class Home extends Component {
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-                <p className="accordion-body-title">…is what we raise! </p>
-                <p className="accordion-body">
+              <p className="accordion-body-title">…is what we raise! </p>
+              <p className="accordion-body-home">
                 Food choices matter more than most people
                 (want to) know. That’s not a coincidence – there’s some pretty
                 powerful & loaded industries & lobbyists out there who want to
@@ -91,7 +93,7 @@ export default class Home extends Component {
           <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingTwo">
               <button
-                className="button-accordian collapsed"
+                className="button-accordion-home collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -108,9 +110,9 @@ export default class Home extends Component {
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-                <p className="accordion-body-title">…is what drives us!</p>
-              <div className="accordion-body">
-                 3 times a day you get to vote, with your
+              <p className="accordion-body-title">…is what drives us!</p>
+              <div className="accordion-body-home">
+                3 times a day you get to vote, with your
                 hard-earned nuggets. Unless you’re munching like Iggy, then it’s
                 6-12 times. It’s like democracy, but on steroids.
               </div>
@@ -122,7 +124,7 @@ export default class Home extends Component {
           <div className="accordion-item border-0">
             <h2 className="accordion-header" id="headingThree">
               <button
-                className="button-accordian-home collapsed"
+                className="button-accordion-home collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -139,9 +141,9 @@ export default class Home extends Component {
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-                 <p className="accordion-body-title">...is what we aim for!</p>
+              <p className="accordion-body-title">...is what we aim for!</p>
               <div className="accordion-body-home">
-                 We don’t recommend to go from carnivore
+                We don’t recommend to go from carnivore
                 to complete herbivore, the same way we don’t recommend to go
                 from Muizies to Dungeons (big wave spot). We believe that
                 reduction is the most sustainable path for most people.
@@ -164,27 +166,27 @@ export default class Home extends Component {
                 </div>
               </div>
               <div className="col">
-              <div className="card text-white border-0">
-                <img id="image2.png" src={image2} alt="image2" />
-                <div className="card-img-overlay d-flex flex-column justify-content-centre">
+                <div className="card text-white border-0">
+                  <img id="image2.png" src={image2} alt="image2" />
+                  <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Community</h1>
                     <p className="card-text">Meet and befriend like-minded people committed to their reduction journeys.</p>
                   </div>
                 </div>
               </div>
               <div className="col">
-              <div className="card text-white border-0">
-                <img id="image3.png" src={image3} alt="image3" />
-                <div className="card-img-overlay d-flex flex-column justify-content-centre">
+                <div className="card text-white border-0">
+                  <img id="image3.png" src={image3} alt="image3" />
+                  <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Salty Gatherings</h1>
                     <p className="card-text">Go to exciting ocean activity events where you can hang out with other Oceaneers.</p>
                   </div>
                 </div>
               </div>
               <div className="col">
-              <div className="card text-white border-0">
-                <img id="image4.png" src={image4} alt="image4" />
-                <div className="card-img-overlay d-flex flex-column justify-content-centre">
+                <div className="card text-white border-0">
+                  <img id="image4.png" src={image4} alt="image4" />
+                  <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Brand Community Discounts</h1>
                     <p className="card-text">Get access to discount codes with our partnered brands.</p>
                   </div>
@@ -195,10 +197,13 @@ export default class Home extends Component {
         </div>
 
         <div className="d-flex justify-content-center">
-            <button className="learn-how-2">Want to Join? Learn how.</button>
-          </div>
-
+          <button className="learn-how-2">Want to Join? Learn how.</button>
+        </div>
+        <NewsLetter />
+        <Footer />
       </div>
+
+
     );
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import NavBar from './NavBar';
 import NewsLetter from './NewsLetter';
-
+import Footer from './Footer';
 export default class Why extends Component {
     render() {
         return (
@@ -91,6 +91,7 @@ export default class Why extends Component {
                 </section>
 
                 <NewsLetter />
+                <Footer />
 
             </div >
         )
