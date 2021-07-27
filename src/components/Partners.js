@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./NavBar";
 import partnerheader from "../imgs/Partners/partnerheader.jpg";
+import Footer from "./Footer";
 
 import carousel1a from "../imgs/Partners/happy earth people-1.jpg";
 import carousel1b from "../imgs/Partners/herbiraw-2.jpg";
@@ -93,7 +94,7 @@ export default class Partners extends Component {
               <div className="row row-cols-1 row-cols-md-3 g-4 slide">
                 {/* this is one image card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel1a} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Happy Earth People</h5>
@@ -105,7 +106,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel1b} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Herbi raw</h5>
@@ -117,7 +118,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel1c} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Back 2 Nature</h5>
@@ -129,7 +130,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card carousel-card text-white border-0">
+                  <div className="card carousel-card text-white border-0 text-center">
                     <img src={carousel1d} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Nourish’d Cafe & Juicery</h5>
@@ -139,7 +140,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel1e} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Nude Foods</h5>
@@ -149,7 +150,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel1f} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Plushi</h5>
@@ -164,7 +165,7 @@ export default class Partners extends Component {
               <div className="row row-cols-1 row-cols-md-3 g-4 slide">
                 {/* this is one image card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel2a} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Happy Earth People</h5>
@@ -176,7 +177,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel2b} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Herbi raw</h5>
@@ -188,7 +189,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel2c} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Back 2 Nature</h5>
@@ -200,7 +201,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card carousel-card text-white border-0">
+                  <div className="card carousel-card text-white border-0 text-center">
                     <img src={carousel2d} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Nourish’d Cafe & Juicery</h5>
@@ -210,7 +211,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel2e} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Nude Foods</h5>
@@ -220,7 +221,7 @@ export default class Partners extends Component {
                 </div>
                 {/* end of card */}
                 <div className="col">
-                  <div className="card text-white border-0">
+                  <div className="card text-white border-0 text-center">
                     <img src={carousel2f} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                       <h5 className="card-title">Plushi</h5>
@@ -269,12 +270,12 @@ export default class Partners extends Component {
             <div className="carousel-item active">
               <div className="row row-cols-1 row-cols-md-3 g-4">
                 {/* item 1 */}
-                <div className="col align-middle mx-auto">
-                  <div className="card rounded-circle border-0">
+                <div className="col align-middle mx-auto p-0">
+                  <div className="card rounded-circle border-0 mx-auto">
                     <img src={circle1} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion  mx-auto">
+                  <div className="accordion d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingOne">
                         <button
@@ -312,12 +313,12 @@ export default class Partners extends Component {
                 {/* end */}
 
                 {/* item 2 */}
-                <div className="col align-middle mx-auto">
+                <div className="col align-middle mx-auto p-0">
                   <div className="card rounded-circle border-0 mx-auto">
                     <img src={circle2} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion  mx-auto">
+                  <div className="accordion d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingTwo">
                         <button
@@ -355,11 +356,11 @@ export default class Partners extends Component {
                 {/* end */}
 
                 {/* item 3 */}
-                <div className="col align-middle mx-auto">
+                <div className="col align-middle mx-auto p-0">
                   <div className="card rounded-circle border-0 mx-auto">
                     <img src={circle3} className="card-img-top" alt="..." />
                   </div>
-                  <div className="accordion  mx-auto">
+                  <div className="accordion d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingThree">
                         <button
@@ -370,7 +371,8 @@ export default class Partners extends Component {
                           aria-expanded="true"
                           aria-controls="collapseThree"
                         >
-                          Fish Welfare Initiative
+                          Fish Welfare
+                          <br /> Initiative
                           <i className="bi bi-plus-circle plus-icon"></i>
                         </button>
                       </h2>
@@ -402,14 +404,17 @@ export default class Partners extends Component {
             <div class="carousel-item">
               <div className="row row-cols-1 row-cols-md-3 g-4">
                 {/* item 4 */}
-                <div className="col align-middle mx-auto">
-                  <div className="card rounded-circle border-0 d-flex justify-content-center">
+                <div className="col align-middle mx-auto p-0">
+                  <div className="card rounded-circle border-0 mx-auto d-flex justify-content-center">
                     <img src={circle4} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion  mx-auto">
+                  <div className="accordion d-flex justify-content-center">
                     <div className="accordion-item border-0">
-                      <h2 className="accordion-header" id="headingOne">
+                      <h2
+                        className="accordion-header text-center"
+                        id="headingFour"
+                      >
                         <button
                           className="button-accordion d-flex align-items-center"
                           type="button"
@@ -445,12 +450,12 @@ export default class Partners extends Component {
                 {/* end */}
 
                 {/* item 5 */}
-                <div className="col align-middle mx-auto">
-                  <div className="card rounded-circle border-0 d-flex justify-content-center">
+                <div className="col align-middle mx-auto p-0">
+                  <div className="card rounded-circle border-0 mx-auto d-flex justify-content-center">
                     <img src={circle5} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion  mx-auto">
+                  <div className="accordion mx-auto d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingTwo">
                         <button
@@ -488,11 +493,11 @@ export default class Partners extends Component {
                 {/* end */}
 
                 {/* item 6 */}
-                <div className="col align-middle mx-auto">
+                <div className="col align-middle mx-auto p-0">
                   <div className="card rounded-circle border-0 mx-auto">
                     <img src={circle6} className="card-img-top" alt="..." />
                   </div>
-                  <div className="accordion  mx-auto">
+                  <div className="accordion d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingThree">
                         <button
@@ -547,6 +552,10 @@ export default class Partners extends Component {
             <i className="bi bi-arrow-right-circle" aria-hidden="true"></i>
           </button>
         </div>
+
+        {/* Footer */}
+
+        <Footer />
 
         {/* div closing whole page   */}
       </div>
