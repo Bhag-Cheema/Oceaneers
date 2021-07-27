@@ -168,10 +168,8 @@ export default class Partners extends Component {
                   <div className="card text-white border-0 text-center">
                     <img src={carousel2a} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
-                      <h5 className="card-title">Happy Earth People</h5>
-                      <p className="card-text">
-                        Locally made pulse-based foods
-                      </p>
+                      <h5 className="card-title">Blended Health Bar</h5>
+                      <p className="card-text">Plant-based cafe</p>
                     </div>
                   </div>
                 </div>
@@ -180,10 +178,8 @@ export default class Partners extends Component {
                   <div className="card text-white border-0 text-center">
                     <img src={carousel2b} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
-                      <h5 className="card-title">Herbi raw</h5>
-                      <p className="card-text">
-                        Holistic health + conscious cooking
-                      </p>
+                      <h5 className="card-title">Surf Emporium</h5>
+                      <p className="card-text">Surf school in Muizenburg</p>
                     </div>
                   </div>
                 </div>
@@ -192,9 +188,9 @@ export default class Partners extends Component {
                   <div className="card text-white border-0 text-center">
                     <img src={carousel2c} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
-                      <h5 className="card-title">Back 2 Nature</h5>
+                      <h5 className="card-title">Thankgoodness Treats</h5>
                       <p className="card-text">
-                        Eco-friendly skin, hair, and suncare products
+                        Vegan decadent, healthy treats
                       </p>
                     </div>
                   </div>
@@ -204,8 +200,8 @@ export default class Partners extends Component {
                   <div className="card carousel-card text-white border-0 text-center">
                     <img src={carousel2d} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
-                      <h5 className="card-title">Nourish’d Cafe & Juicery</h5>
-                      <p className="card-text">Plant-based health bar</p>
+                      <h5 className="card-title">Wawa Surfboards</h5>
+                      <p className="card-text">Eco surf boards</p>
                     </div>
                   </div>
                 </div>
@@ -214,8 +210,8 @@ export default class Partners extends Component {
                   <div className="card text-white border-0 text-center">
                     <img src={carousel2e} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
-                      <h5 className="card-title">Nude Foods</h5>
-                      <p className="card-text">Plastic-free groceries</p>
+                      <h5 className="card-title">The Commons</h5>
+                      <p className="card-text">Creative space in Muizenburg</p>
                     </div>
                   </div>
                 </div>
@@ -224,8 +220,8 @@ export default class Partners extends Component {
                   <div className="card text-white border-0 text-center">
                     <img src={carousel2f} className="card-img" alt="..." />
                     <div className="card-img-overlay d-flex flex-column justify-content-end">
-                      <h5 className="card-title">Plushi</h5>
-                      <p className="card-text">Plant-based zero waste sushi</p>
+                      <h5 className="card-title">Sealand</h5>
+                      <p className="card-text">Sustainable bags and clothing</p>
                     </div>
                   </div>
                 </div>
@@ -419,16 +415,16 @@ export default class Partners extends Component {
                           className="button-accordion d-flex align-items-center"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
+                          data-bs-target="#collapseFour"
                           aria-expanded="true"
-                          aria-controls="collapseOne"
+                          aria-controls="collapseFour"
                         >
                           Beyond the Surface International
                           <i className="bi bi-plus-circle plus-icon"></i>
                         </button>
                       </h2>
                       <div
-                        id="collapseOne"
+                        id="collapseFour"
                         className="accordion-collapse collapse"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
@@ -457,23 +453,23 @@ export default class Partners extends Component {
 
                   <div className="accordion mx-auto d-flex justify-content-center">
                     <div className="accordion-item border-0">
-                      <h2 className="accordion-header" id="headingTwo">
+                      <h2 className="accordion-header" id="headingFive">
                         <button
                           className="button-accordion"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
+                          data-bs-target="#collapseFive"
                           aria-expanded="true"
-                          aria-controls="collapseTwo"
+                          aria-controls="collapseFive"
                         >
                           Captain Fanplastic
                           <i className="bi bi-plus-circle plus-icon"></i>
                         </button>
                       </h2>
                       <div
-                        id="collapseTwo"
+                        id="collapseFive"
                         className="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
+                        aria-labelledby="headingFive"
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
@@ -499,23 +495,23 @@ export default class Partners extends Component {
                   </div>
                   <div className="accordion d-flex justify-content-center">
                     <div className="accordion-item border-0">
-                      <h2 className="accordion-header" id="headingThree">
+                      <h2 className="accordion-header" id="headingSix">
                         <button
                           className="button-accordion"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
+                          data-bs-target="#collapseSix"
                           aria-expanded="true"
-                          aria-controls="collapseThree"
+                          aria-controls="collapseSix"
                         >
                           Fry’s Family Food
                           <i className="bi bi-plus-circle plus-icon"></i>
                         </button>
                       </h2>
                       <div
-                        id="collapseThree"
+                        id="collapseSix"
                         className="accordion-collapse collapse"
-                        aria-labelledby="headingThree"
+                        aria-labelledby="headingSix"
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
