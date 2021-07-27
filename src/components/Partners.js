@@ -48,7 +48,9 @@ export default class Partners extends Component {
           </div>
           {/* Join us button */}
           <div className="d-flex justify-content-center">
-            <button className="learn-how-partners">Want to Join? Learn how.</button>
+            <button className="learn-how-partners">
+              Want to Join? Learn how.
+            </button>
           </div>
         </div>
         {/* Quote */}
@@ -68,6 +70,7 @@ export default class Partners extends Component {
         </div>
 
         {/* Carousel */}
+
         <div
           id="gridCarousel"
           className="carousel carousel-dark slide"
@@ -272,11 +275,11 @@ export default class Partners extends Component {
                     <img src={circle1} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion d-flex justify-content-center">
+                  <div className="accordion-partners d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className="button-accordion"
+                          className="button-accordion mx-auto"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseOne"
@@ -284,7 +287,7 @@ export default class Partners extends Component {
                           aria-controls="collapseOne"
                         >
                           Ocean Pledge
-                          <i className="bi bi-plus-circle plus-icon"></i>
+                          <i className="bi bi-plus-circle plus-icon-partners"></i>
                         </button>
                       </h2>
                       <div
@@ -293,7 +296,7 @@ export default class Partners extends Component {
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body">
+                        <div className="accordion-body mx-auto">
                           <p className="text-accordion text-center">
                             A Cape Town based grass root community that fights
                             plastic pollution in our oceans, by giving
@@ -315,11 +318,11 @@ export default class Partners extends Component {
                     <img src={circle2} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion d-flex justify-content-center">
+                  <div className="accordion-partners d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingTwo">
                         <button
-                          className="button-accordion"
+                          className="button-accordion mx-auto"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseTwo"
@@ -327,7 +330,7 @@ export default class Partners extends Component {
                           aria-controls="collapseTwo"
                         >
                           Greenpop
-                          <i className="bi bi-plus-circle plus-icon"></i>
+                          <i className="bi bi-plus-circle plus-icon-partners"></i>
                         </button>
                       </h2>
                       <div
@@ -336,8 +339,8 @@ export default class Partners extends Component {
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body">
-                          <p className="text-accordion  text-center">
+                        <div className="accordion-body mx-auto">
+                          <p className="text-accordion text-center">
                             They reconnect people with nature, all over Africa
                             through reforestation festivals, art projects and
                             corporate events at under-resourced schools etc.
@@ -357,11 +360,11 @@ export default class Partners extends Component {
                   <div className="card rounded-circle border-0 mx-auto">
                     <img src={circle3} className="card-img-top" alt="..." />
                   </div>
-                  <div className="accordion d-flex justify-content-center">
+                  <div className="accordion-partners d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingThree">
                         <button
-                          className="button-accordion"
+                          className="button-accordion mx-auto"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseThree"
@@ -370,7 +373,7 @@ export default class Partners extends Component {
                         >
                           Fish Welfare
                           <br /> Initiative
-                          <i className="bi bi-plus-circle plus-icon"></i>
+                          <i className="bi bi-plus-circle plus-icon-partners"></i>
                         </button>
                       </h2>
                       <div
@@ -379,7 +382,7 @@ export default class Partners extends Component {
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body">
+                        <div className="accordion-body mx-auto">
                           <p className="text-accordion text-center">
                             Fish Welfare Initiative helps up to 180 billion fish
                             that are farmed each year. It’s now no secret that
@@ -406,14 +409,14 @@ export default class Partners extends Component {
                     <img src={circle4} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion d-flex justify-content-center">
+                  <div className="accordion-partners d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2
                         className="accordion-header text-center"
                         id="headingFour"
                       >
                         <button
-                          className="button-accordion d-flex align-items-center"
+                          className="button-accordion  mx-auto d-flex align-items-center"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseFour"
@@ -421,7 +424,7 @@ export default class Partners extends Component {
                           aria-controls="collapseFour"
                         >
                           Beyond the Surface International
-                          <i className="bi bi-plus-circle plus-icon"></i>
+                          <i className="bi bi-plus-circle plus-icon-partners"></i>
                         </button>
                       </h2>
                       <div
@@ -430,7 +433,7 @@ export default class Partners extends Component {
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body">
+                        <div className="accordion-body mx-auto">
                           <p className="text-accordion text-center">
                             This organization works at the local level with
                             marginalized small-scale fishing communities, for
@@ -452,11 +455,11 @@ export default class Partners extends Component {
                     <img src={circle5} className="card-img-top" alt="..." />
                   </div>
 
-                  <div className="accordion mx-auto d-flex justify-content-center">
+                  <div className="accordion-partners mx-auto d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingFive">
                         <button
-                          className="button-accordion"
+                          className="button-accordion  mx-auto"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseFive"
@@ -464,7 +467,7 @@ export default class Partners extends Component {
                           aria-controls="collapseFive"
                         >
                           Captain Fanplastic
-                          <i className="bi bi-plus-circle plus-icon"></i>
+                          <i className="bi bi-plus-circle plus-icon-partners"></i>
                         </button>
                       </h2>
                       <div
@@ -473,7 +476,7 @@ export default class Partners extends Component {
                         aria-labelledby="headingFive"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body">
+                        <div className="accordion-body mx-auto">
                           <p className="text-accordion text-center">
                             The Pirates behind Captain Fanplastic use the power
                             of storytelling and gamification to raise awareness
@@ -494,11 +497,11 @@ export default class Partners extends Component {
                   <div className="card rounded-circle border-0 mx-auto">
                     <img src={circle6} className="card-img-top" alt="..." />
                   </div>
-                  <div className="accordion d-flex justify-content-center">
+                  <div className="accordion-partners d-flex justify-content-center">
                     <div className="accordion-item border-0">
                       <h2 className="accordion-header" id="headingSix">
                         <button
-                          className="button-accordion"
+                          className="button-accordion mx-auto"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseSix"
@@ -506,7 +509,7 @@ export default class Partners extends Component {
                           aria-controls="collapseSix"
                         >
                           Fry’s Family Food
-                          <i className="bi bi-plus-circle plus-icon"></i>
+                          <i className="bi bi-plus-circle plus-icon-partners"></i>
                         </button>
                       </h2>
                       <div
@@ -515,7 +518,7 @@ export default class Partners extends Component {
                         aria-labelledby="headingSix"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body">
+                        <div className="accordion-body mx-auto">
                           <p className="text-accordion text-center">
                             The number of plant-based nuggets we have devoured
                             in our post-surf wraps is closer to 1000. Having
