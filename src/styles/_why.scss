@@ -14,11 +14,13 @@
   text-align: center;
 
   .title {
-    font-size: 6rem;
+    font-size: 6.5rem;
+    font-weight: 700;
   }
 
   .desc {
     font-size: 3rem;
+    font-weight: 400;
   }
 }
 
@@ -43,7 +45,7 @@
     }
 
     .sub-desc {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: normal;
       color: #024a63;
     }
