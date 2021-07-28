@@ -67,9 +67,7 @@ export default class Home extends Component {
                 aria-controls="collapseOne"
               >
                 Awarness
-
                 <i className="bi bi-plus-circle plus-icon"></i>
-
               </button>
             </h2>
             <div
@@ -188,7 +186,7 @@ export default class Home extends Component {
                   <img id="image4.png" src={image4} alt="image4" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Brand Community Discounts</h1>
-                    <p className="card-text">Get access to discount codes with our partnered brands.</p>
+                    <p className="card-text-brand">Get access to discount codes with our partnered brands.</p>
                   </div>
                 </div>
               </div>
