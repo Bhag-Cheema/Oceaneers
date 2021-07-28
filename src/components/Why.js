@@ -2,6 +2,14 @@ import React, { Component } from 'react'
 import NavBar from './NavBar';
 import NewsLetter from './NewsLetter';
 import Footer from './Footer';
+import Cow from '../imgs/cow.png';
+import Turtle from '../imgs/turtle.png';
+import Branchbeach from "../imgs/branchBeach.png";
+import Fish from "../imgs/fish.png";
+import Pill from "../imgs/pills.png";
+import Train from "../imgs/train.png";
+
+
 export default class Why extends Component {
     render() {
         return (
@@ -81,7 +89,78 @@ export default class Why extends Component {
 
 
                 <section className="why-carousel">
+                    <div className="carousel-title-why">
+                        <h3>Need more evidence? <br />
+                            Believe in the numbers.</h3>
+                    </div>
+                    {/* <div className="why-carousel-start">
+                        <button className="carousel-button-why">
+                            <i className="bi bi-arrow-right-circle"></i>
+                        </button>
+                        <div className="carousel-track-container-why">
+                            <ul className="carousel-track-why">
+                                <li className="carousel-slide-why">
+                                    <img src={Fish} alt="cow" />
+                                </li>
+                                <li className="carousel-slide-why">
+                                    <img src={Train} alt="" />
 
+                                </li>
+                                <li classNmae="carausel-slide-why">
+                                    <img src={Branchbeach} alt="" />
+                                </li>
+                                <li classNmae="carausel-slide-why">
+                                    <img src={Cow} alt="" />
+                                </li>
+                                <li classNmae="carausel-slide-why">
+                                    <img src={Turtle} alt="" />
+                                </li>
+                                <li classNmae="carausel-slide-why">
+                                    <img src={Pill} alt="" />
+                                </li>
+
+                            </ul>
+                        </div>
+                        <button type="button" className="carousel-button-why">
+                            <i className="bi bi-arrow-left-circle"></i>
+                        </button>
+                    </div> */}
+                    <div id="carouselExampleIndicators" className="carousel slide slide-why" data-ride="carousel">
+                        <ol className="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img className="d-block w-100" src={Fish} alt="First slide" />
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={Train} alt="Second slide" />
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={Branchbeach} alt="Third slide" />
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={Cow} alt="Third slide" />
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={Turtle} alt="Third slide" />
+                            </div>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={Pill} alt="Third slide" />
+                            </div>
+
+                            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
                 </section>
 
                 <section className="infographic">

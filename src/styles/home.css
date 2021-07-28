@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -25,12 +27,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 10vh;
+  min-height: 5vh;
   width: 98%;
   margin: auto;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav ul {
@@ -38,14 +40,14 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 8;
-  -ms-flex: 8 1 10rem;
-  flex: 8 1 10rem;
+      -ms-flex: 8 1 10rem;
+          flex: 8 1 10rem;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   font-family: "Cabin", sans-serif;
   padding-top: 1.3rem;
@@ -53,8 +55,8 @@ nav ul {
 
 #logo {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 10rem;
-  flex: 1 1 10rem;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
   background-color: #024a63;
 }
 
@@ -78,11 +80,8 @@ nav ul {
   font-family: "Cabin", sans-serif;
 }
 
-.pointer {
+.pointer-why {
   cursor: pointer;
-}
-
-i {
   font-size: 2rem;
 }
 
@@ -90,11 +89,11 @@ i {
   background: #024a63;
   color: white;
   width: 75%;
-  height: 2.17rem;
+  height: 217px;
   border-radius: 5.8rem;
   margin-left: 12%;
   margin-right: 12%;
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 .learn-how {
@@ -104,7 +103,7 @@ i {
   border: 0rem solid white;
   color: white;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
 }
@@ -117,102 +116,122 @@ i {
 
 .oceaneers-cabin-small {
   font-family: "Cabin", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 .oceaneers-cabin {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   font-size: 4.5rem;
+  margin-top: 1.7rem;
 }
 
 .oceaneers-raleway {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
   font-style: "Regular 400";
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: static;
 }
 
 .our-purpose {
   color: #024a63;
   font-family: "Cabin", sans-serif;
   font-weight: 700;
-  margin-top: 8rem;
-  font-size: 6rem;
+  margin-top: 7rem;
+  font-size: 4.5rem;
   text-align: center;
 }
 
 .our-purpose-text {
   color: #024a63;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 80px;
   text-align: center;
   font-size: 3rem;
   margin-top: 1.5%;
-  margin-left: 229px;
-  margin-right: 228px;
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
 .our-pillers-text {
   color: #024a63;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 80px;
   text-align: center;
   font-size: 3rem;
-  margin-top: 1.5%;
-  margin-left: 229px;
-  margin-right: 228px;
+  margin-top: 3%;
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
-.accordion {
-  margin-top: 3.2rem;
-  margin-bottom: 3.2rem;
-  background-color: #024a63 !important;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: none;
+.accordion-home {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .accordion-body-title {
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
-  font-weight: 500;
+  font-weight: 300;
   border: none;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: -5.5rem;
+  background-color: #024a63;
+  border-radius: 0rem 0rem 0rem 0rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  width: 75%;
+  color: white;
 }
 
-.accordion-body {
+.accordion-body-home {
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
-  font-weight: 500;
+  font-weight: 300;
   border: none;
-  margin-left: 14%;
-  margin-right: 14%;
+  margin-left: 12%;
+  margin-right: 12%;
+  width: 75%;
+  background-color: #024a63;
+  color: white;
+  border-radius: 0rem 0rem 4.3rem 4.3rem;
+  margin-top: -2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.button-accordion {
+.button-accordion-home {
   font-family: "Cabin", sans-serif;
+  position: relative;
   font-size: 2.5rem;
-  font-weight: 600;
-  background-color: #024a63;
+  font-weight: 300;
   border: none;
+  background-color: #024a63;
   border-radius: 4.3rem;
   color: white;
   width: 75%;
-  height: 7.2rem;
+  height: 6rem;
   margin-left: 12%;
   margin-right: 12%;
   text-align: center;
+}
+
+.plus-icon {
+  position: absolute;
+  font-size: 2.4rem;
+  right: 21rem;
+  font-size: 2.5rem;
 }
 
 .card-title {
@@ -266,7 +285,7 @@ i {
 .events-cabin-large {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 6.5rem;
 }
 
 .events-cabin-small {
@@ -287,5 +306,865 @@ i {
   font-weight: 600;
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
+}
+
+.intro-why {
+  min-height: 60vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../imgs/whyIntro.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../imgs/whyIntro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Cabin", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.intro-why .title {
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+
+.intro-why .desc {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+/* -------------------------------------------  */
+.compare {
+  min-height: 50vh;
+  width: 100%;
+  margin: auto;
+}
+
+.compare .indust {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.compare .indust .sub-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #024a63;
+}
+
+.compare .indust .sub-desc {
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: #024a63;
+}
+
+.compare .indust-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.compare .indust-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.compare .card-itself {
+  border: solid;
+  background: url("../imgs/bridge-water.png");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45rem;
+  height: 35rem;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.compare .card-itself h5 {
+  font-size: 2.5rem;
+}
+
+.compare .card-itself h6 {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.compare .non-indust-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.compare .card-itself-two {
+  border: solid;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url("../imgs/camel.png");
+  width: 45rem;
+  height: 35rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.compare .card-itself-two h5 {
+  margin-top: 22rem;
+  font-size: 2.5rem;
+}
+
+.compare .card-itself-two h6 {
+  font-size: 1.5rem;
+}
+
+.compare .green-bar {
+  background-color: #024a63;
+  color: white;
+  width: 35rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.compare .green-bar h5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hrLine {
+  margin-left: 50rem;
+  margin-right: 50rem;
+}
+
+.hrLine hr {
+  border: 3px solid #bededf;
+}
+
+.further-explanation {
+  min-height: 50vh;
+}
+
+.further-explanation .explanation-content {
+  text-align: center;
+}
+
+.further-explanation .explanation-content h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #024a63;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.further-explanation .explanation-content h4 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #024a63;
+  padding-bottom: 1rem;
+}
+
+.why-carousel {
+  min-height: 50vh;
+}
+
+.why-carousel .carousel-title-why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.why-carousel .carousel-title-why h3 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #024a63;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0rem;
+}
+
+.why-carousel .slide-why {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.infographic {
+  min-height: 40vh;
+}
+
+.infographic div {
+  border-radius: 10rem;
+  background: url("../imgs/infographic.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 95%;
+  margin: auto;
+  height: 100rem;
+}
+
+.newsLetter {
+  min-height: 5vh;
+  color: #024a63;
+  border: 1px solid #024a63;
+  padding-top: 2.4rem;
+}
+
+.newsLetter .newsLetter-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.newsLetter .desc-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  margin-left: 5rem;
+}
+
+.newsLetter .desc-container h3 {
+  font-family: Cabin, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.newsLetter .desc-container h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.newsLetter .inputs-container {
+  margin-right: 6rem;
+  font-family: Cabin, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newsLetter .inputs-container label {
+  color: #024a63;
+  font-size: 1.5rem;
+}
+
+.newsLetter .inputs-container input {
+  background-color: #e2f0ef;
+  width: 20rem;
+  border-radius: 2rem;
+}
+
+.newsLetter .inputs-container input [type="email"] {
+  width: 40rem;
+}
+
+.newsLetter .inputs-container #email {
+  width: 42rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsLetter .inputs-container button {
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 2.4rem;
+  padding: 0.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.newsLetter .inputs-container .input-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newsLetter .inputs-container .firstname {
+  margin-right: 2rem;
+}
+
+.newsLetter .inputs-container .subButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card {
+  border: none;
+}
+
+.header {
+  font-family: "Cabin", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin-top: 9.2rem;
+}
+
+.header-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 2.8rem 9.5rem 11.3rem 9.5rem;
+}
+
+.learn-how-partners {
+  padding: 0.5rem 3.5rem;
+  margin-top: -2rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+}
+
+.quote {
+  color: #024a63;
+  margin-top: 3.7rem;
+  margin-bottom: 4.8rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.repeating-h1 {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+
+.repeating-h2 {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin: 1.6rem 25rem 1rem 25rem;
+  line-height: 3.5rem;
+}
+
+.slide {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+}
+
+.card-title {
+  font-family: "Cabin", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+.card-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.bi-arrow-right-circle {
+  position: absolute;
+  font-size: 3.6rem;
+  top: 6rem;
+  right: 0rem;
+  color: black;
+}
+
+.bi-arrow-left-circle {
+  position: absolute;
+  font-size: 3.6rem;
+  top: 6rem;
+  left: 0rem;
+  color: black;
+}
+
+.filled-circle {
+  border-radius: 100%;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+.rounded-circle {
+  width: 35.8rem;
+  height: 35.8rem;
+  padding: 3.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 4.8rem;
+  background-color: #e2f0ef !important;
+}
+
+.accordion-partners .accordion-body {
+  background-color: #e2f0ef;
+  margin-top: -4rem;
+  width: 32.4rem;
+  border-radius: 0rem 0rem 4.3rem 4.3rem;
+}
+
+.accordion-partners .text-accordion {
+  background-color: #e2f0ef;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding-top: 4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.accordion-partners .button-accordion {
+  font-family: "Cabin", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: #024a63;
+  margin-top: 2.4rem;
+  border: none;
+  border-radius: 4.3rem;
+  color: white;
+  height: 7.4rem;
+  width: 32.4rem;
+  position: relative;
+}
+
+.accordion-partners .plus-icon-partners {
+  position: absolute;
+  right: 1.6rem;
+  top: 2.4rem;
+  font-size: 2.4rem;
+}
+
+.main-footer {
+  background-color: #024a63;
+  height: 23.1rem;
+  width: 100%;
+  padding: 4.1rem 5.5rem;
+  margin-top: 0rem;
+}
+
+.col-one .footer-title {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: white;
+}
+
+.col-one .footer-subtitle {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: white;
+  width: 39.3rem;
+}
+
+.col-two {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.col-three {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.col-four .footer-login {
+  padding: 0.5rem 2rem;
+  background: white;
+  border: 0rem solid white;
+  color: #024a63;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 2.4rem;
+  font-family: "Cabin", sans-serif;
+  width: 12rem;
+  height: 3.9rem;
+}
+
+.col-four .footer-join {
+  padding: 0.5rem 2rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  border-radius: 2.4rem;
+  font-family: "Cabin", sans-serif;
+  width: 12rem;
+  height: 3.9rem;
+}
+
+.social-icons .instagram {
+  border: 0.1rem solid white;
+  border-radius: 100%;
+  padding: 1.1rem;
+  margin-top: 2rem;
+}
+
+.social-icons .facebook {
+  border: 0.1rem solid white;
+  border-radius: 100%;
+  padding: 1.1rem 1.8rem;
+  margin-left: 1.2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  border: none;
+}
+
+.header-about {
+  font-family: "Cabin", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin-top: 9.2rem;
+}
+
+.header-text-about {
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 2.8rem 9.5rem 11.3rem 9.5rem;
+}
+
+.learn-how-about {
+  padding: 0.5rem 3.5rem;
+  margin-top: -2rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+}
+
+.repeating-h1-about {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.repeating-h2-about {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.repeating-h2-name {
+  color: #024a63;
+  padding-top: 6rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 0rem;
+  line-height: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.repeating-h3-about {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  margin-top: -2.5rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.repeating-h1-1-about {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.h3-about {
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  margin-top: -1.5rem;
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #024a63;
+}
+
+.repeating-h3-team {
+  color: #024a63;
+  padding-top: 0.4rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+}
+
+.h4 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  padding-top: 1rem;
+  font-style: italic;
+  text-align: center;
+  color: #024a63;
+}
+
+.container-about {
+  margin-top: 2rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  background: #bededf;
+  border-radius: 7rem;
+}
+
+.ambasadors {
+  background: #bededf;
+  border-radius: 10.3rem;
+}
+
+.accordion-about {
+  margin-bottom: 3.2rem;
+  margin-top: -1rem;
+}
+
+.accordion-body-about {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.button-accordion-about {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 1rem 3rem 1rem 3rem;
+  outline: none;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  border-radius: 4.3rem;
+  color: white;
+  width: 13rem;
+  height: 4rem;
+  margin-top: -5rem;
+  margin-bottom: -3rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+
+.container-2 {
+  width: 100rem;
+  height: 50rem;
+  left: 59px;
+  top: 1618px;
+  background: #ffffff;
+  border: 1px solid #024a63;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 15rem;
+  border-radius: 58px;
+}
+
+.col-8 {
+  width: 781px;
+  height: 168px;
+  left: 549px;
+  top: 1796px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #024a63;
+}
+
+.rounded-circle-am {
+  padding-top: 7rem;
+  padding-left: 3rem;
+  width: 35rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.interview {
+  padding: 1.1rem 2rem;
+  margin-top: 3rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+}
+
+.bi-instagram {
+  margin-top: -4rem;
+  font-size: 2.5rem;
+}
+
+.bi-facebook {
+  margin-top: -4rem;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+
+.il {
+  font-size: 1.75rem;
+  line-height: 1.6rem;
+  margin-top: 0.6rem;
+}
+
+.rounded {
+  margin-top: 5rem;
+  width: 20%;
+}
+
+.rounded-circle-team {
+  margin-left: 2rem;
+}
+
+.repeating-h2-iggy {
+  color: #024a63;
+  padding-top: 4rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+}
+
+.repeating-h3-iggy {
+  color: #024a63;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: -2.5rem;
+  margin-bottom: 6rem;
 }
 /*# sourceMappingURL=home.css.map */
