@@ -5,11 +5,11 @@ import Footer from "./Footer";
 
 import header1 from "../imgs/aboutus/header1.png";
 
-import ambassador1 from "../imgs/aboutus/ambassador1.png"
+import ambassador1circle from "../imgs/aboutus/ambassador1circle.png"
 import ambassador2 from "../imgs/aboutus/ambassador2.png"
 import ambassador3 from "../imgs/aboutus/ambassador3.png"
 import ambassador4 from "../imgs/aboutus/ambassador4.png"
-import ambassador1circle from "../imgs/aboutus/ambassador1circle.png"
+
 
 import team1 from "../imgs/aboutus/team1.png"
 import team2 from "../imgs/aboutus/team2.png"
@@ -61,14 +61,11 @@ export default class Partners extends Component {
           <h1 className="repeating-h1-1-about">Ambassadors</h1>
           <div className="row row-cols-1 row-cols-md-4 g-4 mx-auto">
             <div className="col">
-              <div className="card rounded-circle">
-                <img src={ambassador1} className="rounded-circle" alt="..." />
-              </div>
+                <img src={ambassador1circle} className="rounded-circle-ambassador" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 James Taylor
                 </h2>
-
-              <div className="accordion about about d-flex justify-content-center" id="accordionExample-James">
+              <div className="accordion-about about d-flex justify-content-center" id="accordionExample-James">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-James">
                     <button
@@ -88,13 +85,13 @@ export default class Partners extends Component {
             {/* end */}
             {/* Tammy Fry */}
             <div className="col">
-              <div className="card rounded-circle">
-                <img src={ambassador2} className="rounded-circle " alt="..." />
-              </div>
+            
+                <img src={ambassador2} className="rounded-circle-ambassador " alt="..." />
+              
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Tammy Fry
                 </h2>
-              <div className="accordion about d-flex justify-content-center" id="accordionExample-Tammy">
+              <div className="accordion-about d-flex justify-content-center" id="accordionExample-Tammy">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Tammy">
                     <button
@@ -112,13 +109,11 @@ export default class Partners extends Component {
             </div>
             {/*Terence Ball*/}
             <div className="col">
-              <div className="card rounded-circle">
-                <img src={ambassador3} className="card rounded-circle" alt="..." />
-              </div>
+            <img src={ambassador3} className="rounded-circle-ambassador " alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Terence Bell
                 </h2>
-              <div className="accordion about d-flex justify-content-center" id="accordionExample-Terence">
+              <div className="accordion-about d-flex justify-content-center" id="accordionExample-Terence">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Terence">
                     <button
@@ -136,13 +131,11 @@ export default class Partners extends Component {
             </div>
             {/*Emi Koch */}
             <div className="col">
-              <div className="card rounded-circle border-0">
-                <img src={ambassador4} className="rounded-circle" alt="..." />
-              </div>
+                <img src={ambassador4} className="rounded-circle-ambassador" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Emi Koch
                 </h2>
-              <div className="accordion about d-flex justify-content-center" id="accordionExample-Emi">
+              <div className="accordion-about d-flex justify-content-center" id="accordionExample-Emi">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Emi">
                     <button
@@ -342,16 +335,14 @@ export default class Partners extends Component {
           <h1 className="repeating-h1-1-about">Our Team</h1>
           <div className="row row-cols-1 row-cols-md-3 g-4 mx-auto">
             <div className="col">
-              <div className="card rounded-circle">
-                <img src={team1} className="rounded-circle" alt="..." />
-              </div>
+                <img src={team1} className="rounded-circle-team" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Kaspar Paur
                 </h2>
               <h2 className="repeating-h3-about d-flex justify-content-center">
                 Founder
                 </h2>
-              <div className="accordion about d-flex justify-content-center" id="accordionExample-Kaspar">
+              <div className="accordion-about d-flex justify-content-center" id="accordionExample-Kaspar">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Kaspar">
                     <button
@@ -370,16 +361,14 @@ export default class Partners extends Component {
             {/* end */}
             {/* Nathan Richardson */}
             <div className="col">
-              <div className="card rounded-circle border-0">
-                <img src={team2} className="rounded-circle " alt="..." />
-              </div>
+                <img src={team2} className="rounded-circle-team" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Nathan Richardson
                 </h2>
               <h2 className="repeating-h3-about d-flex justify-content-center">
                 Stoke Manager
                 </h2>
-              <div className="accordion about d-flex justify-content-center" id="accordionExample-Nathan">
+              <div className="accordion-about d-flex justify-content-center" id="accordionExample-Nathan">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Nathan">
                     <button
@@ -397,16 +386,14 @@ export default class Partners extends Component {
             </div>
             {/*Andrea Fedder*/}
             <div className="col">
-              <div className="card rounded-circle border-0">
-                <img src={team3} className="card rounded-circle" alt="..." />
-              </div>
+                <img src={team3} className="rounded-circle-team" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Andrea Fedder
                 </h2>
               <h2 className="repeating-h3-about d-flex justify-content-center">
                 (Alumni)
                 </h2>
-              <div className="accordion about d-flex justify-content-center" id="accordionExample-Andrea">
+              <div className="accordion-about d-flex justify-content-center" id="accordionExample-Andrea">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-Andrea">
                     <button
