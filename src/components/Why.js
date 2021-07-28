@@ -125,7 +125,7 @@ export default class Why extends Component {
                             <i className="bi bi-arrow-left-circle"></i>
                         </button>
                     </div> */}
-                    <div id="carouselExampleIndicators" className="carousel slide slide-why" data-ride="carousel">
+                    {/* <div id="carouselExampleIndicators" className="carousel slide slide-why" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -160,7 +160,7 @@ export default class Why extends Component {
                                 <span className="sr-only">Next</span>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
 
                 <section className="infographic">
