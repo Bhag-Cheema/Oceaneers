@@ -12,7 +12,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        {/* <Navbar />  */}
         <div className="card text-white border-0">
           <img id="iggy" src={beach} alt="beach" />
           <div className="card-img-overlay d-flex justify-content-center flex-column align-item-center text-center">
@@ -197,10 +197,9 @@ export default class Home extends Component {
         <div className="d-flex justify-content-center">
           <button className="learn-how-2">Want to Join? Learn how.</button>
         </div>
-        <NewsLetter />
-        <Footer />
+        {/* <NewsLetter /> */}
+        {/* <Footer /> */}
       </div>
-
 
     );
   }

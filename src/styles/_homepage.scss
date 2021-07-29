@@ -4,8 +4,9 @@
   width: 75%;
   height: 217px;
   border-radius: 5.8rem;
-  margin-left: 12%;
-  margin-right: 12%;
+  // margin-left: 12%;
+  // margin-right: 12%;
+  margin: auto ;
   margin-top: 3rem;
 }
 
@@ -203,4 +204,135 @@
   font-weight: 600;
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
+}
+
+// iphone X
+@media (width: 375px) {
+  .learn-how {
+    padding: 0.5rem 2rem;
+    margin-top: -1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  .homepage-color {
+    width: 80%;
+  }
+  .oceaneers-cabin-large {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  .oceaneers-cabin-small {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .oceaneers-cabin {
+    font-weight: 700;
+    font-size: 2.8rem;
+  }
+  .oceaneers-raleway {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .our-purpose {
+    font-weight: 700;
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  .our-purpose-text {
+    margin-top: 7rem;
+    font-size: 2rem;
+    margin-top: 1.5%;
+  }
+  .our-pillers-text {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3%;
+  }
+  .accordion-home {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .accordion-body-title {
+    font-size: 1.8rem;
+    margin-top: -2rem;
+  }
+  
+  .accordion-body-home {
+    font-size: 1.6rem;
+    margin-top: -2.2rem;
+    // border-radius: 0rem, 0rem, 8rem, 8rem;
+  }
+  
+  .button-accordion-home {
+    font-size: 2rem;
+    border-radius: 4.3rem;
+    height: 4rem;
+  }
+  
+  .plus-icon {
+    font-size: 2.4rem;
+    right: 1.3rem;
+    font-size: 2rem;
+  }
+  // this stuff is not working 
+  .card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 0.1rem;
+    font-weight: 200;
+    margin-top: 15%;
+  }
+  
+  .card-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.1rem;
+    font-weight: 200;
+    margin-top: 35%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .card-text-brand {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .card-text-ocean {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  // end of what isnt working 
+  .why {
+    margin-top: 5rem;
+    font-size: 3rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .learn-how-2 {
+    padding: 0.5rem 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 4.3rem;
+    font-family: "Cabin", sans-serif;
+  }
+  
+  
 }

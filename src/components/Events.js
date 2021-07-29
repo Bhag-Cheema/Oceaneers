@@ -8,7 +8,7 @@ export default class Events extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="card text-white border-0">
           <img id="events" src={events} alt="events" />
           <div className="card-img-overlay d-flex justify-content-center flex-column align-item-center text-center">
@@ -25,8 +25,8 @@ export default class Events extends Component {
             <button className="learn-how-events">Want to Join? Learn how.</button>
           </div>
         </div>
-        <NewsLetter />
-        <Footer />
+        {/* <NewsLetter /> */}
+        {/* <Footer /> */}
       </div>
     );
   }
