@@ -21,7 +21,7 @@ export default class Partners extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+       {/* <Navbar /> */}
         {/* Header image w text */}
         <div className="card text-white border-0">
           <img
@@ -44,23 +44,23 @@ export default class Partners extends Component {
         {/* Why We Started */}
         <div className="card text-center border-0">
           <h1 className="repeating-h1-about">Why We Started</h1>
-          <h2 className="repeating-h2-about">
-            We created Oceaneers as a community-driven initiative because we believe changing our food{" "}
-            <br /> choices is the most powerful lever to make oceans more sustainable, reduce suffering worldwide,{" "}
-            <br />  and take better care of our Oceans.
+          <h2 className="repeating-h3-iggy">
+            We created Oceaneers as a community-driven initiative because we believe changing our food
+            choices is the most powerful lever to make oceans more sustainable, reduce suffering worldwide,
+            and take better care of our Oceans.
           </h2>
-          <h2 className="repeating-h2-about">
-            The urge to share this information with our fellow Ocean-dwellers and inspire a reduction-based{" "}
-            <br /> journey blossomed. Thus, we decided to put other work projects on stand-by and dedicate our {" "}
-            <br />full time and energy towards this cause.
+          <h2 className="repeating-h3-iggy">
+            The urge to share this information with our fellow Ocean-dwellers and inspire a reduction-based
+            journey blossomed. Thus, we decided to put other work projects on stand-by and dedicate our
+            full time and energy towards this cause.
           </h2>
         </div>
 
         {/* Ambassadors */}
         <div className="container-about">
           <h1 className="repeating-h1-1-about">Ambassadors</h1>
-          <div className="row row-cols-1 row-cols-md-4 g-4 mx-auto">
-            <div className="col">
+          <div className="row mx-auto">
+            <div className="col-sm">
                 <img src={ambassador1circle} className="rounded-circle-ambassador" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 James Taylor
@@ -84,7 +84,7 @@ export default class Partners extends Component {
 
             {/* end */}
             {/* Tammy Fry */}
-            <div className="col">
+            <div className="col-sm">
             
                 <img src={ambassador2} className="rounded-circle-ambassador " alt="..." />
               
@@ -108,7 +108,7 @@ export default class Partners extends Component {
               </div>
             </div>
             {/*Terence Ball*/}
-            <div className="col">
+            <div className="col-sm">
             <img src={ambassador3} className="rounded-circle-ambassador " alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Terence Bell
@@ -130,7 +130,7 @@ export default class Partners extends Component {
               </div>
             </div>
             {/*Emi Koch */}
-            <div className="col">
+            <div className="col-sm">
                 <img src={ambassador4} className="rounded-circle-ambassador" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Emi Koch
@@ -176,6 +176,7 @@ export default class Partners extends Component {
                   <h3 className="h3-about">
                     Big-wave Surfer, Foiler, Spear-fisherman, Entrepreneur
                   </h3>
+                  <h3 className="h3-description">
                     Unlike most big wave surfers, James didn’t grow up at the ocean but in the middle of South Africa. After catching
                     his first wave at the mature age of 12, nothing could keep him away from the salty playground anymore and he’s
                     taken full advantage of it ever since. This even lead to James’s participation in the WSL Big Wave Tour in
@@ -186,6 +187,7 @@ export default class Partners extends Component {
                     though. He kitesurfs, windsurfs, SUPs, spearfishes, swims and has increasingly often been spotted on foils out in
                     the Southern African ocean. We seriously couldn’t think of a better first ambassador for Oceaneers than
                     James—stoked to have you on board!{" "}<br />
+                    </h3>
                   <button className="interview">View the full interview with James</button>
                   <div className="social-media d-flex justify-content-center">
                     <i className="bi bi-instagram "></i>
@@ -220,6 +222,7 @@ export default class Partners extends Component {
                   <h3 className="h3-about">
                     Surfer, Karateka, Blogger, Marketeer, Advocate, Influencer
                   </h3>
+                  <h3 className="h3-description">
                   You do not want to drop in on Tammy Fry. Karate runs through her veins. She’s won multiple South African
                   National Championships, the 2017 Australian Open, and is a Queensland karate champion. In addition, she’s
                   a self-defence coach, runs regular workshops and writes blogs where she shares her deep knowledge around
@@ -230,6 +233,7 @@ export default class Partners extends Component {
                   stages and staying true to her motto “Spread love everywhere you go. Let no one come to you without leaving
                   happier” (Mother Teresa). Tammy, we’re excited to have you on board, may your energy, compassion and
                   experience inspire lots of Oceaneers in their reduction journey!{" "}<br />
+                  </h3>
                   <button className="interview">View the full interview with Tammy</button>
                   <div className="social-media d-flex justify-content-center">
                     <i className="bi bi-instagram "></i>
@@ -263,6 +267,7 @@ export default class Partners extends Component {
                   <h3 className="h3-about">
                     Waterman, Endurance Athlete, Ocean-advocate, Investor
                   </h3>
+                  <h3 className="h3-description">
                   Terence is an Australia-raised, passionate waterman and endurance athlete. Nature has always been a significant
                   part of his life; the wild stillness of the ocean brings him back to a natural state of being. In early 2018, he
                   launched a passion project called The Ocean Lover where he aims to create a deeper awareness with the ocean
@@ -273,6 +278,7 @@ export default class Partners extends Component {
                   with local communities in Hawaii andthe Seabin Project who provides a solution for plastic and waste collection
                   in marinas and ports. Terence, after all the memories we've already had together, it's a huge joy to know that
                   you're part of this venture as well!{" "}<br />
+                  </h3>
                   <button className="interview">View the full interview with Terence</button>
                   <div className="social-media d-flex justify-content-center">
                     <i className="bi bi-instagram "></i>
@@ -307,6 +313,7 @@ export default class Partners extends Component {
                   <h3 className="h3-about">
                     Surfer, Social Ecologist, Multimedia Storyteller, Founder
                   </h3>
+                  <h3 className="h3-description">
                   Emi has created the reality that most of us are dreaming of: getting paid to go surfing with Billabong. She
                   overcame a profound personal transformation when she taught science and art in Mexico and Nepal
                   monasteries. These two experiences made her realize that she wants to advocate for a more equitable world. At
@@ -317,6 +324,7 @@ export default class Partners extends Component {
                   adaption and social environmental justice. Given her amazing work, Emi was named 2018 NatGeo Adventurer and
                   2019-2020 Fulbright NatGeo Digital Storytelling Fellow. Emi, your work inspires us and we’re eager to have you on
                   our team!{" "}<br />
+                  </h3>
                   <button className="interview">View the full interview with Emi</button>
                   <div className="social-media d-flex justify-content-center">
                     <i className="bi bi-instagram "></i>
@@ -334,7 +342,7 @@ export default class Partners extends Component {
         <div className="container-about">
           <h1 className="repeating-h1-1-about">Our Team</h1>
           <div className="row row-cols-1 row-cols-md-3 g-4 mx-auto">
-            <div className="col">
+            <div className="col-md">
                 <img src={team1} className="rounded-circle-team" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Kaspar Paur
@@ -360,7 +368,7 @@ export default class Partners extends Component {
             </div>
             {/* end */}
             {/* Nathan Richardson */}
-            <div className="col">
+            <div className="col-md">
                 <img src={team2} className="rounded-circle-team" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Nathan Richardson
@@ -385,7 +393,7 @@ export default class Partners extends Component {
               </div>
             </div>
             {/*Andrea Fedder*/}
-            <div className="col">
+            <div className="col-md">
                 <img src={team3} className="rounded-circle-team" alt="..." />
               <h2 className="repeating-h2-about d-flex justify-content-center">
                 Andrea Fedder
@@ -441,7 +449,7 @@ export default class Partners extends Component {
                   <h3 className="h3-about">
                     Kaspar’s Reduction Journey
                   </h3>
-                  <ul>
+                  <ul className="list">
                     <li className="il">Arrives in South Africa in 2013 as an omnivore</li>
                     <li className="il">Learns about the impact of factory farming through locals, reads Foer’s ‘Eating Animals’
                       and subsequently cuts out meat and dairy</li>
@@ -532,7 +540,7 @@ export default class Partners extends Component {
                     Andrea's Reduction Journey
                   </h3>
                   <ul>
-                    <li className="il">Was raised proper South African/German around the braai, meat = mains</li>
+                    <li className="il">Was raised proper South African/German around the brain, {" "}<br /> meat = mains</li>
                     <li className="il">Became aware of factory farming an inhumane animal practices around age 21 (2007)</li>
                     <li className="il">Dabbled in various fully committed forms of vegetarian, vegan, raw, pescatarian for a decade, while working
                     in food writing and later in ethical nature-oriented industries, but never really felt comfortable in any absolute diet-style</li>
@@ -560,15 +568,16 @@ export default class Partners extends Component {
             Who is He and Why Do We Love Him?
             </h2>
           <h3 className="repeating-h3-iggy">
-            Meet Iggy, our Marine Iguana and Oceaneers mascot! Just like the community at{" "}<br />
-            Oceaneers, he’s devilishly good-looking, spends most of his time in the water, feasts on{" "}<br />
-            a plant-based diet, and doesn’t support industrialized animal farming and fishing. He is{" "}<br />
+            Meet Iggy, our Marine Iguana and Oceaneers mascot! Just like the community at
+            Oceaneers, he’s devilishly good-looking, spends most of his time in the water, feasts on
+            a plant-based diet, and doesn’t support industrialized animal farming and fishing. He is
             all about sustainability and saving the planet!
             </h3>
         </div>
 
-        <NewsLetter />
-        <Footer />
+        {/* <NewsLetter /> */}
+
+        {/* <Footer /> */ }
 
       </div> //end render class
 
