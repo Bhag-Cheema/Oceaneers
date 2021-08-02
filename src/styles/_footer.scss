@@ -1,77 +1,325 @@
-.main-footer {
-  background-color: #024a63;
-  height: 23.1rem;
-  width: 100%;
-  padding: 4.1rem 5.5rem;
-  margin-top: 0rem;
-}
-.col-one {
-  .footer-title {
-    font-family: "Cabin", sans-serif;
-    font-weight: 700;
-    font-size: 4.5rem;
-    color: white;
+@media (min-width: 320px) {
+  div.main-footer {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 0rem;
   }
-  .footer-subtitle {
+  .col-one {
+    h1.footer-title {
+      font-size: 1.8rem;
+      position: absolute;
+      top: 9rem;
+      left: 2rem;
+    }
+    p.footer-subtitle {
+      font-size: 1.4rem;
+      width: 10rem;
+      position: absolute;
+      top: 12rem;
+      left: 2rem;
+    }
+    .social-icons {
+      .instagram {
+        position: absolute;
+        top: 13rem;
+        right: 9rem;
+        padding: 1.1rem;
+      }
+      .facebook {
+        position: absolute;
+        top: 13em;
+        right: 2rem;
+        padding: 1.1rem 1.8rem;
+      }
+    }
+  }
+  p.about-us {
+    display: none;
+  }
+  div.col-three {
+    align-content: flex-end;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 18rem;
+    top: 9rem;
+    padding-left: 0rem;
+  }
+  div.col-four {
+    button.footer-login {
+      position: absolute;
+      top: 3rem;
+      left: 2rem;
+      padding: 0.5rem 2rem;
+      font-size: 1.6rem;
+      width: 12rem;
+      height: 3.9rem;
+    }
+    button.footer-join {
+      position: absolute;
+      margin-top: 0rem;
+      top: 3rem;
+      right: 2rem;
+      font-size: 1.6rem;
+      padding: 0.5rem 2rem;
+      width: 12rem;
+      height: 3.9rem;
+    }
+  }
+}
+@media (min-width: 375px) {
+  div.main-footer {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 0rem;
+  }
+  .col-one {
+    h1.footer-title {
+      font-size: 1.8rem;
+      position: absolute;
+      top: 9rem;
+      left: 2rem;
+    }
+    p.footer-subtitle {
+      font-size: 1.4rem;
+      width: 10rem;
+      position: absolute;
+      top: 12rem;
+      left: 2rem;
+    }
+    .social-icons {
+      .instagram {
+        position: absolute;
+        top: 13rem;
+        right: 9rem;
+        padding: 1.1rem;
+      }
+      .facebook {
+        position: absolute;
+        top: 13em;
+        right: 2rem;
+        padding: 1.1rem 1.8rem;
+      }
+    }
+  }
+  p.about-us {
+    display: none;
+  }
+  div.col-three {
+    align-content: flex-end;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 23rem;
+    top: 9rem;
+  }
+  div.col-four {
+    button.footer-login {
+      position: absolute;
+      top: 3rem;
+      left: 2rem;
+      padding: 0.5rem 2rem;
+      font-size: 1.6rem;
+      width: 12rem;
+      height: 3.9rem;
+    }
+    button.footer-join {
+      position: absolute;
+      margin-top: 0rem;
+      top: 3rem;
+      right: 2rem;
+      font-size: 1.6rem;
+      padding: 0.5rem 2rem;
+      width: 12rem;
+      height: 3.9rem;
+    }
+  }
+}
+@media (min-width: 414px) {
+  div.main-footer {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 0rem;
+  }
+  .col-one {
+    h1.footer-title {
+      font-size: 1.8rem;
+      position: absolute;
+      top: 9rem;
+      left: 2rem;
+    }
+    p.footer-subtitle {
+      font-size: 1.4rem;
+      width: 10rem;
+      position: absolute;
+      top: 12rem;
+      left: 2rem;
+    }
+  }
+  div.col-three {
+    font-size: 1.8rem;
+    left: 23.9rem;
+  }
+}
+@media (min-width: 768px) {
+  div.main-footer {
+    position: relative;
+    height: 25.1rem;
+    padding: 3rem 4rem;
+    margin-top: 0rem;
+    overflow-x: hidden;
+  }
+
+  .col-one {
+    h1.footer-title {
+      position: inherit;
+      font-size: 4rem;
+    }
+    p.footer-subtitle {
+      position: inherit;
+      font-size: 1.6rem;
+      width: 22rem;
+    }
+    .social-icons {
+      .instagram {
+        position: inherit;
+        border: 0.1rem solid white;
+        border-radius: 100%;
+        padding: 1.1rem;
+        margin-top: 2rem;
+      }
+      .facebook {
+        position: inherit;
+        border: 0.1rem solid white;
+        border-radius: 100%;
+        padding: 1.1rem 1.8rem;
+        margin-left: 1.2rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+  div.col-two {
+    p {
+      position: inherit;
+      display: block;
+      justify-content: center;
+      font-size: 1.8rem;
+    }
+  }
+  div.col-three {
+    position: inherit;
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  div.col-four {
+    align-content: flex-end;
+    button.footer-login {
+      font-size: 1.8rem;
+      padding: 0.5rem 2rem;
+      position: inherit;
+    }
+    button.footer-join {
+      position: inherit;
+
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding: 0.5rem 2rem;
+      margin-top: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  div.main-footer {
+    overflow-y: hidden;
+    position: inherit;
+    background-color: #024a63;
+    height: 24rem;
+    width: 100%;
+    padding: 4rem 5rem;
+    margin-top: 0rem;
+  }
+  div.col-one {
+    h1.footer-title {
+      font-family: "Cabin", sans-serif;
+      font-weight: 700;
+      font-size: 4.5rem;
+      color: white;
+      position: inherit;
+    }
+    p.footer-subtitle {
+      font-family: "Cabin", sans-serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      color: white;
+      width: 39.3rem;
+      position: inherit;
+    }
+    .social-icons {
+      .instagram {
+        border: 0.1rem solid white;
+        border-radius: 100%;
+        padding: 1.1rem;
+        margin-top: 2rem;
+        position: inherit;
+      }
+      .facebook {
+        border: 0.1rem solid white;
+        border-radius: 100%;
+        padding: 1.1rem 1.8rem;
+        margin-left: 1.2rem;
+        margin-top: 2rem;
+        position: inherit;
+      }
+    }
+  }
+  div.col-two {
+    p {
+      position: inherit;
+      display: block;
+      justify-content: center;
+      font-family: "Cabin", sans-serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+      color: white;
+    }
+  }
+  div.col-three {
+    position: inherit;
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     color: white;
-    width: 39.3rem;
+    display: flex;
+    justify-content: center;
   }
-}
-.col-two {
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: white;
-}
-.col-three {
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: white;
-}
-.col-four {
-  .footer-login {
-    padding: 0.5rem 2rem;
-    background: white;
-    border: 0rem solid white;
-    color: #024a63;
-    font-size: 2rem;
-    font-weight: 600;
-    border-radius: 2.4rem;
-    font-family: "Cabin", sans-serif;
-    width: 12rem;
-    height: 3.9rem;
-  }
-  .footer-join {
-    padding: 0.5rem 2rem;
-    background: #ff7c5c;
-    border: 0rem solid white;
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-top: 1.8rem;
-    border-radius: 2.4rem;
-    font-family: "Cabin", sans-serif;
-    width: 12rem;
-    height: 3.9rem;
-  }
-}
-
-.social-icons {
-  .instagram {
-    border: 0.1rem solid white;
-    border-radius: 100%;
-    padding: 1.1rem;
-    margin-top: 2rem;
-  }
-  .facebook {
-    border: 0.1rem solid white;
-    border-radius: 100%;
-    padding: 1.1rem 1.8rem;
-    margin-left: 1.2rem;
-    margin-top: 2rem;
+  div.col-four {
+    align-content: flex-end;
+    button.footer-login {
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: "Cabin", sans-serif;
+      padding: 0.5rem 2rem;
+      background: white;
+      color: #024a63;
+      border-radius: 2.4rem;
+      width: 12rem;
+      height: 3.9rem;
+      position: inherit;
+    }
+    button.footer-join {
+      position: inherit;
+      font-family: "Cabin", sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+      background: #ff7c5c;
+      padding: 0.5rem 2rem;
+      margin-top: 1.8rem;
+      border-radius: 2.4rem;
+      width: 12rem;
+      height: 3.9rem;
+    }
   }
 }

@@ -10,7 +10,7 @@ export default class Footer extends Component {
         <footer>
           <div className="main-footer mx-0">
             <div className="row">
-              <div className="col-sm col-one">
+              <div className="col-sm  col-one">
                 <h1 className="footer-title">Oceaneers</h1>
                 <p className="footer-subtitle">
                   To the Oceans, Our Food Choices Matter.
@@ -30,13 +30,13 @@ export default class Footer extends Component {
                   />
                 </div>
               </div>
-              <div className="col-sm col-two d-flex justify-content-center">
+              <div className="col-sm  col-two">
                 {/* NEEDS LINKING */}
-                <NavLink to="" activeClassName="active-link">
+                <p to="" className="about-us">
                   About Us
-                </NavLink>
+                </p>
               </div>
-              <div className="col-sm col-three d-flex justify-content-center">
+              <div className="col-sm col-three">
                 {/* NEEDS LINKING */}
                 Contact Us <br />
                 hello@oceaneers.co
