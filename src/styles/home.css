@@ -97,6 +97,14 @@ nav ul {
   margin-top: 3rem;
 }
 
+.header-image-home {
+  min-height: 60vh;
+  background: url("../imgs/iggy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .learn-how {
   padding: 0.5rem 3.5rem;
   margin-top: -2rem;
@@ -107,13 +115,18 @@ nav ul {
   font-weight: 400;
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
-  cursor: pointer;
+  z-index: 1;
+}
+
+.play-icon {
+  font-size: 80px;
 }
 
 .oceaneers-cabin-large {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   font-size: 6.5rem;
+  margin-top: 15rem;
 }
 
 .oceaneers-cabin-small {
@@ -295,7 +308,7 @@ nav ul {
   font-family: "Cabin", sans-serif;
 }
 
-@media (width: 375px) {
+@media (max-width: 540px) {
   .learn-how {
     padding: 0.5rem 2rem;
     margin-top: -1.8rem;
@@ -307,10 +320,14 @@ nav ul {
   .oceaneers-cabin-large {
     font-weight: 700;
     font-size: 4rem;
+    margin-top: 18rem;
   }
   .oceaneers-cabin-small {
     font-weight: 400;
     font-size: 2rem;
+  }
+  .play-icon {
+    font-size: 80px;
   }
   .oceaneers-cabin {
     font-weight: 700;
@@ -360,35 +377,20 @@ nav ul {
     right: 1.3rem;
     font-size: 2rem;
   }
-  .card-title {
+  h1.card-title {
     font-family: "Cabin", sans-serif;
-    font-size: 0.1rem;
+    font-size: 2rem;
     font-weight: 200;
-    margin-top: 15%;
+    margin: auto;
   }
   .card-text {
-    font-family: "Raleway", sans-serif;
-    font-size: 0.1rem;
-    font-weight: 200;
-    margin-top: 35%;
-    margin-left: 10%;
-    margin-right: 10%;
+    display: none;
   }
   .card-text-brand {
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    display: none;
   }
   .card-text-ocean {
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-right: 10%;
+    display: none;
   }
   .why {
     margin-top: 5rem;
