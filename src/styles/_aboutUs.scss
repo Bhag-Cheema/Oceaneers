@@ -13,7 +13,7 @@
   font-family: "Cabin", sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  padding: 2.8rem 9.5rem 11.3rem 9.5rem;
+  padding: 2.8rem 8rem 11.3rem 8rem;
 }
 .learn-how-about {
   padding: 0.5rem 3.5rem;
@@ -32,24 +32,29 @@
   font-size: 4.5rem;
   font-weight: bold;
   margin-top: 3rem;
+  margin-bottom: 2rem;
+
 }
 .repeating-h2-about {
   color: #024a63;
   font-family: "Cabin", sans-serif;
   font-size: 2.4rem;
-  font-weight: normal;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  font-weight: bold !important;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .repeating-h2-name {
   color: #024a63;
-  padding-top: 6rem;
+  padding-top: 4rem;
+  padding-left: 1rem;
   font-family: "Cabin", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   margin-top: 0rem;
   line-height: 3.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .repeating-h3-about {
   color: #024a63;
@@ -93,12 +98,26 @@
   font-style: normal;
   margin-top: -2.5rem;
   margin-bottom: 3rem;
+  padding-left: 1rem;
+}
+.h3-description {
+  color: #024a63;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: -2.5rem;
+  margin-bottom: -4rem;
 }
 .h4 {
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding-top: 1rem;
   font-style: italic;
   text-align: center;
@@ -146,9 +165,9 @@
   margin-right: -3rem;
 }
 .container-2 {
-  width: 100rem;
+  width: 80rem;
   height: 50rem;
-  left: 59px;
+  left: 55px;
   top: 1618px;
 
   background: #ffffff;
@@ -194,12 +213,14 @@
 }
 
 .bi-instagram {
-  margin-top: -4rem;
+  margin-top: -5rem;
   font-size: 2.5rem;
+  padding-top: 0.8rem;
 }
 .bi-facebook {
-  margin-top: -4rem;
+  margin-top: -5rem;
   margin-left: 2rem;
+  padding-top: 0.8rem;
   font-size: 2.5rem;
 }
 
@@ -214,7 +235,7 @@
   width: 20%;
 }
 .rounded-circle-team{
-  margin-left: 2rem;
+  margin-left: -0.5rem !important;
 }
 .repeating-h2-iggy {
   color: #024a63;
@@ -229,10 +250,478 @@
   color: #024a63;
   padding-top: 2rem;
   padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-family: "Cabin", sans-serif;
   font-size: 2.2rem;
   font-weight: normal;
   font-style: normal;
   margin-top: -2.5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 0.5rem !important;
+}
+
+
+
+//iPad Screen
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .learn-how-about {
+    padding: 0.5rem 3.5rem;
+    margin-top: -2rem;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    border-radius: 4.3rem;
+    font-family: "Cabin", sans-serif;
+  }
+  .header-about {
+    font-family: "Cabin", sans-serif;
+    font-size: 4rem !important;
+  }
+  .header-text-about {
+    margin-top: -2.5rem;
+    font-size: 1.3rem !important;
+  }
+  .repeating-h1-about {
+    font-size: 3.2rem !important;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+  .repeating-h1-1-about {
+    font-size: 3.5rem !important;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  .repeating-h2-about {
+    font-size: 0.82rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .repeating-h2-name {
+    font-size: 1.8rem !important;
+    margin-top: -2.75rem !important;
+    line-height: 3rem !important;
+  } 
+  .repeating-h2-iggy {
+    color: #024a63;
+    padding-top: 4rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 2.1rem !important;
+    font-weight: 600;
+    margin-top: -3rem !important;
+    margin-bottom: 3rem;
+  }
+  .repeating-h3-iggy {
+    color: #024a63;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -3rem !important;
+    margin-bottom: 6rem;
+  }
+  .repeating-h3-about {
+    font-size: 0.85rem !important;
+    margin-top: -3.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .h3-about {
+    padding-top: 0rem;
+    padding-bottom: 1rem !important;
+    margin-top: -3rem !important;
+    font-size: 1.5rem !important;
+    padding-left: 0.8rem;
+  }
+  .h3-description {
+    font-size: 5px !important;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .repeating-h3-team {
+    color: #024a63;
+    padding-top: 0.4rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -2.5rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+  }
+  .button-accordion-about {
+  font-size: 0.8rem !important;
+  padding: 1rem 1rem 1rem 1rem !important;
+  width: 6.5rem !important;
+  height: 2.6rem !important;
+  outline: none !important;
+  border: 0rem solid white !important;
+  border-radius: 5rem !important;
+
+  margin-top: -5rem !important;
+  margin-bottom: -5rem !important;
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
+  }
+  .container-about {
+    width: 40rem !important;
+    margin: auto !important;
+  }
+  .container-2 {
+    width: 40rem !important;
+    height: 35rem !important;
+    left: 5px;
+    top: 1618px;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #024a63;
+    box-sizing: border-box;
+    margin: auto !important;
+    border-radius: 58px;
+  }
+  .col-sm {
+    width: 100px !important;
+  }
+  .col-md {
+    width: 130px !important;
+  }
+  .rounded-circle-team{
+    margin-left: 0.5rem !important;
+  }
+  .col-4 {
+    display: none !important;
+  }
+  .col-8 {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0.5rem;
+  }
+  .interview {
+    padding: 0.8rem 2rem !important;
+    margin-top: -3rem !important;
+    margin-left: 3rem !important;
+    font-size: 1rem !important;
+  }
+  .bi-instagram {
+    font-size: 2rem !important;
+    margin-left: 15rem !important;
+  }
+  .bi-facebook {
+    margin-left: 1.8rem !important;
+    font-size: 2rem !important;
+  }
+  .h3-description {
+    color: #024a63;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.1rem !important;
+    padding-right: 1rem !important;
+    padding-left: 0.5rem !important;
+    margin-bottom: 0rem !important;
+  } 
+  .list {
+    margin-top: -2rem !important;
+  }
+  .il {
+    font-size: 1.2rem !important;
+    line-height:1.6rem;
+    margin-top: 0rem !important;
+    padding-right: 0.1rem;
+    margin-left: -0.3rem;
+  }
+  .rounded {
+    margin-top: 5rem;
+    width: 30% !important;
+  }
+}
+//Large Screens: Ipad Pro and Desktop
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .header-about {
+    font-family: "Cabin", sans-serif;
+    font-size: 5rem !important;
+  }
+  .header-text-about {
+    font-size: 2rem !important;
+  }
+  .repeating-h2-about {
+    font-size: 1.5rem !important;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  } 
+  .repeating-h3-about {
+    font-size: 1.5rem !important;
+  }
+  .repeating-h3-iggy {
+    color: #024a63;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.8rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -2.5rem;
+    margin-bottom: 6rem;
+  }
+  .button-accordion-about {
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    padding: 1rem 1rem 1rem 1rem !important;
+    text-align: center !important;
+    width: 10rem !important;
+    //line-height: 30px !important;
+    height: 4rem;
+  }
+  .rounded-circle-team{
+    margin-left: -0.25rem !important;
+  }
+  //Learn More Container
+  .container-about {
+    margin: auto !important;
+    background: #bededf;
+    border-radius: 7rem;
+    width:68rem !important;
+  }
+  .container-2 {
+    width: 68rem !important;
+    height: 43rem !important;
+    margin: auto !important;
+  }
+  .h3-description {
+    color: #024a63;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.2rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -2.5rem;
+    margin-bottom: -4rem;
+  }
+  .h3-about {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem !important;
+    font-size: 1.75rem !important;
+  }
+  .bi-instagram {
+    margin-top: -5rem;
+    font-size: 2.5rem;
+    margin-left: 18rem;
+    padding-top: 0.8rem;
+  }
+  .bi-facebook {
+    margin-top: -5rem;
+    margin-left: 2rem;
+    padding-top: 0.8rem;
+    font-size: 2.5rem;
+  }
+  .il {
+    font-size: 1.5rem !important;
+    padding-right: 1rem;
+    line-height:1.6rem;
+    margin-top:0.3rem !important;
+  }
+}
+// Large Screens Bigger Headers
+@media screen and (min-width: 1000px) and (max-width:1280px) {
+  .header-about {
+    font-family: "Cabin", sans-serif;
+    font-size: 6rem !important;
+  }
+  .header-text-about {
+    font-size: 3rem !important;
+  }
+  .repeating-h2-about {
+    font-size: 2rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .repeating-h3-iggy {
+    font-size: 2.3rem !important;
+  }
+}
+//iPhone and mobile devices
+@media screen and (min-width: 340px) and (max-width: 499px) {
+  .learn-how-about {
+    padding: 0.5rem 3.5rem;
+    margin-top: -1rem !important;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 1rem !important;
+    font-weight: 600;
+    border-radius: 4.3rem;
+    font-family: "Cabin", sans-serif;
+  }
+  .header-about {
+    font-family: "Cabin", sans-serif;
+    font-size: 3rem !important;
+  }
+  .header-text-about {
+    margin-top: -2.5rem;
+    font-size: 0.85rem !important;
+  }
+  .repeating-h1-about {
+    font-size: 3.2rem !important;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+  .repeating-h1-1-about {
+    font-size: 3.5rem !important;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  .repeating-h2-about {
+    font-size: 1rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+    text-align: center;
+  }
+  .repeating-h2-name {
+    font-size: 1.5rem !important;
+    margin-top: -2.75rem !important;
+    line-height: 3rem !important;
+  } 
+  .repeating-h2-iggy {
+    color: #024a63;
+    padding-top: 4rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem !important;
+    font-weight: 600;
+    margin-top: -3rem !important;
+    margin-bottom: 3rem;
+  }
+  .repeating-h3-iggy {
+    color: #024a63;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -3rem !important;
+    margin-bottom: 6rem;
+  }
+  .repeating-h3-about {
+    font-size: 0.85rem !important;
+    margin-top: -3.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .h3-about {
+    padding-top: 0rem;
+    padding-bottom: 1rem !important;
+    margin-top: -3rem !important;
+    font-size: 1.1rem !important;
+    padding-left: 0.8rem;
+  }
+  .h3-description {
+    font-size: 1rem !important;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .repeating-h3-team {
+    color: #024a63;
+    padding-top: 0.4rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.3rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -2.5rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+  }
+  .button-accordion-about {
+  font-size: 0.6rem !important;
+  padding: 1rem 1rem 1rem 1rem !important;
+  width: 5rem !important;
+  height: 2.2rem !important;
+  outline: none !important;
+  border: 0rem solid white !important;
+  border-radius: 5rem !important;
+  text-align: center;
+
+  margin-top: -5rem !important;
+  margin-bottom: -5rem !important;
+  margin-left: -2rem !important;
+  margin-right: -2rem !important;
+  }
+  .container-about {
+    width: 30rem !important;
+    margin: auto !important;
+  }
+  .container-2 {
+    width: 30rem !important;
+    height: 35rem !important;
+    left: 5px;
+    top: 1618px;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #024a63;
+    box-sizing: border-box;
+    margin: auto !important;
+    border-radius: 58px;
+  }
+  .col-sm {
+    width: 75px !important;
+  }
+  .col-md {
+    width: 100px !important;
+  }
+  .rounded-circle-team{
+    margin-left: 0.5rem !important;
+  }
+  .col-4 {
+    display: none !important;
+  }
+  .col-8 {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0.5rem;
+  }
+  .interview {
+    padding: 0rem 2rem !important;
+    margin-top: -6rem !important;
+    margin-left: 3rem !important;
+    font-size: 0.8rem !important;
+    height: 2rem !important;
+  }
+  .bi-instagram {
+    font-size: 1.5rem !important;
+    margin-left: 15rem !important;
+    margin-top: -2.75rem !important;
+  }
+  .bi-facebook {
+    margin-left: 1rem !important;
+    font-size: 1.75rem !important;
+    margin-top: -2.75rem !important;
+  }
+  .h3-description {
+    font-size: 1rem !important;
+    padding-right: 1rem !important;
+    padding-left: 0.5rem !important;
+    margin-bottom: -2rem !important;
+  } 
+  .list {
+    margin-top: -1rem !important;
+  }
+  .il {
+    font-size: 0.9rem !important;
+    line-height: 1.2rem !important;
+    margin-top: 0rem !important;
+    padding-right: 0.1rem;
+    margin-left: -1.1rem;
+  }
+  .rounded {
+    margin-top: 5rem;
+    width: 30% !important;
+  }
 }
