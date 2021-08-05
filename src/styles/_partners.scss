@@ -229,9 +229,9 @@
     margin-bottom: 3rem;
     div.rounded-circle {
       position: relative;
-      width: 20rem;
-      height: 20rem;
-      padding: 2rem;
+      width: 24rem;
+      height: 24rem;
+      padding: 2.4rem;
       margin-left: 2.5rem;
       margin-right: 2.5rem;
       margin-top: 2rem;
@@ -415,6 +415,25 @@
     margin-right: 10rem;
     line-height: 3.4rem;
   }
+  #gridCarousel {
+    button.carousel-control-next {
+      float: right;
+      position: relative;
+      display: inline;
+      margin-bottom: 2rem;
+      .bi-arrow-right-circle {
+        top: -3rem;
+      }
+    }
+    button.carousel-control-prev {
+      position: relative;
+      display: inline;
+      float: left;
+      .bi-arrow-left-circle {
+        top: -3rem;
+      }
+    }
+  }
   h5.partner-card-title {
     font-size: 3.5rem;
     line-height: 4.2rem;
@@ -430,17 +449,76 @@
     font-weight: 400;
     padding-bottom: 1rem;
   }
-  .carousel-indicators {
-    .filled-circle {
-      display: block;
-      border-radius: 100%;
-      width: 1.2rem !important;
-      height: 1.2rem !important;
-      background-color: gray !important;
+  #circleCarousel {
+    margin-bottom: 4rem;
+    padding-left: 0%;
+    padding-right: 0%;
+
+    div.rounded-circle {
+      width: 28rem;
+      height: 28rem;
+      padding: 3rem;
     }
-    .filled-circle.active {
-      display: block;
-      background-color: #024a63 !important;
+    .carousel-indicators {
+      .filled-circle {
+        display: block;
+        border-radius: 100%;
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+        background-color: gray !important;
+      }
+      .filled-circle.active {
+        display: block;
+        background-color: #024a63 !important;
+      }
+    }
+
+    button.carousel-control-next {
+      float: right;
+      position: relative;
+      display: inline;
+      margin-bottom: 2rem;
+      .bi-arrow-right-circle {
+        top: 0.5rem;
+      }
+    }
+    button.carousel-control-prev {
+      position: relative;
+      display: inline;
+      float: left;
+      .bi-arrow-left-circle {
+        top: 0.5rem;
+      }
+    }
+    .accordion-partners {
+      div.accordion-body {
+        margin-top: -3rem;
+        width: 19rem;
+      }
+      p.text-accordion {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      h2.accordion-header {
+        button.button-accordion {
+          font-size: 2.2rem;
+          margin-top: 1rem;
+          height: 7.4rem;
+          width: 25rem;
+          line-height: 2.2rem;
+          margin-left: 0rem;
+        }
+
+        i.plus-icon-partners {
+          position: absolute;
+          top: 2.7rem;
+          right: 1rem;
+          font-size: 2rem;
+        }
+      }
     }
   }
 }
