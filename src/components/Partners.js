@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 // import Navbar from "./NavBar";
-import partnerheader from "../imgs/Partners/partnerheader.jpg";
 import Footer from "./Footer";
 
 import carousel1a from "../imgs/Partners/happy earth people-1.jpg";

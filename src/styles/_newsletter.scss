@@ -6,6 +6,7 @@
   .newsLetter-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 2rem;
   }
@@ -73,5 +74,18 @@
       display: flex;
       justify-content: flex-end;
     }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .desc-container {
+    text-align: center;
+  }
+
+  .inputs-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

@@ -12,9 +12,6 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-/* body {
-  overflow-x: hidden;
-} */
 
 .main-head {
   background: #024a63;
@@ -95,9 +92,16 @@ nav ul {
   width: 75%;
   height: 217px;
   border-radius: 5.8rem;
-  margin-left: 12%;
-  margin-right: 12%;
+  margin: auto;
   margin-top: 3rem;
+}
+
+.header-image-home {
+  min-height: 60vh;
+  background: url("../imgs/iggy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .learn-how {
@@ -110,12 +114,18 @@ nav ul {
   font-weight: 400;
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
+  z-index: 1;
+}
+
+.play-icon {
+  font-size: 80px;
 }
 
 .oceaneers-cabin-large {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   font-size: 6.5rem;
+  margin-top: 15rem;
 }
 
 .oceaneers-cabin-small {
@@ -297,6 +307,111 @@ nav ul {
   font-family: "Cabin", sans-serif;
 }
 
+@media (max-width: 540px) {
+  .learn-how {
+    padding: 0.5rem 2rem;
+    margin-top: -1.8rem;
+    font-size: 1.4rem;
+  }
+  .homepage-color {
+    width: 80%;
+  }
+  .oceaneers-cabin-large {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 18rem;
+  }
+  .oceaneers-cabin-small {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .play-icon {
+    font-size: 80px;
+  }
+  .oceaneers-cabin {
+    font-weight: 700;
+    font-size: 2.8rem;
+  }
+  .oceaneers-raleway {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .our-purpose {
+    font-weight: 700;
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  .our-purpose-text {
+    margin-top: 7rem;
+    font-size: 2rem;
+    margin-top: 1.5%;
+  }
+  .our-pillers-text {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3%;
+  }
+  .accordion-home {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .accordion-body-title {
+    font-size: 1.8rem;
+    margin-top: -2rem;
+  }
+  .accordion-body-home {
+    font-size: 1.6rem;
+    margin-top: -2.2rem;
+  }
+  .button-accordion-home {
+    font-size: 2rem;
+    border-radius: 4.3rem;
+    height: 4rem;
+  }
+  .plus-icon {
+    font-size: 2.4rem;
+    right: 1.3rem;
+    font-size: 2rem;
+  }
+  h1.card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: auto;
+  }
+  .card-text {
+    display: none;
+  }
+  .card-text-brand {
+    display: none;
+  }
+  .card-text-ocean {
+    display: none;
+  }
+  .why {
+    margin-top: 5rem;
+    font-size: 3rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-how-2 {
+    padding: 0.5rem 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 4.3rem;
+    font-family: "Cabin", sans-serif;
+  }
+}
+
 .events-cabin-large {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
@@ -324,6 +439,35 @@ nav ul {
   font-weight: 600;
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
+}
+
+@media (width: 375px) {
+  .events-cabin-large {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: -20rem;
+  }
+  .events-cabin-small {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-how-events {
+    padding: 0.5rem 2rem;
+    margin-top: -1.8rem;
+    margin-bottom: 20rem;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 4.3rem;
+    font-family: "Cabin", sans-serif;
+  }
 }
 
 .intro-why {
@@ -393,13 +537,13 @@ nav ul {
   flex-direction: column;
 }
 
-.compare .indust .sub-title {
+.compare .indust .sub-title-why {
   font-size: 4.5rem;
   font-weight: bold;
   color: #024a63;
 }
 
-.compare .indust .sub-desc {
+.compare .indust .sub-desc-why {
   font-size: 2.4rem;
   font-weight: normal;
   color: #024a63;
@@ -437,9 +581,9 @@ nav ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 45rem;
-  height: 35rem;
-  margin-right: 1rem;
+  width: 55rem;
+  height: 45rem;
+  margin-right: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,12 +602,12 @@ nav ul {
 }
 
 .compare .card-itself h5 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .compare .card-itself h6 {
-  font-size: 1.5rem;
-  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
 .compare .non-indust-card {
@@ -489,8 +633,8 @@ nav ul {
   background-size: cover;
   background-position: center;
   background: url("../imgs/camel.png");
-  width: 45rem;
-  height: 35rem;
+  width: 55rem;
+  height: 45rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -507,27 +651,43 @@ nav ul {
 }
 
 .compare .card-itself-two h5 {
-  margin-top: 22rem;
-  font-size: 2.5rem;
+  margin-top: 28.5rem;
+  font-size: 3rem;
 }
 
 .compare .card-itself-two h6 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .compare .green-bar {
+  position: relative;
   background-color: #024a63;
   color: white;
-  width: 35rem;
-  height: 3.5rem;
+  width: 38rem;
+  height: 4rem;
   margin-bottom: 1rem;
   text-align: center;
   border-radius: 1rem;
 }
 
 .compare .green-bar h5 {
+  text-align: center;
+  font-size: 1.8rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+
+.compare .green-bar .plusBoy {
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  -webkit-transform: translate(-90%, 20%);
+  transform: translate(-90%, 20%);
+  cursor: pointer;
+}
+
+.compare .green-bar .plusBoy i {
+  font-size: large;
 }
 
 .hrLine {
@@ -604,6 +764,31 @@ nav ul {
   width: 95%;
   margin: auto;
   height: 100rem;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 1091px) {
+  .intro-why .title {
+    font-size: 4rem;
+  }
+  .intro-why .desc {
+    font-size: 2rem;
+  }
+  .indust .sub-title-why {
+    font-size: 4rem !important;
+  }
+  .indust .sub-desc-why {
+    font-size: 2rem !important;
+  }
+  .explanation-content h2 {
+    font-size: 4rem !important;
+  }
+  .explanation-content h4 {
+    font-size: 2rem !important;
+  }
+  .carousel-title-why h3 {
+    font-size: 4rem !important;
+  }
 }
 
 .newsLetter {

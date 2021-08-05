@@ -25,10 +25,10 @@ export default class Why extends Component {
                 </section>
                 <section className="compare">
                     <div className="indust">
-                        <p className="sub-title">
+                        <p className="sub-title-why">
                             Industrial vs. Non-Industrial <br /> Fishing and Livestock Farming
                         </p>
-                        <p className="sub-desc">
+                        <p className="sub-desc-why">
                             Oceaneeers hopes for a world free of industrial fishing/livestock farming and for more <br />
                             non-industrial fishing/livestock farming.
                         </p>
@@ -41,9 +41,18 @@ export default class Why extends Component {
                                 </div>
                                 <div className="green-bar">
                                     <h5>Industrial Fishing</h5>
+                                    <div className="plusBoy">
+                                        <i className="bi bi-plus-circle plus-icon plusBoy"></i>
+                                    </div>
+
                                 </div>
                                 <div className="green-bar">
                                     <h5>Non Industrial Fishing</h5>
+
+                                    <div className="plusBoy">
+                                        <i className="bi bi-plus-circle plus-icon plusBoy"></i>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -54,9 +63,15 @@ export default class Why extends Component {
                                 </div>
                                 <div className="green-bar">
                                     <h5>Industrial Livestock Fishing</h5>
+                                    <div className="plusBoy">
+                                        <i className="bi bi-plus-circle plus-icon plusBoy"></i>
+                                    </div>
                                 </div>
                                 <div className="green-bar">
                                     <h5>Non Industrial Livestock Fishing</h5>
+                                    <div className="plusBoy">
+                                        <i className="bi bi-plus-circle plus-icon plusBoy"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -93,74 +108,32 @@ export default class Why extends Component {
                         <h3>Need more evidence? <br />
                             Believe in the numbers.</h3>
                     </div>
-                    {/* <div className="why-carousel-start">
-                        <button className="carousel-button-why">
-                            <i className="bi bi-arrow-right-circle"></i>
-                        </button>
-                        <div className="carousel-track-container-why">
-                            <ul className="carousel-track-why">
-                                <li className="carousel-slide-why">
-                                    <img src={Fish} alt="cow" />
-                                </li>
-                                <li className="carousel-slide-why">
-                                    <img src={Train} alt="" />
-
-                                </li>
-                                <li classNmae="carausel-slide-why">
-                                    <img src={Branchbeach} alt="" />
-                                </li>
-                                <li classNmae="carausel-slide-why">
-                                    <img src={Cow} alt="" />
-                                </li>
-                                <li classNmae="carausel-slide-why">
-                                    <img src={Turtle} alt="" />
-                                </li>
-                                <li classNmae="carausel-slide-why">
-                                    <img src={Pill} alt="" />
-                                </li>
-
-                            </ul>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <button type="button" className="carousel-button-why">
-                            <i className="bi bi-arrow-left-circle"></i>
-                        </button>
-                    </div> */}
-                    {/* <div id="carouselExampleIndicators" className="carousel slide slide-why" data-ride="carousel">
-                        <ol className="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img className="d-block w-100" src={Fish} alt="First slide" />
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src={Cow} class="d-block w-100" alt="..." />
                             </div>
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src={Train} alt="Second slide" />
+                            <div class="carousel-item">
+                                <img src={Fish} class="d-block w-100" alt="..." />
                             </div>
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src={Branchbeach} alt="Third slide" />
+                            <div class="carousel-item">
+                                <img src={Turtle} class="d-block w-100" alt="..." />
                             </div>
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src={Cow} alt="Third slide" />
-                            </div>
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src={Turtle} alt="Third slide" />
-                            </div>
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src={Pill} alt="Third slide" />
-                            </div>
-
-                            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
-                            </a>
                         </div>
-                    </div> */}
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
 
                 <section className="infographic">
