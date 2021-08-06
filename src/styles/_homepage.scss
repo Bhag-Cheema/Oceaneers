@@ -182,7 +182,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  margin-top: 10%;
+  margin-top: 21%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -219,8 +219,38 @@
   font-family: "Cabin", sans-serif;
 }
 
+//ipad 
+@media (min-width: 541px) and (max-width: 768px) {
+  .oceaneers-cabin-large {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 15rem;
+  }
+  .oceaneers-cabin-small {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .learn-how {
+    padding: 0.5rem 2rem;
+    margin-top: -1.8rem;
+    font-size: 1.4rem;
+  }
+  .oceaneers-cabin {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-top: 5%;
+  }
+  .oceaneers-raleway {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+}
+
 // iphone X
-@media (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 540px) {
   .learn-how {
     padding: 0.5rem 2rem;
     margin-top: -1.8rem;
@@ -234,7 +264,7 @@
     font-weight: 700;
     font-size: 4rem;
     margin-top: 18rem;
-    // margin-top: -30rem;
+
   }
   .oceaneers-cabin-small {
     font-weight: 400;
@@ -242,7 +272,8 @@
   }
 
   .play-icon {
-    font-size: 80px;
+    font-size: 20rem;
+    position: absolute;
   }
   .oceaneers-cabin {
     font-weight: 700;
@@ -283,7 +314,6 @@
   .accordion-body-home {
     font-size: 1.6rem;
     margin-top: -2.2rem;
-    // border-radius: 0rem, 0rem, 8rem, 8rem;
   }
   
   .button-accordion-home {
@@ -291,13 +321,11 @@
     border-radius: 4.3rem;
     height: 4rem;
   }
-  
   .plus-icon {
     font-size: 2.4rem;
     right: 1.3rem;
     font-size: 2rem;
   }
-  // this stuff is not working 
   h1.card-title {
     font-family: "Cabin", sans-serif;
     font-size: 2rem;
