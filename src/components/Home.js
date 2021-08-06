@@ -12,20 +12,20 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <div className="card text-white border-0">
-          <img id="iggy" src={beach} alt="beach" />
-          <div className="card-img-overlay d-flex justify-content-center flex-column align-item-center text-center">
+         <Navbar />  
+        <section className="header-image-home">
+          <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
             <h1 className="oceaneers-cabin-large">Oceaneers</h1>
             <p className="oceaneers-cabin-small">
               {" "}
               To the Oceans, Our Food Choices Matter.
             </p>
+            <i class="bi bi-play-circle fa-5x"></i>
           </div>
+          </section>
           <div className="d-flex justify-content-center">
             <button className="learn-how">Want to Join? Learn how.</button>
           </div>
-        </div>
 
         <div className="homepage-color">
           <div className="card-body justify-content-center text-center">
@@ -153,8 +153,8 @@ export default class Home extends Component {
         <div className="container">
           <div className="our-purpose">
             <h1 className="why">Why become an Oceaneer?</h1>
-            <div className="row row-cols-4">
-              <div className="col">
+            <div className="row ">
+              <div className="col-6 col-md-3">
                 <div className="card text-white border-0">
                   <img id="image1.jpg" src={image1} alt="image1" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
@@ -163,7 +163,7 @@ export default class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-6 col-md-3">
                 <div className="card text-white border-0">
                   <img id="image2.png" src={image2} alt="image2" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
@@ -172,7 +172,7 @@ export default class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-6 col-md-3">
                 <div className="card text-white border-0">
                   <img id="image3.png" src={image3} alt="image3" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
@@ -181,7 +181,7 @@ export default class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-6 col-md-3">
                 <div className="card text-white border-0">
                   <img id="image4.png" src={image4} alt="image4" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
@@ -197,10 +197,9 @@ export default class Home extends Component {
         <div className="d-flex justify-content-center">
           <button className="learn-how-2">Want to Join? Learn how.</button>
         </div>
-        <NewsLetter />
-        <Footer />
+        {/* <NewsLetter /> */}
+        {/* <Footer /> */}
       </div>
-
 
     );
   }

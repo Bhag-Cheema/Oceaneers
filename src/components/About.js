@@ -21,7 +21,7 @@ export default class Partners extends Component {
   render() {
     return (
       <div>
-       {/* <Navbar /> */}
+        <Navbar /> 
         {/* Header image w text */}
         <div className="card text-white border-0">
           <img

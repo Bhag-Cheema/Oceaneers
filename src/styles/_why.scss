@@ -38,13 +38,13 @@
     text-align: center;
     flex-direction: column;
 
-    .sub-title {
+    .sub-title-why {
       font-size: 4.5rem;
       font-weight: bold;
       color: #024a63;
     }
 
-    .sub-desc {
+    .sub-desc-why {
       font-size: 2.4rem;
       font-weight: normal;
       color: #024a63;
@@ -53,6 +53,7 @@
 
   .indust-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
@@ -70,9 +71,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 45rem;
-    height: 35rem;
-    margin-right: 1rem;
+    width: 55rem;
+    height: 45rem;
+    margin-right: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -81,12 +82,12 @@
     margin-bottom: 1rem;
 
     h5 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
 
     h6 {
-      font-size: 1.5rem;
-      margin-bottom: 2.5rem;
+      font-size: 2rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -104,8 +105,8 @@
     background-size: cover;
     background-position: center;
     background: url("../imgs/camel.png");
-    width: 45rem; //
-    height: 35rem;
+    width: 55rem; //
+    height: 45rem;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
@@ -114,27 +115,42 @@
     margin-bottom: 1rem;
 
     h5 {
-      margin-top: 22rem;
-      font-size: 2.5rem;
+      margin-top: 28.5rem;
+      font-size: 3rem;
     }
 
     h6 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
   .green-bar {
+    position: relative;
     background-color: #024a63;
     color: white;
-    width: 35rem;
-    height: 3.5rem;
+    width: 38rem;
+    height: 4rem;
     margin-bottom: 1rem;
     text-align: center;
     border-radius: 1rem;
 
     h5 {
+      text-align: center;
+      font-size: 1.8rem;
       padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    .plusBoy {
+      position: absolute;
+      top: 0rem;
+      right: 0;
+      transform: translate(-90%, 20%);
+      cursor: pointer;
+
+      i {
+        font-size: large;
+      }
     }
   }
 
@@ -219,5 +235,50 @@
     width: 95%;
     margin: auto;
     height: 100rem;
+  }
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 1091px) {
+  .intro-why {
+    .title {
+      font-size: 4rem;
+    }
+    .desc {
+      font-size: 2rem;
+    }
+  }
+
+  .indust {
+    .sub-title-why {
+      font-size: 4rem !important;
+    }
+
+    .sub-desc-why {
+      font-size: 2rem !important;
+    }
+  }
+
+  .card-itself,
+  .card-itself-two {
+    width: 45rem !important;
+    height: 35rem !important;
+  }
+
+  .explanation-content {
+    h2 {
+      font-size: 4rem !important;
+    }
+
+    h4 {
+      font-size: 2rem !important;
+    }
+  }
+
+  .carousel-title-why {
+    h3 {
+      font-size: 4rem !important;
+    }
   }
 }

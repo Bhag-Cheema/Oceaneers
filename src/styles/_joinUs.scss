@@ -1,0 +1,133 @@
+.repeating-h1-join {
+  font-family: "Cabin", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #024a63;
+}
+.card-headers {
+  text-align: center;
+  font-family: "cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #024a63;
+  margin-bottom: 2.4rem;
+}
+
+.form-field-card {
+  background: #bededf;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5rem;
+  border-radius: 4.3rem;
+  padding: 3.3rem 6.5rem 3.3rem 6.5rem;
+}
+.form-title-join {
+  font-family: "cabin", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #024a63;
+}
+.form-subtitle-join {
+  font-family: "cabin", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #024a63;
+  margin-bottom: 2.4rem;
+}
+
+.join-us-form-labels {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #024a63;
+}
+input[type="text"] {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+input[type="email"] {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+input[type="number"] {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+textarea[type="text"] {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+
+.two-column-left {
+  display: inline;
+  float: left;
+  .left-col {
+    width: 49.1rem;
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+}
+.two-column-right {
+  display: inline;
+  float: right;
+  .right-col {
+    width: 49.1rem;
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.full-width {
+  float: left;
+  height: 4.4rem;
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 2.4rem;
+}
+
+.join-us-form-checkboxes {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #024a63;
+}
+.checkboxes {
+  margin-top: 5.6rem;
+}
+input.radio-button {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+  border: none;
+}
+input.checkbox-join {
+  margin-top: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+  border: none;
+}
+button.sign-up-btn {
+  color: white;
+  margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
+  background-color: #ff7c5c;
+  height: 4.4rem;
+  width: 25.6rem;
+  border-radius: 20px;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  cursor: pointer;
+}
