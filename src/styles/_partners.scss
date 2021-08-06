@@ -163,17 +163,22 @@
 
 @media (min-width: 500px) and (max-width: 767px) {
   section.header-image-partner {
+    min-height: 50vh;
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     p.header {
       font-size: 5rem;
-      margin-top: 8rem;
-      margin-bottom: 2rem;
+      margin-top: 6rem;
+      margin-bottom: 0rem;
     }
     p.header-text {
       font-size: 2.8rem;
       margin-left: 3rem;
       margin-right: 3rem;
       margin-top: 0rem;
-      margin-bottom: 1rem;
+      margin-bottom: 5rem;
     }
   }
   h3.quote {
@@ -196,6 +201,20 @@
     margin-right: 6rem;
     line-height: 3rem;
   }
+  h5.partner-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.partner-card-text {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
   button.carousel-control-next {
     float: right;
     position: relative;
@@ -244,7 +263,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   // Header Image
   section.header-image-partner {
-    min-height: 40vh;
+    min-height: 50vh;
     background: url("../imgs/Partners/partnerheader.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -260,7 +279,7 @@
       margin-left: 3rem;
       margin-right: 3rem;
       margin-top: 0rem;
-      margin-bottom: 1rem;
+      margin-bottom: 4rem;
     }
   }
   // Learn how button
@@ -400,6 +419,10 @@
 // large tablet/small desktop
 @media (min-width: 1024px) and (max-width: 1279px) {
   section.header-image-partner {
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     min-height: 40vw;
     p.header {
       font-size: 6rem;

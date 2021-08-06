@@ -143,39 +143,42 @@
     h1.footer-title {
       font-size: 1.8rem;
       position: absolute;
-      top: 9rem;
+      top: 8rem;
       left: 2rem;
     }
     p.footer-subtitle {
       font-size: 1.4rem;
       width: 10rem;
       position: absolute;
-      top: 12rem;
+      top: 10rem;
       left: 2rem;
     }
     .social-icons {
       .instagram {
         position: absolute;
-        top: 13rem;
-        left: 17rem;
+        top: 14rem;
+        right: 13.5rem;
         padding: 1.1rem;
       }
       .facebook {
         position: absolute;
-        left: 23rem;
+        top: 14rem;
+        right: 2rem;
         padding: 1.1rem 1.8rem;
       }
     }
   }
   div.col-three {
     font-size: 1.8rem;
-    left: 17rem;
+    right: 2rem;
+    top: 8rem;
+    display: flex;
   }
   div.col-four {
     button.footer-login {
       position: absolute;
-      top: 9rem;
-      left: 36rem;
+      top: 2rem;
+      left: 2rem;
       padding: 0.5rem 2rem;
       font-size: 1.6rem;
       width: 12rem;
@@ -184,8 +187,71 @@
     button.footer-join {
       position: absolute;
       margin-top: 0rem;
-      top: 15rem;
-      right: 2rem;
+      top: 2rem;
+      right: 6.5rem;
+      font-size: 1.6rem;
+      padding: 0.5rem 2rem;
+      width: 12rem;
+      height: 3.9rem;
+    }
+  }
+}
+@media (min-width: 500px) {
+  div.main-footer {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 0rem;
+  }
+  .col-one {
+    h1.footer-title {
+      font-size: 2rem;
+      position: absolute;
+      top: 8rem;
+      left: 2rem;
+    }
+    p.footer-subtitle {
+      font-size: 1.6rem;
+      width: 15rem;
+      position: absolute;
+      top: 11rem;
+      left: 2rem;
+    }
+    .social-icons {
+      .instagram {
+        position: absolute;
+        top: 13rem;
+        right: 13.5rem;
+        padding: 1.1rem;
+      }
+      .facebook {
+        position: absolute;
+        top: 13rem;
+        right: 2rem;
+        padding: 1.1rem 1.8rem;
+      }
+    }
+  }
+  div.col-three {
+    font-size: 1.8rem;
+    left: 32rem;
+    top: 8rem;
+    display: flex;
+  }
+  div.col-four {
+    button.footer-login {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      padding: 0.5rem 2rem;
+      font-size: 1.6rem;
+      width: 12rem;
+      height: 3.9rem;
+    }
+    button.footer-join {
+      position: absolute;
+      margin-top: 0rem;
+      top: 2rem;
+      right: 6.5rem;
       font-size: 1.6rem;
       padding: 0.5rem 2rem;
       width: 12rem;
@@ -236,6 +302,7 @@
       display: block;
       justify-content: center;
       font-size: 1.8rem;
+      margin-left: 5rem;
     }
   }
   div.col-three {
