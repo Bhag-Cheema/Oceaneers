@@ -12,7 +12,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar />  */}
+        <Navbar /> 
         <section className="header-image-home">
           <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
             <h1 className="oceaneers-cabin-large">Oceaneers</h1>
@@ -20,7 +20,7 @@ export default class Home extends Component {
               {" "}
               To the Oceans, Our Food Choices Matter.
             </p>
-            <i class="bi bi-play-circle fa-5x"></i>
+            <i className="bi bi-play-circle"></i>
           </div>
           </section>
           <div className="d-flex justify-content-center">
@@ -198,7 +198,7 @@ export default class Home extends Component {
           <button className="learn-how-2">Want to Join? Learn how.</button>
         </div>
         {/* <NewsLetter /> */}
-        {/* <Footer /> */}
+        <Footer /> 
       </div>
 
     );
