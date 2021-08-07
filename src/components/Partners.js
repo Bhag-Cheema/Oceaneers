@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import Navbar from "./NavBar";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 import carousel1a from "../imgs/Partners/happy earth people-1.jpg";
 import carousel1b from "../imgs/Partners/herbiraw-2.jpg";
@@ -50,9 +51,11 @@ export default class Partners extends Component {
         </section>
         {/* Join us button */}
         <div className="d-flex justify-content-center">
-          <button type="button" className="learn-how-partners cursor">
-            Want to Join? Learn how.
-          </button>
+          <Link to="/joinus">
+            <button type="button" className="learn-how-partners cursor">
+              Want to Join? Learn how.
+            </button>
+          </Link>
         </div>
         {/* Quote */}
         <div className="text-center">

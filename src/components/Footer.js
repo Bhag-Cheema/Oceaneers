@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Facebook from "../imgs/Footer/Facebook.png";
 import Instagram from "../imgs/Footer/Instagram.png";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Footer extends Component {
   render() {
@@ -16,25 +16,37 @@ export default class Footer extends Component {
                   To the Oceans, Our Food Choices Matter.
                 </p>
                 <div className="social-icons">
-                  <img
-                    className="instagram"
-                    id="header-image"
-                    src={Instagram}
-                    alt="instagram logo"
-                  />
-                  <img
-                    className="facebook"
-                    id="header-image"
-                    src={Facebook}
-                    alt="facebook logo"
-                  />
+                  <Link
+                    to={{ pathname: "https://www.instagram.com/oceaneers.co/" }}
+                    target="_blank"
+                  >
+                    <img
+                      className="instagram"
+                      id="header-image"
+                      src={Instagram}
+                      alt="instagram logo"
+                    />
+                  </Link>
+                  <Link
+                    to={{ pathname: "https://www.facebook.com/oceaneers.co/" }}
+                    target="_blank"
+                  >
+                    <img
+                      className="facebook"
+                      id="header-image"
+                      src={Facebook}
+                      alt="facebook logo"
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="col-sm  col-two">
                 {/* NEEDS LINKING */}
-                <p to="" className="about-us">
-                  About Us
-                </p>
+                <Link to="/aboutus" style={{ textDecoration: "none" }}>
+                  <p to="" className="about-us">
+                    About Us
+                  </p>
+                </Link>
               </div>
               <div className="col-sm col-three">
                 {/* NEEDS LINKING */}
@@ -46,7 +58,9 @@ export default class Footer extends Component {
                   <button className="footer-login">Log In</button>
                 </div>
                 <div>
-                  <button className="footer-join">Join Us</button>
+                  <Link to="/joinus">
+                    <button className="footer-join">Join Us</button>
+                  </Link>
                 </div>
               </div>
             </div>
