@@ -34,7 +34,21 @@
   font-family: "Cabin", sans-serif;
 }
 
-@media (max-width: 540px) {
+@media (min-width: 540px) and (max-width: 768px) {
+  .events-cabin-large {
+    font-size: 3rem;
+  }
+  .events-cabin-small {
+    font-size: 2rem;
+  }
+  .learn-how-events {
+    padding: 0.5rem 2rem;
+    margin-top: -1.8rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
 
 .events-cabin-large {
   font-weight: 700;
@@ -45,7 +59,6 @@
 .events-cabin-small {
   font-weight: 400;
   font-size: 1.8rem;
-  // margin-bottom: 2.5rem;
   margin-left: 5%;
   margin-right: 5%;
 }
