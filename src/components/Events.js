@@ -3,6 +3,7 @@ import Navbar from "./NavBar";
 import events from "../imgs/events.png";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 export default class Events extends Component {
   render() {
@@ -22,7 +23,9 @@ export default class Events extends Component {
           </div>
           </section>
           <div className="d-flex justify-content-center mb-5">
+            <Link to="/joinus">
             <button className="learn-how-events">Want to Join? Learn how.</button>
+            </Link>
           </div>
         {/* <NewsLetter /> */}
          <Footer/>
