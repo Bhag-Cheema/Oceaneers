@@ -132,6 +132,7 @@ a {
 
 .play-icon {
   font-size: 80px;
+  width: 20rem;
 }
 
 .oceaneers-cabin-large {
@@ -349,7 +350,7 @@ a {
   }
 }
 
-@media (min-width: 540px) and (max-width: 1024px) {
+@media (min-width: 541px) and (max-width: 1024px) {
   .homepage-color {
     width: 75%;
     height: 200px;
@@ -357,7 +358,7 @@ a {
   .oceaneers-cabin-large {
     font-weight: 700;
     font-size: 4rem;
-    margin-top: 18rem;
+    margin-top: 35%;
   }
   .oceaneers-cabin-small {
     font-weight: 400;
@@ -397,6 +398,7 @@ a {
   .accordion-body-home {
     font-size: 2rem;
     font-weight: 300;
+    margin-top: -2.4rem;
   }
   .button-accordion-home {
     font-size: 2rem;
@@ -428,14 +430,14 @@ a {
   .card-text-brand {
     font-size: 1.4rem;
     font-weight: 500;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
   }
   .card-text-ocean {
     font-size: 1.4rem;
     font-weight: 500;
-    margin-top: 5%;
+    margin-top: 4.5%;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -453,7 +455,113 @@ a {
   }
 }
 
-@media (min-width: 320px) and (max-width: 539px) {
+@media (width: 540px) {
+  .homepage-color {
+    width: 75%;
+    height: 245px;
+  }
+  .oceaneers-cabin-large {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 35%;
+  }
+  .oceaneers-cabin-small {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .learn-how {
+    padding: 0.5rem 2rem;
+    margin-top: -1.8rem;
+    font-size: 1.4rem;
+  }
+  .oceaneers-cabin {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 3%;
+  }
+  .oceaneers-raleway {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .our-purpose {
+    margin-top: 5rem;
+    font-size: 3.5rem;
+  }
+  .our-purpose-text {
+    font-weight: 300;
+    font-size: 2.2rem;
+  }
+  .our-pillers-text {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .accordion-body-title {
+    font-size: 2rem;
+  }
+  .accordion-body-home {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: -2.3rem;
+  }
+  .button-accordion-home {
+    font-size: 2rem;
+    height: 5rem;
+  }
+  .accordion-home {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .plus-icon {
+    font-size: 2rem;
+  }
+  .why {
+    font-weight: 700;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 5rem;
+  }
+  .card-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .card-text-brand {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .card-text-ocean {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .learn-how-2 {
+    padding: 0.5rem 2rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 4.3rem;
+    font-family: "Cabin", sans-serif;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 539px) {
   .learn-how {
     padding: 0.5rem 2rem;
     margin-top: -1.8rem;
@@ -466,7 +574,7 @@ a {
   .oceaneers-cabin-large {
     font-weight: 700;
     font-size: 4rem;
-    margin-top: 18rem;
+    margin-top: 40%;
   }
   .oceaneers-cabin-small {
     font-weight: 400;
@@ -571,7 +679,7 @@ a {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   font-size: 6.5rem;
-  margin-top: 10rem;
+  margin-top: 10%;
 }
 
 .events-cabin-small {
@@ -596,9 +704,10 @@ a {
   font-family: "Cabin", sans-serif;
 }
 
-@media (min-width: 540px) and (max-width: 768px) {
+@media (min-width: 540px) and (max-width: 1024px) {
   .events-cabin-large {
     font-size: 3rem;
+    margin-top: 25%;
   }
   .events-cabin-small {
     font-size: 2rem;
@@ -610,7 +719,7 @@ a {
   }
 }
 
-@media (min-width: 320px) and (max-width: 539px) {
+@media (min-width: 280px) and (max-width: 539px) {
   .events-cabin-large {
     font-weight: 700;
     font-size: 4rem;
@@ -1217,17 +1326,27 @@ a {
 }
 
 @media (min-width: 500px) and (max-width: 767px) {
+  section.header-image-partner {
+    min-height: 50vh;
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   section.header-image-partner p.header {
     font-size: 5rem;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 0rem;
   }
   section.header-image-partner p.header-text {
     font-size: 2.8rem;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 0rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+  }
+  button.learn-how-partners {
+    padding: 1rem 3.5rem;
   }
   h3.quote {
     font-size: 2.6rem;
@@ -1248,6 +1367,19 @@ a {
     margin-left: 6rem;
     margin-right: 6rem;
     line-height: 3rem;
+  }
+  h5.partner-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.partner-card-text {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
   button.carousel-control-next {
     float: right;
@@ -1295,7 +1427,7 @@ a {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   section.header-image-partner {
-    min-height: 40vh;
+    min-height: 50vh;
     background: url("../imgs/Partners/partnerheader.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1311,12 +1443,13 @@ a {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 0rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
   button.learn-how-partners {
     font-size: 2rem;
     height: 5rem;
     margin-top: -2.5rem;
+    padding: 1rem 3.5rem;
   }
   h3.quote {
     font-size: 2.6rem;
@@ -1433,6 +1566,10 @@ a {
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   section.header-image-partner {
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     min-height: 40vw;
   }
   section.header-image-partner p.header {
@@ -1442,6 +1579,9 @@ a {
   section.header-image-partner p.header-text {
     font-size: 3rem;
     margin: 2rem 9.5rem 11.3rem 9.5rem;
+  }
+  button.learn-how-partners {
+    padding: 1rem 3.5rem;
   }
   h2.repeating-h2 {
     margin-left: 10rem;
@@ -1565,7 +1705,7 @@ a {
     margin: 1rem 9.5rem 11.3rem 9.5rem;
   }
   button.learn-how-partners {
-    padding: 0.5rem 3.5rem;
+    padding: 1rem 3.5rem;
     margin-top: -2rem;
     background: #ff7c5c;
     border: 0rem solid white;
@@ -1848,35 +1988,40 @@ a {
   .col-one h1.footer-title {
     font-size: 1.8rem;
     position: absolute;
-    top: 9rem;
+    top: 8rem;
     left: 2rem;
   }
   .col-one p.footer-subtitle {
     font-size: 1.4rem;
     width: 10rem;
     position: absolute;
-    top: 12rem;
+    top: 10rem;
     left: 2rem;
   }
   .col-one .social-icons .instagram {
     position: absolute;
-    top: 13rem;
-    left: 17rem;
+    top: 14rem;
+    right: 13.5rem;
     padding: 1.1rem;
   }
   .col-one .social-icons .facebook {
     position: absolute;
-    left: 23rem;
+    top: 14rem;
+    right: 2rem;
     padding: 1.1rem 1.8rem;
   }
   div.col-three {
     font-size: 1.8rem;
-    left: 17rem;
+    right: 2rem;
+    top: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   div.col-four button.footer-login {
     position: absolute;
-    top: 9rem;
-    left: 36rem;
+    top: 2rem;
+    left: 2rem;
     padding: 0.5rem 2rem;
     font-size: 1.6rem;
     width: 12rem;
@@ -1885,8 +2030,68 @@ a {
   div.col-four button.footer-join {
     position: absolute;
     margin-top: 0rem;
-    top: 15rem;
+    top: 2rem;
+    right: 6.5rem;
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    width: 12rem;
+    height: 3.9rem;
+  }
+}
+
+@media (min-width: 500px) {
+  div.main-footer {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 0rem;
+  }
+  .col-one h1.footer-title {
+    font-size: 2rem;
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+  }
+  .col-one p.footer-subtitle {
+    font-size: 1.6rem;
+    width: 15rem;
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
+  }
+  .col-one .social-icons .instagram {
+    position: absolute;
+    top: 13rem;
+    right: 13.5rem;
+    padding: 1.1rem;
+  }
+  .col-one .social-icons .facebook {
+    position: absolute;
+    top: 13rem;
     right: 2rem;
+    padding: 1.1rem 1.8rem;
+  }
+  div.col-three {
+    font-size: 1.8rem;
+    left: 32rem;
+    top: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.col-four button.footer-login {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    width: 12rem;
+    height: 3.9rem;
+  }
+  div.col-four button.footer-join {
+    position: absolute;
+    margin-top: 0rem;
+    top: 2rem;
+    right: 6.5rem;
     font-size: 1.6rem;
     padding: 0.5rem 2rem;
     width: 12rem;
@@ -1933,6 +2138,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1.8rem;
+    margin-left: 5rem;
   }
   div.col-three {
     position: inherit;
@@ -2798,151 +3004,442 @@ a {
   }
 }
 
-.repeating-h1-join {
-  font-family: "Cabin", sans-serif;
-  font-size: 4.5rem;
-  font-weight: 700;
-  color: #024a63;
+@media (min-width: 500px) {
+  .repeating-h1-join {
+    font-family: "Cabin", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #024a63;
+  }
+  .card-headers {
+    text-align: center;
+    font-family: "cabin", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #024a63;
+    margin-bottom: 2.4rem;
+  }
+  .form-field-card {
+    background: #bededf;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5rem;
+    border-radius: 4.3rem;
+    padding: 3.3rem 6.5rem 3.3rem 6.5rem;
+  }
+  .form-title-join {
+    font-family: "cabin", sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #024a63;
+  }
+  .form-subtitle-join {
+    font-family: "cabin", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #024a63;
+    margin-bottom: 2.4rem;
+  }
+  .join-us-form-labels {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #024a63;
+  }
+  input[type="text"] {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  input[type="email"] {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  input[type="number"] {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  textarea[type="text"] {
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  .input-rows .left-col {
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+  .input-rows .right-col {
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+  .full-width {
+    float: left;
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+  .join-us-form-checkboxes {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #024a63;
+  }
+  .checkboxes {
+    margin-top: 5.6rem;
+  }
+  input.radio-button {
+    width: 2.4rem;
+    min-width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+    border: none;
+  }
+  input.checkbox-join {
+    margin-top: 1rem;
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border: none;
+  }
+  button.sign-up-btn {
+    color: white;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    background-color: #ff7c5c;
+    height: 4.4rem;
+    width: 25.6rem;
+    border-radius: 20px;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    cursor: pointer;
+  }
+  div.joinus-image-left-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 50%;
+    max-width: 56.98rem;
+    margin-left: 10%;
+    margin-bottom: 5.37rem;
+  }
+  div.joinus-image-left-col p.joinus-card-text {
+    position: absolute;
+    bottom: 1rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  div.joinus-image-left-col .check-email-card3 {
+    position: absolute;
+    bottom: 4.7rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+  }
+  div.joinus-image-left-col .joinus-card-btn {
+    position: absolute;
+    bottom: 4.7rem;
+    background-color: #ff7c5c;
+    color: white;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 4.3rem;
+  }
+  .joinus-image-right-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 50%;
+    max-width: 56.98rem;
+    margin-right: 10%;
+    margin-bottom: 5.37rem;
+  }
+  .joinus-image-right-col .joinus-card-text {
+    position: absolute;
+    bottom: 14.6rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .joinus-image-right-col .joinus-card-btn {
+    position: absolute;
+    background-color: #ff7c5c;
+    bottom: 4.7rem;
+    color: white;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 4.3rem;
+  }
 }
 
-.card-headers {
-  text-align: center;
-  font-family: "cabin", sans-serif;
-  font-size: 3rem;
-  font-weight: 500;
-  color: #024a63;
-  margin-bottom: 2.4rem;
-}
-
-.form-field-card {
-  background: #bededf;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5rem;
-  border-radius: 4.3rem;
-  padding: 3.3rem 6.5rem 3.3rem 6.5rem;
-}
-
-.form-title-join {
-  font-family: "cabin", sans-serif;
-  font-size: 4rem;
-  font-weight: 600;
-  color: #024a63;
-}
-
-.form-subtitle-join {
-  font-family: "cabin", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 400;
-  color: #024a63;
-  margin-bottom: 2.4rem;
-}
-
-.join-us-form-labels {
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  color: #024a63;
-}
-
-input[type="text"] {
-  padding: 2rem;
-  font-size: 2rem;
-  font-family: "raleway", sans-serif;
-}
-
-input[type="email"] {
-  padding: 2rem;
-  font-size: 2rem;
-  font-family: "raleway", sans-serif;
-}
-
-input[type="number"] {
-  padding: 2rem;
-  font-size: 2rem;
-  font-family: "raleway", sans-serif;
-}
-
-textarea[type="text"] {
-  padding: 1rem;
-  font-size: 2rem;
-  font-family: "raleway", sans-serif;
-}
-
-.two-column-left {
-  display: inline;
-  float: left;
-}
-
-.two-column-left .left-col {
-  width: 49.1rem;
-  height: 4.4rem;
-  border-radius: 2rem;
-  border: none;
-  margin-bottom: 2.4rem;
-}
-
-.two-column-right {
-  display: inline;
-  float: right;
-}
-
-.two-column-right .right-col {
-  width: 49.1rem;
-  height: 4.4rem;
-  border-radius: 2rem;
-  border: none;
-  margin-bottom: 2.4rem;
-}
-
-.full-width {
-  float: left;
-  height: 4.4rem;
-  border-radius: 2rem;
-  border: none;
-  margin-bottom: 2.4rem;
-}
-
-.join-us-form-checkboxes {
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  color: #024a63;
-}
-
-.checkboxes {
-  margin-top: 5.6rem;
-}
-
-input.radio-button {
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-right: 1rem;
-  margin-top: 0.5rem;
-  margin-left: 0rem;
-  border: none;
-}
-
-input.checkbox-join {
-  margin-top: 1rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-right: 1rem;
-  border: none;
-}
-
-button.sign-up-btn {
-  color: white;
-  margin-top: 4.5rem;
-  margin-bottom: 3.5rem;
-  background-color: #ff7c5c;
-  height: 4.4rem;
-  width: 25.6rem;
-  border-radius: 20px;
-  font-family: "Cabin", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 2.4rem;
-  cursor: pointer;
+@media (min-width: 1280px) {
+  .join-us-body {
+    font-family: "cabin", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #024a63;
+    margin-bottom: 3rem;
+  }
+  .repeating-h1-join {
+    font-family: "Cabin", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #024a63;
+    margin-bottom: 3rem;
+  }
+  .card-headers {
+    text-align: center;
+    font-family: "cabin", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #024a63;
+    margin-bottom: 3.3rem;
+  }
+  div.joinus-image-left-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 50%;
+    max-width: 56.98rem;
+    margin-left: 10%;
+    margin-bottom: 5.37rem;
+  }
+  div.joinus-image-left-col p.joinus-card-text {
+    position: absolute;
+    bottom: 14.6rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  div.joinus-image-left-col .check-email-card3 {
+    position: absolute;
+    bottom: 4.7rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+  }
+  div.joinus-image-left-col .joinus-card-btn {
+    position: absolute;
+    bottom: 4.7rem;
+    background-color: #ff7c5c;
+    color: white;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 4.3rem;
+  }
+  .joinus-image-right-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 50%;
+    max-width: 56.98rem;
+    margin-right: 10%;
+    margin-bottom: 5.37rem;
+  }
+  .joinus-image-right-col .joinus-card-text {
+    position: absolute;
+    bottom: 14.6rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .joinus-image-right-col .joinus-card-btn {
+    position: absolute;
+    background-color: #ff7c5c;
+    bottom: 4.7rem;
+    color: white;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 4.3rem;
+  }
+  .form-field-card {
+    background: #bededf;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5rem;
+    border-radius: 4.3rem;
+    padding: 3.3rem 6.5rem 3.3rem 6.5rem;
+  }
+  .form-title-join {
+    font-family: "cabin", sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #024a63;
+  }
+  .form-subtitle-join {
+    font-family: "cabin", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #024a63;
+    margin-bottom: 2.4rem;
+  }
+  .join-us-form-labels {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #024a63;
+  }
+  input[type="text"] {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  input[type="email"] {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  input[type="number"] {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  textarea[type="text"] {
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "raleway", sans-serif;
+  }
+  .input-rows .left-col {
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+  .input-rows .right-col {
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+  .full-width {
+    float: left;
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+  .join-us-form-checkboxes {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #024a63;
+  }
+  .checkboxes {
+    margin-top: 5.6rem;
+  }
+  input.radio-button {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+    border: none;
+  }
+  input.checkbox-join {
+    margin-top: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+    border: none;
+  }
+  button.sign-up-btn {
+    color: white;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    background-color: #ff7c5c;
+    height: 4.4rem;
+    width: 25.6rem;
+    border-radius: 20px;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=home.css.map */
