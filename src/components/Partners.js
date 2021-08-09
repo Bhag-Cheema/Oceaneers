@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
-// import Navbar from "./NavBar";
-=======
 import Navbar from "./NavBar";
-import partnerheader from "../imgs/Partners/partnerheader.jpg";
->>>>>>> valeria-3
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 

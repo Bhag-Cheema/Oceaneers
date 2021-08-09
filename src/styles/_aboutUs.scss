@@ -264,6 +264,25 @@
 
 //iPad Screen
 @media screen and (min-width: 500px) and (max-width: 768px) {
+  section.header-image-about {
+    min-height: 50vh;
+    background: url("../imgs/aboutus/header1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    p.header-about {
+      font-size: 5rem !important;
+      margin-top: 6rem;
+      margin-bottom: 0rem;
+    }
+    p.header-text-about {
+      font-size: 2.8rem !important;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-top: 0rem;
+      margin-bottom: 5rem;
+    }
+  }
   .learn-how-about {
     padding: 0.5rem 3.5rem;
     margin-top: -2rem;
@@ -274,14 +293,6 @@
     font-weight: 600;
     border-radius: 4.3rem;
     font-family: "Cabin", sans-serif;
-  }
-  .header-about {
-    font-family: "Cabin", sans-serif;
-    font-size: 4rem !important;
-  }
-  .header-text-about {
-    margin-top: -2.5rem;
-    font-size: 1.3rem !important;
   }
   .repeating-h1-about {
     font-size: 3.2rem !important;
@@ -440,12 +451,25 @@
 }
 //Large Screens: Ipad Pro and Desktop
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-  .header-about {
-    font-family: "Cabin", sans-serif;
-    font-size: 5rem !important;
-  }
-  .header-text-about {
-    font-size: 2rem !important;
+  section.header-image-about {
+    min-height: 50vh;
+    background: url("../imgs/aboutus/header1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    p.header-about {
+      font-size: 5rem !important;
+      margin-top: 6rem;
+      margin-bottom: 0rem;
+    }
+
+    p.header-text-about {
+      font-size: 2.8rem !important;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-top: 0rem;
+      margin-bottom: 4rem;
+    }
   }
   .repeating-h2-about {
     font-size: 1.5rem !important;
@@ -547,25 +571,29 @@
   }
 }
 //iPhone and mobile devices
-@media screen and (min-width: 340px) and (max-width: 499px) {
-  .learn-how-about {
-    padding: 0.5rem 3.5rem;
-    margin-top: -1rem !important;
-    background: #ff7c5c;
-    border: 0rem solid white;
-    color: white;
-    font-size: 1rem !important;
-    font-weight: 600;
-    border-radius: 4.3rem;
-    font-family: "Cabin", sans-serif;
-  }
-  .header-about {
-    font-family: "Cabin", sans-serif;
-    font-size: 3rem !important;
-  }
-  .header-text-about {
-    margin-top: -2.5rem;
-    font-size: 0.85rem !important;
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  section.header-image-about {
+    min-height: 60vh;
+    background: url("../imgs/aboutus/header1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    p.header-about {
+      font-size: 4rem !important;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      line-height: 4.5rem;
+    }
+    p.header-text-about {
+      font-size: 2rem !important;
+      font-weight: 400;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+    }
   }
   .repeating-h1-about {
     font-size: 3.2rem !important;

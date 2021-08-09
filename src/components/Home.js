@@ -12,11 +12,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-<<<<<<< HEAD
         <Navbar /> 
-=======
-         <Navbar />  
->>>>>>> valeria-3
         <section className="header-image-home">
           <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
             <h1 className="oceaneers-cabin-large">Oceaneers</h1>

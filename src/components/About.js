@@ -3,8 +3,6 @@ import Navbar from "./NavBar";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
 
-import header1 from "../imgs/aboutus/header1.png";
-
 import ambassador1circle from "../imgs/aboutus/ambassador1circle.png"
 import ambassador2 from "../imgs/aboutus/ambassador2.png"
 import ambassador3 from "../imgs/aboutus/ambassador3.png"
@@ -23,24 +21,19 @@ export default class Partners extends Component {
       <div>
         <Navbar /> 
         {/* Header image w text */}
-        <div className="card text-white border-0">
-          <img
-            id="header-image"
-            src={header1}
-            alt="girl eating smoothie bowl"
-          />
-          <div className="card-img-overlay d-flex justify-content-center flex-column align-item-center text-center">
-            <h1 className="header-about">About Us</h1>
-            <h3 className="header-text-about">
-              Join a community of like-minded people who share a passion for the ocean and are committed to reducing
-              their consumption of animal products.
-            </h3>
+        <section className="header-image-about">
+          <div className=" d-flex justify-content-center flex-column align-item-center text-white text-center">
+            <p className="header-about">About Us</p>
+            <p className="header-text-about">
+            Join a community of like-minded people who share a passion for the ocean and are committed to reducing
+            their consumption of animal products.
+            </p>
           </div>
+        </section>
           {/* Join us button */}
           <div className="d-flex justify-content-center">
             <button className="learn-how-about">Want to Join? Learn how.</button>
           </div>
-        </div>
         {/* Why We Started */}
         <div className="card text-center border-0">
           <h1 className="repeating-h1-about">Why We Started</h1>
