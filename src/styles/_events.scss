@@ -9,14 +9,14 @@
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   font-size: 6.5rem;
-  margin-top: 10rem;
+  margin-top: 5%;
 }
 
 .events-cabin-small {
   font-family: "Cabin", sans-serif;
   font-weight: 400;
   font-size: 3rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5%;
   margin-left: 8%;
   margin-right: 8%;
 }
@@ -33,10 +33,11 @@
   border-radius: 4.3rem;
   font-family: "Cabin", sans-serif;
 }
-
-@media (min-width: 540px) and (max-width: 768px) {
+//ipad
+@media (min-width: 540px) and (max-width: 1024px) {
   .events-cabin-large {
     font-size: 3rem;
+    margin-top: 25%;
   }
   .events-cabin-small {
     font-size: 2rem;
@@ -48,7 +49,8 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 539px) {
+//iphone x 
+@media (min-width: 280px) and (max-width: 539px) {
 
 .events-cabin-large {
   font-weight: 700;

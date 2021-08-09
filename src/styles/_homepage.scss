@@ -31,9 +31,16 @@
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .bi-play-circle {
   font-size: 60px;
   margin-top: -2.5rem;
+=======
+.play-icon {
+  font-size: 200rem;
+ 
+  // width: 20rem;
+>>>>>>> bhag-dev
 }
 
 .oceaneers-cabin-large {
@@ -251,13 +258,10 @@
     font-weight: 500;
     margin-top: 3%; 
   }
-
 }
 
-
-
 //ipad 
-@media (min-width: 540px) and (max-width: 1024px) {
+@media (min-width: 541px) and (max-width: 1024px) {
   .homepage-color {
     width: 75%;
     height: 200px;
@@ -265,8 +269,7 @@
   .oceaneers-cabin-large {
     font-weight: 700;
     font-size: 4rem;
-    margin-top: 18rem;
-    //not sure why it changes, but could be 25rem 
+    margin-top: 35%;
   }
   .oceaneers-cabin-small {
     font-weight: 400;
@@ -306,6 +309,7 @@
   .accordion-body-home {
     font-size: 2rem;
     font-weight: 300;
+    margin-top: -2.4rem;
   }
   .button-accordion-home {
     font-size: 2rem;
@@ -339,7 +343,7 @@
   .card-text-brand {
     font-size: 1.4rem;
     font-weight: 500;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -347,7 +351,7 @@
   .card-text-ocean {
     font-size: 1.4rem;
     font-weight: 500;
-    margin-top: 5%;
+    margin-top: 4.5%;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -366,8 +370,119 @@
   
 }
 
+//surface duo 
+@media (width: 540px) {
+  .homepage-color {
+    width: 75%;
+    height: 245px;
+  }
+  .oceaneers-cabin-large {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 35%;
+  }
+  .oceaneers-cabin-small {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .learn-how {
+    padding: 0.5rem 2rem;
+    margin-top: -1.8rem;
+    font-size: 1.4rem;
+  }
+  .oceaneers-cabin {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 3%;
+  }
+  .oceaneers-raleway {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .our-purpose {
+    margin-top: 5rem;
+    font-size: 3.5rem;
+  }
+  .our-purpose-text {
+    font-weight: 300;
+    font-size: 2.2rem;
+  }
+  .our-pillers-text {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .accordion-body-title {
+    font-size: 2rem;
+  }
+  .accordion-body-home {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: -2.3rem;
+  }
+  .button-accordion-home {
+    font-size: 2rem;
+    height: 5rem;
+  }
+  .accordion-home {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .plus-icon {
+    font-size: 2rem;
+  }
+  .why {
+    font-weight: 700;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 5rem;
+  }
+  
+  .card-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .card-text-brand {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .card-text-ocean {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .learn-how-2 {
+    padding: 0.5rem 2rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 4.3rem;
+    font-family: "Cabin", sans-serif;
+  }
+
+}
+
 // iphone X
-@media (min-width: 320px) and (max-width: 539px) {
+@media (min-width: 280px) and (max-width: 539px) {
   .learn-how {
     padding: 0.5rem 2rem;
     margin-top: -1.8rem;
@@ -381,7 +496,7 @@
   .oceaneers-cabin-large {
     font-weight: 700;
     font-size: 4rem;
-    margin-top: 18rem;
+    margin-top: 40%;
 
   }
   .oceaneers-cabin-small {

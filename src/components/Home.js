@@ -7,12 +7,18 @@ import image3 from "../imgs/image3.png";
 import image4 from "../imgs/image4.png";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
+import "bootstrap-icons/font/bootstrap-icons.json"
+import { Link } from "react-router-dom";
 
 export default class Home extends Component {
   render() {
     return (
       <div>
+<<<<<<< HEAD
         <Navbar /> 
+=======
+         <Navbar />  
+>>>>>>> bhag-dev
         <section className="header-image-home">
           <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
             <h1 className="oceaneers-cabin-large">Oceaneers</h1>
@@ -24,7 +30,9 @@ export default class Home extends Component {
           </div>
           </section>
           <div className="d-flex justify-content-center">
+            <Link to = "/joinus">
             <button className="learn-how">Want to Join? Learn how.</button>
+            </Link>
           </div>
 
         <div className="homepage-color">
@@ -195,7 +203,9 @@ export default class Home extends Component {
         </div>
 
         <div className="d-flex justify-content-center">
+        <Link to = "/joinus">
           <button className="learn-how-2">Want to Join? Learn how.</button>
+          </Link>
         </div>
         {/* <NewsLetter /> */}
         <Footer /> 
