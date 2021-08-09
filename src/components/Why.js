@@ -110,8 +110,8 @@ export default class Why extends Component {
                         <h3>Need more evidence? <br />
                             Believe in the numbers.</h3>
                     </div>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                        <div className="carousel-indicators">
                             <button
                                 type="button"
                                 data-bs-slide-to="0"
@@ -156,37 +156,37 @@ export default class Why extends Component {
                                 aria-label="Slide 6"
                             ></button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src={Fish} class="d-block w-100" alt="..." />
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img src={Fish} className="d-block w-100" alt="..." />
                             </div>
-                            <div class="carousel-item">
-                                <img src={Train} class="d-block w-100" alt="..." />
+                            <div className="carousel-item">
+                                <img src={Train} className="d-block w-100" alt="..." />
                             </div>
-                            <div class="carousel-item">
-                                <img src={Ocean} class="d-block w-100" alt="..." />
+                            <div className="carousel-item">
+                                <img src={Ocean} className="d-block w-100" alt="..." />
                             </div>
-                            <div class="carousel-item">
-                                <img src={Cow} class="d-block w-100" alt="..." />
+                            <div className="carousel-item">
+                                <img src={Cow} className="d-block w-100" alt="..." />
                             </div>
-                            <div class="carousel-item">
-                                <img src={Turtle} class="d-block w-100" alt="..." />
+                            <div className="carousel-item">
+                                <img src={Turtle} className="d-block w-100" alt="..." />
                             </div>
-                            <div class="carousel-item">
-                                <img src={Pills} class="d-block w-100" alt="..." />
+                            <div className="carousel-item">
+                                <img src={Pills} className="d-block w-100" alt="..." />
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            {/* <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span> */}
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            {/* <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span> */}
                             <i
                                 className="bi bi-arrow-left-circle"
                                 aria-hidden="true"
                             ></i>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            {/* <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span> */}
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            {/* <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span> */}
                             <i
                                 className="bi bi-arrow-right-circle"
                                 aria-hidden="true"
