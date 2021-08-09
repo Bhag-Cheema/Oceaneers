@@ -1,5 +1,3 @@
-// Responsiveness
-// mobile size
 section.header-image-partner {
   min-height: 60vh;
   background: url("../imgs/Partners/partnerheader.jpg");
@@ -116,14 +114,14 @@ button.carousel-control-prev {
   }
 }
 .carousel-indicators {
-  .filled-circle {
+  button.filled-circle {
     display: block;
     border-radius: 100%;
     width: 1.2rem !important;
     height: 1.2rem !important;
     background-color: gray !important;
   }
-  .filled-circle.active {
+  button.filled-circle.active {
     display: block;
     background-color: #024a63 !important;
   }
@@ -168,7 +166,7 @@ div.rounded-circle {
     padding-right: 1.6rem;
   }
   h2.accordion-header {
-    button.button-accordion {
+    .button-accordion {
       font-family: "Cabin", sans-serif;
       font-size: 2.4rem;
       line-height: 2.6rem;
@@ -185,561 +183,9 @@ div.rounded-circle {
 
     i.plus-icon-partners {
       position: absolute;
+      right: 1rem;
       top: 2.4rem;
       font-size: 2.4rem;
-    }
-  }
-}
-
-@media (min-width: 320px) and (max-width: 499px) {
-  // Header Image
-  section.header-image-partner {
-    min-height: 60vh;
-    background: url("../imgs/Partners/partnerheader.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    p.header {
-      font-size: 4rem;
-      font-weight: 700;
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-      line-height: 4.5rem;
-    }
-    p.header-text {
-      font-size: 2rem;
-      font-weight: 400;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      margin-top: 0rem;
-      margin-bottom: 1rem;
-    }
-  }
-  // Learn how button
-  button.learn-how-partners {
-    font-size: 1.8rem;
-    height: 4.4rem;
-    margin-top: -2rem;
-  }
-  h3.quote {
-    font-size: 1.8rem;
-    margin-top: 2.7rem;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  // Repeating h1 & 2
-  h1.repeating-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 2rem;
-  }
-  h2.repeating-h2 {
-    font-size: 1.4rem;
-    font-weight: normal;
-    margin-top: 0.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    line-height: 2rem;
-  }
-  // Grid Carousel Inner
-  h5.partner-card-title {
-    font-family: "Cabin", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-  p.partner-card-text {
-    display: none;
-    // font-size: 1.4rem;
-    // line-height: 1.6rem;
-    // padding-bottom: 0rem;
-  }
-  // Carousel Controls
-  button.filled-circle {
-    display: none;
-  }
-  button.carousel-control-next {
-    float: right;
-    position: relative;
-    display: inline;
-    margin-bottom: 2rem;
-    .bi-arrow-right-circle {
-      top: -1rem;
-    }
-  }
-  button.carousel-control-prev {
-    position: relative;
-    display: inline;
-    .bi-arrow-left-circle {
-      top: -1rem;
-    }
-  }
-  .slide {
-    padding-top: 1rem !important;
-    padding-bottom: 0rem;
-  }
-  // Carousel touch points
-  .carousel-control-next {
-    height: 5rem;
-  }
-  .carousel-control-prev {
-    height: 5rem;
-  }
-  // Circle Carousel
-  // Cards w image
-  div.rounded-circle {
-    position: relative;
-    width: 16rem;
-    height: 16rem;
-    padding: 1.6rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    margin-top: 2rem;
-    background-color: #e2f0ef !important;
-  }
-
-  // Accordions
-  .accordion-partners {
-    div.accordion-body {
-      margin-top: -4rem;
-      width: 24rem;
-      border-radius: 0rem 0rem 4.3rem 4.3rem;
-    }
-    p.text-accordion {
-      font-size: 1.4rem;
-      font-weight: 500;
-      padding-top: 4rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    h2.accordion-header {
-      .button-accordion {
-        font-size: 1.8rem;
-        margin-top: 1rem;
-        border: none;
-        border-radius: 4.3rem;
-        color: white;
-        height: 5rem;
-        width: 24rem;
-        line-height: 2.1rem;
-      }
-
-      i.plus-icon-partners {
-        position: absolute;
-        top: 1.5rem;
-        right: 1rem;
-        font-size: 1.8rem;
-      }
-    }
-  }
-  #circleCarousel {
-    .carousel-control-prev {
-      i.left-arrow-bottom-circles {
-        margin-top: 2rem;
-        margin-left: 1rem;
-      }
-    }
-    .carousel-control-next {
-      i.right-arrow-bottom-circles {
-        margin-top: 2rem;
-        margin-right: 1rem;
-      }
-    }
-  }
-}
-
-@media (min-width: 500px) and (max-width: 767px) {
-  section.header-image-partner {
-    min-height: 50vh;
-    background: url("../imgs/Partners/partnerheader.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    p.header {
-      font-size: 5rem;
-      margin-top: 6rem;
-      margin-bottom: 0rem;
-    }
-    p.header-text {
-      font-size: 2.8rem;
-      margin-left: 3rem;
-      margin-right: 3rem;
-      margin-top: 0rem;
-      margin-bottom: 5rem;
-    }
-  }
-  button.learn-how-partners {
-    padding: 1rem 3.5rem;
-  }
-  h3.quote {
-    font-size: 2.6rem;
-    margin-top: 2.7rem;
-    margin-bottom: 2rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-  h1.repeating-h1 {
-    font-size: 3.4rem;
-    font-weight: 700;
-    margin-top: 2rem;
-  }
-  h2.repeating-h2 {
-    font-size: 2.4rem;
-    font-weight: normal;
-    margin-top: 0.5rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    line-height: 3rem;
-  }
-  h5.partner-card-title {
-    font-family: "Cabin", sans-serif;
-    font-size: 2.4rem;
-    line-height: 3rem;
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-  p.partner-card-text {
-    font-family: "Raleway", sans-serif;
-    display: block;
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-
-  button.carousel-control-next {
-    float: right;
-    position: relative;
-    display: inline;
-    margin-bottom: 2rem;
-    .bi-arrow-right-circle {
-      top: -1rem;
-    }
-  }
-  button.carousel-control-prev {
-    position: relative;
-    display: inline;
-    float: left;
-    .bi-arrow-left-circle {
-      top: -1rem;
-    }
-  }
-  h5.partner-card-title {
-    font-size: 2.4rem;
-    line-height: 3rem;
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-  p.partner-card-text {
-    font-family: "Raleway", sans-serif;
-    display: block;
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  #circleCarousel {
-    margin-bottom: 3rem;
-    div.rounded-circle {
-      position: relative;
-      width: 24rem;
-      height: 24rem;
-      padding: 2.4rem;
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
-      margin-top: 2rem;
-      background-color: #e2f0ef !important;
-    }
-  }
-}
-
-// Tablet
-@media (min-width: 768px) and (max-width: 1023px) {
-  // Header Image
-  section.header-image-partner {
-    min-height: 50vh;
-    background: url("../imgs/Partners/partnerheader.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    p.header {
-      font-size: 5rem;
-      margin-top: 6rem;
-      margin-bottom: 0rem;
-    }
-
-    p.header-text {
-      font-size: 2.8rem;
-      margin-left: 3rem;
-      margin-right: 3rem;
-      margin-top: 0rem;
-      margin-bottom: 4rem;
-    }
-  }
-  // Learn how button
-  button.learn-how-partners {
-    font-size: 2rem;
-    height: 5rem;
-    margin-top: -2.5rem;
-    padding: 1rem 3.5rem;
-  }
-  h3.quote {
-    font-size: 2.6rem;
-    margin-top: 2.7rem;
-    margin-bottom: 2rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-  // Repeating h1 & 2
-  h1.repeating-h1 {
-    font-size: 3.4rem;
-    font-weight: 700;
-    margin-top: 2rem;
-  }
-  h2.repeating-h2 {
-    font-size: 2.4rem;
-    font-weight: normal;
-    margin-top: 0.5rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    line-height: 3rem;
-  }
-  // Grid Carousel Inner
-  #gridCarousel {
-    padding-top: 0rem;
-  }
-  h5.partner-card-title {
-    font-family: "Cabin", sans-serif;
-    font-size: 2.4rem;
-    line-height: 3rem;
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-  p.partner-card-text {
-    font-family: "Raleway", sans-serif;
-    display: block;
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  // Carousel Controls
-  button.filled-circle {
-    display: none;
-  }
-
-  // Carousel touch points
-  #gridCarousel {
-    button.carousel-control-next {
-      float: right;
-      position: relative;
-      display: inline;
-      margin-bottom: 2rem;
-      .bi-arrow-right-circle {
-        top: -3rem;
-      }
-    }
-    button.carousel-control-prev {
-      position: relative;
-      display: inline;
-      float: left;
-      .bi-arrow-left-circle {
-        top: -3rem;
-      }
-    }
-  }
-  // Circle Carousel
-  #circleCarousel {
-    margin-bottom: 4rem;
-    button.carousel-control-next {
-      float: right;
-      position: relative;
-      display: inline;
-      margin-bottom: 2rem;
-      .bi-arrow-right-circle {
-        top: 0.5rem;
-      }
-    }
-    button.carousel-control-prev {
-      position: relative;
-      display: inline;
-      float: left;
-      .bi-arrow-left-circle {
-        top: 0.5rem;
-      }
-    }
-    // Cards w image
-    div.rounded-circle {
-      position: relative;
-      width: 18rem;
-      height: 18rem;
-      padding: 1.8rem;
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
-      margin-top: 0rem;
-      background-color: #e2f0ef !important;
-    }
-
-    // Accordions
-    .accordion-partners {
-      div.accordion-body {
-        margin-top: -3rem;
-        width: 19rem;
-      }
-      p.text-accordion {
-        font-size: 1.4rem;
-        font-weight: 500;
-        padding-top: 4rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      h2.accordion-header {
-        button.button-accordion {
-          font-size: 1.6rem;
-          margin-top: 1rem;
-          height: 5rem;
-          width: 19rem;
-          line-height: 2.2rem;
-          margin-left: 0rem;
-        }
-
-        i.plus-icon-partners {
-          position: absolute;
-          top: 1.5rem;
-          right: 1rem;
-          font-size: 1.8rem;
-        }
-      }
-    }
-  }
-}
-// large tablet/small desktop
-@media (min-width: 1024px) and (max-width: 1279px) {
-  section.header-image-partner {
-    background: url("../imgs/Partners/partnerheader.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 40vw;
-    p.header {
-      font-size: 6rem;
-      margin-bottom: 1rem;
-    }
-    p.header-text {
-      font-size: 3rem;
-      margin: 2rem 9.5rem 11.3rem 9.5rem;
-    }
-  }
-  button.learn-how-partners {
-    padding: 1rem 3.5rem;
-  }
-  h2.repeating-h2 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-    line-height: 3.4rem;
-  }
-  #gridCarousel {
-    button.carousel-control-next {
-      float: right;
-      position: relative;
-      display: inline;
-      margin-bottom: 2rem;
-      .bi-arrow-right-circle {
-        top: -3rem;
-      }
-    }
-    button.carousel-control-prev {
-      position: relative;
-      display: inline;
-      float: left;
-      .bi-arrow-left-circle {
-        top: -3rem;
-      }
-    }
-  }
-  h5.partner-card-title {
-    font-size: 3.5rem;
-    line-height: 4.2rem;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  p.partner-card-text {
-    display: contents;
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    padding-bottom: 1rem;
-  }
-  #circleCarousel {
-    margin-bottom: 4rem;
-    padding-left: 0%;
-    padding-right: 0%;
-
-    div.rounded-circle {
-      width: 28rem;
-      height: 28rem;
-      padding: 3rem;
-    }
-    .carousel-indicators {
-      .filled-circle {
-        display: block;
-        border-radius: 100%;
-        width: 1.2rem !important;
-        height: 1.2rem !important;
-        background-color: gray !important;
-      }
-      .filled-circle.active {
-        display: block;
-        background-color: #024a63 !important;
-      }
-    }
-
-    button.carousel-control-next {
-      float: right;
-      position: relative;
-      display: inline;
-      margin-bottom: 2rem;
-      .bi-arrow-right-circle {
-        top: 0.5rem;
-      }
-    }
-    button.carousel-control-prev {
-      position: relative;
-      display: inline;
-      float: left;
-      .bi-arrow-left-circle {
-        top: 0.5rem;
-      }
-    }
-    .accordion-partners {
-      div.accordion-body {
-        margin-top: -3rem;
-        width: 19rem;
-      }
-      p.text-accordion {
-        font-size: 1.4rem;
-        font-weight: 500;
-        padding-top: 4rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      h2.accordion-header {
-        button.button-accordion {
-          font-size: 2.2rem;
-          margin-top: 1rem;
-          height: 7.4rem;
-          width: 25rem;
-          line-height: 2.2rem;
-          margin-left: 0rem;
-        }
-
-        i.plus-icon-partners {
-          position: absolute;
-          top: 2.7rem;
-          right: 1rem;
-          font-size: 2rem;
-        }
-      }
     }
   }
 }
@@ -862,14 +308,14 @@ div.rounded-circle {
     }
   }
   .carousel-indicators {
-    .filled-circle {
+    button.filled-circle {
       display: block;
       border-radius: 100%;
       width: 1.2rem !important;
       height: 1.2rem !important;
       background-color: gray !important;
     }
-    .filled-circle.active {
+    button.filled-circle.active {
       display: block;
       background-color: #024a63 !important;
     }
@@ -933,6 +379,569 @@ div.rounded-circle {
         position: absolute;
         top: 2.4rem;
         font-size: 2.4rem;
+      }
+    }
+  }
+}
+// large tablet/small desktop
+@media (min-width: 1024px) and (max-width: 1279px) {
+  section.header-image-partner {
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 40vw;
+    p.header {
+      font-size: 6rem;
+      margin-bottom: 1rem;
+    }
+    p.header-text {
+      font-size: 3rem;
+      margin: 2rem 9.5rem 11.3rem 9.5rem;
+    }
+  }
+  button.learn-how-partners {
+    padding: 1rem 3.5rem;
+  }
+  h2.repeating-h2 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    line-height: 3.4rem;
+  }
+  #gridCarousel {
+    button.carousel-control-next {
+      float: right;
+      position: relative;
+      display: inline;
+      margin-bottom: 2rem;
+      .bi-arrow-right-circle {
+        top: -3rem;
+      }
+    }
+    button.carousel-control-prev {
+      position: relative;
+      display: inline;
+      float: left;
+      .bi-arrow-left-circle {
+        top: -3rem;
+      }
+    }
+  }
+  h5.partner-card-title {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  p.partner-card-text {
+    display: contents;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  #circleCarousel {
+    margin-bottom: 4rem;
+    padding-left: 0%;
+    padding-right: 0%;
+
+    div.rounded-circle {
+      width: 28rem;
+      height: 28rem;
+      padding: 3rem;
+    }
+    .carousel-indicators {
+      button.filled-circle {
+        display: block;
+        border-radius: 100%;
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+        background-color: gray !important;
+      }
+      button.filled-circle.active {
+        display: block;
+        background-color: #024a63 !important;
+      }
+    }
+
+    button.carousel-control-next {
+      float: right;
+      position: relative;
+      display: inline;
+      margin-bottom: 2rem;
+      .bi-arrow-right-circle {
+        top: 0.5rem;
+      }
+    }
+    button.carousel-control-prev {
+      position: relative;
+      display: inline;
+      float: left;
+      .bi-arrow-left-circle {
+        top: 0.5rem;
+      }
+    }
+    .accordion-partners {
+      div.accordion-body {
+        margin-top: -3rem;
+        width: 19rem;
+      }
+      p.text-accordion {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      h2.accordion-header {
+        button.button-accordion {
+          font-size: 2.2rem;
+          margin-top: 1rem;
+          height: 7.4rem;
+          width: 25rem;
+          line-height: 2.2rem;
+          margin-left: 0rem;
+        }
+
+        i.plus-icon-partners {
+          position: absolute;
+          top: 2.7rem;
+          right: 1rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  // Header Image
+  section.header-image-partner {
+    min-height: 50vh;
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    p.header {
+      font-size: 5rem;
+      margin-top: 6rem;
+      margin-bottom: 0rem;
+    }
+
+    p.header-text {
+      font-size: 2.8rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-top: 0rem;
+      margin-bottom: 4rem;
+    }
+  }
+  // Learn how button
+  button.learn-how-partners {
+    font-size: 2rem;
+    height: 5rem;
+    margin-top: -2.5rem;
+    padding: 1rem 3.5rem;
+  }
+  h3.quote {
+    font-size: 2.6rem;
+    margin-top: 2.7rem;
+    margin-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  // Repeating h1 & 2
+  h1.repeating-h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  h2.repeating-h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    line-height: 3rem;
+  }
+  // Grid Carousel Inner
+  #gridCarousel {
+    padding-top: 0rem;
+  }
+  h5.partner-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.partner-card-text {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  // Carousel Controls
+  .carousel-indicators {
+    button.filled-circle {
+      display: none;
+    }
+    button.filled-circle.active {
+      display: none;
+    }
+  }
+
+  // Carousel touch points
+  #gridCarousel {
+    button.carousel-control-next {
+      float: right;
+      position: relative;
+      display: inline;
+      margin-bottom: 2rem;
+      .bi-arrow-right-circle {
+        top: -3rem;
+      }
+    }
+    button.carousel-control-prev {
+      position: relative;
+      display: inline;
+      float: left;
+      .bi-arrow-left-circle {
+        top: -3rem;
+      }
+    }
+  }
+  // Circle Carousel
+  #circleCarousel {
+    margin-bottom: 4rem;
+    button.carousel-control-next {
+      float: right;
+      position: relative;
+      display: inline;
+      margin-bottom: 2rem;
+      .bi-arrow-right-circle {
+        top: 0.5rem;
+      }
+    }
+    button.carousel-control-prev {
+      position: relative;
+      display: inline;
+      float: left;
+      .bi-arrow-left-circle {
+        top: 0.5rem;
+      }
+    }
+    // Cards w image
+    div.rounded-circle {
+      position: relative;
+      width: 18rem;
+      height: 18rem;
+      padding: 1.8rem;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      margin-top: 0rem;
+      background-color: #e2f0ef !important;
+    }
+
+    // Accordions
+    .accordion-partners {
+      div.accordion-body {
+        margin-top: -3rem;
+        width: 19rem;
+      }
+      p.text-accordion {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      h2.accordion-header {
+        button.button-accordion {
+          font-size: 1.6rem;
+          margin-top: 1rem;
+          height: 5rem;
+          width: 19rem;
+          line-height: 2.2rem;
+          margin-left: 0rem;
+        }
+
+        i.plus-icon-partners {
+          position: absolute;
+          top: 1.5rem;
+          right: 1rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  section.header-image-partner {
+    min-height: 50vh;
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    p.header {
+      font-size: 5rem;
+      margin-top: 6rem;
+      margin-bottom: 0rem;
+    }
+    p.header-text {
+      font-size: 2.8rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-top: 0rem;
+      margin-bottom: 5rem;
+    }
+  }
+  button.learn-how-partners {
+    padding: 1rem 3.5rem;
+  }
+  h3.quote {
+    font-size: 2.6rem;
+    margin-top: 2.7rem;
+    margin-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  h1.repeating-h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  h2.repeating-h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    line-height: 3rem;
+  }
+  h5.partner-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.partner-card-text {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  button.carousel-control-next {
+    float: right;
+    position: relative;
+    display: inline;
+    margin-bottom: 2rem;
+    .bi-arrow-right-circle {
+      top: -1rem;
+    }
+  }
+  button.carousel-control-prev {
+    position: relative;
+    display: inline;
+    float: left;
+    .bi-arrow-left-circle {
+      top: -1rem;
+    }
+  }
+  h5.partner-card-title {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.partner-card-text {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  #circleCarousel {
+    margin-bottom: 3rem;
+    div.rounded-circle {
+      position: relative;
+      width: 24rem;
+      height: 24rem;
+      padding: 2.4rem;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      margin-top: 2rem;
+      background-color: #e2f0ef !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+  // Header Image
+  section.header-image-partner {
+    min-height: 60vh;
+    background: url("../imgs/Partners/partnerheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    p.header {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      line-height: 4.5rem;
+    }
+    p.header-text {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+    }
+  }
+  // Learn how button
+  button.learn-how-partners {
+    font-size: 1.8rem;
+    height: 4.4rem;
+    margin-top: -2rem;
+  }
+  h3.quote {
+    font-size: 1.8rem;
+    margin-top: 2.7rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  // Repeating h1 & 2
+  h1.repeating-h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  h2.repeating-h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    line-height: 2rem;
+  }
+  // Grid Carousel Inner
+  h5.partner-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.partner-card-text {
+    display: none;
+    // font-size: 1.4rem;
+    // line-height: 1.6rem;
+    // padding-bottom: 0rem;
+  }
+  // Carousel Controls
+  .carousel-indicators {
+    button.filled-circle {
+      display: none;
+    }
+    button.filled-circle.active {
+      display: none;
+    }
+  }
+  button.carousel-control-next {
+    float: right;
+    position: relative;
+    display: inline;
+    margin-bottom: 2rem;
+    .bi-arrow-right-circle {
+      top: -1rem;
+    }
+  }
+  button.carousel-control-prev {
+    position: relative;
+    display: inline;
+    .bi-arrow-left-circle {
+      top: -1rem;
+    }
+  }
+  .slide {
+    padding-top: 1rem !important;
+    padding-bottom: 0rem;
+  }
+  // Carousel touch points
+  .carousel-control-next {
+    height: 5rem;
+  }
+  .carousel-control-prev {
+    height: 5rem;
+  }
+  // Circle Carousel
+  // Cards w image
+  div.rounded-circle {
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    padding: 1.6rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2rem;
+    background-color: #e2f0ef !important;
+  }
+
+  // Accordions
+  .accordion-partners {
+    div.accordion-body {
+      margin-top: -4rem;
+      width: 24rem;
+      border-radius: 0rem 0rem 4.3rem 4.3rem;
+    }
+    p.text-accordion {
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding-top: 4rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    h2.accordion-header {
+      .button-accordion {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 4.3rem;
+        color: white;
+        height: 5rem;
+        width: 24rem;
+        line-height: 2.1rem;
+      }
+
+      i.plus-icon-partners {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  #circleCarousel {
+    .carousel-control-prev {
+      i.left-arrow-bottom-circles {
+        margin-top: 2rem;
+        margin-left: 1rem;
+      }
+    }
+    .carousel-control-next {
+      i.right-arrow-bottom-circles {
+        margin-top: 2rem;
+        margin-right: 1rem;
       }
     }
   }

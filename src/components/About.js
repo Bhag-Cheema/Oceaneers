@@ -713,7 +713,7 @@ export default class Partners extends Component {
           </h3>
         </div>
 
-        <NewsLetter />
+        {/* <NewsLetter /> */}
 
         <Footer />
       </div> //end render class
