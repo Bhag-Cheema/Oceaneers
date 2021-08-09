@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import NavBar from './NavBar';
 import NewsLetter from './NewsLetter';
 import Footer from './Footer';
-import Cow from '../imgs/cow.png';
-import Turtle from '../imgs/turtle.png';
-import Branchbeach from "../imgs/branchBeach.png";
-import Fish from "../imgs/fish.png";
-import Pill from "../imgs/pills.png";
-import Train from "../imgs/train.png";
+import Cow from '../imgs/Cow.png';
+import Turtle from '../imgs/Turtle.png';
+import Ocean from "../imgs/Ocean.png";
+import Fish from "../imgs/Fish.png";
+import Pills from "../imgs/Pills.png";
+import Train from "../imgs/Trainway.png";
 
 
 export default class Why extends Component {
@@ -18,8 +18,8 @@ export default class Why extends Component {
 
                 <section className="intro-why">
                     <div>
-                        <p className="title">Why You Should Care?</p>
-                        <p className="desc">The detrimental impact of industrial fishing and livestock farming on our oceans,<br /> our planet,
+                        <p className="title-why">Why You Should Care?</p>
+                        <p className="desc-why">The detrimental impact of industrial fishing and livestock farming on our oceans,<br /> our planet,
                         and us are undeniable. Oceaneers advocated for a world free of them.</p>
                     </div>
                 </section>
@@ -47,7 +47,7 @@ export default class Why extends Component {
 
                                 </div>
                                 <div className="green-bar">
-                                    <h5>Non Industrial Fishing</h5>
+                                    <h5>Industrial Livestock Fishing</h5>
 
                                     <div className="plusBoy">
                                         <i className="bi bi-plus-circle plus-icon plusBoy"></i>
@@ -58,11 +58,13 @@ export default class Why extends Component {
                             </div>
                             <div className="non-indust-card">
                                 <div className="card-itself-two">
-                                    <h5>Non-Industrial Fishing/Livestock <br /> Farming</h5>
-                                    <h6>Connection between the human and the individual <br /> animal – respect, care and dignity. Back to the roots.</h6>
+                                    <div className="card-itself-two-content">
+                                        <h5>Non-Industrial Fishing/Livestock <br /> Farming</h5>
+                                        <h6>Connection between the human and the individual <br /> animal – respect, care and dignity. Back to the roots.</h6>
+                                    </div>
                                 </div>
                                 <div className="green-bar">
-                                    <h5>Industrial Livestock Fishing</h5>
+                                    <h5>Non Industrial Fishing</h5>
                                     <div className="plusBoy">
                                         <i className="bi bi-plus-circle plus-icon plusBoy"></i>
                                     </div>
@@ -110,28 +112,85 @@ export default class Why extends Component {
                     </div>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button
+                                type="button"
+                                data-bs-slide-to="0"
+                                data-bs-target="#carouselExampleIndicators"
+                                className="active filled-circle m-4 light"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                className="active filled-circle m-4"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                className="active filled-circle m-4"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                className="active filled-circle m-4"
+                                data-bs-slide-to="3"
+                                aria-label="Slide 4"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                className="active filled-circle m-4"
+                                data-bs-slide-to="4"
+                                aria-label="Slide 5"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                className="active filled-circle m-4"
+                                data-bs-slide-to="5"
+                                aria-label="Slide 6"
+                            ></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src={Cow} class="d-block w-100" alt="..." />
+                                <img src={Fish} class="d-block w-100" alt="..." />
                             </div>
                             <div class="carousel-item">
-                                <img src={Fish} class="d-block w-100" alt="..." />
+                                <img src={Train} class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src={Ocean} class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src={Cow} class="d-block w-100" alt="..." />
                             </div>
                             <div class="carousel-item">
                                 <img src={Turtle} class="d-block w-100" alt="..." />
                             </div>
+                            <div class="carousel-item">
+                                <img src={Pills} class="d-block w-100" alt="..." />
+                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            {/* <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span> */}
+                            <i
+                                className="bi bi-arrow-left-circle"
+                                aria-hidden="true"
+                            ></i>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            {/* <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span> */}
+                            <i
+                                className="bi bi-arrow-right-circle"
+                                aria-hidden="true"
+                            ></i>
                         </button>
                     </div>
                 </section>

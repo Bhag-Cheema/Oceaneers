@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import Navbar from "./NavBar";
+import Navbar from "./NavBar";
 import Footer from "./Footer";
 
 import carousel1a from "../imgs/Partners/happy earth people-1.jpg";
@@ -35,7 +35,7 @@ export default class Partners extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
 
         {/* Header image w text */}
         <section className="header-image-partner">
