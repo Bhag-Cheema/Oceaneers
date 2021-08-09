@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Navbar from "./NavBar";
-import partnerheader from "../imgs/Partners/partnerheader.jpg";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
@@ -37,7 +36,7 @@ export default class Partners extends Component {
   render() {
     return (
       <div>
-         <Navbar /> 
+        <Navbar />
 
         {/* Header image w text */}
         <section className="header-image-partner">
@@ -709,8 +708,6 @@ export default class Partners extends Component {
         </div>
 
         {/* <NewsLetter /> */}
-
-        {/* Footer */}
 
         <Footer />
 

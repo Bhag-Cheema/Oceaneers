@@ -1,3 +1,322 @@
+.header-image-joinus {
+  min-height: 60vh;
+  background: url("../imgs/Joinus/headerimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.joinus-cabin-large {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 6.5rem;
+  margin-top: 15rem;
+}
+
+.joinus-cabin-small {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 10%;
+}
+.join-us-body {
+  font-family: "cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #024a63;
+  margin-bottom: 3rem;
+  margin-top: 4%;
+}
+.repeating-h1-join {
+  font-family: "Cabin", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #024a63;
+  margin-bottom: 3rem;
+}
+.card-headers {
+  text-align: center;
+  font-family: "cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #024a63;
+  margin-bottom: 3.3rem;
+}
+
+div.joinus-image-left-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  max-width: 56.98rem;
+  margin-left: 10%;
+  margin-bottom: 5.37rem;
+
+  p.joinus-card-text {
+    position: absolute;
+    bottom: 14.6rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .check-email-card3 {
+    position: absolute;
+    bottom: 4.7rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+  }
+  .joinus-card-btn {
+    position: absolute;
+    bottom: 4.7rem;
+    background-color: #ff7c5c;
+    color: white;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 4.3rem;
+  }
+}
+
+.joinus-image-right-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  max-width: 56.98rem;
+  margin-right: 10%;
+  margin-bottom: 5.37rem;
+  .joinus-card-text {
+    position: absolute;
+    bottom: 14.6rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .joinus-card-btn {
+    position: absolute;
+    background-color: #ff7c5c;
+    bottom: 4.7rem;
+    color: white;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 4.3rem;
+  }
+}
+
+// Form field
+
+.form-field-card {
+  background: #bededf;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5rem;
+  border-radius: 4.3rem;
+  padding: 3.3rem 6.5rem 3.3rem 6.5rem;
+}
+.form-title-join {
+  font-family: "cabin", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #024a63;
+}
+.form-subtitle-join {
+  font-family: "cabin", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #024a63;
+  margin-bottom: 2.4rem;
+}
+
+.join-us-form-labels {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #024a63;
+}
+// Inputs
+input[type="text"] {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+input[type="email"] {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+input[type="number"] {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+textarea[type="text"] {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "raleway", sans-serif;
+}
+.input-rows {
+  .left-col {
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+  .right-col {
+    height: 4.4rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.full-width {
+  float: left;
+  height: 4.4rem;
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 2.4rem;
+}
+
+.join-us-form-checkboxes {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #024a63;
+}
+.checkboxes {
+  margin-top: 5.6rem;
+}
+input.radio-button {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+  border: none;
+}
+input.checkbox-join {
+  margin-top: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+  border: none;
+}
+button.sign-up-btn {
+  color: white;
+  margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
+  background-color: #ff7c5c;
+  height: 4.4rem;
+  width: 25.6rem;
+  border-radius: 20px;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  cursor: pointer;
+}
+.reduce-title {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  margin-top: 7rem;
+  font-size: 4.5rem;
+  text-align: center;
+  background-color: white;
+}
+.reduce-text {
+  color: #024a63;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+}
+
+.accordion-joinus {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.accordion-body-title-joinus {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 300;
+  border: none;
+  text-align: center;
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+  background-color: #024a63;
+  border-radius: 0rem 0rem 0rem 0rem;
+  padding-top: 3rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  width: 80%;
+  color: white;
+}
+
+.accordion-body-joinus {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 300;
+  border: none;
+  margin-left: 12%;
+  margin-right: 12%;
+  width: 80%;
+  background-color: #024a63;
+  color: white;
+  border-radius: 0rem 0rem 4.3rem 4.3rem;
+  margin-top: -2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button-accordion-joinus {
+  font-family: "Cabin", sans-serif;
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 300;
+  border: none;
+  background-color: #024a63;
+  border-radius: 4.3rem;
+  color: white;
+  width: 80%;
+  height: 6rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: center;
+}
+
+.plus-icon-joinus {
+  position: absolute;
+  font-size: 2.4rem;
+  right: 3rem;
+  font-size: 2.5rem;
+}
+
 @media (min-width: 500px) {
   .repeating-h1-join {
     font-family: "Cabin", sans-serif;
@@ -206,10 +525,10 @@
 @media (min-width: 1280px) {
   .header-image-joinus {
     min-height: 60vh;
-      background: url("../imgs/Joinus/headerimage.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    background: url("../imgs/Joinus/headerimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .joinus-cabin-large {
     font-family: "Cabin", sans-serif;
@@ -219,11 +538,10 @@
   }
 
   .joinus-cabin-small {
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  margin-bottom: 10%;
-
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 10%;
   }
   .join-us-body {
     font-family: "cabin", sans-serif;
@@ -442,33 +760,32 @@
     cursor: pointer;
   }
   .reduce-title {
-  color: #024a63;
-  font-family: "Cabin", sans-serif;
-  font-weight: 700;
-  margin-top: 7rem;
-  font-size: 4.5rem;
-  text-align: center;
-  background-color: white;
-
+    color: #024a63;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    margin-top: 7rem;
+    font-size: 4.5rem;
+    text-align: center;
+    background-color: white;
   }
   .reduce-text {
-  color: #024a63;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  margin-top: 80px;
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 1.5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: white;
+    color: #024a63;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
   }
 
   .accordion-joinus {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  
+
   .accordion-body-title-joinus {
     font-family: "Raleway", sans-serif;
     font-size: 2.3rem;
@@ -485,7 +802,7 @@
     width: 80%;
     color: white;
   }
-  
+
   .accordion-body-joinus {
     font-family: "Raleway", sans-serif;
     font-size: 2.3rem;
@@ -501,7 +818,7 @@
     text-align: center;
     margin-bottom: 2rem;
   }
-  
+
   .button-accordion-joinus {
     font-family: "Cabin", sans-serif;
     position: relative;
@@ -517,13 +834,11 @@
     margin-right: 12%;
     text-align: center;
   }
-  
+
   .plus-icon-joinus {
     position: absolute;
     font-size: 2.4rem;
     right: 3rem;
     font-size: 2.5rem;
   }
-
-
 }

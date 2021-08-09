@@ -1,3 +1,96 @@
+div.main-footer {
+  overflow-y: hidden;
+  position: inherit;
+  background-color: #024a63;
+  height: 24rem;
+  width: 100%;
+  padding: 4rem 5rem;
+  margin-top: 0rem;
+}
+div.col-one {
+  h1.footer-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: white;
+    position: inherit;
+  }
+  p.footer-subtitle {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: white;
+    width: 39.3rem;
+    position: inherit;
+  }
+  .social-icons {
+    .instagram {
+      border: 0.1rem solid white;
+      border-radius: 100%;
+      padding: 1.1rem;
+      margin-top: 2rem;
+      position: inherit;
+    }
+    .facebook {
+      border: 0.1rem solid white;
+      border-radius: 100%;
+      padding: 1.1rem 1.8rem;
+      margin-left: 1.2rem;
+      margin-top: 2rem;
+      position: inherit;
+    }
+  }
+}
+div.col-two {
+  p {
+    position: inherit;
+    display: block;
+    justify-content: center;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: white;
+  }
+}
+div.col-three {
+  position: inherit;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+div.col-four {
+  align-content: flex-end;
+  button.footer-login {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Cabin", sans-serif;
+    padding: 0.5rem 2rem;
+    background: white;
+    color: #024a63;
+    border-radius: 2.4rem;
+    width: 12rem;
+    height: 3.9rem;
+    position: inherit;
+  }
+  button.footer-join {
+    position: inherit;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background: #ff7c5c;
+    padding: 0.5rem 2rem;
+    margin-top: 1.8rem;
+    border-radius: 2.4rem;
+    width: 12rem;
+    height: 3.9rem;
+  }
+}
+
 @media (min-width: 320px) {
   div.main-footer {
     position: relative;

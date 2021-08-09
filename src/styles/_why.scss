@@ -13,12 +13,12 @@
   flex-direction: column;
   text-align: center;
 
-  .title {
+  .title-why {
     font-size: 6.5rem;
     font-weight: 700;
   }
 
-  .desc {
+  .desc-why {
     font-size: 3rem;
     font-weight: 400;
   }
@@ -73,7 +73,7 @@
     background-position: center;
     width: 55rem;
     height: 45rem;
-    margin-right: 3rem;
+    margin: 0rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -111,11 +111,14 @@
     justify-content: flex-end;
     align-items: center;
     border-radius: 3rem;
-    margin-left: 1rem;
+    margin: 0rem 3rem;
     margin-bottom: 1rem;
 
+    .card-itself-two-content {
+      margin: 29rem 0rem;
+    }
+
     h5 {
-      margin-top: 28.5rem;
       font-size: 3rem;
     }
 
@@ -132,7 +135,7 @@
     height: 4rem;
     margin-bottom: 1rem;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 3rem;
 
     h5 {
       text-align: center;
@@ -241,6 +244,12 @@
 /* mobile responsive */
 
 @media screen and (max-width: 1091px) {
+  .title-why {
+    font-size: 5.5rem !important;
+  }
+  .desc-why {
+    font-size: 2.5rem !important;
+  }
   .intro-why {
     .title {
       font-size: 4rem;
@@ -266,6 +275,10 @@
     height: 35rem !important;
   }
 
+  .card-itself-two-content {
+    margin: 12rem 0rem;
+  }
+
   .explanation-content {
     h2 {
       font-size: 4rem !important;
@@ -279,6 +292,39 @@
   .carousel-title-why {
     h3 {
       font-size: 4rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .compare {
+    p .sub-title-why {
+      font-size: 3.5rem !important;
+    }
+
+    .sub-desc-why {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .explanation-content {
+    h2 {
+      font-size: 3rem !important;
+    }
+    h4 {
+      font-size: 1.5rem !important;
+      line-height: 2.5rem;
+    }
+  }
+
+  .card-itself-two {
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .explanation-content {
+    h2 {
+      font-size: 1.5rem;
     }
   }
 }

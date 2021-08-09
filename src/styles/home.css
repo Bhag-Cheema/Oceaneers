@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -68,25 +68,29 @@ a {
 }
 
 .nav-link {
+  margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 2rem !important;
 }
 
 .join {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   background: #ff7c5c;
   border: 0rem solid white;
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   border-radius: 2.4rem;
   font-family: "Cabin", sans-serif;
 }
 
 .login {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   background: #ff7c5c;
   border: 0rem solid white;
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
   /* 16 px */
   border-radius: 2.4rem;
   font-family: "Cabin", sans-serif;
@@ -96,6 +100,18 @@ a {
   .join,
   .login {
     margin: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 994px) and (mac-width: 1150px) {
+  .nav-link {
+    font-size: 1.5rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  nav img {
+    width: 15px !important;
+    height: 15px !important;
   }
 }
 
@@ -165,8 +181,8 @@ a {
   font-style: "Regular 400";
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: static;
 }
 
@@ -747,8 +763,16 @@ a {
 
 .intro-why {
   min-height: 60vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../imgs/whyIntro.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../imgs/whyIntro.png");
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.45)),
+      to(rgba(0, 0, 0, 0.45))
+    ),
+    url("../imgs/whyIntro.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../imgs/whyIntro.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -758,24 +782,24 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
-.intro-why .title {
+.intro-why .title-why {
   font-size: 6.5rem;
   font-weight: 700;
 }
 
-.intro-why .desc {
+.intro-why .desc-why {
   font-size: 3rem;
   font-weight: 400;
 }
@@ -792,16 +816,16 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .compare .indust .sub-title-why {
@@ -821,10 +845,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .compare .indust-card {
@@ -833,14 +857,14 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .compare .card-itself {
@@ -852,20 +876,20 @@ a {
   background-position: center;
   width: 55rem;
   height: 45rem;
-  margin-right: 3rem;
+  margin: 0rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 3rem;
   margin-bottom: 1rem;
 }
@@ -885,14 +909,14 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .compare .card-itself-two {
@@ -906,21 +930,24 @@ a {
   height: 45rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 3rem;
-  margin-left: 1rem;
+  margin: 0rem 3rem;
   margin-bottom: 1rem;
 }
 
+.compare .card-itself-two .card-itself-two-content {
+  margin: 29rem 0rem;
+}
+
 .compare .card-itself-two h5 {
-  margin-top: 28.5rem;
   font-size: 3rem;
 }
 
@@ -936,7 +963,7 @@ a {
   height: 4rem;
   margin-bottom: 1rem;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 3rem;
 }
 
 .compare .green-bar h5 {
@@ -951,7 +978,7 @@ a {
   top: 0rem;
   right: 0;
   -webkit-transform: translate(-90%, 20%);
-          transform: translate(-90%, 20%);
+  transform: translate(-90%, 20%);
   cursor: pointer;
 }
 
@@ -1000,8 +1027,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -1037,6 +1064,12 @@ a {
 
 /* mobile responsive */
 @media screen and (max-width: 1091px) {
+  .title-why {
+    font-size: 5.5rem !important;
+  }
+  .desc-why {
+    font-size: 2.5rem !important;
+  }
   .intro-why .title {
     font-size: 4rem;
   }
@@ -1054,6 +1087,9 @@ a {
     width: 45rem !important;
     height: 35rem !important;
   }
+  .card-itself-two-content {
+    margin: 12rem 0rem;
+  }
   .explanation-content h2 {
     font-size: 4rem !important;
   }
@@ -1062,6 +1098,28 @@ a {
   }
   .carousel-title-why h3 {
     font-size: 4rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .compare .sub-title-why {
+    font-size: 3.5rem !important;
+  }
+  .compare .sub-desc-why {
+    font-size: 1.5rem !important;
+  }
+  .explanation-content h2 {
+    font-size: 3rem !important;
+  }
+  .explanation-content h4 {
+    font-size: 1.5rem !important;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .explanation-content h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1078,17 +1136,17 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 2rem;
 }
 
 .newsLetter .desc-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
+  -ms-flex: 1 1 20rem;
+  flex: 1 1 20rem;
   margin-left: 5rem;
 }
 
@@ -1112,8 +1170,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .newsLetter .inputs-container label {
@@ -1147,8 +1205,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .newsLetter .inputs-container .input-names {
@@ -1166,8 +1224,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 730px) {
@@ -1177,14 +1235,14 @@ a {
   .inputs-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
   }
 }
@@ -1548,7 +1606,10 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  #circleCarousel .accordion-partners h2.accordion-header button.button-accordion {
+  #circleCarousel
+    .accordion-partners
+    h2.accordion-header
+    button.button-accordion {
     font-size: 1.6rem;
     margin-top: 1rem;
     height: 5rem;
@@ -1668,7 +1729,10 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  #circleCarousel .accordion-partners h2.accordion-header button.button-accordion {
+  #circleCarousel
+    .accordion-partners
+    h2.accordion-header
+    button.button-accordion {
     font-size: 2.2rem;
     margin-top: 1rem;
     height: 7.4rem;
@@ -1888,7 +1952,7 @@ a {
   }
   div.col-three {
     -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
     font-size: 1.4rem;
     position: absolute;
     left: 18rem;
@@ -1952,7 +2016,7 @@ a {
   }
   div.col-three {
     -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
     font-size: 1.4rem;
     position: absolute;
     left: 23rem;
@@ -2135,8 +2199,8 @@ a {
     position: inherit;
     display: block;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     font-size: 1.8rem;
     margin-left: 5rem;
   }
@@ -2148,12 +2212,12 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   div.col-four {
     -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
   }
   div.col-four button.footer-login {
     font-size: 1.8rem;
@@ -2214,8 +2278,8 @@ a {
     position: inherit;
     display: block;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
@@ -2231,12 +2295,12 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   div.col-four {
     -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
   }
   div.col-four button.footer-login {
     font-size: 2rem;
@@ -2369,8 +2433,8 @@ section.header-image-about {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #024a63;
 }
 
@@ -2461,7 +2525,7 @@ section.header-image-about {
   background: #ffffff;
   border: 1px solid #024a63;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-left: 15rem;
   border-radius: 58px;
 }
@@ -2679,7 +2743,7 @@ section.header-image-about {
     background: #ffffff;
     border: 1px solid #024a63;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin: auto !important;
     border-radius: 58px;
   }
@@ -2978,7 +3042,7 @@ section.header-image-about {
     background: #ffffff;
     border: 1px solid #024a63;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin: auto !important;
     border-radius: 58px;
   }
@@ -3164,16 +3228,16 @@ section.header-image-about {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     width: 50%;
     max-width: 56.98rem;
@@ -3214,16 +3278,16 @@ section.header-image-about {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     width: 50%;
     max-width: 56.98rem;
@@ -3304,16 +3368,16 @@ section.header-image-about {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     width: 50%;
     max-width: 56.98rem;
@@ -3354,16 +3418,16 @@ section.header-image-about {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     width: 50%;
     max-width: 56.98rem;

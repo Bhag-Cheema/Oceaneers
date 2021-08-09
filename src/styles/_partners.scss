@@ -1,5 +1,196 @@
 // Responsiveness
 // mobile size
+section.header-image-partner {
+  min-height: 60vh;
+  background: url("../imgs/Partners/partnerheader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  p.header {
+    font-family: "Cabin", sans-serif;
+    font-size: 6.5rem;
+    font-weight: 700;
+    margin-top: 9.2rem;
+  }
+
+  p.header-text {
+    font-family: "Cabin", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 1rem 9.5rem 11.3rem 9.5rem;
+  }
+}
+
+// ORANGE BUTTON
+button.learn-how-partners {
+  padding: 1rem 3.5rem;
+  margin-top: -2rem;
+  background: #ff7c5c;
+  border: 0rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4.3rem;
+  font-family: "Cabin", sans-serif;
+  cursor: pointer;
+  z-index: 1;
+}
+// Quote Block
+h3.quote {
+  color: #024a63;
+  margin-top: 3.5rem;
+  margin-bottom: 4.8rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+// Repeating h1,h2
+h1.repeating-h1 {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+h2.repeating-h2 {
+  color: #024a63;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  line-height: 3.5rem;
+}
+
+// Grid carousel
+
+.slide {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+}
+
+h5.partner-card-title {
+  font-family: "Cabin", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+.partner-card-text {
+  display: contents;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+button.carousel-control-next {
+  width: 50%;
+  height: 5rem;
+  float: right;
+  position: relative;
+  display: inline;
+  .bi-arrow-right-circle {
+    font-size: 3.6rem;
+    color: black;
+    top: 0;
+  }
+}
+button.carousel-control-prev {
+  width: 50%;
+  height: 5rem;
+  position: relative;
+  display: inline;
+  .bi-arrow-left-circle {
+    font-size: 3.6rem;
+    top: 0;
+    color: black;
+  }
+}
+.carousel-indicators {
+  .filled-circle {
+    display: block;
+    border-radius: 100%;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    background-color: gray !important;
+  }
+  .filled-circle.active {
+    display: block;
+    background-color: #024a63 !important;
+  }
+}
+
+// Circle Carousels
+#circleCarousel {
+  i.left-arrow-bottom-circles {
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+  }
+  i.right-arrow-bottom-circles {
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+  }
+}
+div.rounded-circle {
+  width: 35.8rem;
+  height: 35.8rem;
+  padding: 3.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 4.8rem;
+  background-color: #e2f0ef !important;
+}
+
+// Drop Downs
+.accordion-partners {
+  div.accordion-body {
+    background-color: #e2f0ef;
+    margin-top: -4rem;
+    width: 32.4rem;
+    border-radius: 0rem 0rem 4.3rem 4.3rem;
+  }
+  p.text-accordion {
+    background-color: #e2f0ef;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 4rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  h2.accordion-header {
+    button.button-accordion {
+      font-family: "Cabin", sans-serif;
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+      font-weight: 600;
+      background-color: #024a63;
+      height: 7.4rem;
+      width: 32.4rem;
+      margin-top: 2.4rem;
+      border: none;
+      border-radius: 4.3rem;
+      color: white;
+      position: relative;
+    }
+
+    i.plus-icon-partners {
+      position: absolute;
+      top: 2.4rem;
+      font-size: 2.4rem;
+    }
+  }
+}
+
 @media (min-width: 320px) and (max-width: 499px) {
   // Header Image
   section.header-image-partner {

@@ -7,14 +7,14 @@ import image3 from "../imgs/image3.png";
 import image4 from "../imgs/image4.png";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
-import "bootstrap-icons/font/bootstrap-icons.json"
+import "bootstrap-icons/font/bootstrap-icons.json";
 import { Link } from "react-router-dom";
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-         <Navbar />  
+        <Navbar />
         <section className="header-image-home">
           <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
             <h1 className="oceaneers-cabin-large">Oceaneers</h1>
@@ -24,12 +24,12 @@ export default class Home extends Component {
             </p>
             <i className="bi bi-play-circle"></i>
           </div>
-          </section>
-          <div className="d-flex justify-content-center">
-            <Link to = "/joinus">
+        </section>
+        <div className="d-flex justify-content-center">
+          <Link to="/joinus">
             <button className="learn-how">Want to Join? Learn how.</button>
-            </Link>
-          </div>
+          </Link>
+        </div>
 
         <div className="homepage-color">
           <div className="card-body justify-content-center text-center">
@@ -82,10 +82,9 @@ export default class Home extends Component {
             >
               <p className="accordion-body-title">…is what we raise! </p>
               <p className="accordion-body-home">
-                Food choices matter more than most people
-                (want to) know. That’s not a coincidence – there’s some pretty
-                powerful & loaded industries & lobbyists out there who want to
-                keep it that way
+                Food choices matter more than most people (want to) know. That’s
+                not a coincidence – there’s some pretty powerful & loaded
+                industries & lobbyists out there who want to keep it that way
               </p>
             </div>
           </div>
@@ -114,9 +113,9 @@ export default class Home extends Component {
             >
               <p className="accordion-body-title">…is what drives us!</p>
               <div className="accordion-body-home">
-                3 times a day you get to vote, with your
-                hard-earned nuggets. Unless you’re munching like Iggy, then it’s
-                6-12 times. It’s like democracy, but on steroids.
+                3 times a day you get to vote, with your hard-earned nuggets.
+                Unless you’re munching like Iggy, then it’s 6-12 times. It’s
+                like democracy, but on steroids.
               </div>
             </div>
           </div>
@@ -145,10 +144,10 @@ export default class Home extends Component {
             >
               <p className="accordion-body-title">...is what we aim for!</p>
               <div className="accordion-body-home">
-                We don’t recommend to go from carnivore
-                to complete herbivore, the same way we don’t recommend to go
-                from Muizies to Dungeons (big wave spot). We believe that
-                reduction is the most sustainable path for most people.
+                We don’t recommend to go from carnivore to complete herbivore,
+                the same way we don’t recommend to go from Muizies to Dungeons
+                (big wave spot). We believe that reduction is the most
+                sustainable path for most people.
               </div>
             </div>
           </div>
@@ -163,7 +162,10 @@ export default class Home extends Component {
                   <img id="image1.jpg" src={image1} alt="image1" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Support Healthy Oceans</h1>
-                    <p className="card-text-ocean">Help the oceans by reducing your consumption of industrially fished or farmed animal products.</p>
+                    <p className="card-text-ocean">
+                      Help the oceans by reducing your consumption of
+                      industrially fished or farmed animal products.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -172,7 +174,10 @@ export default class Home extends Component {
                   <img id="image2.png" src={image2} alt="image2" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Community</h1>
-                    <p className="card-text">Meet and befriend like-minded people committed to their reduction journeys.</p>
+                    <p className="card-text">
+                      Meet and befriend like-minded people committed to their
+                      reduction journeys.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -181,7 +186,10 @@ export default class Home extends Component {
                   <img id="image3.png" src={image3} alt="image3" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Salty Gatherings</h1>
-                    <p className="card-text">Go to exciting ocean activity events where you can hang out with other Oceaneers.</p>
+                    <p className="card-text">
+                      Go to exciting ocean activity events where you can hang
+                      out with other Oceaneers.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -190,7 +198,9 @@ export default class Home extends Component {
                   <img id="image4.png" src={image4} alt="image4" />
                   <div className="card-img-overlay d-flex flex-column justify-content-centre">
                     <h1 className="card-title">Brand Community Discounts</h1>
-                    <p className="card-text-brand">Get access to discount codes with our partnered brands.</p>
+                    <p className="card-text-brand">
+                      Get access to discount codes with our partnered brands.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -199,14 +209,13 @@ export default class Home extends Component {
         </div>
 
         <div className="d-flex justify-content-center">
-        <Link to = "/joinus">
-          <button className="learn-how-2">Want to Join? Learn how.</button>
+          <Link to="/joinus">
+            <button className="learn-how-2">Want to Join? Learn how.</button>
           </Link>
         </div>
         {/* <NewsLetter /> */}
-        <Footer /> 
+        <Footer />
       </div>
-
     );
   }
 }
