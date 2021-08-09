@@ -361,6 +361,7 @@ export default class JoinUs extends Component {
               Sign Up
             </button>
           </form>
+          </div>
       
           <div className= "reduce-title">
             <h1 className= "reduce-title">Ways To Reduce</h1>
@@ -453,7 +454,6 @@ export default class JoinUs extends Component {
               </div>
             </div>
           </div>
-        </div>
         </div>
         <Footer />
       </div>
