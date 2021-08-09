@@ -1,6 +1,13 @@
 .card {
   border: none;
 }
+section.header-image-about {
+  min-height: 50vh;
+  background: url("../imgs/aboutus/header1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .header-about {
   font-family: "Cabin", sans-serif;

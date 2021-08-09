@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "./NavBar";
-<<<<<<< HEAD
-=======
 import partnerheader from "../imgs/Partners/partnerheader.jpg";
->>>>>>> bhag-dev
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
