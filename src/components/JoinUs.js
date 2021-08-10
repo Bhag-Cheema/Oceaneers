@@ -21,6 +21,7 @@ export default class JoinUs extends Component {
     super(props);
 
     this.auth = firebase.auth();
+    this.db = firebase.firestore();
 
     this.state = {
       firstname: '',
@@ -41,24 +42,46 @@ export default class JoinUs extends Component {
     };
   }
 
-  handlePassiveClickedMenu = () => {
+  handlePassiveClicked = () => {
     this.setState({ passive: !this.state.passive })
   }
 
+  handleActiveClicked = () => {
+    this.setState({ active: !this.state.active })
+  }
+
+  handleRaiseClicked = () => {
+    this.setState({ raise: !this.state.raise })
+  }
+
+  handlePayClicked = () => {
+    this.setState({ pay: !this.state.pay })
+  }
+
+  handleFillClicked = () => {
+    this.setState({ fill: !this.state.fill })
+  }
+
+
 
   async onJoin(e) {
+
     e.preventDefault();
     if ((this.state.passive || this.state.active) && (this.state.raise && this.state.pay && this.state.fill)) {
       try {
-        const { email, password } = this.state;
-        const userCredential = await this.auth.createUserWithEmailAndPassword(email, password);
-        console.log(userCredential.user);
+        const { firstname, lastname, city, country, email, password, phone, how, why, passive, active } = this.state;
+        const cred = await this.auth.createUserWithEmailAndPassword(email, password);
+        await this.db.collection('members').doc(cred.user.uid).set({
+          firstname, lastname, phone, city, country, email, how, why, passive, active
+        });
         this.props.history.push('/');
+        console.log(cred.user);
 
       } catch (err) {
         this.setState({ error: err.message })
       }
     } else {
+
     }
 
   }
@@ -349,7 +372,7 @@ export default class JoinUs extends Component {
               <div className="form-check d-flex justify-content-left">
                 <input
                   value={passive}
-                  // onClick 
+                  onChange={() => this.handlePassiveClicked()}
                   className="form-check-input radio-button"
                   type="radio"
                   name="flexRadioDefault"
@@ -366,7 +389,7 @@ export default class JoinUs extends Component {
               <div className="form-check d-flex justify-content-left">
                 <input
                   value={active}
-                  // onClick={(e) => this.setState{passive: !this.state.passivepassive}}
+                  onChange={() => this.handleActiveClicked()}
                   className="form-check-input radio-button"
                   type="radio"
                   name="flexRadioDefault"
@@ -395,7 +418,7 @@ export default class JoinUs extends Component {
                   className="form-check-input checkbox-join"
                   type="checkbox"
                   value={raise}
-                  //onChange={(e) =>}
+                  onChange={() => this.handleRaiseClicked()}
                   id="flexCheckChecked"
                 />
                 <label
@@ -410,6 +433,7 @@ export default class JoinUs extends Component {
                   className="form-check-input checkbox-join"
                   type="checkbox"
                   value={pay}
+                  onChange={() => this.handlePayClicked()}
                   id="flexCheckChecked"
                 />
                 <label
@@ -426,6 +450,7 @@ export default class JoinUs extends Component {
                   className="form-check-input checkbox-join"
                   type="checkbox"
                   value={fill}
+                  onChange={() => this.handleFillClicked()}
                   id="flexCheckDefault"
                 />
                 <label
