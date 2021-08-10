@@ -63,116 +63,85 @@ export default class JoinUs extends Component {
           <h1 className="repeating-h1-join text-center">
             What it Takes to Be an Oceaneer
           </h1>
-          <p className="card-headers">From Anywhere and Everywhere...</p>
         </div>
 
-        {/* row 1 */}
-
-        <div className="row">
-          {/* Card 1: make it official */}
-          <div className="col joinus-image-left-col ">
-            <img
-              src={makeitofficial}
-              className="card-img-top join-us-image"
-              alt="..."
-            />
-            <p className="joinus-card-text">
-              Make it official and take the pledge.
-            </p>
-            <button className="d-flex justify-content-center align-items-center joinus-card-btn">
-              Sign up Now
-            </button>
+        <p className="card-headers">From Anywhere and Everywhere...</p>
+        <div className="join-us-cards">
+          <div className="join-card">
+            <div className="make-card-itself">
+              <h5 className="join-card-text">
+                Make it official and take the pledge.
+              </h5>
+              <button className="d-flex justify-content-center align-items-center joinus-card-btn">
+                Sign up Now
+              </button>
+            </div>
           </div>
-
-          {/* Card 2:commit */}
-          <div className="col joinus-image-right-col ">
-            <img
-              src={committoyour}
-              className="card-img-top join-us-image"
-              alt="..."
-            />
-            <p className="joinus-card-text">
-              Commit to your reduction journey and share your progress.
-            </p>
-            <button className="joinus-card-btn d-flex justify-content-center align-items-center">
-              Ways to Reduce
-            </button>
+          <div className="join-card">
+            <div className="commit-card-itself">
+              <h5 className="join-card-text">
+                Commit to your reduction journey and share your progress.
+              </h5>
+              <button className="d-flex justify-content-center align-items-center joinus-card-btn">
+                Ways to Reduce
+              </button>
+            </div>
           </div>
         </div>
-
         <div>
           <p className="card-headers">If Cape Town is Your Home Base...</p>
         </div>
-        {/* row 2 */}
-        <div className="row">
-          {/* Card 3 */}
-          <div className="col joinus-image-left-col">
-            <img
-              src={payr50}
-              className="card-img-top join-us-image"
-              alt="..."
-            />
-            <p className="joinus-card-text">
-              Pay the R50 sign-up fee and receive a Welcome Pack.
-            </p>
-            <p className="check-email-card3">(Check your email)</p>
+        <div className="join-us-cards">
+          <div className="join-card">
+            <div className="pay-card-itself">
+              <h5 className="join-card-text">
+                Pay the R50 sign-up fee and receive a Welcome Pack.
+              </h5>
+              <p className="check-email-card3">(Check your email)</p>
+            </div>
           </div>
+          <div className="join-card">
+            <div className="get-card-itself">
+              <h5 className="join-card-text">
+                Commit to your reduction journey and share your progress.
+              </h5>
+              <Link
+                to="/partners"
+                style={{ textDecoration: "none" }}
+                className="d-flex justify-content-center align-items-center"
+              >
+                <button className="joinus-card-btn">Brand Partners</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <p className="card-headers">
+          If You’re Keen to Get More Involved Locally...
+        </p>
+        <div className="join-us-cards">
+          <div className="join-card">
+            <div className="salty-card-itself">
+              <h5 className="join-card-text">
+                Join our Salty Gatherings and meet your fellow Oceaneers.
+              </h5>
+              <Link
+                to="/events"
+                style={{ textDecoration: "none" }}
+                className="d-flex justify-content-center align-items-center"
+              >
+                <button class="joinus-card-btn">View Events</button>
+              </Link>
+            </div>
+          </div>
+          <div className="join-card">
+            <div className="active-card-itself">
+              <h5 className="active-card-text">
+                Commit to your reduction journey and share your progress.
+              </h5>
+            </div>
+          </div>
+        </div>
 
-          {/* Card 4 */}
-          <div className="col joinus-image-right-col">
-            <img
-              src={getaccess}
-              className="card-img-top join-us-image"
-              alt="..."
-            />
-            <p className="joinus-card-text">
-              Get access to discounts from our local brand community.
-            </p>
-            <Link
-              to="/partners"
-              className="d-flex justify-content-center align-items-center"
-            >
-              <button className="joinus-card-btn">Brand Partners</button>
-            </Link>
-          </div>
-        </div>
-        <div>
-          <p className="card-headers">
-            If You’re Keen to Get More Involved Locally...
-          </p>
-        </div>
-        {/* row 3 */}
-        <div className="row">
-          {/* Card 5 */}
-          <div className="col joinus-image-left-col">
-            <img
-              src={joinoursalty}
-              className="card-img-top join-us-image"
-              alt="..."
-            />
-            <p className="joinus-card-text">
-              Join our Salty Gatherings and meet your fellow Oceaneers.
-            </p>
-            <Link
-              to="/events"
-              className="d-flex justify-content-center align-items-center"
-            >
-              <button class="joinus-card-btn">View Events</button>
-            </Link>
-          </div>
-
-          {/* Card 6 */}
-          <div className="col joinus-image-right-col">
-            <img
-              src={beactive}
-              className="card-img-top join-us-image"
-              alt="..."
-            />
-            <p className="joinus-card-text">
-              Join our Salty Gatherings and meet your fellow Oceaneers.
-            </p>
-          </div>
-        </div>
         <div>
           <h1 className="repeating-h1-join text-center">
             {" "}
@@ -504,6 +473,7 @@ export default class JoinUs extends Component {
             </div>
           </div>
         </div>
+
         {/* <Newsletter /> */}
         <Footer />
       </div>
