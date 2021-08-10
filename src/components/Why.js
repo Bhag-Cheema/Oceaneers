@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import NavBar from "./NavBar";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
-import Cow from "../imgs/cow.png";
-import Turtle from "../imgs/turtle.png";
+import Cow from "../imgs/Cow.png";
+import Turtle from "../imgs/Turtle.png";
 import Ocean from "../imgs/Ocean.png";
-import Fish from "../imgs/fish.png";
-import Pills from "../imgs/pills.png";
+import Fish from "../imgs/Fish.png";
+import Pills from "../imgs/Pills.png";
 import Train from "../imgs/Trainway.png";
 
 export default class Why extends Component {
