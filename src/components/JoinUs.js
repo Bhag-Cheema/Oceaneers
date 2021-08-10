@@ -13,8 +13,7 @@ import joinoursalty from "../imgs/Joinus/(5)join our salty.jpg";
 import beactive from "../imgs/Joinus/(6) be active.jpg";
 import headerimage from "../imgs/Joinus/headerimage.png";
 
-import firebase from '../firebase/firebase';
-
+import firebase from "../firebase/firebase";
 
 export default class JoinUs extends Component {
   constructor(props) {
@@ -23,20 +22,20 @@ export default class JoinUs extends Component {
     this.auth = firebase.auth();
 
     this.state = {
-      firstname: '',
-      lastname:'',
-      city:'',
-      country:'',
-      email: '',
-      password: '',
-      phone:'',
-      how:'',
-      why:'',
+      firstname: "",
+      lastname: "",
+      city: "",
+      country: "",
+      email: "",
+      password: "",
+      phone: "",
+      how: "",
+      why: "",
       passive: false,
       active: false,
       raise: false,
-      pay:false,
-      fill:false,
+      pay: false,
+      fill: false,
     };
   }
   render() {
@@ -262,7 +261,7 @@ export default class JoinUs extends Component {
                 for="exampleFormControlInput1"
                 className="form-label join-us-form-labels"
               >
-              Password
+                Password
               </label>
               <input type="password" className="full-width" />
             </div>
@@ -505,7 +504,7 @@ export default class JoinUs extends Component {
             </div>
           </div>
         </div>
-        <Newsletter />
+        {/* <Newsletter /> */}
         <Footer />
       </div>
     );
