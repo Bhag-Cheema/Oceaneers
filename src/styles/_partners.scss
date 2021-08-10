@@ -100,6 +100,7 @@ button.carousel-control-next {
     font-size: 3.6rem;
     color: black;
     top: 0;
+    float: right;
   }
 }
 button.carousel-control-prev {
@@ -111,6 +112,7 @@ button.carousel-control-prev {
     font-size: 3.6rem;
     top: 0;
     color: black;
+    float: left;
   }
 }
 .carousel-indicators {
@@ -129,13 +131,19 @@ button.carousel-control-prev {
 
 // Circle Carousels
 #circleCarousel {
-  i.left-arrow-bottom-circles {
-    margin-top: 2rem;
-    margin-left: 2.5rem;
+  button.carousel-control-prev {
+    i.left-arrow-bottom-circles {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      float: left;
+    }
   }
-  i.right-arrow-bottom-circles {
-    margin-top: 2rem;
-    margin-right: 2.5rem;
+  button.carousel-control-next {
+    i.right-arrow-bottom-circles {
+      margin-top: 2rem;
+      margin-right: 2rem;
+      float: right;
+    }
   }
 }
 div.rounded-circle {
@@ -470,7 +478,7 @@ div.rounded-circle {
       float: right;
       position: relative;
       display: inline;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       .bi-arrow-right-circle {
         top: 0.5rem;
       }
@@ -479,6 +487,7 @@ div.rounded-circle {
       position: relative;
       display: inline;
       float: left;
+      margin-bottom: 5rem;
       .bi-arrow-left-circle {
         top: 0.5rem;
       }
@@ -570,32 +579,29 @@ div.rounded-circle {
   // Grid Carousel Inner
   #gridCarousel {
     padding-top: 0rem;
-  }
-  h5.partner-card-title {
-    font-family: "Cabin", sans-serif;
-    font-size: 2.4rem;
-    line-height: 3rem;
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-  p.partner-card-text {
-    font-family: "Raleway", sans-serif;
-    display: block;
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  // Carousel Controls
-  .carousel-indicators {
-    button.filled-circle {
-      display: none;
-    }
-    button.filled-circle.active {
-      display: none;
-    }
-  }
 
-  // Carousel touch points
-  #gridCarousel {
+    h5.partner-card-title {
+      font-family: "Cabin", sans-serif;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      margin-left: 0.15rem;
+      margin-right: 0.15rem;
+    }
+    p.partner-card-text {
+      font-family: "Raleway", sans-serif;
+      display: block;
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+    // Carousel Controls
+    .carousel-indicators {
+      button.filled-circle {
+        display: block;
+      }
+      button.filled-circle.active {
+        display: block;
+      }
+    }
     button.carousel-control-next {
       float: right;
       position: relative;
@@ -609,28 +615,29 @@ div.rounded-circle {
       position: relative;
       display: inline;
       float: left;
+      margin-bottom: 2rem;
       .bi-arrow-left-circle {
         top: -3rem;
       }
     }
   }
+
   // Circle Carousel
   #circleCarousel {
-    margin-bottom: 4rem;
     button.carousel-control-next {
       float: right;
-      position: relative;
       display: inline;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       .bi-arrow-right-circle {
         top: 0.5rem;
       }
     }
     button.carousel-control-prev {
-      position: relative;
       display: inline;
       float: left;
+      margin-bottom: 5rem;
       .bi-arrow-left-circle {
+        margin-bottom: 10rem;
         top: 0.5rem;
       }
     }
@@ -723,6 +730,10 @@ div.rounded-circle {
     margin-right: 6rem;
     line-height: 3rem;
   }
+  .slide {
+    padding-top: 3rem;
+  }
+
   h5.partner-card-title {
     font-family: "Cabin", sans-serif;
     font-size: 2.4rem;
@@ -738,20 +749,19 @@ div.rounded-circle {
   }
 
   button.carousel-control-next {
-    float: right;
-    position: relative;
     display: inline;
     margin-bottom: 2rem;
     .bi-arrow-right-circle {
       top: -1rem;
+      float: right;
     }
   }
   button.carousel-control-prev {
-    position: relative;
     display: inline;
-    float: left;
+    margin-bottom: 2rem;
     .bi-arrow-left-circle {
-      top: -1rem;
+      top: 0rem;
+      float: left;
     }
   }
   h5.partner-card-title {
@@ -767,7 +777,6 @@ div.rounded-circle {
     line-height: 2rem;
   }
   #circleCarousel {
-    margin-bottom: 3rem;
     div.rounded-circle {
       position: relative;
       width: 24rem;
@@ -777,6 +786,12 @@ div.rounded-circle {
       margin-right: 2.5rem;
       margin-top: 2rem;
       background-color: #e2f0ef !important;
+    }
+    button.carousel-control-next {
+      margin-bottom: 5rem;
+    }
+    button.carousel-control-prev {
+      margin-bottom: 5rem;
     }
   }
 }
@@ -871,6 +886,7 @@ div.rounded-circle {
     display: inline;
     .bi-arrow-left-circle {
       top: -1rem;
+      left: 0rem;
     }
   }
   .slide {
@@ -932,16 +948,16 @@ div.rounded-circle {
     }
   }
   #circleCarousel {
-    .carousel-control-prev {
+    button.carousel-control-prev {
       i.left-arrow-bottom-circles {
         margin-top: 2rem;
-        margin-left: 1rem;
+        left: 0;
       }
     }
-    .carousel-control-next {
+    button.carousel-control-next {
       i.right-arrow-bottom-circles {
         margin-top: 2rem;
-        margin-right: 1rem;
+        margin-right: 0rem;
       }
     }
   }
