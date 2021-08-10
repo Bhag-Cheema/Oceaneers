@@ -8,13 +8,13 @@ import Ocean from "../imgs/Ocean.png";
 import Fish from "../imgs/fish.png";
 import Pills from "../imgs/pills.png";
 import Train from "../imgs/Trainway.png";
+import { Link } from "react-router-dom";
 
 export default class Why extends Component {
   render() {
     return (
       <div>
         <NavBar />
-
         <section className="intro-why">
           <div>
             <p className="title-why">Why You Should Care?</p>
@@ -26,6 +26,11 @@ export default class Why extends Component {
             </p>
           </div>
         </section>
+        <div className="d-flex justify-content-center">
+          <Link to="/joinus">
+          <button className="learn-how-why">Want to Join? Learn how.</button>
+          </Link>
+        </div>
         <section className="compare">
           <div className="indust">
             <p className="sub-title-why">
