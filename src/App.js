@@ -9,6 +9,7 @@ import JoinUs from "./components/JoinUs";
 
 import "./styles/home.scss";
 import "./styles/home.css";
+
 import "bootstrap/dist/css/bootstrap.css";
 // import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
