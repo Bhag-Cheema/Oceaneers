@@ -265,7 +265,7 @@
 .accordion-body-title-joinus {
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
-  font-weight: 300;
+  font-weight: 600;
   border: none;
   text-align: center;
   margin-top: -2.5rem;
@@ -273,10 +273,10 @@
   background-color: #024a63;
   border-radius: 0rem 0rem 0rem 0rem;
   padding-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
   width: 80%;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .accordion-body-joinus {
@@ -284,15 +284,15 @@
   font-size: 2.3rem;
   font-weight: 300;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
   width: 80%;
   background-color: #024a63;
   color: white;
   border-radius: 0rem 0rem 4.3rem 4.3rem;
-  margin-top: -2rem;
+  margin-top: -2.2rem;
   text-align: center;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-accordion-joinus {
@@ -306,7 +306,7 @@
   color: white;
   width: 80%;
   height: 6rem;
-  margin-left: auto;
+  margin-left: 10%;
   margin-right: auto;
   text-align: center;
 }
@@ -734,7 +734,7 @@
   .accordion-body-title-joinus {
     font-family: "Raleway", sans-serif;
     font-size: 2.3rem;
-    font-weight: 300;
+    font-weight: 600;
     border: none;
     text-align: center;
     margin-top: -2.5rem;
@@ -742,8 +742,8 @@
     background-color: #024a63;
     border-radius: 0rem 0rem 0rem 0rem;
     padding-top: 3rem;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     color: white;
   }
@@ -753,13 +753,13 @@
     font-size: 2.3rem;
     font-weight: 300;
     border: none;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     background-color: #024a63;
     color: white;
     border-radius: 0rem 0rem 4.3rem 4.3rem;
-    margin-top: -2rem;
+    margin-top: -2.2rem;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -775,7 +775,7 @@
     color: white;
     width: 80%;
     height: 6rem;
-    margin-left: auto;
+    margin-left: 10%;
     margin-right: auto;
     text-align: center;
   }
