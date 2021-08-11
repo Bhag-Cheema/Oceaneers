@@ -103,7 +103,7 @@ a {
   }
 }
 
-@media screen and (min-width: 994px) and (mac-width: 1150px) {
+@media screen and (min-width: 994px) and (max-width: 1150px) {
   .nav-link {
     font-size: 1.5rem !important;
     margin-left: 1rem;
@@ -1382,6 +1382,22 @@ a {
   }
 }
 
+@media (min-width: 280px) and (max-width: 539px) {
+  .inputs-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
 section.header-image-partner {
   min-height: 60vh;
   background: url("../imgs/Partners/partnerheader.jpg");
@@ -2264,7 +2280,6 @@ div.col-one h1.footer-title {
   font-weight: 700;
   font-size: 4.5rem;
   color: white;
-  position: inherit;
 }
 
 div.col-one p.footer-subtitle {
@@ -2274,7 +2289,6 @@ div.col-one p.footer-subtitle {
   margin-top: 2rem;
   color: white;
   width: 39.3rem;
-  position: inherit;
 }
 
 div.col-one .social-icons .instagram {
@@ -2282,7 +2296,6 @@ div.col-one .social-icons .instagram {
   border-radius: 100%;
   padding: 1.1rem;
   margin-top: 2rem;
-  position: inherit;
 }
 
 div.col-one .social-icons .facebook {
@@ -2291,7 +2304,6 @@ div.col-one .social-icons .facebook {
   padding: 1.1rem 1.8rem;
   margin-left: 1.2rem;
   margin-top: 2rem;
-  position: inherit;
 }
 
 div.col-two p.about-us {
@@ -2335,11 +2347,9 @@ div.col-four button.footer-login {
   border-radius: 2.4rem;
   width: 12rem;
   height: 3.9rem;
-  position: inherit;
 }
 
 div.col-four button.footer-join {
-  position: inherit;
   font-family: "Cabin", sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -2751,7 +2761,27 @@ div.col-four button.footer-join {
   div.col-two p.about-us {
     display: none;
   }
-  div.col-three {
+  div.col-two .facebook {
+    border: 0.1rem solid white;
+    border-radius: 100%;
+    padding: 1.1rem !important;
+    margin-left: -1rem !important;
+    margin-right: 20rem !important;
+    margin-top: 4rem !important;
+    width: 3rem !important;
+  }
+  div.col-two .footer-login {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    font-family: "Cabin", sans-serif;
+    padding: 0.5rem 2rem;
+    background: white;
+    color: #024a63;
+    border-radius: 2.4rem;
+    width: 8rem !important;
+    height: 3rem !important;
+  }
+  div.col-two div.col-three {
     -ms-flex-line-pack: end;
         align-content: flex-end;
     font-size: 1.4rem;
@@ -2765,7 +2795,7 @@ div.col-four button.footer-join {
         -ms-flex-pack: right;
             justify-content: right;
   }
-  div.col-four button.footer-login {
+  div.col-two div.col-four button.footer-login {
     position: absolute;
     top: 3rem;
     left: 2rem;
@@ -2774,7 +2804,7 @@ div.col-four button.footer-join {
     width: 12rem;
     height: 3.9rem;
   }
-  div.col-four button.footer-join {
+  div.col-two div.col-four button.footer-join {
     position: absolute;
     margin-top: 0rem;
     top: 3rem;
@@ -2866,16 +2896,16 @@ section.header-image-about {
   background-position: center;
 }
 
-.header-about {
+p.header-about {
   font-family: "Cabin", sans-serif;
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   font-weight: 700;
   margin-top: 9.2rem;
 }
 
-.header-text-about {
+p.header-text-about {
   font-family: "Cabin", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
   padding: 2.8rem 8rem 11.3rem 8rem;
 }
@@ -3138,11 +3168,197 @@ section.header-image-about {
   font-style: normal;
   margin-top: -2.5rem;
   margin-bottom: 0.5rem !important;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
-@media screen and (min-width: 500px) and (max-width: 768px) {
+@media all and (min-width: 320px) and (max-width: 499px) {
   section.header-image-about {
-    min-height: 50vh;
+    min-height: 60vh !important;
+    background: url("../imgs/aboutus/header1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  section.header-image-about p.header-about {
+    font-size: 4rem !important;
+    font-weight: 700 !important;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 4.5rem;
+  }
+  section.header-image-about p.header-text-about {
+    font-size: 2rem !important;
+    font-weight: 400;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .repeating-h1-about {
+    font-size: 3.2rem !important;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+  .repeating-h1-1-about {
+    font-size: 3.5rem !important;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  .repeating-h2-about {
+    font-size: 1rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+    text-align: center;
+  }
+  .repeating-h2-name {
+    font-size: 1.5rem !important;
+    margin-top: -2.75rem !important;
+    line-height: 3rem !important;
+  }
+  .repeating-h2-iggy {
+    color: #024a63;
+    padding-top: 4rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem !important;
+    font-weight: 600;
+    margin-top: -3rem !important;
+    margin-bottom: 3rem;
+  }
+  .repeating-h3-iggy {
+    color: #024a63;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -3rem !important;
+    margin-bottom: 6rem;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+  .repeating-h3-about {
+    font-size: 0.85rem !important;
+    margin-top: -3.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .h3-about {
+    padding-top: 0rem;
+    padding-bottom: 1rem !important;
+    margin-top: -3rem !important;
+    font-size: 1.1rem !important;
+    padding-left: 0.8rem;
+  }
+  .h3-description {
+    font-size: 1rem !important;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .repeating-h3-team {
+    color: #024a63;
+    padding-top: 0.4rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.3rem !important;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -2.5rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+  }
+  .button-accordion-about {
+    font-size: 0.75rem !important;
+    padding: 1rem 1rem 1rem 1rem !important;
+    width: 5rem !important;
+    height: 2.2rem !important;
+    outline: none !important;
+    border: 0rem solid white !important;
+    border-radius: 5rem !important;
+    text-align: center;
+    margin-top: -5rem !important;
+    margin-bottom: -5rem !important;
+    margin-left: -2rem !important;
+    margin-right: -2rem !important;
+  }
+  .container-about {
+    width: 30rem !important;
+    margin: auto !important;
+  }
+  .container-2 {
+    width: 30rem !important;
+    height: 35rem !important;
+    left: 5px;
+    top: 1618px;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #024a63;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: auto !important;
+    border-radius: 58px;
+  }
+  .col-sm {
+    width: 100px !important;
+  }
+  .col-md {
+    width: 100px !important;
+  }
+  .rounded-circle-team {
+    margin-left: 0.4rem !important;
+  }
+  .col-4 {
+    display: none !important;
+  }
+  .col-8 {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0.5rem;
+  }
+  .interview {
+    padding: 0rem 2rem !important;
+    margin-top: -6rem !important;
+    margin-left: 3rem !important;
+    font-size: 0.8rem !important;
+    height: 2rem !important;
+  }
+  .bi-instagram {
+    font-size: 1.5rem !important;
+    margin-left: 15rem !important;
+    margin-top: -2.75rem !important;
+  }
+  .bi-facebook {
+    margin-left: 1rem !important;
+    font-size: 1.75rem !important;
+    margin-top: -2.75rem !important;
+  }
+  .h3-description {
+    font-size: 1rem !important;
+    padding-right: 1rem !important;
+    padding-left: 0.5rem !important;
+    margin-bottom: -2rem !important;
+  }
+  .list {
+    margin-top: -1rem !important;
+  }
+  .il {
+    font-size: 0.9rem !important;
+    line-height: 1.2rem !important;
+    margin-top: 0rem !important;
+    padding-right: 0.1rem;
+    margin-left: -1.1rem;
+  }
+  .rounded {
+    margin-top: 5rem;
+    width: 30% !important;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 768px) {
+  section.header-image-about {
+    min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -3150,15 +3366,15 @@ section.header-image-about {
   }
   section.header-image-about p.header-about {
     font-size: 5rem !important;
-    margin-top: 6rem;
+    margin-top: 6rem !important;
     margin-bottom: 0rem;
   }
   section.header-image-about p.header-text-about {
     font-size: 2.8rem !important;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
     margin-top: 0rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem !important;
   }
   .learn-how-about {
     padding: 0.5rem 3.5rem;
@@ -3213,6 +3429,8 @@ section.header-image-about {
     font-style: normal;
     margin-top: -3rem !important;
     margin-bottom: 6rem;
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
   }
   .repeating-h3-about {
     font-size: 0.85rem !important;
@@ -3315,7 +3533,7 @@ section.header-image-about {
     margin-top: -2rem !important;
   }
   .il {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     line-height: 1.6rem;
     margin-top: 0rem !important;
     padding-right: 0.1rem;
@@ -3327,25 +3545,25 @@ section.header-image-about {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+@media all and (min-width: 769px) and (max-width: 1280px) {
   section.header-image-about {
-    min-height: 50vh;
+    min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   section.header-image-about p.header-about {
-    font-size: 5rem !important;
-    margin-top: 6rem;
+    font-size: 5.5rem !important;
+    margin-top: 6rem !important;
     margin-bottom: 0rem;
   }
   section.header-image-about p.header-text-about {
-    font-size: 2.8rem !important;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 0rem;
-    margin-bottom: 4rem;
+    font-size: 3rem !important;
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 4rem !important;
   }
   .repeating-h2-about {
     font-size: 1.5rem !important;
@@ -3366,6 +3584,8 @@ section.header-image-about {
     font-style: normal;
     margin-top: -2.5rem;
     margin-bottom: 6rem;
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
   }
   .button-accordion-about {
     font-size: 1.2rem !important;
@@ -3427,13 +3647,25 @@ section.header-image-about {
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1280px) {
-  .header-about {
-    font-family: "Cabin", sans-serif;
-    font-size: 6rem !important;
+@media all and (min-width: 1000px) and (max-width: 1280px) {
+  section.header-image-about {
+    min-height: 50vh !important;
+    background: url("../imgs/aboutus/header1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  .header-text-about {
-    font-size: 3rem !important;
+  section.header-image-about p.header-about {
+    font-size: 5.5rem !important;
+    margin-top: 6rem;
+    margin-bottom: 0rem;
+  }
+  section.header-image-about p.header-text-about {
+    font-size: 4rem !important;
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 4rem;
   }
   .repeating-h2-about {
     font-size: 2rem !important;
@@ -3442,188 +3674,6 @@ section.header-image-about {
   }
   .repeating-h3-iggy {
     font-size: 2.3rem !important;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 499px) {
-  section.header-image-about {
-    min-height: 60vh;
-    background: url("../imgs/aboutus/header1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  section.header-image-about p.header-about {
-    font-size: 4rem !important;
-    font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    line-height: 4.5rem;
-  }
-  section.header-image-about p.header-text-about {
-    font-size: 2rem !important;
-    font-weight: 400;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-  }
-  .repeating-h1-about {
-    font-size: 3.2rem !important;
-    font-weight: bold;
-    margin-top: 3rem;
-  }
-  .repeating-h1-1-about {
-    font-size: 3.5rem !important;
-    font-weight: 700;
-    margin-top: 3rem;
-    margin-left: 4rem;
-    margin-bottom: 3rem;
-    padding-top: 2rem;
-  }
-  .repeating-h2-about {
-    font-size: 1rem !important;
-    margin-top: 1rem !important;
-    margin-bottom: 3rem !important;
-    text-align: center;
-  }
-  .repeating-h2-name {
-    font-size: 1.5rem !important;
-    margin-top: -2.75rem !important;
-    line-height: 3rem !important;
-  }
-  .repeating-h2-iggy {
-    color: #024a63;
-    padding-top: 4rem;
-    font-family: "Cabin", sans-serif;
-    font-size: 2rem !important;
-    font-weight: 600;
-    margin-top: -3rem !important;
-    margin-bottom: 3rem;
-  }
-  .repeating-h3-iggy {
-    color: #024a63;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    font-family: "Cabin", sans-serif;
-    font-size: 1.5rem !important;
-    font-weight: normal;
-    font-style: normal;
-    margin-top: -3rem !important;
-    margin-bottom: 6rem;
-  }
-  .repeating-h3-about {
-    font-size: 0.85rem !important;
-    margin-top: -3.5rem !important;
-    margin-bottom: 0.5rem !important;
-  }
-  .h3-about {
-    padding-top: 0rem;
-    padding-bottom: 1rem !important;
-    margin-top: -3rem !important;
-    font-size: 1.1rem !important;
-    padding-left: 0.8rem;
-  }
-  .h3-description {
-    font-size: 1rem !important;
-    font-weight: normal;
-    font-style: normal;
-  }
-  .repeating-h3-team {
-    color: #024a63;
-    padding-top: 0.4rem;
-    font-family: "Cabin", sans-serif;
-    font-size: 1.3rem !important;
-    font-weight: normal;
-    font-style: normal;
-    margin-top: -2.5rem;
-    margin-bottom: 3rem;
-    padding-left: 1rem;
-  }
-  .button-accordion-about {
-    font-size: 0.6rem !important;
-    padding: 1rem 1rem 1rem 1rem !important;
-    width: 5rem !important;
-    height: 2.2rem !important;
-    outline: none !important;
-    border: 0rem solid white !important;
-    border-radius: 5rem !important;
-    text-align: center;
-    margin-top: -5rem !important;
-    margin-bottom: -5rem !important;
-    margin-left: -2rem !important;
-    margin-right: -2rem !important;
-  }
-  .container-about {
-    width: 30rem !important;
-    margin: auto !important;
-  }
-  .container-2 {
-    width: 30rem !important;
-    height: 35rem !important;
-    left: 5px;
-    top: 1618px;
-    text-align: left;
-    background: #ffffff;
-    border: 1px solid #024a63;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: auto !important;
-    border-radius: 58px;
-  }
-  .col-sm {
-    width: 75px !important;
-  }
-  .col-md {
-    width: 100px !important;
-  }
-  .rounded-circle-team {
-    margin-left: 0.5rem !important;
-  }
-  .col-4 {
-    display: none !important;
-  }
-  .col-8 {
-    width: 100% !important;
-    height: 100% !important;
-    margin-left: 0.5rem;
-  }
-  .interview {
-    padding: 0rem 2rem !important;
-    margin-top: -6rem !important;
-    margin-left: 3rem !important;
-    font-size: 0.8rem !important;
-    height: 2rem !important;
-  }
-  .bi-instagram {
-    font-size: 1.5rem !important;
-    margin-left: 15rem !important;
-    margin-top: -2.75rem !important;
-  }
-  .bi-facebook {
-    margin-left: 1rem !important;
-    font-size: 1.75rem !important;
-    margin-top: -2.75rem !important;
-  }
-  .h3-description {
-    font-size: 1rem !important;
-    padding-right: 1rem !important;
-    padding-left: 0.5rem !important;
-    margin-bottom: -2rem !important;
-  }
-  .list {
-    margin-top: -1rem !important;
-  }
-  .il {
-    font-size: 0.9rem !important;
-    line-height: 1.2rem !important;
-    margin-top: 0rem !important;
-    padding-right: 0.1rem;
-    margin-left: -1.1rem;
-  }
-  .rounded {
-    margin-top: 5rem;
-    width: 30% !important;
   }
 }
 
@@ -3678,105 +3728,6 @@ section.header-image-about {
   margin-bottom: 3.3rem;
 }
 
-div.joinus-image-left-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  width: 50%;
-  max-width: 56.98rem;
-  margin-left: 10%;
-  margin-bottom: 5.37rem;
-}
-
-div.joinus-image-left-col p.joinus-card-text {
-  position: absolute;
-  bottom: 14.6rem;
-  font-family: "Cabin", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 600;
-  color: white;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-div.joinus-image-left-col .check-email-card3 {
-  position: absolute;
-  bottom: 4.7rem;
-  font-family: "Cabin", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  color: white;
-}
-
-div.joinus-image-left-col .joinus-card-btn {
-  position: absolute;
-  bottom: 4.7rem;
-  background-color: #ff7c5c;
-  color: white;
-  font-size: 2rem;
-  font-family: "Cabin", sans-serif;
-  font-weight: 600;
-  padding: 1rem 1.6rem;
-  border-radius: 4.3rem;
-}
-
-.joinus-image-right-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  width: 50%;
-  max-width: 56.98rem;
-  margin-right: 10%;
-  margin-bottom: 5.37rem;
-}
-
-.joinus-image-right-col .joinus-card-text {
-  position: absolute;
-  bottom: 14.6rem;
-  font-family: "Cabin", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 600;
-  color: white;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-.joinus-image-right-col .joinus-card-btn {
-  position: absolute;
-  background-color: #ff7c5c;
-  bottom: 4.7rem;
-  color: white;
-  font-size: 2rem;
-  font-family: "Cabin", sans-serif;
-  font-weight: 600;
-  padding: 1rem 1.6rem;
-  border-radius: 4.3rem;
-}
-
 .form-field-card {
   background: #bededf;
   margin-left: 10%;
@@ -3786,14 +3737,14 @@ div.joinus-image-left-col .joinus-card-btn {
   padding: 3.3rem 6.5rem 3.3rem 6.5rem;
 }
 
-.form-field-card .form-title-join {
+.form-field-card h2.form-title-join {
   font-family: "cabin", sans-serif;
   font-size: 4rem;
   font-weight: 600;
   color: #024a63;
 }
 
-.form-field-card .form-subtitle-join {
+.form-field-card p.form-subtitle-join {
   font-family: "cabin", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
@@ -3928,7 +3879,7 @@ div.joinus-image-left-col .joinus-card-btn {
 .accordion-body-title-joinus {
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
-  font-weight: 300;
+  font-weight: 600;
   border: none;
   text-align: center;
   margin-top: -2.5rem;
@@ -3936,10 +3887,10 @@ div.joinus-image-left-col .joinus-card-btn {
   background-color: #024a63;
   border-radius: 0rem 0rem 0rem 0rem;
   padding-top: 3rem;
-  margin-left: 12%;
-  margin-right: 12%;
   width: 80%;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .accordion-body-joinus {
@@ -3947,15 +3898,15 @@ div.joinus-image-left-col .joinus-card-btn {
   font-size: 2.3rem;
   font-weight: 300;
   border: none;
-  margin-left: 12%;
-  margin-right: 12%;
   width: 80%;
   background-color: #024a63;
   color: white;
   border-radius: 0rem 0rem 4.3rem 4.3rem;
-  margin-top: -2rem;
+  margin-top: -2.2rem;
   text-align: center;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-accordion-joinus {
@@ -3969,8 +3920,8 @@ div.joinus-image-left-col .joinus-card-btn {
   color: white;
   width: 80%;
   height: 6rem;
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-left: 10%;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -3979,6 +3930,231 @@ div.joinus-image-left-col .joinus-card-btn {
   font-size: 2.4rem;
   right: 3rem;
   font-size: 2.5rem;
+}
+
+.card-headers {
+  text-align: center;
+  font-family: "cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #024a63;
+  margin-bottom: 3.3rem;
+}
+
+.join-us-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.join-us-cards .join-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.join-us-cards h5 {
+  text-align: center;
+  padding-bottom: 10rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 3.2rem;
+}
+
+.join-us-cards .active-card-text {
+  text-align: center;
+  padding-bottom: 20rem;
+  font-family: "Cabin", sans-serif;
+  font-size: 3.2rem;
+}
+
+.join-us-cards .check-email-card3 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 4.7rem;
+}
+
+.join-us-cards .joinus-card-btn {
+  background-color: #ff7c5c;
+  color: white;
+  font-size: 2rem;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  padding: 1rem 1.6rem;
+  border-radius: 4.3rem;
+  margin-bottom: 4.7rem;
+}
+
+.join-us-cards .make-card-itself {
+  border: solid;
+  background: url("../imgs/Joinus/(1)makeitoffical.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 56.9rem;
+  height: 39.6rem;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.join-us-cards .commit-card-itself {
+  border: solid;
+  background: url("../imgs/Joinus/(2)commit to your .jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 56.9rem;
+  height: 39.6rem;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.join-us-cards .pay-card-itself {
+  border: solid;
+  background: url("../imgs/Joinus/(3) pay R50.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 56.9rem;
+  height: 39.6rem;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.join-us-cards .get-card-itself {
+  border: solid;
+  background: url("../imgs/Joinus/(4) get access.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 56.9rem;
+  height: 39.6rem;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.join-us-cards .salty-card-itself {
+  border: solid;
+  background: url("../imgs/Joinus/(5)join our salty.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 56.9rem;
+  height: 39.6rem;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.join-us-cards .active-card-itself {
+  border: solid;
+  background: url("../imgs/Joinus/(6) be active.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 56.9rem;
+  height: 39.6rem;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1280px) {
@@ -4127,74 +4303,74 @@ div.joinus-image-left-col .joinus-card-btn {
     border-radius: 4.3rem;
     padding: 3.3rem 6.5rem 3.3rem 6.5rem;
   }
-  .form-title-join {
+  .form-field-card h2.form-title-join {
     font-family: "cabin", sans-serif;
     font-size: 4rem;
     font-weight: 600;
     color: #024a63;
   }
-  .form-subtitle-join {
+  .form-field-card p.form-subtitle-join {
     font-family: "cabin", sans-serif;
     font-size: 2.4rem;
     font-weight: 400;
     color: #024a63;
     margin-bottom: 2.4rem;
   }
-  .join-us-form-labels {
+  .form-field-card .join-us-form-labels {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color: #024a63;
   }
-  input[type="text"] {
+  .form-field-card input[type="text"] {
     padding: 2rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  input[type="email"] {
+  .form-field-card input[type="email"] {
     padding: 2rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  input[type="number"] {
+  .form-field-card input[type="number"] {
     padding: 2rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  textarea[type="text"] {
+  .form-field-card textarea[type="text"] {
     padding: 1rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  .input-rows .left-col {
+  .form-field-card .input-rows .left-col {
     height: 4.4rem;
     border-radius: 2rem;
     border: none;
     margin-bottom: 2.4rem;
   }
-  .input-rows .right-col {
+  .form-field-card .input-rows .right-col {
     height: 4.4rem;
     border-radius: 2rem;
     border: none;
     margin-bottom: 2.4rem;
   }
-  .full-width {
+  .form-field-card .full-width {
     float: left;
     height: 4.4rem;
     border-radius: 2rem;
     border: none;
     margin-bottom: 2.4rem;
   }
-  .join-us-form-checkboxes {
+  .form-field-card .join-us-form-checkboxes {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color: #024a63;
   }
-  .checkboxes {
+  .form-field-card .checkboxes {
     margin-top: 5.6rem;
   }
-  input.radio-button {
+  .form-field-card input.radio-button {
     width: 2.4rem;
     height: 2.4rem;
     margin-right: 1rem;
@@ -4202,14 +4378,14 @@ div.joinus-image-left-col .joinus-card-btn {
     margin-left: 0rem;
     border: none;
   }
-  input.checkbox-join {
+  .form-field-card input.checkbox-join {
     margin-top: 1rem;
     width: 2.4rem;
     height: 2.4rem;
     margin-right: 1rem;
     border: none;
   }
-  button.sign-up-btn {
+  .form-field-card button.sign-up-btn {
     color: white;
     margin-top: 4.5rem;
     margin-bottom: 3.5rem;
@@ -4251,7 +4427,7 @@ div.joinus-image-left-col .joinus-card-btn {
   .accordion-body-title-joinus {
     font-family: "Raleway", sans-serif;
     font-size: 2.3rem;
-    font-weight: 300;
+    font-weight: 600;
     border: none;
     text-align: center;
     margin-top: -2.5rem;
@@ -4259,8 +4435,8 @@ div.joinus-image-left-col .joinus-card-btn {
     background-color: #024a63;
     border-radius: 0rem 0rem 0rem 0rem;
     padding-top: 3rem;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     color: white;
   }
@@ -4269,13 +4445,13 @@ div.joinus-image-left-col .joinus-card-btn {
     font-size: 2.3rem;
     font-weight: 300;
     border: none;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     background-color: #024a63;
     color: white;
     border-radius: 0rem 0rem 4.3rem 4.3rem;
-    margin-top: -2rem;
+    margin-top: -2.2rem;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -4290,8 +4466,8 @@ div.joinus-image-left-col .joinus-card-btn {
     color: white;
     width: 80%;
     height: 6rem;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 10%;
+    margin-right: auto;
     text-align: center;
   }
   .plus-icon-joinus {
@@ -4325,74 +4501,74 @@ div.joinus-image-left-col .joinus-card-btn {
     border-radius: 4.3rem;
     padding: 3.3rem 6.5rem 3.3rem 6.5rem;
   }
-  .form-title-join {
+  .form-field-card .form-title-join {
     font-family: "cabin", sans-serif;
     font-size: 4rem;
     font-weight: 600;
     color: #024a63;
   }
-  .form-subtitle-join {
+  .form-field-card .form-subtitle-join {
     font-family: "cabin", sans-serif;
     font-size: 2.4rem;
     font-weight: 400;
     color: #024a63;
     margin-bottom: 2.4rem;
   }
-  .join-us-form-labels {
+  .form-field-card .join-us-form-labels {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color: #024a63;
   }
-  input[type="text"] {
+  .form-field-card input[type="text"] {
     padding: 2rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  input[type="email"] {
+  .form-field-card input[type="email"] {
     padding: 2rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  input[type="number"] {
+  .form-field-card input[type="number"] {
     padding: 2rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  textarea[type="text"] {
+  .form-field-card textarea[type="text"] {
     padding: 1rem;
     font-size: 2rem;
     font-family: "raleway", sans-serif;
   }
-  .input-rows .left-col {
+  .form-field-card .input-rows .left-col {
     height: 4.4rem;
     border-radius: 2rem;
     border: none;
     margin-bottom: 2.4rem;
   }
-  .input-rows .right-col {
+  .form-field-card .input-rows .right-col {
     height: 4.4rem;
     border-radius: 2rem;
     border: none;
     margin-bottom: 2.4rem;
   }
-  .full-width {
+  .form-field-card .full-width {
     float: left;
     height: 4.4rem;
     border-radius: 2rem;
     border: none;
     margin-bottom: 2.4rem;
   }
-  .join-us-form-checkboxes {
+  .form-field-card .join-us-form-checkboxes {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color: #024a63;
   }
-  .checkboxes {
+  .form-field-card .checkboxes {
     margin-top: 5.6rem;
   }
-  input.radio-button {
+  .form-field-card input.radio-button {
     width: 2.4rem;
     min-width: 2.4rem;
     height: 2.4rem;
@@ -4401,7 +4577,7 @@ div.joinus-image-left-col .joinus-card-btn {
     margin-left: 0rem;
     border: none;
   }
-  input.checkbox-join {
+  .form-field-card input.checkbox-join {
     margin-top: 1rem;
     width: 2rem;
     min-width: 2rem;
@@ -4409,7 +4585,7 @@ div.joinus-image-left-col .joinus-card-btn {
     margin-right: 1rem;
     border: none;
   }
-  button.sign-up-btn {
+  .form-field-card button.sign-up-btn {
     color: white;
     margin-top: 4.5rem;
     margin-bottom: 3.5rem;
@@ -4424,9 +4600,6 @@ div.joinus-image-left-col .joinus-card-btn {
     cursor: pointer;
   }
   div.joinus-image-left-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -4434,14 +4607,10 @@ div.joinus-image-left-col .joinus-card-btn {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     position: relative;
-    width: 50%;
     max-width: 56.98rem;
     margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 5.37rem;
   }
   div.joinus-image-left-col p.joinus-card-text {
@@ -4517,23 +4686,211 @@ div.joinus-image-left-col .joinus-card-btn {
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 499px) {
+  .joinus-cabin-large {
+    font-size: 4rem;
+    margin-top: 15rem;
+  }
+  .joinus-cabin-small {
+    font-size: 2rem;
+    margin-bottom: 10%;
+  }
+  .join-us-body {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2rem;
+    margin-top: 4%;
+  }
+  .repeating-h1-join {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+  }
+  .card-headers {
+    font-size: 2rem;
+    margin-bottom: 3.3rem;
+  }
+  .card-headers {
+    text-align: center;
+    font-family: "cabin", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #024a63;
+    margin-bottom: 3.3rem;
+  }
+  .join-us-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .join-us-cards .join-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .join-us-cards h5 {
+    text-align: center;
+    padding-bottom: 0rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.6rem;
+  }
+  .join-us-cards .active-card-text {
+    text-align: center;
+    padding-bottom: 10rem;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.6rem;
+  }
+  .join-us-cards .check-email-card3 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 4.7rem;
+  }
+  .join-us-cards .joinus-card-btn {
+    background-color: #ff7c5c;
+    color: white;
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 4.3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .join-us-cards .make-card-itself {
+    border: solid;
+    background: url("../imgs/Joinus/(1)makeitoffical.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .join-us-cards .commit-card-itself {
+    border: solid;
+    background: url("../imgs/Joinus/(2)commit to your .jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .join-us-cards .pay-card-itself {
+    border: solid;
+    background: url("../imgs/Joinus/(3) pay R50.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .join-us-cards .get-card-itself {
+    border: solid;
+    background: url("../imgs/Joinus/(4) get access.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .join-us-cards .salty-card-itself {
+    border: solid;
+    background: url("../imgs/Joinus/(5)join our salty.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .join-us-cards .active-card-itself {
+    border: solid;
+    background: url("../imgs/Joinus/(6) be active.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
   .form-field-card {
     margin-top: 5rem;
     border-radius: 4.3rem;
     padding: 3.3rem 2rem 1rem 2rem;
   }
-  .form-field-card .form-title-join {
-    font-family: "cabin", sans-serif;
+  .form-field-card h2.form-title-join {
     font-size: 2.2rem;
-    font-weight: 600;
     text-align: center;
   }
-  .form-field-card .form-subtitle-join {
-    font-family: "cabin", sans-serif;
+  .form-field-card p.form-subtitle-join {
     font-size: 1.6rem;
-    font-weight: 400;
-    color: #024a63;
     margin-bottom: 2.4rem;
   }
   .form-field-card .join-us-form-labels {
@@ -4619,5 +4976,21 @@ div.joinus-image-left-col .joinus-card-btn {
     line-height: 2.4rem;
     cursor: pointer;
   }
+}
+
+.h2-login {
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+}
+
+.form-label {
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+}
+
+.btn-primary {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem !important;
+  margin-right: 3rem;
 }
 /*# sourceMappingURL=home.css.map */
