@@ -641,7 +641,7 @@ p.header-text-about {
   }
 }
 //Large Screens: Ipad Pro and Desktop
-@media all and (min-width: 769px) and (max-width: 1280px) {
+@media all and (min-width: 769px) and (max-width: 1300px) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -676,7 +676,7 @@ p.header-text-about {
     padding-top: 2rem;
     padding-bottom: 3rem;
     font-family: "Cabin", sans-serif;
-    font-size: 1.8rem !important;
+    font-size: 2.2rem !important;
     font-weight: normal;
     font-style: normal;
     margin-top: -2.5rem;
@@ -739,14 +739,14 @@ p.header-text-about {
     font-size: 2.5rem;
   }
   .il {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     padding-right: 1rem;
     line-height:1.6rem;
-    margin-top:0.3rem !important;
+    margin-top:0.2rem !important;
   }
 }
 // Large Screens Bigger Headers
-@media all and (min-width: 1000px) and (max-width:1280px) {
+@media all and (min-width: 1000px) and (max-width:1300) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
