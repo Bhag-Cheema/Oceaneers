@@ -13,7 +13,6 @@ div.col-one {
     font-weight: 700;
     font-size: 4.5rem;
     color: white;
-    position: inherit;
   }
   p.footer-subtitle {
     font-family: "Cabin", sans-serif;
@@ -22,7 +21,6 @@ div.col-one {
     margin-top: 2rem;
     color: white;
     width: 39.3rem;
-    position: inherit;
   }
   .social-icons {
     .instagram {
@@ -30,7 +28,6 @@ div.col-one {
       border-radius: 100%;
       padding: 1.1rem;
       margin-top: 2rem;
-      position: inherit;
     }
     .facebook {
       border: 0.1rem solid white;
@@ -38,7 +35,6 @@ div.col-one {
       padding: 1.1rem 1.8rem;
       margin-left: 1.2rem;
       margin-top: 2rem;
-      position: inherit;
     }
   }
 }
@@ -74,10 +70,8 @@ div.col-four {
     border-radius: 2.4rem;
     width: 12rem;
     height: 3.9rem;
-    position: inherit;
   }
   button.footer-join {
-    position: inherit;
     font-family: "Cabin", sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -507,35 +501,55 @@ div.col-four {
     p.about-us {
       display: none;
     }
-  }
-  div.col-three {
-    align-content: flex-end;
-    font-size: 1.4rem;
-    position: absolute;
-    left: 23rem;
-    top: 9rem;
-    display: flex;
-    justify-content: right;
-  }
-  div.col-four {
-    button.footer-login {
-      position: absolute;
-      top: 3rem;
-      left: 2rem;
-      padding: 0.5rem 2rem;
-      font-size: 1.6rem;
-      width: 12rem;
-      height: 3.9rem;
+    .facebook {
+      border: 0.1rem solid white;
+      border-radius: 100%;
+      padding: 1.1rem !important;
+      margin-left: -1rem !important;
+      margin-right: 20rem !important;
+      margin-top: 4rem !important;
+      width: 3rem !important;
     }
-    button.footer-join {
-      position: absolute;
-      margin-top: 0rem;
-      top: 3rem;
-      right: 2rem;
-      font-size: 1.6rem;
+    .footer-login {
+      font-size: 1.5rem !important;
+      font-weight: 600;
+      font-family: "Cabin", sans-serif;
       padding: 0.5rem 2rem;
-      width: 12rem;
-      height: 3.9rem;
+      background: white;
+      color: #024a63;
+      border-radius: 2.4rem;
+      width: 8rem !important;
+      height: 3rem !important;
+    }
+    div.col-three {
+      align-content: flex-end;
+      font-size: 1.4rem;
+      position: absolute;
+      left: 23rem;
+      top: 9rem;
+      display: flex;
+      justify-content: right;
+    }
+    div.col-four {
+      button.footer-login {
+        position: absolute;
+        top: 3rem;
+        left: 2rem;
+        padding: 0.5rem 2rem;
+        font-size: 1.6rem;
+        width: 12rem;
+        height: 3.9rem;
+      }
+      button.footer-join {
+        position: absolute;
+        margin-top: 0rem;
+        top: 3rem;
+        right: 2rem;
+        font-size: 1.6rem;
+        padding: 0.5rem 2rem;
+        width: 12rem;
+        height: 3.9rem;
+      }
     }
   }
 }
