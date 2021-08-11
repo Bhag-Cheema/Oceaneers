@@ -23,7 +23,7 @@ export default class NewsLetter extends Component {
                                     <input type="text" id="lname" name="lastname"></input>
                                 </div>
                             </div>
-                            <div className="emaill">
+                            <div className="email">
                                 <label>Email:</label>
                                 <input type="email" id="email" name="email"></input>
                             </div>

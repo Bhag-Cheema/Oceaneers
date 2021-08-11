@@ -89,3 +89,13 @@
     text-align: center;
   }
 }
+
+// iphone X
+@media (min-width: 280px) and (max-width: 539px) {
+  .inputs-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

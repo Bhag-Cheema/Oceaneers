@@ -103,7 +103,7 @@ a {
   }
 }
 
-@media screen and (min-width: 994px) and (mac-width: 1150px) {
+@media screen and (min-width: 994px) and (max-width: 1150px) {
   .nav-link {
     font-size: 1.5rem !important;
     margin-left: 1rem;
@@ -1367,6 +1367,22 @@ a {
   .desc-container {
     text-align: center;
   }
+  .inputs-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 539px) {
   .inputs-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

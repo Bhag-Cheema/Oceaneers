@@ -1,12 +1,42 @@
 import React, { Component } from "react";
 import Navbar from "./NavBar";
+import AddEvents from "./AddEvents";
 import events from "../imgs/events.png";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import firebase from "../firebase/firebase";
+
+const db = firebase.firestore();
 
 export default class Events extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = { 
+      events: [],
+    };
+  }
+
+componentDidMount() {
+  this.fetchEvents();
+
+}
+
+async fetchEvents() {
+  try {
+    const snapshot = await db.collection('events').get();
+    const events = snapshot.docs.map(doc => {
+      return { id: doc.id, ...doc.data()}
+    });
+    this.setState({events: events});
+  } catch (err) {
+    console.log(err);
+  }
+}
   render() {
+    const {events} = this.state;
     return (
       <div>
         <Navbar />
@@ -30,6 +60,27 @@ export default class Events extends Component {
             </button>
           </Link>
         </div>
+        {/* render out the events images */}
+
+        <div> 
+          {
+            events.map(event => {
+              return <div key={event.id}>
+                <img
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  objectFit: "cover",
+                }}
+                src={event.downloadUrl}
+                alt="Event cover"
+              />
+                </div>
+            })
+            }
+        </div>
+        <AddEvents/>
+
         <NewsLetter />
         <Footer />
       </div>

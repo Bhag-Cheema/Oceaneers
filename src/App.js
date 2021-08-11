@@ -42,7 +42,7 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/login" exact component={Login} />
           <Route path="/why" exact component={Why} />
-          <Route path="/events" exact component={Events} />
+          <Route path="/events" exact render={(props) => <Events {...props}  />} />
           <Route path="/partners" exact component={Partners} />
           <Route path="/aboutus" exact component={About} />
           <Route path="/joinus" exact component={JoinUs} />
