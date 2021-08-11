@@ -19,8 +19,8 @@ export default class JoinUs extends Component {
   constructor(props) {
     super(props);
 
-    this.auth = firebase.auth();
-    this.db = firebase.firestore();
+    this.auth = firebase.auth(); // email and password 
+    this.db = firebase.firestore(); // users data like name phone etc
 
     this.state = {
       firstname: "",
@@ -107,6 +107,10 @@ export default class JoinUs extends Component {
     } else {
     }
   }
+
+
+
+  // front end 
   render() {
     const {
       firstname,
@@ -419,7 +423,6 @@ export default class JoinUs extends Component {
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault2"
-                  checked
                 />
                 <label
                   className="form-check-label join-us-form-checkboxes"

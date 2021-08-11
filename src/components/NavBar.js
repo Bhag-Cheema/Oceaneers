@@ -23,8 +23,8 @@ export default class NavBar extends Component {
             <div>
                 <header className="main-head">
                     <nav className="navbar navbar-expand-lg navbar-dark">
-                        <div className="m-2 ">
-                            <img src={logo} alt="Logo" height="20" />
+                        <div className="m-2 image">
+                            <img src={logo} alt="Logo" height="10" />
                         </div>
                         <button
                             className="navbar-toggler me-2"
