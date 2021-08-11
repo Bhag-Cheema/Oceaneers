@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import Navbar from "./NavBar";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
@@ -233,7 +235,8 @@ export default class Partners extends Component {
                     View the full interview with James
                   </button>
                   <div className="social-media d-flex justify-content-center">
-                    <i className="bi bi-instagram "></i>
+                  
+                    <i className="bi bi-instagram"></i>
                     <i className="bi bi-facebook"></i>
                   </div>
                 </div>
@@ -713,7 +716,7 @@ export default class Partners extends Component {
           </h3>
         </div>
 
-        {/* <NewsLetter /> */}
+        <NewsLetter />
 
         <Footer />
       </div> //end render class
