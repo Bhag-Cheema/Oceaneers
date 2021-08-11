@@ -6,6 +6,7 @@ import Events from "./components/Events";
 import Why from "./components/Why";
 import About from "./components/About";
 import JoinUs from "./components/JoinUs";
+import firebase from "./firebase/firebase";
 
 import "./styles/home.scss";
 import "./styles/home.css";
@@ -16,6 +17,24 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.auth = firebase.auth();
+    this.db = firebase.firestore();
+
+    this.state = {
+      user: null
+    }
+
+  }
+
+
+  componentDidMount() {
+    this.auth.onAuthStateChanged(user => {
+      this.setState({ user });
+    })
+  }
   render() {
     return (
       <div>

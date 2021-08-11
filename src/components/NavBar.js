@@ -60,10 +60,10 @@ export default class NavBar extends Component {
                                     <NavLink className="nav-link" to="/">Blog</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <button className="join">Join Us</button>
+                                    <NavLink to="/joinus"><button className="join">Join Us</button></NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <button className="login">Login</button>
+                                    <NavLink to="/login"><button className="login">Login</button></NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <i className="bi bi-search pointer-why"></i>
@@ -71,8 +71,8 @@ export default class NavBar extends Component {
                             </ul>
                         </div>
                     </nav>
-                </header>
-            </div>
+                </header >
+            </div >
         )
     }
 }

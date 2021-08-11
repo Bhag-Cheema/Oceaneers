@@ -20,6 +20,7 @@ export default class JoinUs extends Component {
     super(props);
 
     this.auth = firebase.auth();
+    this.db = firebase.firestore();
 
     this.state = {
       firstname: "",
@@ -36,9 +37,93 @@ export default class JoinUs extends Component {
       raise: false,
       pay: false,
       fill: false,
+      error: "",
     };
   }
+
+  handlePassiveClicked = () => {
+    this.setState({ passive: !this.state.passive });
+  };
+
+  handleActiveClicked = () => {
+    this.setState({ active: !this.state.active });
+  };
+
+  handleRaiseClicked = () => {
+    this.setState({ raise: !this.state.raise });
+  };
+
+  handlePayClicked = () => {
+    this.setState({ pay: !this.state.pay });
+  };
+
+  handleFillClicked = () => {
+    this.setState({ fill: !this.state.fill });
+  };
+
+  async onJoin(e) {
+    e.preventDefault();
+    if (
+      (this.state.passive || this.state.active) &&
+      this.state.raise &&
+      this.state.pay &&
+      this.state.fill
+    ) {
+      try {
+        const {
+          firstname,
+          lastname,
+          city,
+          country,
+          email,
+          password,
+          phone,
+          how,
+          why,
+          passive,
+          active,
+        } = this.state;
+        const cred = await this.auth.createUserWithEmailAndPassword(
+          email,
+          password
+        );
+        await this.db.collection("members").doc(cred.user.uid).set({
+          firstname,
+          lastname,
+          phone,
+          city,
+          country,
+          email,
+          how,
+          why,
+          passive,
+          active,
+        });
+        this.props.history.push("/");
+        console.log(cred.user);
+      } catch (err) {
+        this.setState({ error: err.message });
+      }
+    } else {
+    }
+  }
   render() {
+    const {
+      firstname,
+      lastname,
+      city,
+      country,
+      email,
+      password,
+      phone,
+      how,
+      why,
+      passive,
+      active,
+      raise,
+      pay,
+      fill,
+    } = this.state;
     return (
       <div>
         {/* Header Video */}
@@ -150,10 +235,11 @@ export default class JoinUs extends Component {
         </div>
 
         {/* Form Card */}
+
         <div className="form-field-card">
           <h2 className="form-title-join">Become an Oceaneer today.</h2>
           <p className="form-subtitle-join">Already have an account? Log in</p>
-          <form id="sign-up-form">
+          <form onSubmit={(e) => this.onJoin(e)} id="sign-up-form">
             {/* Column 1: first and last name */}
             <div className="row input-rows">
               <div className="col">
@@ -164,6 +250,8 @@ export default class JoinUs extends Component {
                   First Name
                 </label>
                 <input
+                  value={firstname}
+                  onChange={(e) => this.setState({ firstname: e.target.value })}
                   type="text"
                   className="form-control left-col"
                   aria-label="First name"
@@ -177,6 +265,8 @@ export default class JoinUs extends Component {
                   Last Name
                 </label>
                 <input
+                  value={lastname}
+                  onChange={(e) => this.setState({ lastname: e.target.value })}
                   type="text"
                   className="form-control right-col"
                   aria-label="Last name"
@@ -194,6 +284,8 @@ export default class JoinUs extends Component {
                   City
                 </label>
                 <input
+                  value={city}
+                  onChange={(e) => this.setState({ city: e.target.value })}
                   type="text"
                   className="form-control left-col"
                   aria-label="First name"
@@ -207,6 +299,8 @@ export default class JoinUs extends Component {
                   Country
                 </label>
                 <input
+                  value={country}
+                  onChange={(e) => this.setState({ country: e.target.value })}
                   type="text"
                   className="form-control right-col"
                   aria-label="Last name"
@@ -222,7 +316,12 @@ export default class JoinUs extends Component {
               >
                 Email
               </label>
-              <input type="email" className="full-width" />
+              <input
+                value={email}
+                onChange={(e) => this.setState({ email: e.target.value })}
+                type="email"
+                className="full-width"
+              />
             </div>
             {/* Row 4 */}
             <div className="full-col">
@@ -232,7 +331,12 @@ export default class JoinUs extends Component {
               >
                 Password
               </label>
-              <input type="password" className="full-width" />
+              <input
+                value={password}
+                onChange={(e) => this.setState({ password: e.target.value })}
+                type="password"
+                className="full-width"
+              />
             </div>
             {/* Row 5 */}
             <div className="full-col">
@@ -242,7 +346,12 @@ export default class JoinUs extends Component {
               >
                 Phone
               </label>
-              <input type="number" className="full-width" />
+              <input
+                value={phone}
+                onChange={(e) => this.setState({ phone: e.target.value })}
+                type="number"
+                className="full-width"
+              />
             </div>
             {/* Row 5 */}
             <div className="full-col">
@@ -252,7 +361,12 @@ export default class JoinUs extends Component {
               >
                 How did you hear about us?
               </label>
-              <input type="text" className="full-width" />
+              <input
+                value={how}
+                onChange={(e) => this.setState({ how: e.target.value })}
+                type="text"
+                className="full-width"
+              />
             </div>
             {/* Row 6 */}
             <div className="full-col">
@@ -263,6 +377,8 @@ export default class JoinUs extends Component {
                 Why do you want to be an Oceaneer? (1-2 sentences)
               </label>
               <textarea
+                value={why}
+                onChange={(e) => this.setState({ why: e.target.value })}
                 type="text"
                 className="full-width"
                 id="textarea"
@@ -276,8 +392,12 @@ export default class JoinUs extends Component {
                 What kind of Oceaneer do you want to be? (Don’t worry, you can
                 change this choice down the line)
               </div>
+
+              {/*Passive*/}
               <div className="form-check d-flex justify-content-left">
                 <input
+                  value={passive}
+                  onChange={() => this.handlePassiveClicked()}
                   className="form-check-input radio-button"
                   type="radio"
                   name="flexRadioDefault"
@@ -293,6 +413,8 @@ export default class JoinUs extends Component {
               </div>
               <div className="form-check d-flex justify-content-left">
                 <input
+                  value={active}
+                  onChange={() => this.handleActiveClicked()}
                   className="form-check-input radio-button"
                   type="radio"
                   name="flexRadioDefault"
@@ -314,11 +436,13 @@ export default class JoinUs extends Component {
                 As an Oceaneer, I am committed to (required)
               </div>
 
+              {/*Raise*/}
               <div className="form-check d-flex">
                 <input
                   className="form-check-input checkbox-join"
                   type="checkbox"
-                  value=""
+                  value={raise}
+                  onChange={() => this.handleRaiseClicked()}
                   id="flexCheckChecked"
                 />
                 <label
@@ -332,7 +456,8 @@ export default class JoinUs extends Component {
                 <input
                   className="form-check-input checkbox-join"
                   type="checkbox"
-                  value=""
+                  value={pay}
+                  onChange={() => this.handlePayClicked()}
                   id="flexCheckChecked"
                 />
                 <label
@@ -342,11 +467,14 @@ export default class JoinUs extends Component {
                   Paying a R50 sign-up fee
                 </label>
               </div>
+
+              {/*Fill*/}
               <div className="form-check d-flex">
                 <input
                   className="form-check-input checkbox-join"
                   type="checkbox"
-                  value=""
+                  value={fill}
+                  onChange={() => this.handleFillClicked()}
                   id="flexCheckDefault"
                 />
                 <label

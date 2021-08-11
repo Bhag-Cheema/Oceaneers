@@ -28,7 +28,7 @@ export default class Why extends Component {
         </section>
         <div className="d-flex justify-content-center">
           <Link to="/joinus">
-          <button className="learn-how-why">Want to Join? Learn how.</button>
+            <button className="learn-how-why">Want to Join? Learn how.</button>
           </Link>
         </div>
         <section className="compare">
@@ -52,7 +52,7 @@ export default class Why extends Component {
                     <br /> Cheap. Shareholder value. Supermarkets. Exploitation.
                   </h6>
                 </div>
-                
+
                 {/* First drop down */}
                 {/* <div className="green-bar">
                   <h5>Industrial Fishing</h5>
@@ -61,67 +61,67 @@ export default class Why extends Component {
                   </div>
                 </div> */}
 
-        <div className="accordion-why" id="accordionExample">
-            <div className="accordion-item border-0">
-              <h2 className="accordion-header" id="headingOne">
-                <button
-                className="button-accordion-why collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Industrial Fishing
-                <i className="bi bi-plus-circle plus-icon-why"></i>
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <p className="accordion-body-why">
-              – Commercial fleets <br /> 
-               – Non-targeted (by-catch) <br /> 
-               – Destructive and unsustainable
-              </p>
-            </div>
-          </div>
-        </div>
+                <div className="accordion-why" id="accordionExample">
+                  <div className="accordion-item border-0">
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="button-accordion-why collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Industrial Fishing
+                        <i className="bi bi-plus-circle plus-icon-why"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <p className="accordion-body-why">
+                        – Commercial fleets <br />
+                        – Non-targeted (by-catch) <br />– Destructive and
+                        unsustainable
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 {/* Second Drop Down */}
 
-          <div className="accordion-why" id="accordionExample">
-            <div className="accordion-item border-0">
-              <h2 className="accordion-header" id="headingTwo">
-                <button
-                className="button-accordion-why collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="true"
-                aria-controls="collapseTwo"
-              >
-                Industrial Livestock Farming
-                <i className="bi bi-plus-circle plus-icon-why"></i>
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <p className="accordion-body-why">
-              – Animals are treated as objects, no respect for life <br /> 
-              – No relation between farmer and animal <br /> 
-              – More animals than farm can feed
-              </p>
-            </div>
-          </div>
-        </div>
-
+                <div className="accordion-why" id="accordionExample">
+                  <div className="accordion-item border-0">
+                    <h2 className="accordion-header" id="headingTwo">
+                      <button
+                        className="button-accordion-why collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        Industrial Livestock Farming
+                        <i className="bi bi-plus-circle plus-icon-why"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <p className="accordion-body-why">
+                        – Animals are treated as objects, no respect for life{" "}
+                        <br />
+                        – No relation between farmer and animal <br />– More
+                        animals than farm can feed
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="non-indust-card">
                 <div className="card-itself-two">
@@ -143,35 +143,36 @@ export default class Why extends Component {
                   </div>
                 </div> */}
 
-        <div className="accordion-why" id="accordionExample">
-            <div className="accordion-item border-0">
-              <h2 className="accordion-header" id="headingThree">
-                <button
-                className="button-accordion-why collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="true"
-                aria-controls="collapseThree"
-              >
-                Non-Industrial Fishing
-                <i className="bi bi-plus-circle plus-icon-why"></i>
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <p className="accordion-body-why">
-
-            – Spear-/line fishing with focus on one animal<br /> 
-            – Small-scale fish farms with high ethical standards<br /> 
-              </p>
-            </div>
-          </div>
-        </div>
+                <div className="accordion-why" id="accordionExample">
+                  <div className="accordion-item border-0">
+                    <h2 className="accordion-header" id="headingThree">
+                      <button
+                        className="button-accordion-why collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
+                        Non-Industrial Fishing
+                        <i className="bi bi-plus-circle plus-icon-why"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <p className="accordion-body-why">
+                        – Spear-/line fishing with focus on one animal
+                        <br />
+                        – Small-scale fish farms with high ethical standards
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Fourth Drop Down */}
                 {/* <div className="green-bar">
@@ -181,36 +182,41 @@ export default class Why extends Component {
                   </div>
                 </div> */}
 
-          <div className="accordion-why" id="accordionExample">
-            <div className="accordion-item border-0">
-              <h2 className="accordion-header" id="headingFour">
-                <button
-                className="button-accordion-why collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="true"
-                aria-controls="collapseFour"
-              >
-               Non-Industrial Livestock Farming
-                <i className="bi bi-plus-circle plus-icon-why"></i>
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample"
-            >
-              <p className="accordion-body-why">
-              – Small farms with holistic methods (e.g. permaculture)<br /> 
-              – Relationship between farmer and animal<br /> 
-              – Animals can fulfil their social and physiological needs<br /> 
-              – Lots of outdoor space, no use of antibiotics/hormones<br /> 
-              </p>
-            </div>
-          </div>
-        </div>
+                <div className="accordion-why" id="accordionExample">
+                  <div className="accordion-item border-0">
+                    <h2 className="accordion-header" id="headingFour">
+                      <button
+                        className="button-accordion-why collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="true"
+                        aria-controls="collapseFour"
+                      >
+                        Non-Industrial Livestock Farming
+                        <i className="bi bi-plus-circle plus-icon-why"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <p className="accordion-body-why">
+                        – Small farms with holistic methods (e.g. permaculture)
+                        <br />
+                        – Relationship between farmer and animal
+                        <br />
+                        – Animals can fulfil their social and physiological
+                        needs
+                        <br />
+                        – Lots of outdoor space, no use of antibiotics/hormones
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
