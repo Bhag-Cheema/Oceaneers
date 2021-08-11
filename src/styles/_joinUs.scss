@@ -45,83 +45,6 @@
   margin-bottom: 3.3rem;
 }
 
-// .joinus-image-left-col {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   flex-direction: column;
-//   position: relative;
-//   width: 50%;
-//   max-width: 56.98rem;
-//   margin-left: 10%;
-//   margin-bottom: 5.37rem;
-
-//   p.joinus-card-text {
-//     position: absolute;
-//     bottom: 14.6rem;
-//     font-family: "Cabin", sans-serif;
-//     font-size: 3.2rem;
-//     font-weight: 600;
-//     color: white;
-//     margin-left: 4rem;
-//     margin-right: 4rem;
-//   }
-//   .check-email-card3 {
-//     position: absolute;
-//     bottom: 4.7rem;
-//     font-family: "Cabin", sans-serif;
-//     font-weight: 600;
-//     font-size: 2rem;
-//     color: white;
-//   }
-//   .joinus-card-btn {
-//     position: absolute;
-//     bottom: 4.7rem;
-//     background-color: #ff7c5c;
-//     color: white;
-//     font-size: 2rem;
-//     font-family: "Cabin", sans-serif;
-//     font-weight: 600;
-//     padding: 1rem 1.6rem;
-//     border-radius: 4.3rem;
-//   }
-// }
-
-// .joinus-image-right-col {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   flex-direction: column;
-//   position: relative;
-//   width: 50%;
-//   max-width: 56.98rem;
-//   margin-right: 10%;
-//   margin-bottom: 5.37rem;
-//   .joinus-card-text {
-//     position: absolute;
-//     bottom: 14.6rem;
-//     font-family: "Cabin", sans-serif;
-//     font-size: 3.2rem;
-//     font-weight: 600;
-//     color: white;
-//     margin-left: 4rem;
-//     margin-right: 4rem;
-//   }
-//   .joinus-card-btn {
-//     position: absolute;
-//     background-color: #ff7c5c;
-//     bottom: 4.7rem;
-//     color: white;
-//     font-size: 2rem;
-//     font-family: "Cabin", sans-serif;
-//     font-weight: 600;
-//     padding: 1rem 1.6rem;
-//     border-radius: 4.3rem;
-//   }
-// }
-
 // Form field
 .form-field-card {
   background: #bededf;
@@ -273,8 +196,8 @@
   background-color: #024a63;
   border-radius: 0rem 0rem 0rem 0rem;
   padding-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   color: white;
 }
@@ -284,8 +207,8 @@
   font-size: 2.3rem;
   font-weight: 300;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   background-color: #024a63;
   color: white;
@@ -306,8 +229,8 @@
   color: white;
   width: 80%;
   height: 6rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: center;
 }
 
@@ -463,6 +386,108 @@
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 1rem;
+  }
+}
+div.sign-up-popup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #ff7c5c;
+  width: 50%;
+  height: 70rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: none;
+  border-radius: 3.2rem;
+  i.bi-plus-circle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.4rem;
+    color: white;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .sign-up-card-header {
+    font-family: "cabin", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  #checkmark {
+    margin-top: 2rem;
+    width: 14.1rem;
+    height: 14.1rem;
+  }
+  .sign-up-card-h2 {
+    margin-top: 2rem;
+    color: white;
+    font-family: "cabin", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .blue-line {
+    width: 75%;
+    height: 0.07rem;
+    color: #bededf;
+    border: 1.492px solid #bededf;
+  }
+  .sign-up-card-h3 {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1.4rem;
+    color: white;
+    font-family: Cabin;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .sign-up-card-h3-raleway {
+    color: white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .sign-up-card-p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+  i.bi-instagram {
+    position: absolute;
+    bottom: 2rem;
+    left: 43%;
+    margin-right: 2rem;
+    color: white;
+    font-size: 3rem;
+  }
+  i.bi-facebook {
+    position: absolute;
+    bottom: 2rem;
+    right: 43%;
+    margin-left: 2rem;
+    color: white;
+    font-size: 3rem;
   }
 }
 
@@ -802,6 +827,113 @@
     color: #024a63;
     margin-bottom: 2.4rem;
   }
+  div.sign-up-popup {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #ff7c5c;
+    width: 70%;
+    height: 70rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: none;
+    border-radius: 3.2rem;
+    i.bi-plus-circle {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 2.4rem;
+      color: white;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+
+    .sign-up-card-header {
+      margin-left: 10%;
+      margin-right: 10%;
+      font-family: "cabin", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    #checkmark {
+      margin-top: 2rem;
+      width: 8rem;
+      height: 8rem;
+    }
+    .sign-up-card-h2 {
+      margin-top: 2rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      color: white;
+      font-family: "cabin", sans-serif;
+      font-size: 2.2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .blue-line {
+      width: 75%;
+      height: 0.07rem;
+      color: #bededf;
+      border: 1.492px solid #bededf;
+    }
+    .sign-up-card-h3 {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 1.4rem;
+      color: white;
+      font-family: Cabin;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .sign-up-card-h3-raleway {
+      color: white;
+      font-family: Raleway;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .sign-up-card-p {
+      margin-left: 5%;
+      margin-right: 5%;
+      font-family: Raleway;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: white;
+    }
+    i.bi-instagram {
+      position: absolute;
+      bottom: 2rem;
+      left: 43%;
+      margin-right: 2rem;
+      color: white;
+      font-size: 3rem;
+    }
+    i.bi-facebook {
+      position: absolute;
+      bottom: 2rem;
+      right: 43%;
+      margin-left: 2rem;
+      color: white;
+      font-size: 3rem;
+    }
+  }
   // Form field
   .form-field-card {
     background: #bededf;
@@ -915,80 +1047,107 @@
       line-height: 2.4rem;
       cursor: pointer;
     }
-  }
-  div.joinus-image-left-col {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    // width: 50%;
-    max-width: 56.98rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
-
-    p.joinus-card-text {
-      position: absolute;
-      bottom: 1rem;
-      font-family: "Cabin", sans-serif;
-      font-size: 2rem;
-      font-weight: 600;
-      color: white;
-      margin-left: 4rem;
-      margin-right: 4rem;
-    }
-    .check-email-card3 {
-      position: absolute;
-      bottom: 4.7rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      font-size: 2rem;
-      color: white;
-    }
-    .joinus-card-btn {
-      position: absolute;
-      bottom: 4.7rem;
+    div.sign-up-popup {
+      position: relative;
+      display: flex;
+      align-items: center;
       background-color: #ff7c5c;
-      color: white;
-      font-size: 2rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      padding: 1rem 1.6rem;
-      border-radius: 4.3rem;
-    }
-  }
-
-  .joinus-image-right-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    position: relative;
-    width: 50%;
-    max-width: 56.98rem;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
-    .joinus-card-text {
-      position: absolute;
-      bottom: 14.6rem;
-      font-family: "Cabin", sans-serif;
-      font-size: 2rem;
-      font-weight: 600;
-      color: white;
-      margin-left: 4rem;
-      margin-right: 4rem;
-    }
-    .joinus-card-btn {
-      position: absolute;
-      background-color: #ff7c5c;
-      bottom: 4.7rem;
-      color: white;
-      font-size: 2rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      padding: 1rem 1.6rem;
-      border-radius: 4.3rem;
+      width: 50%;
+      height: 70rem;
+      margin-left: 25%;
+      margin-right: 25%;
+      border: none;
+      border-radius: 3.2rem;
+      i.bi-plus-circle {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2.4rem;
+        color: white;
+        transform: rotate(45deg);
+        cursor: pointer;
+      }
+      .sign-up-card-header {
+        font-family: "cabin", sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        margin-top: 4rem;
+      }
+      #checkmark {
+        margin-top: 2rem;
+        width: 14.1rem;
+        height: 14.1rem;
+      }
+      .sign-up-card-h2 {
+        margin-top: 2rem;
+        color: white;
+        font-family: "cabin", sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      .blue-line {
+        width: 75%;
+        height: 0.07rem;
+        color: #bededf;
+        border: 1.492px solid #bededf;
+      }
+      .sign-up-card-h3 {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 1.4rem;
+        color: white;
+        font-family: Cabin;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      .sign-up-card-h3-raleway {
+        color: white;
+        font-family: Raleway;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      .sign-up-card-p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: Raleway;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+      }
+      i.bi-instagram {
+        position: absolute;
+        bottom: 1rem;
+        left: 30%;
+        margin-right: 2rem;
+        color: white;
+        font-size: 2rem;
+      }
+      i.bi-facebook {
+        position: absolute;
+        bottom: 1rem;
+        right: 30%;
+        margin-left: 2rem;
+        color: white;
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -70,8 +70,10 @@ div.col-four {
     border-radius: 2.4rem;
     width: 12rem;
     height: 3.9rem;
+    position: inherit;
   }
   button.footer-join {
+    position: inherit;
     font-family: "Cabin", sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -183,7 +185,7 @@ div.col-four {
 @media (min-width: 768px) and (max-width: 1279px) {
   div.main-footer {
     position: relative;
-    height: 23rem;
+    height: 28rem;
     padding: 3rem 4rem;
     margin-top: 0rem;
     overflow-x: hidden;
@@ -218,16 +220,11 @@ div.col-four {
     }
   }
   div.col-two {
-    p.about-us {
-      position: inherit;
-      display: block;
-      justify-content: center;
-      font-size: 1.8rem;
-      margin-left: 5rem;
-    }
+    display: block;
+    font-size: 1.8rem;
+    margin-left: 2rem;
   }
   div.col-three {
-    position: inherit;
     font-size: 1.8rem;
     color: white;
     display: flex;
@@ -261,62 +258,62 @@ div.col-four {
     h1.footer-title {
       font-size: 2rem;
       position: absolute;
-      top: 8rem;
-      left: 2rem;
+      top: 20%;
+      left: 8%;
     }
     p.footer-subtitle {
       font-size: 1.6rem;
       width: 15rem;
       position: absolute;
-      top: 9rem;
-      left: 2rem;
+      top: 25%;
+      left: 8%;
     }
     .social-icons {
       img.instagram {
         position: absolute;
-        border: 0.1rem solid white;
-        border-radius: 100%;
+        top: 55%;
+        left: 8%;
         padding: 1.1rem;
-        margin-top: 2rem;
-        right: 17rem;
       }
       img.facebook {
         position: absolute;
-        border: 0.1rem solid white;
-        border-radius: 100%;
+        top: 55%;
+        left: 20%;
         padding: 1.1rem 1.8rem;
-        margin-left: 1.2rem;
-        margin-top: 2rem;
-        right: 6rem;
       }
     }
   }
   div.col-two {
-    p.about-us {
-      display: none;
-    }
+    display: none;
   }
   div.col-three {
-    position: inherit;
+    position: absolute;
     font-size: 1.8rem;
-    color: white;
+    top: 20%;
+    left: 37%;
+    padding-right: 0rem;
     display: flex;
     justify-content: right;
   }
   div.col-four {
     button.footer-login {
-      font-size: 1.8rem;
-      padding: 0.5rem 2rem;
       position: absolute;
-      left: 6rem;
+      top: 20%;
+      right: 8%;
+      padding: 0.5rem 2rem;
+      font-size: 1.8rem;
+      width: 12rem;
+      height: 3.9rem;
     }
     button.footer-join {
       position: absolute;
-      left: 32rem;
+      margin-top: 0rem;
+      top: 50%;
+      right: 8%;
       font-size: 1.8rem;
-      font-weight: 600;
       padding: 0.5rem 2rem;
-      margin-top: 1.8rem;
+      width: 12rem;
+      height: 3.9rem;
     }
   }
 }
@@ -331,27 +328,27 @@ div.col-four {
     h1.footer-title {
       font-size: 2rem;
       position: absolute;
-      top: 8rem;
-      left: 2rem;
+      top: 36%;
+      left: 8%;
     }
     p.footer-subtitle {
       font-size: 1.6rem;
-      width: 15rem;
+      width: 10rem;
       position: absolute;
-      top: 9rem;
-      left: 2rem;
+      top: 40%;
+      left: 8%;
     }
     .social-icons {
-      .instagram {
+      img.instagram {
         position: absolute;
-        top: 13rem;
-        right: 13.5rem;
+        top: 55%;
+        right: 27%;
         padding: 1.1rem;
       }
-      .facebook {
+      img.facebook {
         position: absolute;
-        top: 13rem;
-        right: 2rem;
+        top: 55%;
+        right: 8%;
         padding: 1.1rem 1.8rem;
       }
     }
@@ -362,17 +359,19 @@ div.col-four {
     }
   }
   div.col-three {
+    position: absolute;
     font-size: 1.8rem;
-    left: 32rem;
-    top: 8rem;
+    top: 36%;
+    left: 61%;
+    padding-right: 0rem;
     display: flex;
     justify-content: right;
   }
   div.col-four {
     button.footer-login {
       position: absolute;
-      top: 2rem;
-      left: 2rem;
+      top: 10%;
+      right: 70%;
       padding: 0.5rem 2rem;
       font-size: 1.6rem;
       width: 12rem;
@@ -381,8 +380,8 @@ div.col-four {
     button.footer-join {
       position: absolute;
       margin-top: 0rem;
-      top: 2rem;
-      right: 6.5rem;
+      top: 10%;
+      right: 8%;
       font-size: 1.6rem;
       padding: 0.5rem 2rem;
       width: 12rem;
@@ -401,59 +400,58 @@ div.col-four {
     h1.footer-title {
       font-size: 1.8rem;
       position: absolute;
-      top: 8rem;
-      left: 2rem;
+      top: 36%;
+      left: 8%;
     }
     p.footer-subtitle {
       font-size: 1.4rem;
       width: 10rem;
       position: absolute;
-      top: 10rem;
-      left: 2rem;
+      top: 40%;
+      left: 8%;
     }
     .social-icons {
       img.instagram {
         position: absolute;
-        top: 14rem;
-        left: 23rem;
+        top: 55%;
+        right: 25%;
         padding: 1.1rem;
       }
       img.facebook {
         position: absolute;
-        top: 14rem;
-        right: 2rem;
+        top: 55%;
+        right: 5%;
         padding: 1.1rem 1.8rem;
       }
     }
   }
   div.col-two {
-    p.about-us {
-      display: none;
-    }
+    display: none;
   }
   div.col-three {
-    font-size: 1.8rem;
-    right: 3rem;
-    top: 8rem;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 36%;
+    left: 61%;
+    padding-right: 0rem;
     display: flex;
     justify-content: right;
   }
   div.col-four {
     button.footer-login {
       position: absolute;
-      top: 2rem;
-      left: 2rem;
+      top: 10%;
+      right: 64%;
       padding: 0.5rem 2rem;
       font-size: 1.6rem;
       width: 12rem;
       height: 3.9rem;
     }
     button.footer-join {
-      margin-right: 0;
       position: absolute;
       margin-top: 0rem;
-      top: 2rem;
-      right: 6.5rem;
+      top: 10%;
+      right: 8%;
       font-size: 1.6rem;
       padding: 0.5rem 2rem;
       width: 12rem;
@@ -472,84 +470,62 @@ div.col-four {
     h1.footer-title {
       font-size: 1.8rem;
       position: absolute;
-      top: 9rem;
-      left: 2rem;
+      top: 36%;
+      left: 5%;
     }
     p.footer-subtitle {
       font-size: 1.4rem;
       width: 10rem;
       position: absolute;
-      top: 12rem;
-      left: 2rem;
+      top: 40%;
+      left: 5%;
     }
     .social-icons {
-      .instagram {
+      img.instagram {
         position: absolute;
-        top: 13rem;
-        right: 9rem;
+        top: 55%;
+        right: 25%;
         padding: 1.1rem;
       }
-      .facebook {
+      img.facebook {
         position: absolute;
-        top: 13em;
-        right: 2rem;
+        top: 55%;
+        right: 5%;
         padding: 1.1rem 1.8rem;
       }
     }
   }
   div.col-two {
-    p.about-us {
-      display: none;
-    }
-    .facebook {
-      border: 0.1rem solid white;
-      border-radius: 100%;
-      padding: 1.1rem !important;
-      margin-left: -1rem !important;
-      margin-right: 20rem !important;
-      margin-top: 4rem !important;
-      width: 3rem !important;
-    }
-    .footer-login {
-      font-size: 1.5rem !important;
-      font-weight: 600;
-      font-family: "Cabin", sans-serif;
-      padding: 0.5rem 2rem;
-      background: white;
-      color: #024a63;
-      border-radius: 2.4rem;
-      width: 8rem !important;
-      height: 3rem !important;
-    }
-    div.col-three {
-      align-content: flex-end;
-      font-size: 1.4rem;
+    display: none;
+  }
+  div.col-three {
+    position: absolute;
+    font-size: 1.4rem;
+    top: 36%;
+    left: 61%;
+    padding-right: 0rem;
+    display: flex;
+    justify-content: right;
+  }
+  div.col-four {
+    button.footer-login {
       position: absolute;
-      left: 23rem;
-      top: 9rem;
-      display: flex;
-      justify-content: right;
+      top: 10%;
+      right: 63%;
+      padding: 0.5rem 2rem;
+      font-size: 1.6rem;
+      width: 12rem;
+      height: 3.9rem;
     }
-    div.col-four {
-      button.footer-login {
-        position: absolute;
-        top: 3rem;
-        left: 2rem;
-        padding: 0.5rem 2rem;
-        font-size: 1.6rem;
-        width: 12rem;
-        height: 3.9rem;
-      }
-      button.footer-join {
-        position: absolute;
-        margin-top: 0rem;
-        top: 3rem;
-        right: 2rem;
-        font-size: 1.6rem;
-        padding: 0.5rem 2rem;
-        width: 12rem;
-        height: 3.9rem;
-      }
+    button.footer-join {
+      position: absolute;
+      margin-top: 0rem;
+      top: 10%;
+      right: 5%;
+      font-size: 1.6rem;
+      padding: 0.5rem 2rem;
+      width: 12rem;
+      height: 3.9rem;
     }
   }
 }
@@ -564,27 +540,27 @@ div.col-four {
     h1.footer-title {
       font-size: 1.8rem;
       position: absolute;
-      top: 9rem;
-      left: 2rem;
+      top: 36%;
+      left: 5%;
     }
     p.footer-subtitle {
       font-size: 1.4rem;
       width: 10rem;
       position: absolute;
-      top: 10rem;
-      left: 2rem;
+      top: 40%;
+      left: 5%;
     }
     .social-icons {
       img.instagram {
         position: absolute;
-        top: 13rem;
-        right: 9rem;
+        top: 55%;
+        right: 28%;
         padding: 1.1rem;
       }
       img.facebook {
         position: absolute;
-        top: 13em;
-        right: 2rem;
+        top: 55%;
+        right: 5%;
         padding: 1.1rem 1.8rem;
       }
     }
@@ -595,10 +571,10 @@ div.col-four {
     }
   }
   div.col-three {
-    position: inherit;
+    position: absolute;
     font-size: 1.4rem;
-    top: 9rem;
-    left: 20rem;
+    top: 36%;
+    left: 55%;
     padding-right: 0rem;
     display: flex;
     justify-content: right;
@@ -606,8 +582,8 @@ div.col-four {
   div.col-four {
     button.footer-login {
       position: absolute;
-      top: 3rem;
-      left: 2rem;
+      top: 10%;
+      right: 58%;
       padding: 0.5rem 2rem;
       font-size: 1.6rem;
       width: 12rem;
@@ -616,8 +592,8 @@ div.col-four {
     button.footer-join {
       position: absolute;
       margin-top: 0rem;
-      top: 3rem;
-      right: 2rem;
+      top: 10%;
+      right: 5%;
       font-size: 1.6rem;
       padding: 0.5rem 2rem;
       width: 12rem;
