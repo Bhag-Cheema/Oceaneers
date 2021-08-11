@@ -79,8 +79,7 @@ async fetchEvents() {
             })
             }
         </div>
-        <AddEvents/>
-
+        <AddEvents history={this.props.history}/>
         <NewsLetter />
         <Footer />
       </div>
