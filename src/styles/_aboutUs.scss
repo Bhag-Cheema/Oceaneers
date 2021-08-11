@@ -267,7 +267,7 @@ p.header-text-about {
   margin-bottom: 0.5rem !important;
 }
 //iPhone and mobile devices
-@media all and (min-width: 320px) and (max-width: 499px) {
+@media all and (min-width: 280px) and (max-width: 499px) {
   section.header-image-about {
     min-height: 60vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -334,8 +334,8 @@ p.header-text-about {
     font-style: normal;
     margin-top: -3rem !important;
     margin-bottom: 6rem;
-    margin-left: 2rem !important;
-    margin-right: 2rem !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
   .repeating-h3-about {
     font-size: 0.85rem !important;
@@ -525,8 +525,8 @@ p.header-text-about {
     font-style: normal;
     margin-top: -3rem !important;
     margin-bottom: 6rem;
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
   .repeating-h3-about {
     font-size: 0.85rem !important;
@@ -681,8 +681,8 @@ p.header-text-about {
     font-style: normal;
     margin-top: -2.5rem;
     margin-bottom: 6rem;
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
   .button-accordion-about {
     font-size: 1.2rem !important;
