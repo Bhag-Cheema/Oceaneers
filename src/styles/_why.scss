@@ -125,6 +125,7 @@
     align-items: center;
     border-radius: 3rem;
     margin: 0rem 3rem;
+    margin: 0rem 3rem;
     margin-bottom: 1rem;
 
     .card-itself-two-content {
@@ -141,54 +142,54 @@
   }
 }
 
-  // Accordion Stuff 
-  .accordion-why {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .accordion-body-why {
-    font-family: "Raleway", sans-serif;
-    font-size: 2.3rem;
-    font-weight: 300;
-    border: none;
-    width: 45rem;
-    background-color: #024a63;
-    color: white;
-    border-radius: 0rem 0rem 4.3rem 4.3rem;
-    margin-top: -2.3rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-  }
-  
-  .button-accordion-why {
-    font-family: "Cabin", sans-serif;
-    position: relative;
-    font-size: 2.3rem;
-    font-weight: 300;
-    border: none;
-    background-color: #024a63;
-    border-radius: 4.3rem;
-    color: white;
-    width: 45rem;
-    height: 5.5rem;
-    
-    text-align: center;
-  }
-  
-  .plus-icon-why {
-    position: absolute;
-    font-size: 2.4rem;
-    right: 3rem;
-    font-size: 2.5rem;
-  }
+// Accordion Stuff
+.accordion-why {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
 
-  // End off accordian stuff 
+.accordion-body-why {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 300;
+  border: none;
+  width: 45rem;
+  background-color: #024a63;
+  color: white;
+  border-radius: 0rem 0rem 4.3rem 4.3rem;
+  margin-top: -2.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.button-accordion-why {
+  font-family: "Cabin", sans-serif;
+  position: relative;
+  font-size: 2.3rem;
+  font-weight: 300;
+  border: none;
+  background-color: #024a63;
+  border-radius: 4.3rem;
+  color: white;
+  width: 45rem;
+  height: 5.5rem;
+
+  text-align: center;
+}
+
+.plus-icon-why {
+  position: absolute;
+  font-size: 2.4rem;
+  right: 3rem;
+  font-size: 2.5rem;
+}
+
+// End off accordian stuff
 
 .hrLine {
-  margin-left: 50rem;
-  margin-right: 50rem;
+  margin-left: 50%;
+  margin-right: 50%;
   hr {
     border: 3px solid #bededf;
   }
@@ -241,7 +242,6 @@
 
 .infographic {
   min-height: 40vh;
-
   div {
     border-radius: 10rem;
     background: url("../imgs/infographic.png");
@@ -334,11 +334,54 @@
   }
 }
 
-//iphone 
+//iphone
 @media screen and (max-width: 375px) {
+  .title-why {
+    font-size: 4rem !important;
+    font-weight: 700;
+    margin-top: 20%;
+  }
+
+  .desc-why {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .indust {
+    .sub-title-why {
+      font-size: 3rem !important;
+      font-weight: 700;
+      margin-top: 2%;
+    }
+
+    .sub-desc-why {
+      font-size: 2rem !important;
+      font-weight: 300;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  // this is not working! 
+  .further-explanation {
+    .explanation-content {
+      h2 {
+        font-size: 3rem !important;
+        font-weight: 700;
+        color: #024a63;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  // need to add the changes to the section before slides
+
   .explanation-content {
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
     }
   }
 
@@ -358,7 +401,7 @@
     align-items: center;
     border-radius: 3rem;
     margin-bottom: 1rem;
-    width: 50%;
+    width: 30rem !important;
 
     h5 {
       font-size: 3rem;
@@ -371,31 +414,16 @@
       margin-right: 3%;
     }
   }
-  
 
   .card-itself-two {
-    border: solid;
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background: url("../imgs/camel.png");
-    // width: 55rem; 
-    // height: 45rem;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    border-radius: 3rem;
-    margin: 0rem 3rem;
-    margin-bottom: 1rem;
-    width: 50%;
+    width: 30rem !important;
 
     .card-itself-two-content {
       margin: 29rem 0rem;
     }
 
     h5 {
-      font-size: 3rem;
+      font-size: 3rem !important;
       margin-top: -18rem;
     }
 
@@ -413,8 +441,6 @@
     justify-content: space-between;
     // margin-left: 10%;
     // margin-right: 10%;
-    
-    
   }
   .indust-card {
     display: flex;
@@ -435,20 +461,61 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  
+
   .accordion-body-why {
     font-size: 2rem;
     width: 35rem;
   }
-  
+
   .button-accordion-why {
     font-size: 1.9rem;
-    width: 35rem; 
+    width: 35rem;
   }
-  
+
   .plus-icon-why {
     right: 1.2rem;
     font-size: 2.5rem;
     margin-top: -0.3rem;
   }
+
+
+
+  .infographic {
+    min-height: 40vh;
+  
+    div {
+      border-radius: 10rem;
+      background: url("../imgs/infographic.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 75% !important;
+      margin: auto;
+      height: 100rem;
+    }
+  }
+
+  .why-carousel {
+    min-height: 50vh;
+    .carousel-title-why {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      h3 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: #024a63;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0rem;
+      }
+    }
+  
+    .slide-why {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
 }

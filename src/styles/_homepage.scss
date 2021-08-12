@@ -34,6 +34,7 @@
 .bi-play-circle {
   font-size: 35px;
   margin-top: -0.5rem;
+  color: white;
 }
 
 .oceaneers-cabin-large {
@@ -220,7 +221,7 @@
   font-family: "Cabin", sans-serif;
 }
 //extra screen sizes 
-@media (min-width: 1025px) and (max-width: 1394px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
   .homepage-color {
     height: 265px;
   }
