@@ -242,8 +242,6 @@
 
 .infographic {
   min-height: 40vh;
-  margin-bottom: 10%;
-
   div {
     border-radius: 10rem;
     background: url("../imgs/infographic.png");
@@ -425,7 +423,7 @@
     }
 
     h5 {
-      font-size: 3rem;
+      font-size: 3rem !important;
       margin-top: -18rem;
     }
 

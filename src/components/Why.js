@@ -352,7 +352,7 @@ export default class Why extends Component {
         </section>
 
         <section className="infographic">
-          <div></div>
+          {/* <div></div> */}
         </section>
 
         {/* <NewsLetter /> */}
