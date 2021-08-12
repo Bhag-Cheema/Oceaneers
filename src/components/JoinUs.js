@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import Facebook from "../imgs/Footer/Facebook.png";
+import Instagram from "../imgs/Footer/Instagram.png";
+
 import Footer from "./Footer";
 import Navbar from "./NavBar";
 import Newsletter from "./NewsLetter";
@@ -624,18 +627,28 @@ export default class JoinUs extends Component {
           <h3 className="sign-up-card-h3-raleway">
             Follow us on social media!
           </h3>
-          <Link
-            to={{ pathname: "https://www.instagram.com/oceaneers.co/" }}
-            target="_blank"
-          >
-            <i className="bi bi-instagram"></i>
-          </Link>
-          <Link
-            to={{ pathname: "https://www.facebook.com/oceaneers.co/" }}
-            target="_blank"
-          >
-            <i className="bi bi-facebook"></i>
-          </Link>
+          <div className="social-icons-pop-up">
+            <Link
+              to={{ pathname: "https://www.instagram.com/oceaneers.co/" }}
+              target="_blank"
+            >
+              <img
+                className="instagram-pop-up"
+                src={Instagram}
+                alt="instagram logo"
+              />
+            </Link>
+            <Link
+              to={{ pathname: "https://www.facebook.com/oceaneers.co/" }}
+              target="_blank"
+            >
+              <img
+                className="facebook-pop-up"
+                src={Facebook}
+                alt="instagram logo"
+              />
+            </Link>
+          </div>
         </div>
 
         {/* <Newsletter /> */}
