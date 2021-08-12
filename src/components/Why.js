@@ -9,6 +9,7 @@ import Fish from "../imgs/fish.png";
 import Pills from "../imgs/pills.png";
 import Train from "../imgs/Trainway.png";
 import { Link } from "react-router-dom";
+import infographic from "../imgs/infographic.png";
 
 export default class Why extends Component {
   render() {
@@ -136,12 +137,6 @@ export default class Why extends Component {
                   </div>
                 </div>
                 {/* third drop down */}
-                {/* <div className="green-bar">
-                  <h5>Non Industrial Fishing</h5>
-                  <div className="plusBoy">
-                    <i className="bi bi-plus-circle plus-icon plusBoy"></i>
-                  </div>
-                </div> */}
 
                 <div className="accordion-why" id="accordionExample">
                   <div className="accordion-item border-0">
@@ -175,12 +170,6 @@ export default class Why extends Component {
                 </div>
 
                 {/* Fourth Drop Down */}
-                {/* <div className="green-bar">
-                  <h5>Non Industrial Livestock Fishing</h5>
-                  <div className="plusBoy">
-                    <i className="bi bi-plus-circle plus-icon plusBoy"></i>
-                  </div>
-                </div> */}
 
                 <div className="accordion-why" id="accordionExample">
                   <div className="accordion-item border-0">
@@ -334,8 +323,6 @@ export default class Why extends Component {
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
             >
-              {/* <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span> */}
               <i className="bi bi-arrow-left-circle" aria-hidden="true"></i>
             </button>
             <button
@@ -344,8 +331,6 @@ export default class Why extends Component {
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
             >
-              {/* <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span> */}
               <i className="bi bi-arrow-right-circle" aria-hidden="true"></i>
             </button>
           </div>
@@ -353,6 +338,7 @@ export default class Why extends Component {
 
         <section className="infographic">
           {/* <div></div> */}
+          <img src={infographic} alt="info"/>
         </section>
 
         {/* <NewsLetter /> */}

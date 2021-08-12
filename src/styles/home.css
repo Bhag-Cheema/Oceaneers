@@ -1046,6 +1046,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-top: 2%;
 }
 
 .why-carousel .carousel-title-why h3 {
@@ -1065,21 +1066,14 @@ a {
 
 .infographic {
   min-height: 40vh;
-}
-
-.infographic div {
-  border-radius: 10rem;
-  background: url("../imgs/infographic.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   width: 95%;
-  margin: auto;
-  height: 100rem;
+  margin-bottom: 2%;
+  padding-left: 15%;
+  padding-right: 10%;
 }
 
 /* mobile responsive */
-@media screen and (max-width: 1091px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
   .title-why {
     font-size: 5.5rem !important;
   }
@@ -1114,10 +1108,11 @@ a {
   }
   .carousel-title-why h3 {
     font-size: 4rem !important;
+    margin-top: -20rem !important;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 541px) and (max-width: 1024px) {
   .compare p .sub-title-why {
     font-size: 3.5rem !important;
   }
@@ -1126,14 +1121,50 @@ a {
   }
   .explanation-content h2 {
     font-size: 3rem !important;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .explanation-content h4 {
-    font-size: 1.5rem !important;
+    font-size: 1.9rem !important;
     line-height: 2.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .carousel-title-why h3 {
+    font-size: 4rem !important;
+    margin-top: 3% !important;
+    margin-bottom: 2% !important;
+  }
+  .card-itself {
+    width: 75% !important;
+  }
+  .card-itself h5 {
+    font-size: 3rem;
+  }
+  .card-itself h6 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .card-itself-two {
+    width: 75% !important;
+  }
+  .card-itself-two .card-itself-two-content {
+    margin: 29rem 0rem;
+  }
+  .card-itself-two h5 {
+    font-size: 3rem !important;
+    margin-top: -18rem;
+  }
+  .card-itself-two h6 {
+    font-size: 2rem;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media (min-width: 280px) and (max-width: 539px) {
   .title-why {
     font-size: 4rem !important;
     font-weight: 700;
@@ -1275,16 +1306,10 @@ a {
   }
   .infographic {
     min-height: 40vh;
-  }
-  .infographic div {
-    border-radius: 10rem;
-    background: url("../imgs/infographic.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 75% !important;
-    margin: auto;
-    height: 100rem;
+    width: 100%;
+    margin-bottom: -7rem;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .why-carousel {
     min-height: 50vh;
@@ -1310,6 +1335,14 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .carousel-title-why h3 {
+    font-size: 3rem !important;
+    font-weight: 700;
+    margin-top: 3% !important;
+    margin-bottom: 2% !important;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 }
 
