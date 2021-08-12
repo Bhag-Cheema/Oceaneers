@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import firebase from "../firebase/firebase";
 
+import AlertLogin from './AlertLogin';
+
+
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -8,24 +11,29 @@ export default class Login extends Component {
     this.auth = firebase.auth();
 
     this.state = {
-      email: "",
-      password: "",
+      email: '',
+      password: '',
+      loading: false,
+      error: '',
     };
   }
 
   async onLogin(e) {
     e.preventDefault();
+    const { email, password } = this.state;
+    this.setState({ loading: true });
 
     try {
-      const { email, password } = this.state;
       await this.auth.signInWithEmailAndPassword(email, password);
       this.props.history.push("/");
     } catch (err) {
-      console.log(err);
+      this.setState({ error: err.message });
     }
+    this.setState({ loading: false });
   }
+
   render() {
-    const { email, password } = this.state;
+    const { email, password, loading, error } = this.state;
 
     return (
       <div className="container my-4">
@@ -56,6 +64,9 @@ export default class Login extends Component {
             <button className="btn btn-primary px-5">Login</button>
           </div>
         </form>
+
+        <AlertLogin className="mt-4" error={error} />
+
       </div>
     );
   }
