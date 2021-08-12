@@ -149,6 +149,7 @@ a {
 .bi-play-circle {
   font-size: 35px;
   margin-top: -0.5rem;
+  color: white;
 }
 
 .oceaneers-cabin-large {
@@ -337,7 +338,7 @@ a {
   font-family: "Cabin", sans-serif;
 }
 
-@media (min-width: 1025px) and (max-width: 1394px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
   .homepage-color {
     height: 265px;
   }
@@ -940,6 +941,7 @@ a {
           align-items: center;
   border-radius: 3rem;
   margin: 0rem 3rem;
+  margin: 0rem 3rem;
   margin-bottom: 1rem;
 }
 
@@ -997,8 +999,8 @@ a {
 }
 
 .hrLine {
-  margin-left: 50rem;
-  margin-right: 50rem;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .hrLine hr {
@@ -1059,6 +1061,7 @@ a {
 
 .infographic {
   min-height: 40vh;
+  margin-bottom: 10%;
 }
 
 .infographic div {
@@ -1128,8 +1131,38 @@ a {
 }
 
 @media screen and (max-width: 375px) {
+  .title-why {
+    font-size: 4rem !important;
+    font-weight: 700;
+    margin-top: 20%;
+  }
+  .desc-why {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .indust .sub-title-why {
+    font-size: 3rem !important;
+    font-weight: 700;
+    margin-top: 2%;
+  }
+  .indust .sub-desc-why {
+    font-size: 2rem !important;
+    font-weight: 300;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .further-explanation .explanation-content h2 {
+    font-size: 3rem !important;
+    font-weight: 700;
+    color: #024a63;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .explanation-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   .card-itself {
     border: solid;
@@ -1154,7 +1187,7 @@ a {
             align-items: center;
     border-radius: 3rem;
     margin-bottom: 1rem;
-    width: 50%;
+    width: 30rem !important;
   }
   .card-itself h5 {
     font-size: 3rem;
@@ -1166,26 +1199,7 @@ a {
     margin-right: 3%;
   }
   .card-itself-two {
-    border: solid;
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background: url("../imgs/camel.png");
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 3rem;
-    margin: 0rem 3rem;
-    margin-bottom: 1rem;
-    width: 50%;
+    width: 30rem !important;
   }
   .card-itself-two .card-itself-two-content {
     margin: 29rem 0rem;
@@ -1255,6 +1269,44 @@ a {
     right: 1.2rem;
     font-size: 2.5rem;
     margin-top: -0.3rem;
+  }
+  .infographic {
+    min-height: 40vh;
+  }
+  .infographic div {
+    border-radius: 10rem;
+    background: url("../imgs/infographic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 75% !important;
+    margin: auto;
+    height: 100rem;
+  }
+  .why-carousel {
+    min-height: 50vh;
+  }
+  .why-carousel .carousel-title-why {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .why-carousel .carousel-title-why h3 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #024a63;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+  }
+  .why-carousel .slide-why {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 

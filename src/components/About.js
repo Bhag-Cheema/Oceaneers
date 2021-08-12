@@ -34,7 +34,9 @@ export default class Partners extends Component {
         </section>
         {/* Join us button */}
         <div className="d-flex justify-content-center">
+        <Link to="/joinus">
           <button className="learn-how-about">Want to Join? Learn how.</button>
+          </Link>
         </div>
         {/* Why We Started */}
         <div className="card text-center border-0">

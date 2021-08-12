@@ -22,7 +22,13 @@ export default class Home extends Component {
               {" "}
               To the Oceans, Our Food Choices Matter.
             </p>
+            <Link
+            to={{ pathname: "https://www.youtube.com/watch?v=FlE2Z8IHUK8" }}
+              target="_blank">
+            <button>
             <i className="bi bi-play-circle"></i>
+            </button>
+            </Link>
           </div>
         </section>
         <div className="d-flex justify-content-center">
