@@ -75,13 +75,13 @@ export default class AddEvents extends Component {
     const { fileDisplay } = this.state;
     return (
       <div>
-        <h3 className="mb-4">Add Event</h3>
+        <h3 className="mb-4 m-4">Add Event</h3>
 
-        <div className="card p-3">
+        <div className="card p-3 m-4">
           <div style={{ fontWeight: "bold" }}>Event Cover</div>
 
           {fileDisplay ? (
-            <div className="text-center">
+            <div className="text-center m-4">
               <img
                 style={{
                   width: "250px",
@@ -116,12 +116,12 @@ export default class AddEvents extends Component {
 
         <form onSubmit={(e) => this.onFormSubmit(e)}>
           <div className="mb-3">
-            <label className="form-label">Name</label>
-            <input type="text" className="form-control" />
+            <label className="form-label m-4">Name</label>
+            <input type="text" className="form-control m-4" />
           </div>
 
           <div className="d-flex justify-content-end">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary mb-4">
               Save Event
             </button>
           </div>
