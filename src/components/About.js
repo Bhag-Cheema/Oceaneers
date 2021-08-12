@@ -603,34 +603,31 @@ export default class Partners extends Component {
                 <div className="col-8">
                   <h2 className="repeating-h2-name">Nathan Richardson</h2>
                   <h3 className="repeating-h3-team">Founder</h3>
-                  <h3 className="h3-about">Nathan’s Reduction Journey</h3>
-                  <ul>
+                  <h3 className="h3-about">Kaspar’s Reduction Journey</h3>
+                  <ul className="ul">
                     <li className="il">
-                      Just like any other SA boy, ate all the meat, all the time
+                    Just like any other SA boy, ate all the meat, all the time 
                     </li>
                     <li className="il">
-                      A deep passion for the environment inspired his studies in
-                      Zoology and Ichthyology (Fishery Science) in 2010 and
-                      confronted by the harsh realities of the state of our
-                      natural world.
+                    A deep passion for the environment inspired his studies in Zoology 
+                    and Ichthyology (Fishery Science) in 2010 and confronted by the harsh 
+                    realities of the state of our natural world
                     </li>
                     <li className="il">
-                      Exposure to a plant-based lifestyle made him realise a
-                      transition to a plant-based diet was the best way to
-                      advocate for conservation and sustainability.
+                    Exposure to a plant-based lifestyle made him realise a transition to a
+                    plant-based diet was the best way to advocate for conservation and
+                    sustainability
                     </li>
                     <li className="il">
-                      Spent a year living a strictly plant-based lifestyle,
-                      moved towards a more flexi approach while indulging in the
-                      occasional non-vegan treat
+                    Spent a year living a strictly plant-based lifestyle, moved towards a more flexi
+                    approach while indulging in the occasional non-vegan treat
                     </li>
                     <li className="il">
-                      Became a more conscious consumer and made decisions that
-                      aligned with personal values and beliefs
+                    Became a more conscious consumer and made decisions that aligned with personal values and
+                    beliefs
                     </li>
                     <li className="il">
-                      Now 95% plant-based, allowing for the odd human moment
-                      just to keep things light
+                    Now 95% plant-based, allowing for the odd human moment just to keep things light
                     </li>
                   </ul>
                 </div>
