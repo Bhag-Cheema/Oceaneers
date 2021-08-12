@@ -249,10 +249,7 @@
   padding-right: 10%;
 }
 
-/* mobile responsive */
-
-// @media screen and (max-width: 1091px) {
-
+//Extra screen sizes 
 @media (min-width: 1025px) and (max-width: 1400px) {
   .title-why {
     font-size: 5.5rem !important;
@@ -307,11 +304,11 @@
   }
 }
 
-// @media screen and (max-width: 768px) {
-//ipad
-@media (min-width: 541px) and (max-width: 1024px) {
+//ipad screen
+@media (min-width: 540px) and (max-width: 1022px) {
+  
   .compare {
-    p .sub-title-why {
+     .sub-title-why {
       font-size: 3.5rem !important;
     }
 
@@ -320,24 +317,42 @@
     }
   }
 
+  .indust {
+    .sub-title-why {
+      font-size: 3rem !important;
+      font-weight: 700;
+      margin-top: 2%;
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+    }
+
+    .sub-desc-why {
+      font-size: 2rem !important;
+      font-weight: 300;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
   .explanation-content {
     h2 {
-      font-size: 3rem !important;
+      font-size: 3.5rem !important;
       margin-left: 10%;
       margin-right: 10%;
     }
     h4 {
-      font-size: 1.9rem !important;
+      font-size: 2rem !important;
       line-height: 2.5rem;
       margin-left: 10%;
       margin-right: 10%;
+      margin-bottom: 1% !important;
     }
   }
 
   .carousel-title-why {
     h3 {
       font-size: 4rem !important;
-      margin-top: 3% !important;
+      margin-top: -5% !important;
       margin-bottom: 2% !important;
     }
   }
@@ -406,27 +421,6 @@
       margin-right: 10%;
     }
   }
-
-  // this is not working! 
-  .further-explanation {
-    .explanation-content {
-      h2 {
-        font-size: 3rem !important;
-        font-weight: 700;
-        color: #024a63;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-    }
-  }
-  // need to add the changes to the section before slides
-
-  .explanation-content {
-    h2 {
-      font-size: 1.5rem !important;
-    }
-  }
-
   .card-itself {
     border: solid;
     background: url("../imgs/bridge-water.png");
@@ -434,8 +428,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // width: 55rem;
-    // height: 45rem;
     margin: 0rem 3rem;
     display: flex;
     flex-direction: column;
@@ -481,22 +473,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    // margin-left: 10%;
-    // margin-right: 10%;
   }
   .indust-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    // margin-left: 10%;
-    // margin-right: 10%;
   }
   .indust-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    // width: 50%;
   }
 
   .accordion-why {
@@ -520,47 +507,36 @@
     margin-top: -0.3rem;
   }
 
-
-
   .infographic {
       min-height: 40vh;
       width: 100%;
-      margin-bottom: -7rem;
+      margin-bottom: 5%;
       padding-left: 10%;
       padding-right: 10%;
-  }
-
-  .why-carousel {
-    min-height: 50vh;
-    .carousel-title-why {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      h3 {
-        font-size: 4.5rem;
-        font-weight: bold;
-        color: #024a63;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-bottom: 0rem;
-      }
-    }
-  
-    .slide-why {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
   }
 
   .carousel-title-why {
     h3 {
       font-size: 3rem !important;
       font-weight: 700;
-      margin-top: 3% !important;
+      margin-top: 2% !important;
       margin-bottom: 2% !important;
       margin-left: 6%;
       margin-right: 6%;
+    }
+  }
+
+  .explanation-content {
+    h2 {
+      font-size: 2.8rem !important;
+      margin-left: 5.7%;
+      margin-right: 5.7%;
+    }
+    h4 {
+      font-size: 1.8rem !important;
+      line-height: 2.5rem;
+      margin-left: 8%;
+      margin-right: 8%;
     }
   }
 
