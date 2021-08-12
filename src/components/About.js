@@ -34,8 +34,10 @@ export default class Partners extends Component {
         </section>
         {/* Join us button */}
         <div className="d-flex justify-content-center">
-        <Link to="/joinus">
-          <button className="learn-how-about">Want to Join? Learn how.</button>
+          <Link to="/joinus">
+            <button className="learn-how-about">
+              Want to Join? Learn how.
+            </button>
           </Link>
         </div>
         {/* Why We Started */}
@@ -237,7 +239,6 @@ export default class Partners extends Component {
                     View the full interview with James
                   </button>
                   <div className="social-media d-flex justify-content-center">
-                  
                     <i className="bi bi-instagram"></i>
                     <i className="bi bi-facebook"></i>
                   </div>
@@ -602,29 +603,34 @@ export default class Partners extends Component {
                 <div className="col-8">
                   <h2 className="repeating-h2-name">Nathan Richardson</h2>
                   <h3 className="repeating-h3-team">Founder</h3>
-                  <h3 className="h3-about">Kaspar’s Reduction Journey</h3>
+                  <h3 className="h3-about">Nathan’s Reduction Journey</h3>
                   <ul>
                     <li className="il">
-                      Arrives in South Africa in 2013 as an omnivore
+                      Just like any other SA boy, ate all the meat, all the time
                     </li>
                     <li className="il">
-                      Learns about the impact of factory farming through locals,
-                      reads Foer’s ‘Eating Animals’ and subsequently cuts out
-                      meat and dairy
+                      A deep passion for the environment inspired his studies in
+                      Zoology and Ichthyology (Fishery Science) in 2010 and
+                      confronted by the harsh realities of the state of our
+                      natural world.
                     </li>
                     <li className="il">
-                      Does his first Vipassana retreat (10-day silent meditation
-                      based on Buddha’s teachings) in 2014, emerging even more
-                      inpsired to reduce suffering of all living beings
+                      Exposure to a plant-based lifestyle made him realise a
+                      transition to a plant-based diet was the best way to
+                      advocate for conservation and sustainability.
                     </li>
                     <li className="il">
-                      Becomes active in reduction advocacy, e.g. by collecting
-                      signatures for a initiative to ban factory farming in
-                      Switzerland
+                      Spent a year living a strictly plant-based lifestyle,
+                      moved towards a more flexi approach while indulging in the
+                      occasional non-vegan treat
                     </li>
                     <li className="il">
-                      Eats now 95% plant-based and enjoys each meal in which he
-                      supports a flourishing plant-based food industry
+                      Became a more conscious consumer and made decisions that
+                      aligned with personal values and beliefs
+                    </li>
+                    <li className="il">
+                      Now 95% plant-based, allowing for the odd human moment
+                      just to keep things light
                     </li>
                   </ul>
                 </div>
@@ -718,7 +724,7 @@ export default class Partners extends Component {
           </h3>
         </div>
 
-        <NewsLetter />
+        {/* <NewsLetter /> */}
 
         <Footer />
       </div> //end render class
