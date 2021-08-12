@@ -5245,11 +5245,29 @@ h5.membership-card-title {
   margin-right: 2.4rem;
 }
 
-.membership-card-text {
+.discount-cards .card {
+  width: 36.5rem;
+  height: auto;
+}
+
+.discount-cards .card .membership-card-text {
   display: contents;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 400;
+}
+
+.discount-info {
+  margin-bottom: 30%;
+}
+
+.discount-info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.discount-info .discount-code {
+  color: #ff7c5c;
 }
 
 @media (min-width: 1280px) {
@@ -5318,6 +5336,18 @@ h5.membership-card-title {
 }
 
 @media (min-width: 320px) and (max-width: 499px) {
+  .header {
+    font-family: "Cabin", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 9.2rem;
+  }
+  .header-text {
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 6rem 11.3rem 6rem;
+  }
   h5.partner-card-title {
     font-family: "Cabin", sans-serif;
     font-size: 1.8rem;
