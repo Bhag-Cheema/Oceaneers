@@ -196,6 +196,8 @@
   background-color: #024a63;
   border-radius: 0rem 0rem 0rem 0rem;
   padding-top: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   color: white;
   margin-left: auto;
@@ -207,6 +209,8 @@
   font-size: 2.3rem;
   font-weight: 300;
   border: none;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   background-color: #024a63;
   color: white;
@@ -230,7 +234,7 @@
   width: 80%;
   height: 6rem;
   margin-left: 10%;
-  margin-right: auto;
+  margin-right: 10%;
   text-align: center;
 }
 
@@ -388,6 +392,107 @@
     margin-bottom: 1rem;
   }
 }
+// POP-UP-TO-COPY
+div.sign-up-popup {
+  display: flex;
+  align-items: center;
+  background-color: #ff7c5c;
+  width: 50%;
+  height: 70rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: none;
+  border-radius: 3.2rem;
+  padding-bottom: 1rem;
+  i.bi-plus-circle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.4rem;
+    color: white;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .sign-up-card-header {
+    font-family: "cabin", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  #checkmark {
+    margin-top: 2rem;
+    width: 14.1rem;
+    height: 14.1rem;
+  }
+  .sign-up-card-h2 {
+    margin-top: 2rem;
+    color: white;
+    font-family: "cabin", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .blue-line {
+    width: 75%;
+    height: 0.07rem;
+    color: #bededf;
+    border: 1.492px solid #bededf;
+  }
+  .sign-up-card-h3 {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1.4rem;
+    color: white;
+    font-family: Cabin;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .sign-up-card-h3-raleway {
+    color: white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .sign-up-card-p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+  .social-icons-pop-up {
+    align-content: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    .instagram-pop-up {
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+    .facebook-pop-up {
+      display: inline;
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
+  }
+}
 
 @media (min-width: 1280px) {
   .header-image-joinus {
@@ -435,83 +540,6 @@
     font-weight: 500;
     color: #024a63;
     margin-bottom: 3.3rem;
-  }
-
-  div.joinus-image-left-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    position: relative;
-    width: 50%;
-    max-width: 56.98rem;
-    margin-left: 10%;
-    margin-bottom: 5.37rem;
-
-    p.joinus-card-text {
-      position: absolute;
-      bottom: 14.6rem;
-      font-family: "Cabin", sans-serif;
-      font-size: 3.2rem;
-      font-weight: 600;
-      color: white;
-      margin-left: 4rem;
-      margin-right: 4rem;
-    }
-    .check-email-card3 {
-      position: absolute;
-      bottom: 4.7rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      font-size: 2rem;
-      color: white;
-    }
-    .joinus-card-btn {
-      position: absolute;
-      bottom: 4.7rem;
-      background-color: #ff7c5c;
-      color: white;
-      font-size: 2rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      padding: 1rem 1.6rem;
-      border-radius: 4.3rem;
-    }
-  }
-
-  .joinus-image-right-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    position: relative;
-    width: 50%;
-    max-width: 56.98rem;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
-    .joinus-card-text {
-      position: absolute;
-      bottom: 14.6rem;
-      font-family: "Cabin", sans-serif;
-      font-size: 3.2rem;
-      font-weight: 600;
-      color: white;
-      margin-left: 4rem;
-      margin-right: 4rem;
-    }
-    .joinus-card-btn {
-      position: absolute;
-      background-color: #ff7c5c;
-      bottom: 4.7rem;
-      color: white;
-      font-size: 2rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      padding: 1rem 1.6rem;
-      border-radius: 4.3rem;
-    }
   }
 
   // Form field
@@ -665,8 +693,8 @@
     background-color: #024a63;
     border-radius: 0rem 0rem 0rem 0rem;
     padding-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     width: 80%;
     color: white;
   }
@@ -676,8 +704,8 @@
     font-size: 2.3rem;
     font-weight: 300;
     border: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     width: 80%;
     background-color: #024a63;
     color: white;
@@ -699,7 +727,7 @@
     width: 80%;
     height: 6rem;
     margin-left: 10%;
-    margin-right: auto;
+    margin-right: 10%;
     text-align: center;
   }
 
@@ -709,213 +737,165 @@
     right: 3rem;
     font-size: 2.5rem;
   }
-}
-@media (min-width: 500px) {
-  .repeating-h1-join {
-    font-family: "Cabin", sans-serif;
-    font-size: 4.5rem;
-    font-weight: 700;
-    color: #024a63;
-  }
-  .card-headers {
-    text-align: center;
-    font-family: "cabin", sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #024a63;
-    margin-bottom: 2.4rem;
-  }
-  // Form field
-  .form-field-card {
-    background: #bededf;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5rem;
-    border-radius: 4.3rem;
-    padding: 3.3rem 6.5rem 3.3rem 6.5rem;
-
-    .form-title-join {
-      font-family: "cabin", sans-serif;
-      font-size: 4rem;
-      font-weight: 600;
-      color: #024a63;
-    }
-    .form-subtitle-join {
-      font-family: "cabin", sans-serif;
+  // POP-UP-TO-COPY
+  div.sign-up-popup {
+    display: flex;
+    align-items: center;
+    background-color: #ff7c5c;
+    width: 50%;
+    height: 70%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: none;
+    border-radius: 3.2rem;
+    i.bi-plus-circle {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
       font-size: 2.4rem;
-      font-weight: 400;
-      color: #024a63;
-      margin-bottom: 2.4rem;
-    }
-
-    .join-us-form-labels {
-      font-family: "Cabin", sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-      color: #024a63;
-    }
-    // Inputs
-    input[type="text"] {
-      padding: 2rem;
-      font-size: 2rem;
-      font-family: "raleway", sans-serif;
-    }
-    input[type="email"] {
-      padding: 2rem;
-      font-size: 2rem;
-      font-family: "raleway", sans-serif;
-    }
-    input[type="number"] {
-      padding: 2rem;
-      font-size: 2rem;
-      font-family: "raleway", sans-serif;
-    }
-    textarea[type="text"] {
-      padding: 1rem;
-      font-size: 2rem;
-      font-family: "raleway", sans-serif;
-    }
-    .input-rows {
-      .left-col {
-        height: 4.4rem;
-        border-radius: 2rem;
-        border: none;
-        margin-bottom: 2.4rem;
-      }
-      .right-col {
-        height: 4.4rem;
-        border-radius: 2rem;
-        border: none;
-        margin-bottom: 2.4rem;
-      }
-    }
-
-    .full-width {
-      float: left;
-      height: 4.4rem;
-      border-radius: 2rem;
-      border: none;
-      margin-bottom: 2.4rem;
-    }
-
-    .join-us-form-checkboxes {
-      font-family: "Cabin", sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-      color: #024a63;
-    }
-    .checkboxes {
-      margin-top: 5.6rem;
-    }
-    input.radio-button {
-      width: 2.4rem;
-      min-width: 2.4rem;
-      height: 2.4rem;
-      margin-right: 1rem;
-      margin-top: 0.5rem;
-      margin-left: 0rem;
-      border: none;
-    }
-    input.checkbox-join {
-      margin-top: 1rem;
-      width: 2rem;
-      min-width: 2rem;
-      height: 2rem;
-      margin-right: 1rem;
-      border: none;
-    }
-    button.sign-up-btn {
       color: white;
-      margin-top: 4.5rem;
-      margin-bottom: 3.5rem;
-      background-color: #ff7c5c;
-      height: 4.4rem;
-      width: 25.6rem;
-      border-radius: 20px;
-      font-family: "Cabin", sans-serif;
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 2.4rem;
+      transform: rotate(45deg);
       cursor: pointer;
     }
+    .sign-up-card-header {
+      font-family: "cabin", sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    #checkmark {
+      margin-top: 2rem;
+      width: 14.1rem;
+      height: 14.1rem;
+    }
+    .sign-up-card-h2 {
+      margin-top: 2rem;
+      color: white;
+      font-family: "cabin", sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .blue-line {
+      width: 75%;
+      height: 0.07rem;
+      color: #bededf;
+      border: 1.492px solid #bededf;
+    }
+    .sign-up-card-h3 {
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 1.4rem;
+      color: white;
+      font-family: Cabin;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .sign-up-card-h3-raleway {
+      color: white;
+      font-family: Raleway;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .sign-up-card-p {
+      margin-left: 10%;
+      margin-right: 10%;
+      font-family: Raleway;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: white;
+    }
+    // i.bi-instagram {
+    //   display: inline;
+    //   color: white;
+    //   font-size: 3rem;
+    // }
+    // i.bi-facebook {
+    //   display: inline;
+    //   color: white;
+    //   font-size: 3rem;
+    // }
   }
-  div.joinus-image-left-col {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    // width: 50%;
-    max-width: 56.98rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
+}
+@media (min-width: 769px) and (max-width: 1279px) {
+  // POP-UP-TO-COPY
+  div.sign-up-popup {
+    width: 70%;
+    height: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 1rem;
 
-    p.joinus-card-text {
-      position: absolute;
-      bottom: 1rem;
-      font-family: "Cabin", sans-serif;
-      font-size: 2rem;
-      font-weight: 600;
-      color: white;
-      margin-left: 4rem;
-      margin-right: 4rem;
+    .sign-up-card-header {
+      font-size: 3rem;
+      margin-top: 3rem;
     }
-    .check-email-card3 {
-      position: absolute;
-      bottom: 4.7rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      font-size: 2rem;
-      color: white;
+    #checkmark {
+      margin-top: 1.5rem;
+      width: 10rem;
+      height: 10rem;
     }
-    .joinus-card-btn {
-      position: absolute;
-      bottom: 4.7rem;
-      background-color: #ff7c5c;
-      color: white;
-      font-size: 2rem;
-      font-family: "Cabin", sans-serif;
-      font-weight: 600;
-      padding: 1rem 1.6rem;
-      border-radius: 4.3rem;
+    .sign-up-card-h2 {
+      margin-top: 1rem;
+      font-size: 2.4rem;
+      line-height: 24px;
     }
-  }
-
-  .joinus-image-right-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    position: relative;
-    width: 50%;
-    max-width: 56.98rem;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
-    .joinus-card-text {
-      position: absolute;
-      bottom: 14.6rem;
-      font-family: "Cabin", sans-serif;
-      font-size: 2rem;
-      font-weight: 600;
-      color: white;
-      margin-left: 4rem;
-      margin-right: 4rem;
+    .sign-up-card-h3 {
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 1.4rem;
+      font-size: 2.4rem;
+      line-height: 3rem;
     }
-    .joinus-card-btn {
-      position: absolute;
-      background-color: #ff7c5c;
-      bottom: 4.7rem;
-      color: white;
-      font-size: 2rem;
-      font-family: "Cabin", sans-serif;
+    .sign-up-card-h3-raleway {
+      font-size: 2.4rem;
+      font-style: normal;
       font-weight: 600;
-      padding: 1rem 1.6rem;
-      border-radius: 4.3rem;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .sign-up-card-p {
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+    }
+    .social-icons-pop-up {
+      align-content: center;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      .instagram-pop-up {
+        font-size: 3rem;
+        margin-right: 1rem;
+      }
+      .facebook-pop-up {
+        display: inline;
+        font-size: 3rem;
+        margin-left: 1rem;
+      }
     }
   }
 }
-@media (min-width: 320px) and (max-width: 499px) {
+
+@media (min-width: 320px) and (max-width: 768px) {
   .joinus-cabin-large {
     font-size: 4rem;
     margin-top: 15rem;
@@ -941,24 +921,24 @@
     margin-right: 5%;
     margin-bottom: 1rem;
   }
-  .card-headers {
-    font-size: 2rem;
-    margin-bottom: 3.3rem;
-  }
 
   // Cards
   .card-headers {
     text-align: center;
     font-family: "cabin", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #024a63;
     margin-bottom: 3.3rem;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .join-us-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-bottom: 2rem;
 
     .join-card {
       display: flex;
@@ -1032,10 +1012,9 @@
       background-position: center;
       width: 30rem;
       height: 20.9rem;
-      // margin-left: 50%;
+
       display: flex;
-      // flex-direction: column;
-      // justify-content: flex-end;
+
       align-items: center;
       margin-bottom: 1rem;
     }
@@ -1048,10 +1027,9 @@
       background-position: center;
       width: 30rem;
       height: 20.9rem;
-      // margin-left: 50%;
+
       display: flex;
-      // flex-direction: column;
-      // justify-content: flex-end;
+
       align-items: center;
       margin-bottom: 1rem;
     }
@@ -1064,11 +1042,9 @@
       background-position: center;
       width: 30rem;
       height: 20.9rem;
-      // margin-left: 50%;
-      // margin-right: 25%;
+
       display: flex;
-      // flex-direction: column;
-      // justify-content: flex-end;
+
       align-items: center;
       margin-bottom: 1rem;
     }
@@ -1081,11 +1057,9 @@
       background-position: center;
       width: 30rem;
       height: 20.9rem;
-      // margin-left: 27%;
-      // margin-right: 25%;
+
       display: flex;
-      // flex-direction: column;
-      // // justify-content: flex-end;
+
       align-items: center;
       margin-bottom: 1rem;
     }
@@ -1093,7 +1067,7 @@
 
   // Form Card
   .form-field-card {
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-radius: 4.3rem;
     padding: 3.3rem 2rem 1rem 2rem;
 
@@ -1193,6 +1167,90 @@
       font-weight: 600;
       line-height: 2.4rem;
       cursor: pointer;
+    }
+  }
+  // Reduce Section
+  .reduce-title {
+    margin-top: 4rem;
+    font-size: 2.8rem;
+  }
+  .reduce-text {
+    margin-top: 80px;
+    font-size: 1.8rem;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .button-accordion-joinus {
+    font-size: 2rem;
+    width: 80%;
+    height: 6rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  // POP-UP-TO-COPY
+  div.sign-up-popup {
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 1rem;
+    i.bi-plus-circle {
+      top: 1rem;
+      right: 1rem;
+    }
+    .sign-up-card-header {
+      font-size: 2.8rem;
+    }
+    #checkmark {
+      margin-top: 1rem;
+      width: 6rem;
+      height: 6rem;
+    }
+    .sign-up-card-h2 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .sign-up-card-h3 {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .sign-up-card-h3-raleway {
+      font-size: 1.6rem;
+      font-style: normal;
+      line-height: 32px;
+      margin-bottom: 1rem;
+    }
+    .sign-up-card-p {
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 1.4rem;
+      line-height: 24px;
+      letter-spacing: 0em;
+    }
+    .social-icons-pop-up {
+      align-content: center;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      .instagram-pop-up {
+        font-size: 3rem;
+        margin-right: 1rem;
+      }
+      .facebook-pop-up {
+        display: inline;
+        font-size: 3rem;
+        margin-left: 1rem;
+      }
     }
   }
 }

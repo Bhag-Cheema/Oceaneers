@@ -40,7 +40,6 @@ p.header-text-about {
   font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 2rem;
-
 }
 .repeating-h2-about {
   color: #024a63;
@@ -233,15 +232,15 @@ p.header-text-about {
 
 .il {
   font-size: 1.75rem;
-  line-height:1.6rem;
-  margin-top:0.6rem;
+  line-height: 1.6rem;
+  margin-top: 0.6rem;
 }
 
 .rounded {
   margin-top: 5rem;
   width: 20%;
 }
-.rounded-circle-team{
+.rounded-circle-team {
   margin-left: -0.5rem !important;
 }
 .repeating-h2-iggy {
@@ -316,7 +315,7 @@ p.header-text-about {
     font-size: 1.5rem !important;
     margin-top: -2.75rem !important;
     line-height: 3rem !important;
-  } 
+  }
   .repeating-h2-iggy {
     color: #024a63;
     padding-top: 4rem;
@@ -368,19 +367,19 @@ p.header-text-about {
     padding-left: 1rem;
   }
   .button-accordion-about {
-  font-size: 0.75rem !important;
-  padding: 1rem 1rem 1rem 1rem !important;
-  width: 5rem !important;
-  height: 2.2rem !important;
-  outline: none !important;
-  border: 0rem solid white !important;
-  border-radius: 5rem !important;
-  text-align: center;
+    font-size: 0.75rem !important;
+    padding: 1rem 1rem 1rem 1rem !important;
+    width: 5rem !important;
+    height: 2.2rem !important;
+    outline: none !important;
+    border: 0rem solid white !important;
+    border-radius: 5rem !important;
+    text-align: center;
 
-  margin-top: -5rem !important;
-  margin-bottom: -5rem !important;
-  margin-left: -2rem !important;
-  margin-right: -2rem !important;
+    margin-top: -5rem !important;
+    margin-bottom: -5rem !important;
+    margin-left: -2rem !important;
+    margin-right: -2rem !important;
   }
   .container-about {
     width: 30rem !important;
@@ -404,7 +403,7 @@ p.header-text-about {
   .col-md {
     width: 100px !important;
   }
-  .rounded-circle-team{
+  .rounded-circle-team {
     margin-left: 0.4rem !important;
   }
   .col-4 {
@@ -437,7 +436,7 @@ p.header-text-about {
     padding-right: 1rem !important;
     padding-left: 0.5rem !important;
     margin-bottom: -2rem !important;
-  } 
+  }
   .list {
     margin-top: -1rem !important;
   }
@@ -507,7 +506,7 @@ p.header-text-about {
     font-size: 1.8rem !important;
     margin-top: -2.75rem !important;
     line-height: 3rem !important;
-  } 
+  }
   .repeating-h2-iggy {
     color: #024a63;
     padding-top: 4rem;
@@ -559,18 +558,18 @@ p.header-text-about {
     padding-left: 1rem;
   }
   .button-accordion-about {
-  font-size: 0.8rem !important;
-  padding: 1rem 1rem 1rem 1rem !important;
-  width: 6.5rem !important;
-  height: 2.6rem !important;
-  outline: none !important;
-  border: 0rem solid white !important;
-  border-radius: 5rem !important;
+    font-size: 0.8rem !important;
+    padding: 1rem 1rem 1rem 1rem !important;
+    width: 6.5rem !important;
+    height: 2.6rem !important;
+    outline: none !important;
+    border: 0rem solid white !important;
+    border-radius: 5rem !important;
 
-  margin-top: -5rem !important;
-  margin-bottom: -5rem !important;
-  margin-left: -3rem !important;
-  margin-right: -3rem !important;
+    margin-top: -5rem !important;
+    margin-bottom: -5rem !important;
+    margin-left: -3rem !important;
+    margin-right: -3rem !important;
   }
   .container-about {
     width: 40rem !important;
@@ -594,7 +593,7 @@ p.header-text-about {
   .col-md {
     width: 130px !important;
   }
-  .rounded-circle-team{
+  .rounded-circle-team {
     margin-left: 0.5rem !important;
   }
   .col-4 {
@@ -626,13 +625,13 @@ p.header-text-about {
     padding-right: 1rem !important;
     padding-left: 0.5rem !important;
     margin-bottom: 0rem !important;
-  } 
+  }
   .list {
     margin-top: -2rem !important;
   }
   .il {
     font-size: 1.1rem !important;
-    line-height:1.6rem;
+    line-height: 1.6rem;
     margin-top: 0rem !important;
     padding-right: 0.1rem;
     margin-left: -0.3rem;
@@ -669,7 +668,7 @@ p.header-text-about {
     font-weight: normal;
     margin-top: 2rem;
     margin-bottom: 3rem;
-  } 
+  }
   .repeating-h3-about {
     font-size: 1.5rem !important;
   }
@@ -695,7 +694,7 @@ p.header-text-about {
     //line-height: 30px !important;
     height: 4rem;
   }
-  .rounded-circle-team{
+  .rounded-circle-team {
     margin-left: -0.25rem !important;
   }
   //Learn More Container
@@ -703,7 +702,7 @@ p.header-text-about {
     margin: auto !important;
     background: #bededf;
     border-radius: 7rem;
-    width:68rem !important;
+    width: 68rem !important;
   }
   .container-2 {
     width: 68rem !important;
@@ -743,19 +742,19 @@ p.header-text-about {
   .il {
     font-size: 1.3rem !important;
     padding-right: 1rem;
-    line-height:1.6rem;
-    margin-top:0.2rem !important;
+    line-height: 1.6rem;
+    margin-top: 0.2rem !important;
   }
 }
 // Large Screens Bigger Headers
-@media all and (min-width: 1000px) and (max-width:1300) {
+@media all and (min-width: 1000px) and (max-width: 1300) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     p.header-about {
       font-size: 5.5rem !important;
       margin-top: 6rem;
@@ -779,5 +778,3 @@ p.header-text-about {
     font-size: 2.3rem !important;
   }
 }
-
-

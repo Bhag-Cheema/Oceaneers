@@ -59,6 +59,10 @@ nav {
   background-color: #024a63;
 }
 
+nav img {
+  height: 8rem;
+}
+
 a {
   color: white !important;
 }
@@ -2398,9 +2402,11 @@ div.col-four button.footer-login {
   border-radius: 2.4rem;
   width: 12rem;
   height: 3.9rem;
+  position: inherit;
 }
 
 div.col-four button.footer-join {
+  position: inherit;
   font-family: "Cabin", sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -2512,7 +2518,7 @@ div.col-four button.footer-join {
 @media (min-width: 768px) and (max-width: 1279px) {
   div.main-footer {
     position: relative;
-    height: 23rem;
+    height: 28rem;
     padding: 3rem 4rem;
     margin-top: 0rem;
     overflow-x: hidden;
@@ -2541,17 +2547,12 @@ div.col-four button.footer-join {
     margin-left: 1.2rem;
     margin-top: 2rem;
   }
-  div.col-two p.about-us {
-    position: inherit;
+  div.col-two {
     display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-size: 1.8rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   div.col-three {
-    position: inherit;
     font-size: 1.8rem;
     color: white;
     display: -webkit-box;
@@ -2588,40 +2589,37 @@ div.col-four button.footer-join {
   div.col-one h1.footer-title {
     font-size: 2rem;
     position: absolute;
-    top: 8rem;
-    left: 2rem;
+    top: 20%;
+    left: 8%;
   }
   div.col-one p.footer-subtitle {
     font-size: 1.6rem;
     width: 15rem;
     position: absolute;
-    top: 9rem;
-    left: 2rem;
+    top: 25%;
+    left: 8%;
   }
   div.col-one .social-icons img.instagram {
     position: absolute;
-    border: 0.1rem solid white;
-    border-radius: 100%;
+    top: 55%;
+    left: 8%;
     padding: 1.1rem;
-    margin-top: 2rem;
-    right: 17rem;
   }
   div.col-one .social-icons img.facebook {
     position: absolute;
-    border: 0.1rem solid white;
-    border-radius: 100%;
+    top: 55%;
+    left: 20%;
     padding: 1.1rem 1.8rem;
-    margin-left: 1.2rem;
-    margin-top: 2rem;
-    right: 6rem;
   }
-  div.col-two p.about-us {
+  div.col-two {
     display: none;
   }
   div.col-three {
-    position: inherit;
+    position: absolute;
     font-size: 1.8rem;
-    color: white;
+    top: 20%;
+    left: 37%;
+    padding-right: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2630,18 +2628,23 @@ div.col-four button.footer-join {
             justify-content: right;
   }
   div.col-four button.footer-login {
-    font-size: 1.8rem;
-    padding: 0.5rem 2rem;
     position: absolute;
-    left: 6rem;
+    top: 20%;
+    right: 8%;
+    padding: 0.5rem 2rem;
+    font-size: 1.8rem;
+    width: 12rem;
+    height: 3.9rem;
   }
   div.col-four button.footer-join {
     position: absolute;
-    left: 32rem;
+    margin-top: 0rem;
+    top: 50%;
+    right: 8%;
     font-size: 1.8rem;
-    font-weight: 600;
     padding: 0.5rem 2rem;
-    margin-top: 1.8rem;
+    width: 12rem;
+    height: 3.9rem;
   }
 }
 
@@ -2654,35 +2657,37 @@ div.col-four button.footer-join {
   div.col-one h1.footer-title {
     font-size: 2rem;
     position: absolute;
-    top: 8rem;
-    left: 2rem;
+    top: 36%;
+    left: 8%;
   }
   div.col-one p.footer-subtitle {
     font-size: 1.6rem;
-    width: 15rem;
+    width: 10rem;
     position: absolute;
-    top: 9rem;
-    left: 2rem;
+    top: 40%;
+    left: 8%;
   }
-  div.col-one .social-icons .instagram {
+  div.col-one .social-icons img.instagram {
     position: absolute;
-    top: 13rem;
-    right: 13.5rem;
+    top: 55%;
+    right: 27%;
     padding: 1.1rem;
   }
-  div.col-one .social-icons .facebook {
+  div.col-one .social-icons img.facebook {
     position: absolute;
-    top: 13rem;
-    right: 2rem;
+    top: 55%;
+    right: 8%;
     padding: 1.1rem 1.8rem;
   }
   div.col-two p.about-us {
     display: none;
   }
   div.col-three {
+    position: absolute;
     font-size: 1.8rem;
-    left: 32rem;
-    top: 8rem;
+    top: 36%;
+    left: 61%;
+    padding-right: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2692,8 +2697,8 @@ div.col-four button.footer-join {
   }
   div.col-four button.footer-login {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 10%;
+    right: 70%;
     padding: 0.5rem 2rem;
     font-size: 1.6rem;
     width: 12rem;
@@ -2702,8 +2707,8 @@ div.col-four button.footer-join {
   div.col-four button.footer-join {
     position: absolute;
     margin-top: 0rem;
-    top: 2rem;
-    right: 6.5rem;
+    top: 10%;
+    right: 8%;
     font-size: 1.6rem;
     padding: 0.5rem 2rem;
     width: 12rem;
@@ -2720,35 +2725,37 @@ div.col-four button.footer-join {
   div.col-one h1.footer-title {
     font-size: 1.8rem;
     position: absolute;
-    top: 8rem;
-    left: 2rem;
+    top: 36%;
+    left: 8%;
   }
   div.col-one p.footer-subtitle {
     font-size: 1.4rem;
     width: 10rem;
     position: absolute;
-    top: 10rem;
-    left: 2rem;
+    top: 40%;
+    left: 8%;
   }
   div.col-one .social-icons img.instagram {
     position: absolute;
-    top: 14rem;
-    left: 23rem;
+    top: 55%;
+    right: 25%;
     padding: 1.1rem;
   }
   div.col-one .social-icons img.facebook {
     position: absolute;
-    top: 14rem;
-    right: 2rem;
+    top: 55%;
+    right: 5%;
     padding: 1.1rem 1.8rem;
   }
-  div.col-two p.about-us {
+  div.col-two {
     display: none;
   }
   div.col-three {
-    font-size: 1.8rem;
-    right: 3rem;
-    top: 8rem;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 36%;
+    left: 61%;
+    padding-right: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2758,19 +2765,18 @@ div.col-four button.footer-join {
   }
   div.col-four button.footer-login {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 10%;
+    right: 64%;
     padding: 0.5rem 2rem;
     font-size: 1.6rem;
     width: 12rem;
     height: 3.9rem;
   }
   div.col-four button.footer-join {
-    margin-right: 0;
     position: absolute;
     margin-top: 0rem;
-    top: 2rem;
-    right: 6.5rem;
+    top: 10%;
+    right: 8%;
     font-size: 1.6rem;
     padding: 0.5rem 2rem;
     width: 12rem;
@@ -2787,58 +2793,37 @@ div.col-four button.footer-join {
   div.col-one h1.footer-title {
     font-size: 1.8rem;
     position: absolute;
-    top: 9rem;
-    left: 2rem;
+    top: 36%;
+    left: 5%;
   }
   div.col-one p.footer-subtitle {
     font-size: 1.4rem;
     width: 10rem;
     position: absolute;
-    top: 12rem;
-    left: 2rem;
+    top: 40%;
+    left: 5%;
   }
-  div.col-one .social-icons .instagram {
+  div.col-one .social-icons img.instagram {
     position: absolute;
-    top: 13rem;
-    right: 9rem;
+    top: 55%;
+    right: 25%;
     padding: 1.1rem;
   }
-  div.col-one .social-icons .facebook {
+  div.col-one .social-icons img.facebook {
     position: absolute;
-    top: 13em;
-    right: 2rem;
+    top: 55%;
+    right: 5%;
     padding: 1.1rem 1.8rem;
   }
-  div.col-two p.about-us {
+  div.col-two {
     display: none;
   }
-  div.col-two .facebook {
-    border: 0.1rem solid white;
-    border-radius: 100%;
-    padding: 1.1rem !important;
-    margin-left: -1rem !important;
-    margin-right: 20rem !important;
-    margin-top: 4rem !important;
-    width: 3rem !important;
-  }
-  div.col-two .footer-login {
-    font-size: 1.5rem !important;
-    font-weight: 600;
-    font-family: "Cabin", sans-serif;
-    padding: 0.5rem 2rem;
-    background: white;
-    color: #024a63;
-    border-radius: 2.4rem;
-    width: 8rem !important;
-    height: 3rem !important;
-  }
-  div.col-two div.col-three {
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    font-size: 1.4rem;
+  div.col-three {
     position: absolute;
-    left: 23rem;
-    top: 9rem;
+    font-size: 1.4rem;
+    top: 36%;
+    left: 61%;
+    padding-right: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2846,20 +2831,20 @@ div.col-four button.footer-join {
         -ms-flex-pack: right;
             justify-content: right;
   }
-  div.col-two div.col-four button.footer-login {
+  div.col-four button.footer-login {
     position: absolute;
-    top: 3rem;
-    left: 2rem;
+    top: 10%;
+    right: 63%;
     padding: 0.5rem 2rem;
     font-size: 1.6rem;
     width: 12rem;
     height: 3.9rem;
   }
-  div.col-two div.col-four button.footer-join {
+  div.col-four button.footer-join {
     position: absolute;
     margin-top: 0rem;
-    top: 3rem;
-    right: 2rem;
+    top: 10%;
+    right: 5%;
     font-size: 1.6rem;
     padding: 0.5rem 2rem;
     width: 12rem;
@@ -2876,36 +2861,36 @@ div.col-four button.footer-join {
   div.col-one h1.footer-title {
     font-size: 1.8rem;
     position: absolute;
-    top: 9rem;
-    left: 2rem;
+    top: 36%;
+    left: 5%;
   }
   div.col-one p.footer-subtitle {
     font-size: 1.4rem;
     width: 10rem;
     position: absolute;
-    top: 10rem;
-    left: 2rem;
+    top: 40%;
+    left: 5%;
   }
   div.col-one .social-icons img.instagram {
     position: absolute;
-    top: 13rem;
-    right: 9rem;
+    top: 55%;
+    right: 28%;
     padding: 1.1rem;
   }
   div.col-one .social-icons img.facebook {
     position: absolute;
-    top: 13em;
-    right: 2rem;
+    top: 55%;
+    right: 5%;
     padding: 1.1rem 1.8rem;
   }
   div.col-two p.about-us {
     display: none;
   }
   div.col-three {
-    position: inherit;
+    position: absolute;
     font-size: 1.4rem;
-    top: 9rem;
-    left: 20rem;
+    top: 36%;
+    left: 55%;
     padding-right: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2916,8 +2901,8 @@ div.col-four button.footer-join {
   }
   div.col-four button.footer-login {
     position: absolute;
-    top: 3rem;
-    left: 2rem;
+    top: 10%;
+    right: 58%;
     padding: 0.5rem 2rem;
     font-size: 1.6rem;
     width: 12rem;
@@ -2926,8 +2911,8 @@ div.col-four button.footer-join {
   div.col-four button.footer-join {
     position: absolute;
     margin-top: 0rem;
-    top: 3rem;
-    right: 2rem;
+    top: 10%;
+    right: 5%;
     font-size: 1.6rem;
     padding: 0.5rem 2rem;
     width: 12rem;
@@ -3223,7 +3208,7 @@ p.header-text-about {
   margin-right: 12%;
 }
 
-@media all and (min-width: 320px) and (max-width: 499px) {
+@media all and (min-width: 280px) and (max-width: 499px) {
   section.header-image-about {
     min-height: 60vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -3289,8 +3274,8 @@ p.header-text-about {
     font-style: normal;
     margin-top: -3rem !important;
     margin-bottom: 6rem;
-    margin-left: 2rem !important;
-    margin-right: 2rem !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
   .repeating-h3-about {
     font-size: 0.85rem !important;
@@ -3480,8 +3465,8 @@ p.header-text-about {
     font-style: normal;
     margin-top: -3rem !important;
     margin-bottom: 6rem;
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
   .repeating-h3-about {
     font-size: 0.85rem !important;
@@ -3596,7 +3581,7 @@ p.header-text-about {
   }
 }
 
-@media all and (min-width: 769px) and (max-width: 1280px) {
+@media all and (min-width: 769px) and (max-width: 1300px) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -3630,13 +3615,13 @@ p.header-text-about {
     padding-top: 2rem;
     padding-bottom: 3rem;
     font-family: "Cabin", sans-serif;
-    font-size: 1.8rem !important;
+    font-size: 2.2rem !important;
     font-weight: normal;
     font-style: normal;
     margin-top: -2.5rem;
     margin-bottom: 6rem;
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
   .button-accordion-about {
     font-size: 1.2rem !important;
@@ -3691,14 +3676,14 @@ p.header-text-about {
     font-size: 2.5rem;
   }
   .il {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     padding-right: 1rem;
     line-height: 1.6rem;
-    margin-top: 0.3rem !important;
+    margin-top: 0.2rem !important;
   }
 }
 
-@media all and (min-width: 1000px) and (max-width: 1280px) {
+@media all and (min-width: 1000px) and (max-width: 1300) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -3938,6 +3923,8 @@ p.header-text-about {
   background-color: #024a63;
   border-radius: 0rem 0rem 0rem 0rem;
   padding-top: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   color: white;
   margin-left: auto;
@@ -3949,6 +3936,8 @@ p.header-text-about {
   font-size: 2.3rem;
   font-weight: 300;
   border: none;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   background-color: #024a63;
   color: white;
@@ -3972,7 +3961,7 @@ p.header-text-about {
   width: 80%;
   height: 6rem;
   margin-left: 10%;
-  margin-right: auto;
+  margin-right: 10%;
   text-align: center;
 }
 
@@ -4208,6 +4197,124 @@ p.header-text-about {
   margin-bottom: 1rem;
 }
 
+div.sign-up-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff7c5c;
+  width: 50%;
+  height: 70rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: none;
+  border-radius: 3.2rem;
+  padding-bottom: 1rem;
+}
+
+div.sign-up-popup i.bi-plus-circle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+div.sign-up-popup .sign-up-card-header {
+  font-family: "cabin", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+div.sign-up-popup #checkmark {
+  margin-top: 2rem;
+  width: 14.1rem;
+  height: 14.1rem;
+}
+
+div.sign-up-popup .sign-up-card-h2 {
+  margin-top: 2rem;
+  color: white;
+  font-family: "cabin", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+div.sign-up-popup .blue-line {
+  width: 75%;
+  height: 0.07rem;
+  color: #bededf;
+  border: 1.492px solid #bededf;
+}
+
+div.sign-up-popup .sign-up-card-h3 {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 1.4rem;
+  color: white;
+  font-family: Cabin;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+div.sign-up-popup .sign-up-card-h3-raleway {
+  color: white;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+div.sign-up-popup .sign-up-card-p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+div.sign-up-popup .social-icons-pop-up {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+div.sign-up-popup .social-icons-pop-up .instagram-pop-up {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+div.sign-up-popup .social-icons-pop-up .facebook-pop-up {
+  display: inline;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
 @media (min-width: 1280px) {
   .header-image-joinus {
     min-height: 60vh;
@@ -4253,98 +4360,6 @@ p.header-text-about {
     font-weight: 500;
     color: #024a63;
     margin-bottom: 3.3rem;
-  }
-  div.joinus-image-left-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-    width: 50%;
-    max-width: 56.98rem;
-    margin-left: 10%;
-    margin-bottom: 5.37rem;
-  }
-  div.joinus-image-left-col p.joinus-card-text {
-    position: absolute;
-    bottom: 14.6rem;
-    font-family: "Cabin", sans-serif;
-    font-size: 3.2rem;
-    font-weight: 600;
-    color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  div.joinus-image-left-col .check-email-card3 {
-    position: absolute;
-    bottom: 4.7rem;
-    font-family: "Cabin", sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: white;
-  }
-  div.joinus-image-left-col .joinus-card-btn {
-    position: absolute;
-    bottom: 4.7rem;
-    background-color: #ff7c5c;
-    color: white;
-    font-size: 2rem;
-    font-family: "Cabin", sans-serif;
-    font-weight: 600;
-    padding: 1rem 1.6rem;
-    border-radius: 4.3rem;
-  }
-  .joinus-image-right-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-    width: 50%;
-    max-width: 56.98rem;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
-  }
-  .joinus-image-right-col .joinus-card-text {
-    position: absolute;
-    bottom: 14.6rem;
-    font-family: "Cabin", sans-serif;
-    font-size: 3.2rem;
-    font-weight: 600;
-    color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  .joinus-image-right-col .joinus-card-btn {
-    position: absolute;
-    background-color: #ff7c5c;
-    bottom: 4.7rem;
-    color: white;
-    font-size: 2rem;
-    font-family: "Cabin", sans-serif;
-    font-weight: 600;
-    padding: 1rem 1.6rem;
-    border-radius: 4.3rem;
   }
   .form-field-card {
     background: #bededf;
@@ -4486,8 +4501,8 @@ p.header-text-about {
     background-color: #024a63;
     border-radius: 0rem 0rem 0rem 0rem;
     padding-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     width: 80%;
     color: white;
   }
@@ -4496,8 +4511,8 @@ p.header-text-about {
     font-size: 2.3rem;
     font-weight: 300;
     border: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     width: 80%;
     background-color: #024a63;
     color: white;
@@ -4518,7 +4533,7 @@ p.header-text-about {
     width: 80%;
     height: 6rem;
     margin-left: 10%;
-    margin-right: auto;
+    margin-right: 10%;
     text-align: center;
   }
   .plus-icon-joinus {
@@ -4527,217 +4542,159 @@ p.header-text-about {
     right: 3rem;
     font-size: 2.5rem;
   }
-}
-
-@media (min-width: 500px) {
-  .repeating-h1-join {
-    font-family: "Cabin", sans-serif;
-    font-size: 4.5rem;
-    font-weight: 700;
-    color: #024a63;
-  }
-  .card-headers {
-    text-align: center;
-    font-family: "cabin", sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #024a63;
-    margin-bottom: 2.4rem;
-  }
-  .form-field-card {
-    background: #bededf;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5rem;
-    border-radius: 4.3rem;
-    padding: 3.3rem 6.5rem 3.3rem 6.5rem;
-  }
-  .form-field-card .form-title-join {
-    font-family: "cabin", sans-serif;
-    font-size: 4rem;
-    font-weight: 600;
-    color: #024a63;
-  }
-  .form-field-card .form-subtitle-join {
-    font-family: "cabin", sans-serif;
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: #024a63;
-    margin-bottom: 2.4rem;
-  }
-  .form-field-card .join-us-form-labels {
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #024a63;
-  }
-  .form-field-card input[type="text"] {
-    padding: 2rem;
-    font-size: 2rem;
-    font-family: "raleway", sans-serif;
-  }
-  .form-field-card input[type="email"] {
-    padding: 2rem;
-    font-size: 2rem;
-    font-family: "raleway", sans-serif;
-  }
-  .form-field-card input[type="number"] {
-    padding: 2rem;
-    font-size: 2rem;
-    font-family: "raleway", sans-serif;
-  }
-  .form-field-card textarea[type="text"] {
-    padding: 1rem;
-    font-size: 2rem;
-    font-family: "raleway", sans-serif;
-  }
-  .form-field-card .input-rows .left-col {
-    height: 4.4rem;
-    border-radius: 2rem;
-    border: none;
-    margin-bottom: 2.4rem;
-  }
-  .form-field-card .input-rows .right-col {
-    height: 4.4rem;
-    border-radius: 2rem;
-    border: none;
-    margin-bottom: 2.4rem;
-  }
-  .form-field-card .full-width {
-    float: left;
-    height: 4.4rem;
-    border-radius: 2rem;
-    border: none;
-    margin-bottom: 2.4rem;
-  }
-  .form-field-card .join-us-form-checkboxes {
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #024a63;
-  }
-  .form-field-card .checkboxes {
-    margin-top: 5.6rem;
-  }
-  .form-field-card input.radio-button {
-    width: 2.4rem;
-    min-width: 2.4rem;
-    height: 2.4rem;
-    margin-right: 1rem;
-    margin-top: 0.5rem;
-    margin-left: 0rem;
-    border: none;
-  }
-  .form-field-card input.checkbox-join {
-    margin-top: 1rem;
-    width: 2rem;
-    min-width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-    border: none;
-  }
-  .form-field-card button.sign-up-btn {
-    color: white;
-    margin-top: 4.5rem;
-    margin-bottom: 3.5rem;
-    background-color: #ff7c5c;
-    height: 4.4rem;
-    width: 25.6rem;
-    border-radius: 20px;
-    font-family: "Cabin", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    cursor: pointer;
-  }
-  div.joinus-image-left-col {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    position: relative;
-    max-width: 56.98rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
-  }
-  div.joinus-image-left-col p.joinus-card-text {
-    position: absolute;
-    bottom: 1rem;
-    font-family: "Cabin", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  div.joinus-image-left-col .check-email-card3 {
-    position: absolute;
-    bottom: 4.7rem;
-    font-family: "Cabin", sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: white;
-  }
-  div.joinus-image-left-col .joinus-card-btn {
-    position: absolute;
-    bottom: 4.7rem;
-    background-color: #ff7c5c;
-    color: white;
-    font-size: 2rem;
-    font-family: "Cabin", sans-serif;
-    font-weight: 600;
-    padding: 1rem 1.6rem;
-    border-radius: 4.3rem;
-  }
-  .joinus-image-right-col {
+  div.sign-up-popup {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-    width: 50%;
-    max-width: 56.98rem;
-    margin-right: 10%;
-    margin-bottom: 5.37rem;
-  }
-  .joinus-image-right-col .joinus-card-text {
-    position: absolute;
-    bottom: 14.6rem;
-    font-family: "Cabin", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  .joinus-image-right-col .joinus-card-btn {
-    position: absolute;
     background-color: #ff7c5c;
-    bottom: 4.7rem;
+    width: 50%;
+    height: 70%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: none;
+    border-radius: 3.2rem;
+  }
+  div.sign-up-popup i.bi-plus-circle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.4rem;
     color: white;
-    font-size: 2rem;
-    font-family: "Cabin", sans-serif;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    cursor: pointer;
+  }
+  div.sign-up-popup .sign-up-card-header {
+    font-family: "cabin", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  div.sign-up-popup #checkmark {
+    margin-top: 2rem;
+    width: 14.1rem;
+    height: 14.1rem;
+  }
+  div.sign-up-popup .sign-up-card-h2 {
+    margin-top: 2rem;
+    color: white;
+    font-family: "cabin", sans-serif;
+    font-size: 30px;
+    font-style: normal;
     font-weight: 600;
-    padding: 1rem 1.6rem;
-    border-radius: 4.3rem;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  div.sign-up-popup .blue-line {
+    width: 75%;
+    height: 0.07rem;
+    color: #bededf;
+    border: 1.492px solid #bededf;
+  }
+  div.sign-up-popup .sign-up-card-h3 {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1.4rem;
+    color: white;
+    font-family: Cabin;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  div.sign-up-popup .sign-up-card-h3-raleway {
+    color: white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  div.sign-up-popup .sign-up-card-p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
   }
 }
 
-@media (min-width: 320px) and (max-width: 499px) {
+@media (min-width: 769px) and (max-width: 1279px) {
+  div.sign-up-popup {
+    width: 70%;
+    height: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 1rem;
+  }
+  div.sign-up-popup .sign-up-card-header {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  div.sign-up-popup #checkmark {
+    margin-top: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  div.sign-up-popup .sign-up-card-h2 {
+    margin-top: 1rem;
+    font-size: 2.4rem;
+    line-height: 24px;
+  }
+  div.sign-up-popup .sign-up-card-h3 {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1.4rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  div.sign-up-popup .sign-up-card-h3-raleway {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  div.sign-up-popup .sign-up-card-p {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  div.sign-up-popup .social-icons-pop-up {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  div.sign-up-popup .social-icons-pop-up .instagram-pop-up {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  div.sign-up-popup .social-icons-pop-up .facebook-pop-up {
+    display: inline;
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   .joinus-cabin-large {
     font-size: 4rem;
     margin-top: 15rem;
@@ -4763,16 +4720,14 @@ p.header-text-about {
     margin-bottom: 1rem;
   }
   .card-headers {
-    font-size: 2rem;
-    margin-bottom: 3.3rem;
-  }
-  .card-headers {
     text-align: center;
     font-family: "cabin", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #024a63;
     margin-bottom: 3.3rem;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .join-us-cards {
     display: -webkit-box;
@@ -4780,9 +4735,11 @@ p.header-text-about {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: hidden;
+    margin-bottom: 2rem;
   }
   .join-us-cards .join-card {
     display: -webkit-box;
@@ -4932,7 +4889,7 @@ p.header-text-about {
     margin-bottom: 1rem;
   }
   .form-field-card {
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-radius: 4.3rem;
     padding: 3.3rem 2rem 1rem 2rem;
   }
@@ -5026,6 +4983,89 @@ p.header-text-about {
     font-weight: 600;
     line-height: 2.4rem;
     cursor: pointer;
+  }
+  .reduce-title {
+    margin-top: 4rem;
+    font-size: 2.8rem;
+  }
+  .reduce-text {
+    margin-top: 80px;
+    font-size: 1.8rem;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .button-accordion-joinus {
+    font-size: 2rem;
+    width: 80%;
+    height: 6rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  div.sign-up-popup {
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 1rem;
+  }
+  div.sign-up-popup i.bi-plus-circle {
+    top: 1rem;
+    right: 1rem;
+  }
+  div.sign-up-popup .sign-up-card-header {
+    font-size: 2.8rem;
+  }
+  div.sign-up-popup #checkmark {
+    margin-top: 1rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  div.sign-up-popup .sign-up-card-h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  div.sign-up-popup .sign-up-card-h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  div.sign-up-popup .sign-up-card-h3-raleway {
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 32px;
+    margin-bottom: 1rem;
+  }
+  div.sign-up-popup .sign-up-card-p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  div.sign-up-popup .social-icons-pop-up {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  div.sign-up-popup .social-icons-pop-up .instagram-pop-up {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  div.sign-up-popup .social-icons-pop-up .facebook-pop-up {
+    display: inline;
+    font-size: 3rem;
+    margin-left: 1rem;
   }
 }
 

@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import Facebook from "../imgs/Footer/Facebook.png";
+import Instagram from "../imgs/Footer/Instagram.png";
+
 import Footer from "./Footer";
 import Navbar from "./NavBar";
 import Newsletter from "./NewsLetter";
 
-import makeitofficial from "../imgs/Joinus/(1)makeitoffical.jpg";
-import committoyour from "../imgs/Joinus/(2)commit to your .jpg";
-import payr50 from "../imgs/Joinus/(3) pay R50.jpg";
-import getaccess from "../imgs/Joinus/(4) get access.jpg";
-import joinoursalty from "../imgs/Joinus/(5)join our salty.jpg";
-import beactive from "../imgs/Joinus/(6) be active.jpg";
-import headerimage from "../imgs/Joinus/headerimage.png";
+import checkmark from "../imgs/Joinus/orangecardcheck.png";
 
 import firebase from "../firebase/firebase";
 
@@ -161,9 +158,11 @@ export default class JoinUs extends Component {
               <h5 className="join-card-text">
                 Make it official and take the pledge.
               </h5>
-              <button className="d-flex justify-content-center align-items-center joinus-card-btn">
-                Sign up Now
-              </button>
+              <a href="#sign-up-form" style={{ textDecoration: "none" }}>
+                <button className="d-flex justify-content-center align-items-center joinus-card-btn">
+                  Sign up Now
+                </button>
+              </a>
             </div>
           </div>
           <div className="join-card">
@@ -171,9 +170,11 @@ export default class JoinUs extends Component {
               <h5 className="join-card-text">
                 Commit to your reduction journey and share your progress.
               </h5>
-              <button className="d-flex justify-content-center align-items-center joinus-card-btn">
-                Ways to Reduce
-              </button>
+              <a href="#ways-to-reduce" style={{ textDecoration: "none" }}>
+                <button className="d-flex justify-content-center align-items-center joinus-card-btn">
+                  Ways to Reduce
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -494,114 +495,162 @@ export default class JoinUs extends Component {
             </button>
           </form>
         </div>
+        <div id="ways-to-reduce">
+          <div className="reduce-title">
+            <h1 className="reduce-title">Ways To Reduce</h1>
+            <p className="reduce-text">
+              We hope that you’ve already signed up to our newsletter, or
+              followed us on our socials. Now we can support you on your
+              reduction journey with inspiring content.
+            </p>
+          </div>
+          <div className="accordion-joinus" id="accordionExample">
+            <div className="accordion-item border-0">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="button-accordion-joinus collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Be Curious
+                  <i className="bi bi-plus-circle plus-icon-joinus"></i>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <p className="accordion-body-title-joinus">
+                  Ask where the products are from!{" "}
+                </p>
+                <p className="accordion-body-joinus">
+                  Next time you’re grocery shopping or eating at a restaurant,
+                  consider going for the plant-based option, or animal products
+                  that come from ethical farms (careful with labels – many of
+                  them are misleading). See just a few products we love below.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div className="reduce-title">
-          <h1 className="reduce-title">Ways To Reduce</h1>
-          <p className="reduce-text">
-            We hope that you’ve already signed up to our newsletter, or followed
-            us on our socials. Now we can support you on your reduction journey
-            with inspiring content.
+          <div className="accordion-joinus" id="accordionExample">
+            <div className="accordion-item border-0">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="button-accordion-joinus collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Join a Challange
+                  <i className="bi bi-plus-circle plus-icon-joinus"></i>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <p className="accordion-body-title-joinus">
+                  Who doesn't like a crowded line-up?{" "}
+                </p>
+                <div className="accordion-body-joinus">
+                  Jokes aside, joining a challenge is a great way to keep
+                  yourself motivated and held accountable by others. Keep
+                  looking for some of our favourite campaigns. You’ll get plenty
+                  of awesome guidance along the way!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-joinus" id="accordionExample">
+            <div className="accordion-item border-0">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="button-accordion-joinus collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Donate Now
+                  <i className="bi bi-plus-circle plus-icon-joinus"></i>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <p className="accordion-body-title-joinus">
+                  We get it. It can be really hard to reduce.
+                </p>
+                <div className="accordion-body-joinus">
+                  Consider donating to organizations that protect our planet
+                  (animal welfare, ocean conservation, etc.). We estimate that
+                  ‘ethical’ animal products are usually 5-10 times more
+                  expensive than industrial goods.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="card sign-up-popup">
+          <i className="bi bi-plus-circle"></i>
+          <h1 className="sign-up-card-header">Success, you’ve made it! </h1>
+          <img id="checkmark" src={checkmark} alt="checkmark" />
+          <h2 className="sign-up-card-h2">
+            Thank you for signing up to be an Oceaneer!
+          </h2>
+          <hr className="blue-line" />
+          <h3 className="sign-up-card-h3">
+            You will soon be added to a WhatsApp groupchat with other Oceaneers.
+          </h3>
+          <h3 className="sign-up-card-h3">
+            Check your inbox for an email coming soon.{" "}
+          </h3>
+          <p className="sign-up-card-p">
+            You will receive more information on paying your R50 membership fee,
+            using your membership card that gives you access to the brand
+            community discounts, starting your reduction journey, and going to
+            regular Salty Gatherings that are exclusive to Oceaneer members.
           </p>
-        </div>
-        <div className="accordion-joinus" id="accordionExample">
-          <div className="accordion-item border-0">
-            <h2 className="accordion-header" id="headingOne">
-              <button
-                className="button-accordion-joinus collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Be Curious
-                <i className="bi bi-plus-circle plus-icon-joinus"></i>
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
+          <h3 className="sign-up-card-h3-raleway">
+            Follow us on social media!
+          </h3>
+          <div className="social-icons-pop-up">
+            <Link
+              to={{ pathname: "https://www.instagram.com/oceaneers.co/" }}
+              target="_blank"
             >
-              <p className="accordion-body-title-joinus">
-                Ask where the products are from!{" "}
-              </p>
-              <p className="accordion-body-joinus">
-                Next time you’re grocery shopping or eating at a restaurant,
-                consider going for the plant-based option, or animal products
-                that come from ethical farms (careful with labels – many of them
-                are misleading). See just a few products we love below.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="accordion-joinus" id="accordionExample">
-          <div className="accordion-item border-0">
-            <h2 className="accordion-header" id="headingTwo">
-              <button
-                className="button-accordion-joinus collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Join a Challange
-                <i className="bi bi-plus-circle plus-icon-joinus"></i>
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
+              <img
+                className="instagram-pop-up"
+                src={Instagram}
+                alt="instagram logo"
+              />
+            </Link>
+            <Link
+              to={{ pathname: "https://www.facebook.com/oceaneers.co/" }}
+              target="_blank"
             >
-              <p className="accordion-body-title-joinus">
-                Who doesn't like a crowded line-up?{" "}
-              </p>
-              <div className="accordion-body-joinus">
-                Jokes aside, joining a challenge is a great way to keep yourself
-                motivated and held accountable by others. Keep looking for some
-                of our favourite campaigns. You’ll get plenty of awesome
-                guidance along the way!
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="accordion-joinus" id="accordionExample">
-          <div className="accordion-item border-0">
-            <h2 className="accordion-header" id="headingThree">
-              <button
-                className="button-accordion-joinus collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Donate Now
-                <i className="bi bi-plus-circle plus-icon-joinus"></i>
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <p className="accordion-body-title-joinus">
-                We get it. It can be really hard to reduce.
-              </p>
-              <div className="accordion-body-joinus">
-                Consider donating to organizations that protect our planet
-                (animal welfare, ocean conservation, etc.). We estimate that
-                ‘ethical’ animal products are usually 5-10 times more expensive
-                than industrial goods.
-              </div>
-            </div>
+              <img
+                className="facebook-pop-up"
+                src={Facebook}
+                alt="instagram logo"
+              />
+            </Link>
           </div>
         </div>
 
