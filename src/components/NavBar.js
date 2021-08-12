@@ -9,6 +9,7 @@ export default class NavBar extends Component {
 
         this.state = {
             clicked: false,
+            loggedIn: false
         }
 
     }
