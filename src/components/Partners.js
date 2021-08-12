@@ -707,7 +707,7 @@ export default class Partners extends Component {
           </button>
         </div>
 
-        {/* <NewsLetter /> */}
+        <NewsLetter />
 
         <Footer />
 

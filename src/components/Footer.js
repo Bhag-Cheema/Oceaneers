@@ -41,7 +41,6 @@ export default class Footer extends Component {
                 </div>
               </div>
               <div className="col col-two">
-                {/* NEEDS LINKING */}
                 <Link to="/aboutus" style={{ textDecoration: "none" }}>
                   <p to="" className="about-us">
                     About Us
@@ -55,7 +54,9 @@ export default class Footer extends Component {
               </div>
               <div className="col col-four d-flex align-items-end flex-column">
                 <div>
-                  <button className="footer-login">Log In</button>
+                  <Link to="/login">
+                    <button className="footer-login">Log In</button>
+                  </Link>
                 </div>
                 <div>
                   <Link to="/joinus">
