@@ -11,6 +11,8 @@ import "bootstrap-icons/font/bootstrap-icons.json";
 import { Link } from "react-router-dom";
 import firebase from "../firebase/firebase";
 
+import ReactPlayer from "react-player";
+
 
 export default class Home extends Component {
 
@@ -20,22 +22,28 @@ export default class Home extends Component {
     this.db = firebase.firestore();
 
     this.state = {
-      user: false
+      user: false,
+      video: false,
     };
   }
 
 
   componentDidMount() {
     this.auth.onAuthStateChanged(user => {
+      localStorage.setItem('user', user);
       this.setState({ user: user });
     })
   }
 
+  onShowVideo() {
+    this.setState({ video: !this.state.video });
+  }
+
 
   render() {
-    const { user } = this.state;
+    const { user, video } = this.state;
     return (
-      <div>
+      <div className='pb-0 mb-0'>
         <Navbar user={user} />
         <section className="header-image-home">
           <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
@@ -44,13 +52,13 @@ export default class Home extends Component {
               {" "}
               To the Oceans, Our Food Choices Matter.
             </p>
-            <Link
-              to={{ pathname: "https://www.youtube.com/watch?v=FlE2Z8IHUK8" }}
-              target="_blank">
-              <button>
-                <i className="bi bi-play-circle"></i>
-              </button>
-            </Link>
+
+            <button onClick={() => this.onShowVideo()}>
+              <i className="bi bi-play-circle"></i>
+            </button>
+
+            {video ? <div className="justify-content-center">  <ReactPlayer url="https://www.youtube.com/watch?v=FlE2Z8IHUK8" />
+            </div> : <div></div>}
           </div>
         </section>
         <div className="d-flex justify-content-center">

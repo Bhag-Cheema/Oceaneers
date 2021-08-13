@@ -3,46 +3,59 @@ import React, { Component } from "react";
 import firebase from "../firebase/firebase";
 
 export default class NewsLetter extends Component {
-  // constructor (props) {
-  //     super(props);
+  constructor(props) {
+    super(props);
 
-  //     this.auth= firebase.auth ();
-  //     this.db = firebase.firestore();
+    this.auth = firebase.auth();
+    this.db = firebase.firestore();
 
-  //     this.state = {
-  //         firsname: "",
-  //         lastname: "",
-  //         email: "",
-  //     };
-  // }
-  //   async onSignUp(e) {
-  //       e.preventDefault();
-  //       if(
-  //           this.state.firstname && this.state.lastname && this.state.email
-  //       )
-  //       try {
-  //           const {
-  //               firstname,
-  //               lastname,
-  //               email
-  //           }= this.state;
-  //   await this.db.collection("newsletter").doc.set({
-  //       firstname,
-  //       lastname,
-  //       email,
-  //   })
-  //         }catch (err){
-  //               console.log(err)
-  //           }
-  //       }
+    this.state = {
+      firsnameNews: "",
+      lastnameNews: "",
+      emailNews: "",
+      loadingNews: false,
+      alertSub: false
+    };
+  }
+  async onSignUp(e) {
+    e.preventDefault();
+    if (this.state.firstnameNews && this.state.lastnameNews && this.state.emailNews) {
+      this.setState({ loading: true })
+      this.setState({ alertSub: false })
+      try {
+        const {
+          firstnameNews,
+          lastnameNews,
+          emailNews
+        } = this.state;
+        await this.db.collection("newsletter").doc.set({
+          firstnameNews,
+          lastnameNews,
+          emailNews,
+        })
+      } catch (err) {
+        console.log(err)
+        this.setState({ alertSub: true })
+      }
 
-  //   }
+      this.setState({ loading: false })
+
+    } else {
+      this.setState({ alertSub: true })
+    }
+
+
+  }
+
+
   render() {
-    //   const {
-    //       firstname,
-    //       lastname,
-    //       email
-    //   } = this.state;
+    const {
+      firstnameNews,
+      lastnameNews,
+      emailNews,
+      loading,
+      alertSub
+    } = this.state;
     return (
       <div>
         <form onSubmit={(e) => this.onSignUp(e)} className="newsLetter">
@@ -60,24 +73,36 @@ export default class NewsLetter extends Component {
               <div className="input-names">
                 <div className="firstname">
                   <label>First Name:</label>
-                  <input type="text" id="fname" name="firstname"></input>
+                  <input value={firstnameNews} onChange={(e) => this.setState({ firstnameNews: e.target.value })}
+                    type="text" id="fname" name="firstname"></input>
                 </div>
                 <div className="lastname">
                   <label>Last Name:</label>
-                  <input type="text" id="lname" name="lastname"></input>
+                  <input value={lastnameNews} onChange={(e) => this.setState({ lastnameNews: e.target.value })} type="text" id="lname" name="lastname"></input>
                 </div>
               </div>
               <div className="email">
-                <label>Email:</label>
+                <label value={emailNews} onChange={(e) => this.setState({ emailNews: e.target.value })}>Email:</label>
                 <input type="email" id="email" name="email"></input>
               </div>
-              <div className="subButton">
-                <button type="submit">Subscribe</button>
-              </div>
+
+
+              {loading ? <div className="subButton">
+                <button type="submit"><div class="spinner-border text-light" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div></button>
+              </div> : <div className="subButton">
+                  <button type="submit">Subscribe</button>
+                </div>}
+
             </div>
           </div>
+
+          {alert ? <div class="alert alert-danger" role="alert">
+            <h3>Please make sure you entered your first and last name with email</h3>
+          </div> : <div></div>}
         </form>
-      </div>
+      </div >
     );
   }
 }
