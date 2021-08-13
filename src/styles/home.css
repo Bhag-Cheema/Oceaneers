@@ -710,7 +710,7 @@ a {
 .learn-how-events {
   padding: 0.5rem 3.5rem;
   margin-top: -2rem;
-  margin-bottom: 20rem;
+  margin-bottom: 0rem;
   background: #ff7c5c;
   border: 0rem solid white;
   color: white;
@@ -3366,6 +3366,10 @@ p.header-text-about {
   font-size: 2.5rem;
 }
 
+.ul {
+  margin-top: -2rem !important;
+}
+
 .il {
   font-size: 1.75rem;
   line-height: 1.6rem;
@@ -3462,6 +3466,8 @@ p.header-text-about {
     font-weight: 600;
     margin-top: -3rem !important;
     margin-bottom: 3rem;
+    margin-right: 8.5% !important;
+    margin-left: 8.5% !important;
   }
   .repeating-h3-iggy {
     color: #024a63;
@@ -3505,8 +3511,8 @@ p.header-text-about {
     padding-left: 1rem;
   }
   .button-accordion-about {
-    font-size: 0.75rem !important;
-    padding: 1rem 1rem 1rem 1rem !important;
+    font-size: 0.7rem !important;
+    padding: 0.75rem 0.75rem 0.25rem 0.75rem !important;
     width: 5rem !important;
     height: 2.2rem !important;
     outline: none !important;
@@ -3536,7 +3542,7 @@ p.header-text-about {
     border-radius: 58px;
   }
   .col-sm {
-    width: 100px !important;
+    width: 75px !important;
   }
   .col-md {
     width: 100px !important;
@@ -3653,6 +3659,8 @@ p.header-text-about {
     font-weight: 600;
     margin-top: -3rem !important;
     margin-bottom: 3rem;
+    margin-left: 8.5% !important;
+    margin-right: 8.5% !important;
   }
   .repeating-h3-iggy {
     color: #024a63;
@@ -3780,7 +3788,7 @@ p.header-text-about {
   }
 }
 
-@media all and (min-width: 769px) and (max-width: 1300px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -3837,10 +3845,10 @@ p.header-text-about {
     margin: auto !important;
     background: #bededf;
     border-radius: 7rem;
-    width: 68rem !important;
+    width: 69rem !important;
   }
   .container-2 {
-    width: 68rem !important;
+    width: 69rem !important;
     height: 43rem !important;
     margin: auto !important;
   }
@@ -3874,6 +3882,9 @@ p.header-text-about {
     padding-top: 0.8rem;
     font-size: 2.5rem;
   }
+  .ul {
+    margin-top: -2rem !important;
+  }
   .il {
     font-size: 1.3rem !important;
     padding-right: 1rem;
@@ -3882,7 +3893,7 @@ p.header-text-about {
   }
 }
 
-@media all and (min-width: 1000px) and (max-width: 1300) {
+@media all and (min-width: 1000px) and (max-width: 1600) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -5404,6 +5415,12 @@ div.sign-up-popup .social-icons-pop-up .facebook-pop-up {
 .btn-primary {
   font-family: "Cabin", sans-serif;
   font-size: 1.5rem !important;
+  margin-right: 3rem;
+}
+
+.mt-4 {
+  font-size: 1.5rem;
+  margin-left: 3rem;
   margin-right: 3rem;
 }
 

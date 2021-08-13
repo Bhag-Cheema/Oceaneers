@@ -6,6 +6,7 @@ import Events from "./components/Events";
 import Why from "./components/Why";
 import About from "./components/About";
 import JoinUs from "./components/JoinUs";
+import AddEvents from "./components/AddEvents";
 import firebase from "./firebase/firebase";
 import Membership from "./components/Membership";
 
@@ -16,6 +17,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { BrowserRouter, Route } from "react-router-dom";
+import GuardedRoute from "./components/GuardedRoute";
 
 class App extends Component {
 
@@ -49,6 +51,7 @@ class App extends Component {
           <Route path="/partners" exact component={Partners} />
           <Route path="/aboutus" exact component={About} />
           <Route path="/joinus" exact component={JoinUs} />
+          <Route path="/addevents" exact component={AddEvents}></Route>
         </BrowserRouter>
       </div>
     );

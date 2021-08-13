@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import firebase from "../firebase/firebase";
 
 import AlertLogin from './AlertLogin';
+import ButtonLogin from './ButtonLogin';
+
+import Navbar from "./NavBar";
+
+
 
 
 export default class Login extends Component {
@@ -38,50 +43,53 @@ export default class Login extends Component {
     const { email, password, loading, error, alert } = this.state;
 
     return (
-      <div className="container my-4">
-        <div className="h2-login">Login</div>
+      <div>
+        <Navbar />
+        <div className="container my-4">
+          <div className="h2-login">Login</div>
 
-        <form onSubmit={(e) => this.onLogin(e)}>
-          <div className="mb-3 m-5">
-            <label className="form-label">Email address</label>
-            <input
-              value={email}
-              onChange={(e) => this.setState({ email: e.target.value })}
-              type="email"
-              className="form-control"
-            />
-          </div>
+          <form onSubmit={(e) => this.onLogin(e)}>
+            <div className="mb-3 m-5">
+              <label className="form-label">Email address</label>
+              <input
+                value={email}
+                onChange={(e) => this.setState({ email: e.target.value })}
+                type="email"
+                className="form-control"
+              />
+            </div>
 
-          <div className="mb-3 m-5">
-            <label className="form-label">Password</label>
-            <input
-              value={password}
-              onChange={(e) => this.setState({ password: e.target.value })}
-              type="password"
-              className="form-control"
-            />
-          </div>
+            <div className="mb-3 m-5">
+              <label className="form-label">Password</label>
+              <input
+                value={password}
+                onChange={(e) => this.setState({ password: e.target.value })}
+                type="password"
+                className="form-control"
+              />
+            </div>
 
-          {/*Login Button */}
+            {/*Login Button */}
 
-          <div className="d-flex justify-content-end">
-            {loading ? <button className="btn btn-primary px-5" type="submit"> <div className="spinner-border text-light" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div> </button> : <button className="btn btn-primary px-5" type="submit">
-                Login
+            <div className="d-flex justify-content-end">
+              {loading ? <button className="btn btn-primary px-5" type="submit"> <div className="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div> </button> : <button className="btn btn-primary px-5" type="submit">
+                  Login
             </button>}
-          </div>
+            </div>
 
 
-          {/*Alert*/}
+            {/*Alert*/}
 
-          {alert ? <div class="alert alert-danger mt-4" role="alert">
-            <h2>Invalid Email or Password</h2>
-          </div> : <div></div>}
-        </form>
+            {alert ? <div class="alert alert-danger mt-4" role="alert">
+              <h2>Invalid Email or Password</h2>
+            </div> : <div></div>}
+          </form>
 
-        {/* <AlertLogin className="mt-4" error={error} /> */}
+          {/* <AlertLogin className="mt-4" error={error} /> */}
 
+        </div>
       </div>
     );
   }

@@ -308,294 +308,285 @@ export default class JoinUs extends Component {
             </div>
           </div>
         ) : (
-          <div className="form-field-card">
-            <h2 className="form-title-join">Become an Oceaneer today.</h2>
-            <p className="form-subtitle-join">
-              Already have an account? Log in
+            <div className="form-field-card">
+              <h2 className="form-title-join">Become an Oceaneer today.</h2>
+              <p className="form-subtitle-join">
+                Already have an account? Log in
             </p>
-            <form onSubmit={(e) => this.onJoin(e)} id="sign-up-form">
-              {/* Column 1: first and last name */}
-              <div className="row input-rows">
-                <div className="col">
+              <form onSubmit={(e) => this.onJoin(e)} id="sign-up-form">
+                {/* Column 1: first and last name */}
+                <div className="row input-rows">
+                  <div className="col">
+                    <label
+                      for="exampleFormControlInput1"
+                      className="form-label join-us-form-labels"
+                    >
+                      First Name
+                  </label>
+                    <input
+                      value={firstname}
+                      onChange={(e) =>
+                        this.setState({ firstname: e.target.value })
+                      }
+                      type="text"
+                      className="form-control left-col"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div className="col">
+                    <label
+                      for="exampleFormControlInput1"
+                      className="form-label join-us-form-labels"
+                    >
+                      Last Name
+                  </label>
+                    <input
+                      value={lastname}
+                      onChange={(e) =>
+                        this.setState({ lastname: e.target.value })
+                      }
+                      type="text"
+                      className="form-control right-col"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                {/* end */}
+                {/* Row 2: city & country */}
+                <div className="row input-rows">
+                  <div className="col">
+                    <label
+                      for="exampleFormControlInput1"
+                      className="form-label join-us-form-labels"
+                    >
+                      City
+                  </label>
+                    <input
+                      value={city}
+                      onChange={(e) => this.setState({ city: e.target.value })}
+                      type="text"
+                      className="form-control left-col"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div className="col">
+                    <label
+                      for="exampleFormControlInput1"
+                      className="form-label join-us-form-labels"
+                    >
+                      Country
+                  </label>
+                    <input
+                      value={country}
+                      onChange={(e) => this.setState({ country: e.target.value })}
+                      type="text"
+                      className="form-control right-col"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                {/* end */}
+                {/* Row 3 */}
+                <div className="full-col">
                   <label
                     for="exampleFormControlInput1"
                     className="form-label join-us-form-labels"
                   >
-                    First Name
-                  </label>
+                    Email
+                </label>
                   <input
-                    value={firstname}
-                    onChange={(e) =>
-                      this.setState({ firstname: e.target.value })
-                    }
-                    type="text"
-                    className="form-control left-col"
-                    aria-label="First name"
+                    value={email}
+                    onChange={(e) => this.setState({ email: e.target.value })}
+                    type="email"
+                    className="full-width"
                   />
                 </div>
-                <div className="col">
+                {/* Row 4 */}
+                <div className="full-col">
                   <label
                     for="exampleFormControlInput1"
                     className="form-label join-us-form-labels"
                   >
-                    Last Name
-                  </label>
+                    Password
+                </label>
                   <input
-                    value={lastname}
-                    onChange={(e) =>
-                      this.setState({ lastname: e.target.value })
-                    }
-                    type="text"
-                    className="form-control right-col"
-                    aria-label="Last name"
+                    value={password}
+                    onChange={(e) => this.setState({ password: e.target.value })}
+                    type="password"
+                    className="full-width"
                   />
                 </div>
-              </div>
-              {/* end */}
-              {/* Row 2: city & country */}
-              <div className="row input-rows">
-                <div className="col">
+                {/* Row 5 */}
+                <div className="full-col">
                   <label
                     for="exampleFormControlInput1"
                     className="form-label join-us-form-labels"
                   >
-                    City
-                  </label>
+                    Phone
+                </label>
                   <input
-                    value={city}
-                    onChange={(e) => this.setState({ city: e.target.value })}
-                    type="text"
-                    className="form-control left-col"
-                    aria-label="First name"
+                    value={phone}
+                    onChange={(e) => this.setState({ phone: e.target.value })}
+                    type="number"
+                    className="full-width"
                   />
                 </div>
-                <div className="col">
+                {/* Row 5 */}
+                <div className="full-col">
                   <label
                     for="exampleFormControlInput1"
                     className="form-label join-us-form-labels"
                   >
-                    Country
-                  </label>
+                    How did you hear about us?
+                </label>
                   <input
-                    value={country}
-                    onChange={(e) => this.setState({ country: e.target.value })}
+                    value={how}
+                    onChange={(e) => this.setState({ how: e.target.value })}
                     type="text"
-                    className="form-control right-col"
-                    aria-label="Last name"
+                    className="full-width"
                   />
                 </div>
-              </div>
-              {/* end */}
-              {/* Row 3 */}
-              <div className="full-col">
-                <label
-                  for="exampleFormControlInput1"
-                  className="form-label join-us-form-labels"
-                >
-                  Email
-                </label>
-                <input
-                  value={email}
-                  onChange={(e) => this.setState({ email: e.target.value })}
-                  type="email"
-                  className="full-width"
-                />
-              </div>
-              {/* Row 4 */}
-              <div className="full-col">
-                <label
-                  for="exampleFormControlInput1"
-                  className="form-label join-us-form-labels"
-                >
-                  Password
-                </label>
-                <input
-                  value={password}
-                  onChange={(e) => this.setState({ password: e.target.value })}
-                  type="password"
-                  className="full-width"
-                />
-              </div>
-              {/* Row 5 */}
-              <div className="full-col">
-                <label
-                  for="exampleFormControlInput1"
-                  className="form-label join-us-form-labels"
-                >
-                  Phone
-                </label>
-                <input
-                  value={phone}
-                  onChange={(e) => this.setState({ phone: e.target.value })}
-                  type="number"
-                  className="full-width"
-                />
-              </div>
-              {/* Row 5 */}
-              <div className="full-col">
-                <label
-                  for="exampleFormControlInput1"
-                  className="form-label join-us-form-labels"
-                >
-                  How did you hear about us?
-                </label>
-                <input
-                  value={how}
-                  onChange={(e) => this.setState({ how: e.target.value })}
-                  type="text"
-                  className="full-width"
-                />
-              </div>
-              {/* Row 6 */}
-              <div className="full-col">
-                <label
-                  for="exampleFormControlTextarea1"
-                  className="form-label join-us-form-labels"
-                >
-                  Why do you want to be an Oceaneer? (1-2 sentences)
-                </label>
-                <textarea
-                  value={why}
-                  onChange={(e) => this.setState({ why: e.target.value })}
-                  type="text"
-                  className="full-width"
-                  id="textarea"
-                  rows="4"
-                ></textarea>
-              </div>
-
-              {/* Radio Button */}
-              <div className="radio-boxes">
-                <div className="join-us-form-labels mb-2">
-                  What kind of Oceaneer do you want to be? (Don’t worry, you can
-                  change this choice down the line)
-                </div>
-
-                {/*Passive*/}
-                <div className="form-check d-flex justify-content-left">
-                  <input
-                    value={passive}
-                    onChange={() => this.handlePassiveClicked()}
-                    className="form-check-input radio-button"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault1"
-                  />
+                {/* Row 6 */}
+                <div className="full-col">
                   <label
-                    className="form-check-label join-us-form-checkboxes"
-                    for="flexRadioDefault1"
+                    for="exampleFormControlTextarea1"
+                    className="form-label join-us-form-labels"
                   >
-                    Passive (“I am inspired to start my reduction journey but
-                    don’t have the time to join meet-ups”)
-                  </label>
-                </div>
-                <div className="form-check d-flex justify-content-left">
-                  <input
-                    value={active}
-                    onChange={() => this.handleActiveClicked()}
-                    className="form-check-input radio-button"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault2"
-                  />
-                  <label
-                    className="form-check-label join-us-form-checkboxes"
-                    for="flexRadioDefault2"
-                  >
-                    Active (“I am keen to meet my fellow Oceaneers and
-                    contribute actively”)
-                  </label>
-                </div>
-              </div>
-              {/* Checkboxes */}
-              <div className="checkboxes">
-                <div className="join-us-form-labels mt-4">
-                  As an Oceaneer, I am committed to{" "}
-                  <p className="required-orange">(required)</p>
+                    Why do you want to be an Oceaneer? (1-2 sentences)
+                </label>
+                  <textarea
+                    value={why}
+                    onChange={(e) => this.setState({ why: e.target.value })}
+                    type="text"
+                    className="full-width"
+                    id="textarea"
+                    rows="4"
+                  ></textarea>
                 </div>
 
-                {/*Raise*/}
-                <div className="form-check d-flex">
-                  <input
-                    className="form-check-input checkbox-join"
-                    type="checkbox"
-                    value={raise}
-                    onChange={() => this.handleRaiseClicked()}
-                    id="flexCheckChecked"
-                  />
-                  <label
-                    className="form-check-label join-us-form-checkboxes"
-                    for="flexCheckChecked"
-                  >
-                    Raising awareness and embarking on a reduction journey
+                {/* Radio Button */}
+                <div className="radio-boxes">
+                  <div className="join-us-form-labels mb-2">
+                    What kind of Oceaneer do you want to be? (Don’t worry, you can
+                    change this choice down the line)
+                </div>
+
+                  {/*Passive*/}
+                  <div className="form-check d-flex justify-content-left">
+                    <input
+                      value={passive}
+                      onChange={() => this.handlePassiveClicked()}
+                      className="form-check-input radio-button"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label
+                      className="form-check-label join-us-form-checkboxes"
+                      for="flexRadioDefault1"
+                    >
+                      Passive (“I am inspired to start my reduction journey but
+                      don’t have the time to join meet-ups”)
                   </label>
-                </div>
-                <div className="form-check d-flex">
-                  <input
-                    className="form-check-input checkbox-join"
-                    type="checkbox"
-                    value={pay}
-                    onChange={() => this.handlePayClicked()}
-                    id="flexCheckChecked"
-                  />
-                  <label
-                    className="form-check-label join-us-form-checkboxes"
-                    for="flexCheckChecked"
-                  >
-                    Paying a R50 sign-up fee
+                  </div>
+                  <div className="form-check d-flex justify-content-left">
+                    <input
+                      value={active}
+                      onChange={() => this.handleActiveClicked()}
+                      className="form-check-input radio-button"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label
+                      className="form-check-label join-us-form-checkboxes"
+                      for="flexRadioDefault2"
+                    >
+                      Active (“I am keen to meet my fellow Oceaneers and
+                      contribute actively”)
                   </label>
+                  </div>
                 </div>
+                {/* Checkboxes */}
+                <div className="checkboxes">
+                  <div className="join-us-form-labels mt-4">
+                    As an Oceaneer, I am committed to{" "}
+                    <p className="required-orange">(required)</p>
+                  </div>
 
-                {/*Fill*/}
-                <div className="form-check d-flex">
-                  <input
-                    className="form-check-input checkbox-join"
-                    type="checkbox"
-                    value={fill}
-                    onChange={() => this.handleFillClicked()}
-                    id="flexCheckDefault"
-                  />
-                  <label
-                    className="form-check-label join-us-form-checkboxes"
-                    for="flexCheckDefault"
-                  >
-                    Filling out a monthly survey to keep track of reduction
-                    journey
+                  {/*Raise*/}
+                  <div className="form-check d-flex">
+                    <input
+                      className="form-check-input checkbox-join"
+                      type="checkbox"
+                      value={raise}
+                      onChange={() => this.handleRaiseClicked()}
+                      id="flexCheckChecked"
+                    />
+                    <label
+                      className="form-check-label join-us-form-checkboxes"
+                      for="flexCheckChecked"
+                    >
+                      Raising awareness and embarking on a reduction journey
                   </label>
+                  </div>
+                  <div className="form-check d-flex">
+                    <input
+                      className="form-check-input checkbox-join"
+                      type="checkbox"
+                      value={pay}
+                      onChange={() => this.handlePayClicked()}
+                      id="flexCheckChecked"
+                    />
+                    <label
+                      className="form-check-label join-us-form-checkboxes"
+                      for="flexCheckChecked"
+                    >
+                      Paying a R50 sign-up fee
+                  </label>
+                  </div>
+
+                  {/*Fill*/}
+                  <div className="form-check d-flex">
+                    <input
+                      className="form-check-input checkbox-join"
+                      type="checkbox"
+                      value={fill}
+                      onChange={() => this.handleFillClicked()}
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      className="form-check-label join-us-form-checkboxes"
+                      for="flexCheckDefault"
+                    >
+                      Filling out a monthly survey to keep track of reduction
+                      journey
+                  </label>
+                  </div>
                 </div>
-              </div>
 
-              {/*Sign Up Button*/}
+                {/*Sign Up Button*/}
 
-              {loading ? (
-                <button className="sign-up-btn" type="submit">
-                  {" "}
-                  <div className="spinner-border text-dark" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>{" "}
-                </button>
-              ) : (
-                <button className="sign-up-btn" type="submit">
-                  Sign Up
-                </button>
-              )}
+                {loading ? (
+                  <button className="sign-up-btn" type="submit">
+                    {" "}
+                    <div className="spinner-border text-dark" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>{" "}
+                  </button>
+                ) : (
+                    <button className="sign-up-btn" type="submit">
+                      Sign Up
+                    </button>
+                  )}
 
-<<<<<<< HEAD
-              {alert ? <div class="alert alert-danger" role="alert">
-                <h2>Please make sure you filled out all the requirements!</h2>
-              </div> : <div></div>}
-=======
-              {alert ? (
-                <div class="alert alert-danger" role="alert">
-                  Please make sure you filled out all the requirements!
-                </div>
-              ) : (
-                <div></div>
-              )}
->>>>>>> 6fb50060c937ef41033eef71308c372d20217f30
-            </form>
-          </div>
-        )}
+
+                {alert ? <div class="alert alert-danger" role="alert">
+                  <h2>Please make sure you filled out all the requirements!</h2>
+                </div> : <div></div>}
+              </form>
+            </div>
+          )}
 
         <div id="ways-to-reduce">
           <div className="reduce-title">

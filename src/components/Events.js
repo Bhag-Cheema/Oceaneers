@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "./NavBar";
-import AddEvents from "./AddEvents";
-import events from "../imgs/events.png";
+//import AddEvents from "./AddEvents";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import firebase from "../firebase/firebase";
+import LoadingLogin from "./LoadingLogin";
 
 const db = firebase.firestore();
 
@@ -16,6 +16,7 @@ export default class Events extends Component {
 
     this.state = { 
       events: [],
+      loading:false,
     };
   }
 
@@ -36,7 +37,7 @@ async fetchEvents() {
   }
 }
   render() {
-    const {events} = this.state;
+    const {events,loading} = this.state;
     return (
       <div>
         <Navbar />
@@ -61,15 +62,16 @@ async fetchEvents() {
           </Link>
         </div>
         {/* render out the events images */}
-
-        <div> 
+      <div className="container-events">
+        <div className="d-flex justify-content-center flex-wrap">
+          <LoadingLogin show={loading}></LoadingLogin>
           {
             events.map(event => {
-              return <div key={event.id}>
+              return <div className="m-3" key={event.id}>
                 <img
                 style={{
-                  width: "250px",
-                  height: "250px",
+                  width: "350px",
+                  height: "350px",
                   objectFit: "cover",
                 }}
                 src={event.downloadUrl}
@@ -79,7 +81,8 @@ async fetchEvents() {
             })
             }
         </div>
-        <AddEvents history={this.props.history}/>
+      </div>
+        {/* <AddEvents history={this.props.history}/> */}
         <NewsLetter />
         <Footer />
       </div>
