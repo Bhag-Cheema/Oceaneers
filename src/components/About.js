@@ -235,12 +235,15 @@ export default class Partners extends Component {
                     couldn’t think of a better first ambassador for Oceaneers
                     than James—stoked to have you on board! <br />
                   </h3>
-                  <button className="interview">
-                    View the full interview with James
+                  <Link to={{ pathname: "https://www.oceaneers.co/james-taylor-first-oceaneers-ambassador-interview/" }} target="_blank">
+                    <button className="interview">
+                      View the full interview with James
                   </button>
+                  </Link>
                   <div className="social-media d-flex justify-content-center">
-                    <i className="bi bi-instagram"></i>
-                    <i className="bi bi-facebook"></i>
+                    {/*THESE ARE THE ICONS THAT IS SUPPOSE TO LINK TO FACEBOOK AND INSTAGRAM */}
+                    {/* <i className="bi bi-instagram"></i>
+                    <i className="bi bi-facebook"></i> */}
                   </div>
                 </div>
               </div>
@@ -292,12 +295,17 @@ export default class Partners extends Component {
                     compassion and experience inspire lots of Oceaneers in their
                     reduction journey! <br />
                   </h3>
-                  <button className="interview">
-                    View the full interview with Tammy
+
+                  <Link to={{ pathname: "https://www.oceaneers.co/we-chat-to-tammy-fry-about-how-surfing-karate-and-veganism-awakens-humility-determination-and-choosing-change/" }} target="_blank">
+                    <button className="interview">
+                      View the full interview with Tammy
                   </button>
+                  </Link>
                   <div className="social-media d-flex justify-content-center">
-                    <i className="bi bi-instagram "></i>
-                    <i className="bi bi-facebook"></i>
+
+                    {/*THESE ARE THE ICONS THAT IS SUPPOSE TO LINK TO FACEBOOK AND INSTAGRAM */}
+                    {/* <i className="bi bi-instagram "></i>
+                    <i className="bi bi-facebook"></i> */}
                   </div>
                 </div>
               </div>
@@ -349,12 +357,16 @@ export default class Partners extends Component {
                     all the memories we've already had together, it's a huge joy
                     to know that you're part of this venture as well! <br />
                   </h3>
-                  <button className="interview">
-                    View the full interview with Terence
+                  <Link to={{ pathname: "https://www.oceaneers.co/we-chat-to-terence-bell-about-endurance-sport-living-with-less-and-the-pursuit-of-joy/" }} target="_blank">
+                    <button className="interview">
+                      View the full interview with Terence
                   </button>
+                  </Link>
                   <div className="social-media d-flex justify-content-center">
-                    <i className="bi bi-instagram "></i>
-                    <i className="bi bi-facebook"></i>
+
+                    {/*THESE ARE THE ICONS THAT IS SUPPOSE TO LINK TO FACEBOOK AND INSTAGRAM */}
+                    {/* <i className="bi bi-instagram "></i>
+                    <i className="bi bi-facebook"></i> */}
                   </div>
                 </div>
               </div>
@@ -407,12 +419,19 @@ export default class Partners extends Component {
                     Digital Storytelling Fellow. Emi, your work inspires us and
                     we’re eager to have you on our team! <br />
                   </h3>
-                  <button className="interview">
-                    View the full interview with Emi
+                  <Link to={{ pathname: "https://www.oceaneers.co/emi-koch-beyond-the-surface-interview-with-oceaneers/" }} target="_blank">
+                    <button className="interview">
+                      View the full interview with Emi
                   </button>
+                  </Link>
                   <div className="social-media d-flex justify-content-center">
-                    <i className="bi bi-instagram "></i>
-                    <i className="bi bi-facebook"></i>
+                    <Link to={{ pathname: "https://www.instagram.com/beyondthesurfaceintl/?hl=en" }} target="_blank" style={{ textDecoration: "none" }}>
+                      <i className="bi bi-instagram " ></i>
+                    </Link>
+                    <Link to={{ pathname: "https://www.facebook.com/emi.koch?_rdc=1&_rdr" }} target="_blank">
+                      <i className="bi bi-facebook " ></i>
+                    </Link>
+
                   </div>
                 </div>
               </div>
@@ -606,28 +625,28 @@ export default class Partners extends Component {
                   <h3 className="h3-about">Kaspar’s Reduction Journey</h3>
                   <ul className="ul">
                     <li className="il">
-                    Just like any other SA boy, ate all the meat, all the time 
+                      Just like any other SA boy, ate all the meat, all the time
                     </li>
                     <li className="il">
-                    A deep passion for the environment inspired his studies in Zoology 
-                    and Ichthyology (Fishery Science) in 2010 and confronted by the harsh 
-                    realities of the state of our natural world
+                      A deep passion for the environment inspired his studies in Zoology
+                      and Ichthyology (Fishery Science) in 2010 and confronted by the harsh
+                      realities of the state of our natural world
                     </li>
                     <li className="il">
-                    Exposure to a plant-based lifestyle made him realise a transition to a
-                    plant-based diet was the best way to advocate for conservation and
-                    sustainability
+                      Exposure to a plant-based lifestyle made him realise a transition to a
+                      plant-based diet was the best way to advocate for conservation and
+                      sustainability
                     </li>
                     <li className="il">
-                    Spent a year living a strictly plant-based lifestyle, moved towards a more flexi
-                    approach while indulging in the occasional non-vegan treat
+                      Spent a year living a strictly plant-based lifestyle, moved towards a more flexi
+                      approach while indulging in the occasional non-vegan treat
                     </li>
                     <li className="il">
-                    Became a more conscious consumer and made decisions that aligned with personal values and
-                    beliefs
+                      Became a more conscious consumer and made decisions that aligned with personal values and
+                      beliefs
                     </li>
                     <li className="il">
-                    Now 95% plant-based, allowing for the odd human moment just to keep things light
+                      Now 95% plant-based, allowing for the odd human moment just to keep things light
                     </li>
                   </ul>
                 </div>
@@ -721,7 +740,7 @@ export default class Partners extends Component {
           </h3>
         </div>
 
-        {/* <NewsLetter /> */}
+        <NewsLetter />
 
         <Footer />
       </div> //end render class

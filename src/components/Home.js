@@ -21,6 +21,11 @@ export default class Home extends Component {
     this.auth = firebase.auth();
     this.db = firebase.firestore();
 
+    //let user = '';
+    //{ localStorage.getItem('user') ? this.user = localStorage.getItem('user') : this.user = this.auth.currentUser(); }
+    // const user = this.auth.currentUser();
+    //localStorage.setItem('user', user);
+
     this.state = {
       user: false,
       video: false,
@@ -30,7 +35,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.auth.onAuthStateChanged(user => {
-      localStorage.setItem('user', user);
+      //localStorage.setItem('user', user);
       this.setState({ user: user });
     })
   }
@@ -44,7 +49,7 @@ export default class Home extends Component {
     const { user, video } = this.state;
     return (
       <div className='pb-0 mb-0'>
-        <Navbar user={user} />
+        <Navbar />
         <section className="header-image-home">
           <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
             <h1 className="oceaneers-cabin-large">Oceaneers</h1>
@@ -249,7 +254,7 @@ export default class Home extends Component {
             <button className="learn-how-2">Want to Join? Learn how.</button>
           </Link>
         </div>
-        {/* <NewsLetter /> */}
+        <NewsLetter />
         <Footer />
       </div>
     );

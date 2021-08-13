@@ -29,13 +29,18 @@ export default class Login extends Component {
     const { email, password } = this.state;
     this.setState({ loading: true });
 
+
     try {
       await this.auth.signInWithEmailAndPassword(email, password);
+      //setTimeout(() => { }, 1000);
+      //const user = this.auth.currentUser();
+      console.log('This is user');
       this.props.history.push("/");
     } catch (err) {
       this.setState({ error: err.message });
       this.setState({ alert: true })
     }
+
     this.setState({ loading: false });
   }
 
@@ -73,7 +78,7 @@ export default class Login extends Component {
 
             <div className="d-flex justify-content-end">
               {loading ? <button className="btn btn-primary px-5" type="submit"> <div className="spinner-border text-light" role="status">
-                <span class="visually-hidden">Loading...</span>
+                <span className="visually-hidden">Loading...</span>
               </div> </button> : <button className="btn btn-primary px-5" type="submit">
                   Login
             </button>}
@@ -82,7 +87,7 @@ export default class Login extends Component {
 
             {/*Alert*/}
 
-            {alert ? <div class="alert alert-danger mt-4" role="alert">
+            {alert ? <div className="alert alert-danger mt-4" role="alert">
               <h2>Invalid Email or Password</h2>
             </div> : <div></div>}
           </form>

@@ -12,12 +12,9 @@ export default class NavBar extends Component {
     };
   }
 
-
-
-
   logout() {
+    localStorage.removeItem('user');
     firebase.auth().signOut();
-
   }
 
   render() {
@@ -74,7 +71,13 @@ export default class NavBar extends Component {
                   </NavLink>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item ">
+                <NavLink className="nav-link" to="/membership">
+                  Membership
+                  </NavLink>
+              </li> */}
+
+              {/* <li className="nav-item">
                 <NavLink to="/joinus">
                   <button className="join">Join Us</button>
                 </NavLink>
@@ -85,12 +88,12 @@ export default class NavBar extends Component {
                 <NavLink to="/login">
                   <button className="login">Login</button>
                 </NavLink>
-              </li>
+              </li> */}
 
 
 
 
-              {/* {user ?
+              {user ?
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/membership">
                     Membership
@@ -109,7 +112,7 @@ export default class NavBar extends Component {
                   <NavLink to="/login">
                     <button className="login">Login</button>
                   </NavLink>
-                </li>} */}
+                </li>}
 
             </ul>
           </div>

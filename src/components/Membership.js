@@ -112,10 +112,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 15%</p>
+                <p>On: The Naughty [in May]</p>
+                <p>Location: Cape Town</p>
+                <p>Type: Health Bar</p>
               </div>
             </div>
             {/* end of card */}
@@ -128,10 +128,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 10%</p>
+                <p>On: Blanket - All Products</p>
+                <p>Location: Cape Town & Newlands</p>
+                <p>Type: Store</p>
               </div>
             </div>
             {/* end of card */}
@@ -146,10 +146,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 10%</p>
+                <p>On: All Products</p>
+                <p className="discount-code">Code: OCEANEER</p>
+                <p>Type: Food</p>
               </div>
             </div>
             {/* end of card */}
@@ -164,10 +164,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 15%</p>
+                <p>Product[Range]: On All Food</p>
+                <p>Location: Glencairn</p>
+                <p>Type: Cafe</p>
               </div>
             </div>
             {/* end of card */}
@@ -181,10 +181,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 15% to 35% [For 1.5 hr rentals] </p>
+                <p>Board and Suit: 99r[Instead of 140r]</p>
+                <p>Board: 66r [Instead of 78r]</p>
+                <p>Suit: 45r [Instead of 70r]</p>
               </div>
             </div>
             {/* end of card */}
@@ -200,10 +200,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 10%</p>
+                <p>On: All Cakes [in May]</p>
+                <p className="discount-code">Code: OCEANMAMMA</p>
+                <p>Type: Foods</p>
               </div>
             </div>
             {/* end of card */}
@@ -217,10 +217,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 10%</p>
+                <p>On: WAWA Bodysurf Handslides Beach Bates</p>
+                <p>Location: Muizenberg</p>
+                <p>Type: Store</p>
               </div>
             </div>
             {/* end of card */}

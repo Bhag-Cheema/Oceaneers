@@ -234,7 +234,7 @@ export default class JoinUs extends Component {
                 style={{ textDecoration: "none" }}
                 className="d-flex justify-content-center align-items-center"
               >
-                <button class="joinus-card-btn">View Events</button>
+                <button className="joinus-card-btn">View Events</button>
               </Link>
             </div>
           </div>
@@ -571,7 +571,7 @@ export default class JoinUs extends Component {
                   <button className="sign-up-btn" type="submit">
                     {" "}
                     <div className="spinner-border text-dark" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                      <span className="visually-hidden">Loading...</span>
                     </div>{" "}
                   </button>
                 ) : (
@@ -581,7 +581,7 @@ export default class JoinUs extends Component {
                   )}
 
 
-                {alert ? <div class="alert alert-danger" role="alert">
+                {alert ? <div className="alert alert-danger" role="alert">
                   <h2>Please make sure you filled out all the requirements!</h2>
                 </div> : <div></div>}
               </form>

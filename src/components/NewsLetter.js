@@ -50,9 +50,9 @@ export default class NewsLetter extends Component {
 
   render() {
     const {
-      firstnameNews,
-      lastnameNews,
-      emailNews,
+      // firstnameNews,
+      // lastnameNews,
+      // emailNews,
       loading,
       alertSub
     } = this.state;
@@ -73,23 +73,23 @@ export default class NewsLetter extends Component {
               <div className="input-names">
                 <div className="firstname">
                   <label>First Name:</label>
-                  <input value={firstnameNews} onChange={(e) => this.setState({ firstnameNews: e.target.value })}
+                  <input value={this.state.firstnameNews} onChange={(e) => this.setState({ firstnameNews: e.target.value })}
                     type="text" id="fname" name="firstname"></input>
                 </div>
                 <div className="lastname">
                   <label>Last Name:</label>
-                  <input value={lastnameNews} onChange={(e) => this.setState({ lastnameNews: e.target.value })} type="text" id="lname" name="lastname"></input>
+                  <input value={this.state.lastnameNews} onChange={(e) => this.setState({ lastnameNews: e.target.value })} type="text" id="lname" name="lastname"></input>
                 </div>
               </div>
               <div className="email">
-                <label value={emailNews} onChange={(e) => this.setState({ emailNews: e.target.value })}>Email:</label>
+                <label value={this.state.emailNews} onChange={(e) => this.setState({ emailNews: e.target.value })}>Email:</label>
                 <input type="email" id="email" name="email"></input>
               </div>
 
 
               {loading ? <div className="subButton">
-                <button type="submit"><div class="spinner-border text-light" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                <button type="submit"><div className="spinner-border text-light" role="status">
+                  <span className="visually-hidden">Loading...</span>
                 </div></button>
               </div> : <div className="subButton">
                   <button type="submit">Subscribe</button>
@@ -98,7 +98,7 @@ export default class NewsLetter extends Component {
             </div>
           </div>
 
-          {alert ? <div class="alert alert-danger" role="alert">
+          {alertSub ? <div className="alert alert-danger" role="alert">
             <h3>Please make sure you entered your first and last name with email</h3>
           </div> : <div></div>}
         </form>
