@@ -1327,6 +1327,7 @@ a {
   color: #024a63;
   border: 1px solid #024a63;
   padding-top: 2.4rem;
+  margin-top: 6rem;
 }
 
 .newsLetter .newsLetter-container {
@@ -1427,9 +1428,11 @@ a {
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 730px) {
+@media (min-width: 540px) and (max-width: 730px) {
   .desc-container {
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 4rem;
   }
   .inputs-container {
     -webkit-box-orient: vertical;
@@ -1442,23 +1445,210 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+    margin-left: 11%;
   }
 }
 
-@media (min-width: 280px) and (max-width: 539px) {
-  .inputs-container {
+@media (min-width: 500px) and (max-width: 539px) {
+  .newsLetter {
+    min-height: 5vh;
+    color: #024a63;
+    border: 1px solid #024a63;
+    padding-top: 2.4rem;
+    margin-top: 6rem;
+    overflow-x: hidden;
+  }
+  .newsLetter .desc-container {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .newsLetter .inputs-container {
+    margin-left: 17%;
+  }
+  .newsLetter .inputs-container label {
+    color: #024a63;
+    font-size: 1.5rem;
+    margin-left: 3%;
+  }
+  .newsLetter .inputs-container input {
+    background-color: #e2f0ef;
+    width: 15rem;
+    border-radius: 2rem;
+  }
+  .newsLetter .inputs-container .lastname {
+    margin-left: 3%;
+  }
+  .newsLetter .inputs-container .email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .newsLetter .inputs-container .email #email {
+    width: 33rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 499px) {
+  .newsLetter {
+    min-height: 5vh;
+    color: #024a63;
+    border: 1px solid #024a63;
+    padding-top: 2.4rem;
+    margin-top: 6rem;
+    overflow-x: hidden;
+  }
+  .newsLetter .desc-container {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .newsLetter .inputs-container {
+    margin-left: 10%;
+  }
+  .newsLetter .inputs-container label {
+    color: #024a63;
+    font-size: 1.5rem;
+    margin-left: 3%;
+  }
+  .newsLetter .inputs-container input {
+    background-color: #e2f0ef;
+    width: 15rem;
+    border-radius: 2rem;
+  }
+  .newsLetter .inputs-container .lastname {
+    margin-left: 3%;
+  }
+  .newsLetter .inputs-container .email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .newsLetter .inputs-container .email #email {
+    width: 33rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 413px) {
+  .newsLetter {
+    min-height: 5vh;
+    color: #024a63;
+    border: 1px solid #024a63;
+    padding-top: 2.4rem;
+    margin-top: 6rem;
+    overflow-x: hidden;
+  }
+  .newsLetter .desc-container {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .newsLetter .inputs-container {
+    margin-left: 5%;
+  }
+  .newsLetter .inputs-container label {
+    color: #024a63;
+    font-size: 1.5rem;
+    margin-left: 3%;
+  }
+  .newsLetter .inputs-container input {
+    background-color: #e2f0ef;
+    width: 15rem;
+    border-radius: 2rem;
+  }
+  .newsLetter .inputs-container .lastname {
+    margin-left: 3%;
+  }
+  .newsLetter .inputs-container .email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .newsLetter .inputs-container .email #email {
+    width: 33rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 374px) {
+  .newsLetter {
+    min-height: 5vh;
+    color: #024a63;
+    border: 1px solid #024a63;
+    padding-top: 2.4rem;
+    margin-top: 6rem;
+    overflow-x: hidden;
+  }
+  .newsLetter .newsLetter-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+  }
+  .newsLetter .desc-container {
+    text-align: center;
+    margin-left: 0;
+  }
+  .newsLetter .inputs-container {
+    margin-right: 6rem;
+    font-family: Cabin, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 5%;
+  }
+  .newsLetter .inputs-container label {
+    color: #024a63;
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+  .newsLetter .inputs-container input {
+    background-color: #e2f0ef;
+    width: 10rem;
+    border-radius: 2rem;
+  }
+  .newsLetter .inputs-container .lastname {
+    margin-left: 20%;
+  }
+  .newsLetter .inputs-container .email {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+  }
+  .newsLetter .inputs-container .email #email {
+    width: 28rem;
+    margin-bottom: 1.5rem;
+  }
+  .newsLetter .inputs-container button {
+    background: #ff7c5c;
+    border: 0rem solid white;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 2.4rem;
+    padding: 0.5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .newsLetter .inputs-container .input-names {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -3795,6 +3985,10 @@ p.header-text-about {
   font-weight: 400;
   color: #024a63;
   margin-bottom: 2.4rem;
+}
+
+.form-field-card p.required-orange {
+  color: #ff7c5c;
 }
 
 .form-field-card .join-us-form-labels {
