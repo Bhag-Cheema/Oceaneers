@@ -7,6 +7,7 @@ import Why from "./components/Why";
 import About from "./components/About";
 import JoinUs from "./components/JoinUs";
 import firebase from "./firebase/firebase";
+import Membership from "./components/Membership";
 
 import "./styles/home.scss";
 import "./styles/home.css";
@@ -29,7 +30,6 @@ class App extends Component {
 
   }
 
-
   componentDidMount() {
     this.auth.onAuthStateChanged(user => {
       this.setState({ user });
@@ -42,6 +42,7 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <Route path="/" exact component={Home} />
+          <Route path="/membership" exact component={Membership} />
           <Route path="/login" exact component={Login} />
           <Route path="/why" exact component={Why} />
           <Route path="/events" exact render={(props) => <Events {...props} />} />

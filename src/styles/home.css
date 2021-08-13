@@ -1072,7 +1072,6 @@ a {
   padding-right: 10%;
 }
 
-/* mobile responsive */
 @media (min-width: 1025px) and (max-width: 1400px) {
   .title-why {
     font-size: 5.5rem !important;
@@ -1108,31 +1107,32 @@ a {
   }
   .carousel-title-why h3 {
     font-size: 4rem !important;
-    margin-top: -20rem !important;
+    margin-top: 2rem !important;
   }
 }
 
-@media (min-width: 541px) and (max-width: 1024px) {
-  .compare p .sub-title-why {
+@media (min-width: 540px) and (max-width: 1022px) {
+  .compare .sub-title-why {
     font-size: 3.5rem !important;
   }
   .compare .sub-desc-why {
     font-size: 1.5rem !important;
   }
   .explanation-content h2 {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
     margin-left: 10%;
     margin-right: 10%;
   }
   .explanation-content h4 {
-    font-size: 1.9rem !important;
+    font-size: 2rem !important;
     line-height: 2.5rem;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 1% !important;
   }
   .carousel-title-why h3 {
     font-size: 4rem !important;
-    margin-top: 3% !important;
+    margin-top: -5% !important;
     margin-bottom: 2% !important;
   }
   .card-itself {
@@ -1187,16 +1187,6 @@ a {
     font-weight: 300;
     margin-left: 10%;
     margin-right: 10%;
-  }
-  .further-explanation .explanation-content h2 {
-    font-size: 3rem !important;
-    font-weight: 700;
-    color: #024a63;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .explanation-content h2 {
-    font-size: 1.5rem !important;
   }
   .card-itself {
     border: solid;
@@ -1307,42 +1297,28 @@ a {
   .infographic {
     min-height: 40vh;
     width: 100%;
-    margin-bottom: -7rem;
+    margin-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
-  }
-  .why-carousel {
-    min-height: 50vh;
-  }
-  .why-carousel .carousel-title-why {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  .why-carousel .carousel-title-why h3 {
-    font-size: 4.5rem;
-    font-weight: bold;
-    color: #024a63;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 0rem;
-  }
-  .why-carousel .slide-why {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   .carousel-title-why h3 {
     font-size: 3rem !important;
     font-weight: 700;
-    margin-top: 3% !important;
+    margin-top: 2% !important;
     margin-bottom: 2% !important;
     margin-left: 6%;
     margin-right: 6%;
+  }
+  .explanation-content h2 {
+    font-size: 2.8rem !important;
+    margin-left: 5.7%;
+    margin-right: 5.7%;
+  }
+  .explanation-content h4 {
+    font-size: 1.8rem !important;
+    line-height: 2.5rem;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 }
 
@@ -5235,5 +5211,155 @@ div.sign-up-popup .social-icons-pop-up .facebook-pop-up {
   font-family: "Cabin", sans-serif;
   font-size: 1.5rem !important;
   margin-right: 3rem;
+}
+
+.header-image-mem {
+  min-height: 60vh;
+  background: url("../imgs/Partners/partnerheader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  font-family: "Cabin", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin-top: 9.2rem;
+}
+
+.header-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 1rem 9.5rem 11.3rem 9.5rem;
+}
+
+h5.membership-card-title {
+  font-family: "Cabin", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+.discount-cards .card {
+  width: 36.5rem;
+  height: auto;
+}
+
+.discount-cards .card .membership-card-text {
+  display: contents;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.discount-info {
+  margin-bottom: 30%;
+}
+
+.discount-info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.discount-info .discount-code {
+  color: #ff7c5c;
+}
+
+@media (min-width: 1280px) {
+  h5.membership-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+  .membership-card-text {
+    display: contents;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h5.membership-card-title {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  p.membership-card-text {
+    display: contents;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  h5.membership-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.membership-card-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  h5.membership-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.membership-card-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+  .header {
+    font-family: "Cabin", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 9.2rem;
+  }
+  .header-text {
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 6rem 11.3rem 6rem;
+  }
+  h5.partner-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+  p.partner-card-text {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding-bottom: 0rem;
+  }
 }
 /*# sourceMappingURL=home.css.map */
