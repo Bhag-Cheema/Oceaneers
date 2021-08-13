@@ -15,6 +15,7 @@ export default class Login extends Component {
       password: '',
       loading: false,
       error: '',
+      alert: false
     };
   }
 
@@ -28,12 +29,13 @@ export default class Login extends Component {
       this.props.history.push("/");
     } catch (err) {
       this.setState({ error: err.message });
+      this.setState({ alert: true })
     }
     this.setState({ loading: false });
   }
 
   render() {
-    const { email, password, loading, error } = this.state;
+    const { email, password, loading, error, alert } = this.state;
 
     return (
       <div className="container my-4">
@@ -60,12 +62,25 @@ export default class Login extends Component {
             />
           </div>
 
+          {/*Login Button */}
+
           <div className="d-flex justify-content-end">
-            <button className="btn btn-primary px-5">Login</button>
+            {loading ? <button className="btn btn-primary px-5" type="submit"> <div className="spinner-border text-light" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div> </button> : <button className="btn btn-primary px-5" type="submit">
+                Login
+            </button>}
           </div>
+
+
+          {/*Alert*/}
+
+          {alert ? <div class="alert alert-danger mt-4" role="alert">
+            <h2>Invalid Email or Password</h2>
+          </div> : <div></div>}
         </form>
 
-        <AlertLogin className="mt-4" error={error} />
+        {/* <AlertLogin className="mt-4" error={error} /> */}
 
       </div>
     );

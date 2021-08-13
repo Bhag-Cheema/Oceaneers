@@ -569,7 +569,7 @@ export default class JoinUs extends Component {
 
 
               {alert ? <div class="alert alert-danger" role="alert">
-                Please make sure you filled out all the requirements!
+                <h2>Please make sure you filled out all the requirements!</h2>
               </div> : <div></div>}
             </form>
           </div>}

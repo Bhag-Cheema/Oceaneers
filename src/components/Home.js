@@ -9,12 +9,34 @@ import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
 import "bootstrap-icons/font/bootstrap-icons.json";
 import { Link } from "react-router-dom";
+import firebase from "../firebase/firebase";
+
 
 export default class Home extends Component {
+
+  constructor(props) {
+    super(props);
+    this.auth = firebase.auth();
+    this.db = firebase.firestore();
+
+    this.state = {
+      user: false
+    };
+  }
+
+
+  componentDidMount() {
+    this.auth.onAuthStateChanged(user => {
+      this.setState({ user: user });
+    })
+  }
+
+
   render() {
+    const { user } = this.state;
     return (
       <div>
-        <Navbar />
+        <Navbar user={user} />
         <section className="header-image-home">
           <div className="d-flex justify-content-center flex-column align-item-center text-white text-center">
             <h1 className="oceaneers-cabin-large">Oceaneers</h1>
@@ -23,11 +45,11 @@ export default class Home extends Component {
               To the Oceans, Our Food Choices Matter.
             </p>
             <Link
-            to={{ pathname: "https://www.youtube.com/watch?v=FlE2Z8IHUK8" }}
+              to={{ pathname: "https://www.youtube.com/watch?v=FlE2Z8IHUK8" }}
               target="_blank">
-            <button>
-            <i className="bi bi-play-circle"></i>
-            </button>
+              <button>
+                <i className="bi bi-play-circle"></i>
+              </button>
             </Link>
           </div>
         </section>
