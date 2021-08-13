@@ -52,10 +52,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 10%</p>
+                <p>On: All Products on www.happyeaerthpeople.com</p>
+                <p className="discount-code">Code: #Pulsepower</p>
+                <p>Type: Foods</p>
               </div>
             </div>
 
@@ -76,10 +76,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 15% on 500ml Salmun Jar (order through IG), 30% on Herbiraw Cookbook </p>
+                <p>On: Online at www.herbiraw.com or Instagram</p>
+                <p className="discount-code">Code: Order though the website or Instagram</p>
+                <p>Type: Food</p>
               </div>
             </div>
             {/* end of card */}
@@ -94,10 +94,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 15%</p>
+                <p>On:Blanket - all products</p>
+                <p className="discount-code">Code: OCEANEERS7</p>
+                <p>Type: Skin products</p>
               </div>
             </div>
             {/* end of card */}
