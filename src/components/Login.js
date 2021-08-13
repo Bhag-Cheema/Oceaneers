@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import firebase from "../firebase/firebase";
 
 import AlertLogin from './AlertLogin';
+import ButtonLogin from './ButtonLogin';
+
+import Navbar from "./NavBar";
+
+
 
 
 export default class Login extends Component {
@@ -36,6 +41,8 @@ export default class Login extends Component {
     const { email, password, loading, error } = this.state;
 
     return (
+    <div>
+      <Navbar />
       <div className="container my-4">
         <div className="h2-login">Login</div>
 
@@ -61,13 +68,17 @@ export default class Login extends Component {
           </div>
 
           <div className="d-flex justify-content-end">
-            <button className="btn btn-primary px-5">Login</button>
+            <ButtonLogin
+              type="submit"
+              className="btn btn-primary px-5"
+              loading={loading}>Login</ButtonLogin>
           </div>
         </form>
 
         <AlertLogin className="mt-4" error={error} />
 
       </div>
+    </div>
     );
   }
 }

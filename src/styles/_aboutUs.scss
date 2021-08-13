@@ -648,7 +648,7 @@ p.header-text-about {
   }
 }
 //Large Screens: Ipad Pro and Desktop
-@media screen and (min-width: 769px) and (max-width: 1300px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");
@@ -708,10 +708,10 @@ p.header-text-about {
     margin: auto !important;
     background: #bededf;
     border-radius: 7rem;
-    width: 68rem !important;
+    width: 69rem !important;
   }
   .container-2 {
-    width: 68rem !important;
+    width: 69rem !important;
     height: 43rem !important;
     margin: auto !important;
   }
@@ -756,7 +756,7 @@ p.header-text-about {
   }
 }
 // Large Screens Bigger Headers
-@media all and (min-width: 1000px) and (max-width: 1300) {
+@media all and (min-width: 1000px) and (max-width: 1600) {
   section.header-image-about {
     min-height: 50vh !important;
     background: url("../imgs/aboutus/header1.png");

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import firebase from "../firebase/firebase";
 
+import AlertLogin from './AlertLogin';
+import ButtonLogin from './ButtonLogin';
+
 const storage = firebase.storage();
 const db = firebase.firestore();
 
@@ -12,6 +15,8 @@ export default class AddEvents extends Component {
       name: "",
       file: null,
       fileDisplay: null,
+      loading: false,
+      error: '',
     };
     this.fileInputRef = React.createRef();
   }
@@ -45,6 +50,7 @@ export default class AddEvents extends Component {
   async uploadFile(file) {
     // debugger;
     const uploadTask = storage.ref("images/" + file.name).put(file);
+    this.setState({loading:true});
     uploadTask.on(
       "state_changed",
       (snap) => {
@@ -52,7 +58,8 @@ export default class AddEvents extends Component {
         console.log("Upload " + percent + "% complete");
       },
       (err) => {
-        alert(err);
+        this.setState({ error: err.message });
+        this.setState({loading:false});
       },
       async () => {
         const downloadUrl = await uploadTask.snapshot.ref.getDownloadURL();
@@ -63,16 +70,18 @@ export default class AddEvents extends Component {
 
   async saveEvent(downloadUrl) {
     // TODO: add try catch
+    this.setState({loading:true});
     try {
       await db.collection("events").add({ downloadUrl: downloadUrl });
       this.props.history.push("/events");
     } catch (error) {
-      console.log(error);
+      this.setState({ error: error.message });
     }
+    this.setState({loading:false});
   }
 
   render() {
-    const { fileDisplay } = this.state;
+    const { fileDisplay,error,loading } = this.state;
     return (
       <div>
         <h3 className="mb-4 m-4">Add Event</h3>
@@ -80,7 +89,7 @@ export default class AddEvents extends Component {
         <div className="card p-3 m-4">
           <div style={{ fontWeight: "bold" }}>Event Cover</div>
 
-          {fileDisplay ? (
+          {fileDisplay ? 
             <div className="text-center m-4">
               <img
                 style={{
@@ -92,9 +101,9 @@ export default class AddEvents extends Component {
                 alt="Event cover"
               />
             </div>
-          ) : (
+             : 
               <div></div>
-            )}
+            }
 
           <input
             ref={this.fileInputRef}
@@ -115,17 +124,16 @@ export default class AddEvents extends Component {
         </div>
 
         <form onSubmit={(e) => this.onFormSubmit(e)}>
-          <div className="mb-3">
-            <label className="form-label m-4">Name</label>
-            <input type="text" className="form-control m-4" />
-          </div>
-
           <div className="d-flex justify-content-end">
-            <button type="submit" className="btn btn-primary mb-4">
+            <ButtonLogin
+              loading={loading}
+              type="submit"
+              className="btn btn-primary mb-4" >
               Save Event
-            </button>
+            </ButtonLogin>
           </div>
         </form>
+        <AlertLogin error={error} />
       </div>
     );
   }
