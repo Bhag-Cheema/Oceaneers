@@ -236,10 +236,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 10%</p>
+                <p>On: Blanket - All New Items</p>
+                <p>Location: Muizenberg</p>
+                <p>Type: Bar Cafe Music Venue</p>
               </div>
             </div>
             {/* end of card */}
@@ -255,10 +255,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 15%</p>
+                <p>On: Sitewide Online</p>
+                <p className="discount-code">Code: sealandoceaneers15</p>
+                <p>Type: Online Store</p>
               </div>
             </div>
             {/* end of card */}
@@ -273,10 +273,11 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 20%</p>
+                <p>On: 1h Massage [440r instead of 550r]</p>
+                <p>Location: Muizenberg</p>
+                <p>Type: Body Work</p>
+                <p>Booking: 084 758 2222 [WhatsApp]</p>
               </div>
             </div>
 
@@ -292,10 +293,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 10%</p>
+                <p>On: Blanket - All Menu Items</p>
+                <p>Location: Muizenberg</p>
+                <p>Type: Cafe</p>
               </div>
             </div>
             {/* end of card */}
@@ -308,10 +309,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Stay Tuned for Cool Prizes! </p>
+                <p></p>
+                <p></p>
+                <p></p>
               </div>
             </div>
             {/* end of card */}
@@ -326,10 +327,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Contributing through Prizes</p>
+                <p></p>
+                <p></p>
+                <p></p>
               </div>
             </div>
             {/* end of card */}
@@ -344,10 +345,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 15%</p>
+                <p>On: all environmental literacy materials by Captain Fanplastic, on the school of sustainable development. [www.schoolofsd.com] </p>
+                <p className="discount-code">Code: Ahoy Oceaneers [Enter at Checkout] </p>
+                <p></p>
               </div>
             </div>
             {/* end of card */}
@@ -360,10 +361,10 @@ export default class Membership extends Component {
                 </div>
               </div>
               <div className="discount-info">
-                <p>Discount:</p>
-                <p>On:</p>
-                <p className="discount-code">Code:</p>
-                <p>Type:</p>
+                <p>Discount: 20%</p>
+                <p>On: All services offered</p>
+                <p className="discount-code">Code: Just recite the pledge</p>
+                <p>Type: Food</p>
               </div>
             </div>
             {/* end of card */}
