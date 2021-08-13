@@ -14,7 +14,7 @@ export default class NavBar extends Component {
 
   logout() {
     firebase.auth().signOut();
-    this.props.history.push("/");
+
   }
 
   // handleClickedMenu = () => {
@@ -85,9 +85,9 @@ export default class NavBar extends Component {
                     <button className="login">Login</button>
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <i className="bi bi-search pointer-why"></i>
-                </li>
+                </li> */}
               </ul>
             </div>
           </nav>
@@ -145,7 +145,7 @@ export default class NavBar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/">
+                    <NavLink className="nav-link" to="/membership">
                       Membership
                   </NavLink>
                   </li>
@@ -154,9 +154,6 @@ export default class NavBar extends Component {
                     <NavLink to="/login">
                       <button onClick={() => this.logout()} className="login">Logout</button>
                     </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <i className="bi bi-search pointer-why"></i>
                   </li>
                 </ul>
               </div>
