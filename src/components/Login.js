@@ -29,12 +29,17 @@ export default class Login extends Component {
     const { email, password } = this.state;
     this.setState({ loading: true });
 
-
     try {
       await this.auth.signInWithEmailAndPassword(email, password);
-      //setTimeout(() => { }, 1000);
-      //const user = this.auth.currentUser();
-      console.log('This is user');
+
+      this.auth.onAuthStateChanged((user) => {
+        if (user) {
+          localStorage.setItem('user', user.Aa);
+        } else {
+          localStorage.removeItem('user');
+        }
+      });
+
       this.props.history.push("/");
     } catch (err) {
       this.setState({ error: err.message });
@@ -42,6 +47,12 @@ export default class Login extends Component {
     }
 
     this.setState({ loading: false });
+  }
+
+  componentWillUnmount() {
+    this.setState = (state, callback) => {
+      return;
+    };
   }
 
   render() {
@@ -80,8 +91,8 @@ export default class Login extends Component {
               {loading ? <button className="btn btn-primary px-5" type="submit"> <div className="spinner-border text-light" role="status">
                 <span className="visually-hidden">Loading...</span>
               </div> </button> : <button className="btn btn-primary px-5" type="submit">
-                  Login
-            </button>}
+                Login
+              </button>}
             </div>
 
 

@@ -200,6 +200,12 @@ a {
   .login {
     margin: 1rem 1rem;
   }
+
+  nav {
+    img {
+      height: 6rem;
+    }
+  }
 }
 
 @media screen and (min-width: 994px) and (max-width: 1150px) {
@@ -209,10 +215,10 @@ a {
     margin-right: 1rem;
   }
 
-  nav {
-    img {
-      width: 15px !important;
-      height: 15px !important;
-    }
-  }
+  // nav {
+  //   img {
+  //     width: 15px !important;
+  //     height: 15px !important;
+  //   }
+  // }
 }

@@ -21,23 +21,22 @@ export default class Home extends Component {
     this.auth = firebase.auth();
     this.db = firebase.firestore();
 
-    //let user = '';
-    //{ localStorage.getItem('user') ? this.user = localStorage.getItem('user') : this.user = this.auth.currentUser(); }
-    // const user = this.auth.currentUser();
-    //localStorage.setItem('user', user);
-
     this.state = {
       user: false,
       video: false,
     };
   }
 
-
   componentDidMount() {
     this.auth.onAuthStateChanged(user => {
-      //localStorage.setItem('user', user);
       this.setState({ user: user });
     })
+  }
+
+  componentWillUnmount() {
+    this.setState = (state, callback) => {
+      return;
+    };
   }
 
   onShowVideo() {
@@ -62,10 +61,15 @@ export default class Home extends Component {
               <i className="bi bi-play-circle"></i>
             </button>
 
-            {video ? <div className="justify-content-center">  <ReactPlayer url="https://www.youtube.com/watch?v=FlE2Z8IHUK8" />
-            </div> : <div></div>}
+            {video ?
+              <div className="videoStyle">
+                <ReactPlayer url="https://www.youtube.com/watch?v=FlE2Z8IHUK8" />
+              </div>
+              :
+              <div></div>}
           </div>
         </section>
+        
         <div className="d-flex justify-content-center">
           <Link to="/joinus">
             <button className="learn-how">Want to Join? Learn how.</button>
@@ -111,7 +115,7 @@ export default class Home extends Component {
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Awarness
+                Awareness
                 <i className="bi bi-plus-circle plus-icon"></i>
               </button>
             </h2>
@@ -122,7 +126,7 @@ export default class Home extends Component {
               data-bs-parent="#accordionExample"
             >
               <p className="accordion-body-title">…is what we raise! </p>
-              <p className="accordion-body-home">
+              <p className="accordion-body-home px-2 pb-2">
                 Food choices matter more than most people (want to) know. That’s
                 not a coincidence – there’s some pretty powerful & loaded
                 industries & lobbyists out there who want to keep it that way
@@ -153,7 +157,7 @@ export default class Home extends Component {
               data-bs-parent="#accordionExample"
             >
               <p className="accordion-body-title">…is what drives us!</p>
-              <div className="accordion-body-home">
+              <div className="accordion-body-home px-2 pb-2">
                 3 times a day you get to vote, with your hard-earned nuggets.
                 Unless you’re munching like Iggy, then it’s 6-12 times. It’s
                 like democracy, but on steroids.
@@ -184,7 +188,7 @@ export default class Home extends Component {
               data-bs-parent="#accordionExample"
             >
               <p className="accordion-body-title">...is what we aim for!</p>
-              <div className="accordion-body-home">
+              <div className="accordion-body-home px-2 pb-2">
                 We don’t recommend to go from carnivore to complete herbivore,
                 the same way we don’t recommend to go from Muizies to Dungeons
                 (big wave spot). We believe that reduction is the most

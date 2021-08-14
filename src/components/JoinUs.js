@@ -89,10 +89,12 @@ export default class JoinUs extends Component {
           passive,
           active,
         } = this.state;
+
         const cred = await this.auth.createUserWithEmailAndPassword(
           email,
           password
         );
+
         await this.db.collection("members").doc(cred.user.uid).set({
           firstname,
           lastname,
@@ -105,8 +107,8 @@ export default class JoinUs extends Component {
           passive,
           active,
         });
+
         this.props.history.push("/joinus");
-        console.log(cred.user);
       } catch (err) {
         this.setState({ error: err.message });
         this.setState({ alert: true });

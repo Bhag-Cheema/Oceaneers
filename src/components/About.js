@@ -238,7 +238,7 @@ export default class Partners extends Component {
                   <Link to={{ pathname: "https://www.oceaneers.co/james-taylor-first-oceaneers-ambassador-interview/" }} target="_blank">
                     <button className="interview">
                       View the full interview with James
-                  </button>
+                    </button>
                   </Link>
                   <div className="social-media d-flex justify-content-center">
                     {/*THESE ARE THE ICONS THAT IS SUPPOSE TO LINK TO FACEBOOK AND INSTAGRAM */}
@@ -299,7 +299,7 @@ export default class Partners extends Component {
                   <Link to={{ pathname: "https://www.oceaneers.co/we-chat-to-tammy-fry-about-how-surfing-karate-and-veganism-awakens-humility-determination-and-choosing-change/" }} target="_blank">
                     <button className="interview">
                       View the full interview with Tammy
-                  </button>
+                    </button>
                   </Link>
                   <div className="social-media d-flex justify-content-center">
 
@@ -360,7 +360,7 @@ export default class Partners extends Component {
                   <Link to={{ pathname: "https://www.oceaneers.co/we-chat-to-terence-bell-about-endurance-sport-living-with-less-and-the-pursuit-of-joy/" }} target="_blank">
                     <button className="interview">
                       View the full interview with Terence
-                  </button>
+                    </button>
                   </Link>
                   <div className="social-media d-flex justify-content-center">
 
@@ -422,7 +422,7 @@ export default class Partners extends Component {
                   <Link to={{ pathname: "https://www.oceaneers.co/emi-koch-beyond-the-surface-interview-with-oceaneers/" }} target="_blank">
                     <button className="interview">
                       View the full interview with Emi
-                  </button>
+                    </button>
                   </Link>
                   <div className="social-media d-flex justify-content-center">
                     <Link to={{ pathname: "https://www.instagram.com/beyondthesurfaceintl/?hl=en" }} target="_blank" style={{ textDecoration: "none" }}>
