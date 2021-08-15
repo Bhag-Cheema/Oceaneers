@@ -5578,5 +5578,16 @@ h5.membership-card-title {
     line-height: 1.6rem;
     padding-bottom: 0rem;
   }
+  .discount-info {
+    margin-bottom: 30%;
+  }
+  .discount-info p {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+  }
+  .discount-info .discount-code {
+    color: #ff7c5c;
+    font-size: 1.7rem;
+  }
 }
 /*# sourceMappingURL=home.css.map */
