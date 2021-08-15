@@ -281,17 +281,19 @@ p.header-text-about {
     p.header-about {
       font-size: 4rem !important;
       font-weight: 700 !important;
-      margin-top: 1rem;
+      margin-top: 30% !important;
       margin-bottom: 0.5rem;
       line-height: 4.5rem;
     }
     p.header-text-about {
       font-size: 2rem !important;
       font-weight: 400;
-      margin-left: 2rem !important;
-      margin-right: 2rem !important;
+      margin-left: 1rem !important;
+      margin-right: 1rem !important;
       margin-top: 0rem;
       margin-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
   .repeating-h1-about {
